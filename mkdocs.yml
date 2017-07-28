@@ -1,0 +1,12 @@
+site_name: "Darklit"
+theme: "material"
+pages:
+- Home: 'index.md'
+- Game Data:
+    - CreatureBrain: gameData/CreatureBrain.md
+    - Explode: gameData/Explode.md
+    - Idle: gameData/Idle.md
+    - MoveOnLine: gameData/MoveOnLine.md
+    - Turn180: gameData/Turn180.md
+    - WorldKnowledge: gameData/WorldKnowledge.md
+

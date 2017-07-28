@@ -1,0 +1,9 @@
+{
+  "project": {
+    "name": "Darklit",
+    "theme": "material"
+  },
+  "other_pages": [
+    "- Home: 'index.md'"
+  ]
+}
