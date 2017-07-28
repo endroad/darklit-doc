@@ -142,7 +142,7 @@
         },
         {
             "location": "/gameData/WorldKnowledge/",
-            "text": "WorldKnowledge\n\n\nData\n\n\nWorldKnowledge.HasGround\n\n\nBool WorldKnowledge.HasGround\n\n\nWhether has a ground under.\n\n\nWorldKnowledge.HasWallLeft\n\n\nBool WorldKnowledge.HasWallLeft\n\n\nUndocumented\n\n\nWorldKnowledge.HasWallRight\n\n\nBool WorldKnowledge.HasWallRight\n\n\nUndocumented\n\n\nWorldKnowledge.HasCeil\n\n\nBool WorldKnowledge.HasCeil\n\n\nUndocumented\n\n\nMethods",
+            "text": "WorldKnowledge\n\n\nData\n\n\nWorldKnowledge.HasGround\n\n\nBool WorldKnowledge.HasGround\n\n\nWhether has a ground under.\n\n\nWorldKnowledge.HasWallLeft\n\n\nBool WorldKnowledge.HasWallLeft\n\n\nCheck if has a wall on left.\n\n\nWorldKnowledge.HasWallRight\n\n\nBool WorldKnowledge.HasWallRight\n\n\nUndocumented\n\n\nWorldKnowledge.HasCeil\n\n\nBool WorldKnowledge.HasCeil\n\n\nUndocumented\n\n\nMethods",
             "title": "WorldKnowledge"
         },
         {
@@ -162,7 +162,7 @@
         },
         {
             "location": "/gameData/WorldKnowledge/#worldknowledgehaswallleft",
-            "text": "Bool WorldKnowledge.HasWallLeft  Undocumented",
+            "text": "Bool WorldKnowledge.HasWallLeft  Check if has a wall on left.",
             "title": "WorldKnowledge.HasWallLeft"
         },
         {
