@@ -1,0 +1,184 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nBrain\n\n\n\n\nplayerDist\n - Distance to closest player.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "title": "Home"
+        },
+        {
+            "location": "/#welcome-to-mkdocs",
+            "text": "For full documentation visit  mkdocs.org .",
+            "title": "Welcome to MkDocs"
+        },
+        {
+            "location": "/#brain",
+            "text": "playerDist  - Distance to closest player.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
+            "title": "Brain"
+        },
+        {
+            "location": "/#project-layout",
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "title": "Project layout"
+        },
+        {
+            "location": "/gameData/CreatureBrain/",
+            "text": "CreatureBrain\n\n\nData\n\n\nCreatureBrain.playerDist\n\n\nFloat CreatureBrain.playerDist\n\n\nDistance to closest player.\n\n\nMethods",
+            "title": "CreatureBrain"
+        },
+        {
+            "location": "/gameData/CreatureBrain/#creaturebrain",
+            "text": "",
+            "title": "CreatureBrain"
+        },
+        {
+            "location": "/gameData/CreatureBrain/#data",
+            "text": "",
+            "title": "Data"
+        },
+        {
+            "location": "/gameData/CreatureBrain/#creaturebrainplayerdist",
+            "text": "Float CreatureBrain.playerDist  Distance to closest player.",
+            "title": "CreatureBrain.playerDist"
+        },
+        {
+            "location": "/gameData/CreatureBrain/#methods",
+            "text": "",
+            "title": "Methods"
+        },
+        {
+            "location": "/gameData/Explode/",
+            "text": "Explode\n\n\nData\n\n\nExplode.event\n\n\nString Explode.event\n\n\nEvent called when explode.\n\n\nExplode.effect\n\n\nString Explode.effect\n\n\nEffect triggered when explode.\n\n\nMethods",
+            "title": "Explode"
+        },
+        {
+            "location": "/gameData/Explode/#explode",
+            "text": "",
+            "title": "Explode"
+        },
+        {
+            "location": "/gameData/Explode/#data",
+            "text": "",
+            "title": "Data"
+        },
+        {
+            "location": "/gameData/Explode/#explodeevent",
+            "text": "String Explode.event  Event called when explode.",
+            "title": "Explode.event"
+        },
+        {
+            "location": "/gameData/Explode/#explodeeffect",
+            "text": "String Explode.effect  Effect triggered when explode.",
+            "title": "Explode.effect"
+        },
+        {
+            "location": "/gameData/Explode/#methods",
+            "text": "",
+            "title": "Methods"
+        },
+        {
+            "location": "/gameData/Idle/",
+            "text": "Idle\n\n\nData\n\n\nMethods",
+            "title": "Idle"
+        },
+        {
+            "location": "/gameData/Idle/#idle",
+            "text": "",
+            "title": "Idle"
+        },
+        {
+            "location": "/gameData/Idle/#data",
+            "text": "",
+            "title": "Data"
+        },
+        {
+            "location": "/gameData/Idle/#methods",
+            "text": "",
+            "title": "Methods"
+        },
+        {
+            "location": "/gameData/MoveOnLine/",
+            "text": "MoveOnLine\n\n\nData\n\n\nMoveOnLine.Velocity\n\n\nFloat MoveOnLine.Velocity\n\n\nUndocumented\n\n\nMethods",
+            "title": "MoveOnLine"
+        },
+        {
+            "location": "/gameData/MoveOnLine/#moveonline",
+            "text": "",
+            "title": "MoveOnLine"
+        },
+        {
+            "location": "/gameData/MoveOnLine/#data",
+            "text": "",
+            "title": "Data"
+        },
+        {
+            "location": "/gameData/MoveOnLine/#moveonlinevelocity",
+            "text": "Float MoveOnLine.Velocity  Undocumented",
+            "title": "MoveOnLine.Velocity"
+        },
+        {
+            "location": "/gameData/MoveOnLine/#methods",
+            "text": "",
+            "title": "Methods"
+        },
+        {
+            "location": "/gameData/Turn180/",
+            "text": "Turn180\n\n\nData\n\n\nMethods",
+            "title": "Turn180"
+        },
+        {
+            "location": "/gameData/Turn180/#turn180",
+            "text": "",
+            "title": "Turn180"
+        },
+        {
+            "location": "/gameData/Turn180/#data",
+            "text": "",
+            "title": "Data"
+        },
+        {
+            "location": "/gameData/Turn180/#methods",
+            "text": "",
+            "title": "Methods"
+        },
+        {
+            "location": "/gameData/WorldKnowledge/",
+            "text": "WorldKnowledge\n\n\nData\n\n\nWorldKnowledge.HasGround\n\n\nBool WorldKnowledge.HasGround\n\n\nUndocumented\n\n\nWorldKnowledge.HasWallLeft\n\n\nBool WorldKnowledge.HasWallLeft\n\n\nUndocumented\n\n\nWorldKnowledge.HasWallRight\n\n\nBool WorldKnowledge.HasWallRight\n\n\nUndocumented\n\n\nWorldKnowledge.HasCeil\n\n\nBool WorldKnowledge.HasCeil\n\n\nUndocumented\n\n\nMethods",
+            "title": "WorldKnowledge"
+        },
+        {
+            "location": "/gameData/WorldKnowledge/#worldknowledge",
+            "text": "",
+            "title": "WorldKnowledge"
+        },
+        {
+            "location": "/gameData/WorldKnowledge/#data",
+            "text": "",
+            "title": "Data"
+        },
+        {
+            "location": "/gameData/WorldKnowledge/#worldknowledgehasground",
+            "text": "Bool WorldKnowledge.HasGround  Undocumented",
+            "title": "WorldKnowledge.HasGround"
+        },
+        {
+            "location": "/gameData/WorldKnowledge/#worldknowledgehaswallleft",
+            "text": "Bool WorldKnowledge.HasWallLeft  Undocumented",
+            "title": "WorldKnowledge.HasWallLeft"
+        },
+        {
+            "location": "/gameData/WorldKnowledge/#worldknowledgehaswallright",
+            "text": "Bool WorldKnowledge.HasWallRight  Undocumented",
+            "title": "WorldKnowledge.HasWallRight"
+        },
+        {
+            "location": "/gameData/WorldKnowledge/#worldknowledgehasceil",
+            "text": "Bool WorldKnowledge.HasCeil  Undocumented",
+            "title": "WorldKnowledge.HasCeil"
+        },
+        {
+            "location": "/gameData/WorldKnowledge/#methods",
+            "text": "",
+            "title": "Methods"
+        }
+    ]
+}
