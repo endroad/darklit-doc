@@ -131,42 +131,42 @@
             "title": "Methods"
         },
         {
-            "location": "/gameData/WorldKnowledge/",
-            "text": "WorldKnowledge\n\n\nData\n\n\nWorldKnowledge.HasGround\n\n\nBool WorldKnowledge.HasGround\n\n\nWhether has a ground under.\n\n\nWorldKnowledge.HasWallLeft\n\n\nBool WorldKnowledge.HasWallLeft\n\n\nCheck if has a wall on left.\n\n\nWorldKnowledge.HasWallRight\n\n\nBool WorldKnowledge.HasWallRight\n\n\nUndocumented\n\n\nWorldKnowledge.HasCeil\n\n\nBool WorldKnowledge.HasCeil\n\n\nUndocumented\n\n\nMethods",
-            "title": "WorldKnowledge"
+            "location": "/gameData/World/",
+            "text": "World\n\n\nData\n\n\nWorld.HasGround\n\n\nBool World.HasGround\n\n\nWhether has a ground under.\n\n\nWorld.HasWallLeft\n\n\nBool World.HasWallLeft\n\n\nCheck if has a wall on left.\n\n\nWorld.HasWallRight\n\n\nBool World.HasWallRight\n\n\nUndocumented\n\n\nWorld.ceil\n\n\nBool World.ceil\n\n\nUndocumented\n\n\nMethods",
+            "title": "World"
         },
         {
-            "location": "/gameData/WorldKnowledge/#worldknowledge",
+            "location": "/gameData/World/#world",
             "text": "",
-            "title": "WorldKnowledge"
+            "title": "World"
         },
         {
-            "location": "/gameData/WorldKnowledge/#data",
+            "location": "/gameData/World/#data",
             "text": "",
             "title": "Data"
         },
         {
-            "location": "/gameData/WorldKnowledge/#worldknowledgehasground",
-            "text": "Bool WorldKnowledge.HasGround  Whether has a ground under.",
-            "title": "WorldKnowledge.HasGround"
+            "location": "/gameData/World/#worldhasground",
+            "text": "Bool World.HasGround  Whether has a ground under.",
+            "title": "World.HasGround"
         },
         {
-            "location": "/gameData/WorldKnowledge/#worldknowledgehaswallleft",
-            "text": "Bool WorldKnowledge.HasWallLeft  Check if has a wall on left.",
-            "title": "WorldKnowledge.HasWallLeft"
+            "location": "/gameData/World/#worldhaswallleft",
+            "text": "Bool World.HasWallLeft  Check if has a wall on left.",
+            "title": "World.HasWallLeft"
         },
         {
-            "location": "/gameData/WorldKnowledge/#worldknowledgehaswallright",
-            "text": "Bool WorldKnowledge.HasWallRight  Undocumented",
-            "title": "WorldKnowledge.HasWallRight"
+            "location": "/gameData/World/#worldhaswallright",
+            "text": "Bool World.HasWallRight  Undocumented",
+            "title": "World.HasWallRight"
         },
         {
-            "location": "/gameData/WorldKnowledge/#worldknowledgehasceil",
-            "text": "Bool WorldKnowledge.HasCeil  Undocumented",
-            "title": "WorldKnowledge.HasCeil"
+            "location": "/gameData/World/#worldceil",
+            "text": "Bool World.ceil  Undocumented",
+            "title": "World.ceil"
         },
         {
-            "location": "/gameData/WorldKnowledge/#methods",
+            "location": "/gameData/World/#methods",
             "text": "",
             "title": "Methods"
         }
