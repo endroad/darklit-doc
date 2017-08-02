@@ -11,6 +11,16 @@
             "title": "Welcome Darklit"
         },
         {
+            "location": "/nstuto/",
+            "text": "Tuto NuSpeak",
+            "title": "Tuto NuSpeak"
+        },
+        {
+            "location": "/nstuto/#tuto-nuspeak",
+            "text": "",
+            "title": "Tuto NuSpeak"
+        },
+        {
             "location": "/gameData/CreatureBrain/",
             "text": "CreatureBrain\n\n\nData\n\n\nCreatureBrain.playerDist\n\n\nFloat CreatureBrain.playerDist\n\n\nDistance to closest player.\n\n\nMethods",
             "title": "CreatureBrain"
@@ -111,22 +121,22 @@
             "title": "Methods"
         },
         {
-            "location": "/gameData/Turn180/",
-            "text": "Turn180\n\n\nData\n\n\nMethods",
-            "title": "Turn180"
+            "location": "/gameData/yolo/",
+            "text": "yolo\n\n\nData\n\n\nMethods",
+            "title": "yolo"
         },
         {
-            "location": "/gameData/Turn180/#turn180",
+            "location": "/gameData/yolo/#yolo",
             "text": "",
-            "title": "Turn180"
+            "title": "yolo"
         },
         {
-            "location": "/gameData/Turn180/#data",
+            "location": "/gameData/yolo/#data",
             "text": "",
             "title": "Data"
         },
         {
-            "location": "/gameData/Turn180/#methods",
+            "location": "/gameData/yolo/#methods",
             "text": "",
             "title": "Methods"
         },
