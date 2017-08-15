@@ -16,7 +16,7 @@
     
     
       
-        <title>Explode - Darklit</title>
+        <title>Stamina - Darklit</title>
       
     
     
@@ -77,7 +77,7 @@
                 </span>
               
             
-            Explode
+            Stamina
           
         </span>
       </div>
@@ -205,74 +205,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Explode
-      </label>
-    
-    <a href="./" title="Explode" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../Explode/" title="Explode" class="md-nav__link">
       Explode
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#data" title="Data" class="md-nav__link">
-    Data
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#explodeevent" title="Explode.event" class="md-nav__link">
-    Explode.event
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#explodeeffect" title="Explode.effect" class="md-nav__link">
-    Explode.effect
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#methods" title="Methods" class="md-nav__link">
-    Methods
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -364,11 +301,88 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../Stamina/" title="Stamina" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Stamina
+      </label>
+    
+    <a href="./" title="Stamina" class="md-nav__link md-nav__link--active">
       Stamina
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data" title="Data" class="md-nav__link">
+    Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#staminacurrent" title="Stamina.Current" class="md-nav__link">
+    Stamina.Current
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#staminacapacity" title="Stamina.Capacity" class="md-nav__link">
+    Stamina.Capacity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#staminarate" title="Stamina.Rate" class="md-nav__link">
+    Stamina.Rate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#staminaburst" title="Stamina.Burst" class="md-nav__link">
+    Stamina.Burst
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" title="Methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -418,15 +432,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#explodeevent" title="Explode.event" class="md-nav__link">
-    Explode.event
+  <a href="#staminacurrent" title="Stamina.Current" class="md-nav__link">
+    Stamina.Current
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#explodeeffect" title="Explode.effect" class="md-nav__link">
-    Explode.effect
+  <a href="#staminacapacity" title="Stamina.Capacity" class="md-nav__link">
+    Stamina.Capacity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#staminarate" title="Stamina.Rate" class="md-nav__link">
+    Stamina.Rate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#staminaburst" title="Stamina.Burst" class="md-nav__link">
+    Stamina.Burst
   </a>
   
 </li>
@@ -458,14 +486,20 @@
               
                 
                 
-                <h1 id="explode">Explode</h1>
+                <h1 id="stamina">Stamina</h1>
 <h2 id="data">Data</h2>
-<h3 id="explodeevent">Explode.event</h3>
-<p><code>String Explode.event</code></p>
-<p>Event called when explode.</p>
-<h3 id="explodeeffect">Explode.effect</h3>
-<p><code>String Explode.effect</code></p>
-<p>Effect triggered when explode.</p>
+<h3 id="staminacurrent">Stamina.Current</h3>
+<p><code>Float Stamina.Current</code></p>
+<p>Undocumented</p>
+<h3 id="staminacapacity">Stamina.Capacity</h3>
+<p><code>Float Stamina.Capacity</code></p>
+<p>Undocumented</p>
+<h3 id="staminarate">Stamina.Rate</h3>
+<p><code>Float Stamina.Rate</code></p>
+<p>Undocumented</p>
+<h3 id="staminaburst">Stamina.Burst</h3>
+<p><code>Float Stamina.Burst</code></p>
+<p>Undocumented</p>
 <h2 id="methods">Methods</h2>
                 
                   
@@ -485,7 +519,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../CreatureBrain/" title="CreatureBrain" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Oxygen/" title="Oxygen" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -494,19 +528,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                CreatureBrain
+                Oxygen
               </span>
             </div>
           </a>
         
         
-          <a href="../Idle/" title="Idle" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../World/" title="World" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Idle
+                World
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

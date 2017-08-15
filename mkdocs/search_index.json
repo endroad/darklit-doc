@@ -21,6 +21,41 @@
             "title": "Tuto NuSpeak"
         },
         {
+            "location": "/gameData/__vmtest/",
+            "text": "__vmtest\n\n\nData\n\n\n__vmtest.myInt\n\n\nInt __vmtest.myInt\n\n\nUndocumented\n\n\n__vmtest.myFloat\n\n\nInt __vmtest.myFloat\n\n\nUndocumented\n\n\n__vmtest.mySubstractionMessage\n\n\nFloat __vmtest.mySubstractionMessage\n\n\nUndocumented\n\n\nMethods",
+            "title": "__vmtest"
+        },
+        {
+            "location": "/gameData/__vmtest/#__vmtest",
+            "text": "",
+            "title": "__vmtest"
+        },
+        {
+            "location": "/gameData/__vmtest/#data",
+            "text": "",
+            "title": "Data"
+        },
+        {
+            "location": "/gameData/__vmtest/#__vmtestmyint",
+            "text": "Int __vmtest.myInt  Undocumented",
+            "title": "__vmtest.myInt"
+        },
+        {
+            "location": "/gameData/__vmtest/#__vmtestmyfloat",
+            "text": "Int __vmtest.myFloat  Undocumented",
+            "title": "__vmtest.myFloat"
+        },
+        {
+            "location": "/gameData/__vmtest/#__vmtestmysubstractionmessage",
+            "text": "Float __vmtest.mySubstractionMessage  Undocumented",
+            "title": "__vmtest.mySubstractionMessage"
+        },
+        {
+            "location": "/gameData/__vmtest/#methods",
+            "text": "",
+            "title": "Methods"
+        },
+        {
             "location": "/gameData/CreatureBrain/",
             "text": "CreatureBrain\n\n\nData\n\n\nCreatureBrain.playerDist\n\n\nFloat CreatureBrain.playerDist\n\n\nDistance to closest player.\n\n\nMethods",
             "title": "CreatureBrain"
@@ -121,22 +156,167 @@
             "title": "Methods"
         },
         {
-            "location": "/gameData/yolo/",
-            "text": "yolo\n\n\nData\n\n\nMethods",
-            "title": "yolo"
+            "location": "/gameData/Turn180/",
+            "text": "Turn180\n\n\nData\n\n\nMethods",
+            "title": "Turn180"
         },
         {
-            "location": "/gameData/yolo/#yolo",
+            "location": "/gameData/Turn180/#turn180",
             "text": "",
-            "title": "yolo"
+            "title": "Turn180"
         },
         {
-            "location": "/gameData/yolo/#data",
+            "location": "/gameData/Turn180/#data",
             "text": "",
             "title": "Data"
         },
         {
-            "location": "/gameData/yolo/#methods",
+            "location": "/gameData/Turn180/#methods",
+            "text": "",
+            "title": "Methods"
+        },
+        {
+            "location": "/gameData/spawner/",
+            "text": "spawner\n\n\nData\n\n\nspawner.time\n\n\nFloat spawner.time\n\n\nUndocumented\n\n\nMethods",
+            "title": "spawner"
+        },
+        {
+            "location": "/gameData/spawner/#spawner",
+            "text": "",
+            "title": "spawner"
+        },
+        {
+            "location": "/gameData/spawner/#data",
+            "text": "",
+            "title": "Data"
+        },
+        {
+            "location": "/gameData/spawner/#spawnertime",
+            "text": "Float spawner.time  Undocumented",
+            "title": "spawner.time"
+        },
+        {
+            "location": "/gameData/spawner/#methods",
+            "text": "",
+            "title": "Methods"
+        },
+        {
+            "location": "/gameData/Character/",
+            "text": "Character\n\n\nData\n\n\nCharacter.Crouch_LateralSpeed\n\n\nFloat Character.Crouch_LateralSpeed\n\n\nUndocumented\n\n\nMethods",
+            "title": "Character"
+        },
+        {
+            "location": "/gameData/Character/#character",
+            "text": "",
+            "title": "Character"
+        },
+        {
+            "location": "/gameData/Character/#data",
+            "text": "",
+            "title": "Data"
+        },
+        {
+            "location": "/gameData/Character/#charactercrouch_lateralspeed",
+            "text": "Float Character.Crouch_LateralSpeed  Undocumented",
+            "title": "Character.Crouch_LateralSpeed"
+        },
+        {
+            "location": "/gameData/Character/#methods",
+            "text": "",
+            "title": "Methods"
+        },
+        {
+            "location": "/gameData/Health/",
+            "text": "Health\n\n\nData\n\n\nHealth.Regen\n\n\nFloat Health.Regen\n\n\nUndocumented\n\n\nHealth.Pool\n\n\nFloat Health.Pool\n\n\nUndocumented\n\n\nHealth.Current\n\n\nInt Health.Current\n\n\nUndocumented\n\n\nMethods",
+            "title": "Health"
+        },
+        {
+            "location": "/gameData/Health/#health",
+            "text": "",
+            "title": "Health"
+        },
+        {
+            "location": "/gameData/Health/#data",
+            "text": "",
+            "title": "Data"
+        },
+        {
+            "location": "/gameData/Health/#healthregen",
+            "text": "Float Health.Regen  Undocumented",
+            "title": "Health.Regen"
+        },
+        {
+            "location": "/gameData/Health/#healthpool",
+            "text": "Float Health.Pool  Undocumented",
+            "title": "Health.Pool"
+        },
+        {
+            "location": "/gameData/Health/#healthcurrent",
+            "text": "Int Health.Current  Undocumented",
+            "title": "Health.Current"
+        },
+        {
+            "location": "/gameData/Health/#methods",
+            "text": "",
+            "title": "Methods"
+        },
+        {
+            "location": "/gameData/Oxygen/",
+            "text": "Oxygen\n\n\nData\n\n\nMethods",
+            "title": "Oxygen"
+        },
+        {
+            "location": "/gameData/Oxygen/#oxygen",
+            "text": "",
+            "title": "Oxygen"
+        },
+        {
+            "location": "/gameData/Oxygen/#data",
+            "text": "",
+            "title": "Data"
+        },
+        {
+            "location": "/gameData/Oxygen/#methods",
+            "text": "",
+            "title": "Methods"
+        },
+        {
+            "location": "/gameData/Stamina/",
+            "text": "Stamina\n\n\nData\n\n\nStamina.Current\n\n\nFloat Stamina.Current\n\n\nUndocumented\n\n\nStamina.Capacity\n\n\nFloat Stamina.Capacity\n\n\nUndocumented\n\n\nStamina.Rate\n\n\nFloat Stamina.Rate\n\n\nUndocumented\n\n\nStamina.Burst\n\n\nFloat Stamina.Burst\n\n\nUndocumented\n\n\nMethods",
+            "title": "Stamina"
+        },
+        {
+            "location": "/gameData/Stamina/#stamina",
+            "text": "",
+            "title": "Stamina"
+        },
+        {
+            "location": "/gameData/Stamina/#data",
+            "text": "",
+            "title": "Data"
+        },
+        {
+            "location": "/gameData/Stamina/#staminacurrent",
+            "text": "Float Stamina.Current  Undocumented",
+            "title": "Stamina.Current"
+        },
+        {
+            "location": "/gameData/Stamina/#staminacapacity",
+            "text": "Float Stamina.Capacity  Undocumented",
+            "title": "Stamina.Capacity"
+        },
+        {
+            "location": "/gameData/Stamina/#staminarate",
+            "text": "Float Stamina.Rate  Undocumented",
+            "title": "Stamina.Rate"
+        },
+        {
+            "location": "/gameData/Stamina/#staminaburst",
+            "text": "Float Stamina.Burst  Undocumented",
+            "title": "Stamina.Burst"
+        },
+        {
+            "location": "/gameData/Stamina/#methods",
             "text": "",
             "title": "Methods"
         },
