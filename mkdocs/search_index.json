@@ -182,7 +182,7 @@
         },
         {
             "location": "/gameData/__vmtest/",
-            "text": "__vmtest\n\n\nVariables\n\n\n__vmtest.myInt\n\n\nint __vmtest.myInt\n\n\nUndocumented\n\n\n__vmtest.myFloat\n\n\nint __vmtest.myFloat\n\n\nUndocumented\n\n\nStats\n\n\nMessage\n\n\n__vmtest.mySubstractionMessage\n\n\n(float)__vmtest.mySubstractionMessage:(int)a b:(float)b\n\nHello Workd\n\n\nArguments\n\n\nint a\n:Some usage\n\n\nfloat b\n:Some other\n\n\nReturns\n\n\nSome last",
+            "text": "__vmtest\n\n\nVariables\n\n\n__vmtest.myInt\n\n\nint __vmtest.myInt\n\n\nUndocumented\n\n\n__vmtest.myFloat\n\n\nint __vmtest.myFloat\n\n\nUndocumented\n\n\nStats\n\n\nMessage\n\n\n__vmtest.mySubstractionMessage\n\n\n(float)__vmtest.mySubstractionMessage:(int)a b:(float)b\n\nHello Workd\n\n\nArguments\n\n\nint a\n: Some usage\n\n\nfloat b\n: Some other\n\n\nReturns\n\n\nSome last",
             "title": "__vmtest"
         },
         {
@@ -222,7 +222,7 @@
         },
         {
             "location": "/gameData/__vmtest/#arguments",
-            "text": "int a :Some usage  float b :Some other",
+            "text": "int a : Some usage  float b : Some other",
             "title": "Arguments"
         },
         {
@@ -437,7 +437,7 @@
         },
         {
             "location": "/gameData/Health/",
-            "text": "Health\n\n\nVariables\n\n\nHealth.Current\n\n\nint Health.Current\n\n\nUndocumented\n\n\nStats\n\n\nHealth.Regen\n\n\nfloat Health.Regen\n\n\nUndocumented\n\n\nHealth.Pool\n\n\nfloat Health.Pool\n\n\nUndocumented\n\n\nMessage",
+            "text": "Health\n\n\nVariables\n\n\nHealth.Current\n\n\nint Health.Current\n\n\nUndocumented\n\n\nStats\n\n\nHealth.Regen\n\n\nfloat Health.Regen\n\n\nUndocumented\n\n\nHealth.Pool\n\n\nfloat Health.Pool\n\n\nUndocumented\n\n\nMessage\n\n\nHealth.Damage\n\n\n(void)Health.Damage:(int)amount\n\nUndocumented\n\n\nHealth.Burst\n\n\n(bool)Health.Burst:(float)amount\n\nUndocumented\n\n\nHealth.Recover\n\n\n(void)Health.Recover:(int)amount\n\nUndocumented",
             "title": "Health"
         },
         {
@@ -476,6 +476,21 @@
             "title": "Message"
         },
         {
+            "location": "/gameData/Health/#healthdamage",
+            "text": "(void)Health.Damage:(int)amount \nUndocumented",
+            "title": "Health.Damage"
+        },
+        {
+            "location": "/gameData/Health/#healthburst",
+            "text": "(bool)Health.Burst:(float)amount \nUndocumented",
+            "title": "Health.Burst"
+        },
+        {
+            "location": "/gameData/Health/#healthrecover",
+            "text": "(void)Health.Recover:(int)amount \nUndocumented",
+            "title": "Health.Recover"
+        },
+        {
             "location": "/gameData/Oxygen/",
             "text": "Oxygen\n\n\nVariables\n\n\nStats\n\n\nMessage",
             "title": "Oxygen"
@@ -502,7 +517,7 @@
         },
         {
             "location": "/gameData/Stamina/",
-            "text": "Stamina\n\n\nVariables\n\n\nStamina.Current\n\n\nfloat Stamina.Current\n\n\nUndocumented\n\n\nStamina.Capacity\n\n\nfloat Stamina.Capacity\n\n\nUndocumented\n\n\nStamina.Rate\n\n\nfloat Stamina.Rate\n\n\nUndocumented\n\n\nStamina.Burst\n\n\nfloat Stamina.Burst\n\n\nUndocumented\n\n\nStats\n\n\nMessage",
+            "text": "Stamina\n\n\nVariables\n\n\nStamina.Current\n\n\nint Stamina.Current\n\n\nUndocumented\n\n\nStats\n\n\nStamina.Regen\n\n\nfloat Stamina.Regen\n\n\nUndocumented\n\n\nStamina.Pool\n\n\nfloat Stamina.Pool\n\n\nUndocumented\n\n\nMessage\n\n\nStamina.Damage\n\n\n(void)Stamina.Damage:(int)amount\n\nUndocumented\n\n\nStamina.Burst\n\n\n(bool)Stamina.Burst:(float)amount\n\nUndocumented\n\n\nStamina.Recover\n\n\n(void)Stamina.Recover:(int)amount\n\nUndocumented",
             "title": "Stamina"
         },
         {
@@ -517,23 +532,8 @@
         },
         {
             "location": "/gameData/Stamina/#staminacurrent",
-            "text": "float Stamina.Current  Undocumented",
+            "text": "int Stamina.Current  Undocumented",
             "title": "Stamina.Current"
-        },
-        {
-            "location": "/gameData/Stamina/#staminacapacity",
-            "text": "float Stamina.Capacity  Undocumented",
-            "title": "Stamina.Capacity"
-        },
-        {
-            "location": "/gameData/Stamina/#staminarate",
-            "text": "float Stamina.Rate  Undocumented",
-            "title": "Stamina.Rate"
-        },
-        {
-            "location": "/gameData/Stamina/#staminaburst",
-            "text": "float Stamina.Burst  Undocumented",
-            "title": "Stamina.Burst"
         },
         {
             "location": "/gameData/Stamina/#stats",
@@ -541,9 +541,34 @@
             "title": "Stats"
         },
         {
+            "location": "/gameData/Stamina/#staminaregen",
+            "text": "float Stamina.Regen  Undocumented",
+            "title": "Stamina.Regen"
+        },
+        {
+            "location": "/gameData/Stamina/#staminapool",
+            "text": "float Stamina.Pool  Undocumented",
+            "title": "Stamina.Pool"
+        },
+        {
             "location": "/gameData/Stamina/#message",
             "text": "",
             "title": "Message"
+        },
+        {
+            "location": "/gameData/Stamina/#staminadamage",
+            "text": "(void)Stamina.Damage:(int)amount \nUndocumented",
+            "title": "Stamina.Damage"
+        },
+        {
+            "location": "/gameData/Stamina/#staminaburst",
+            "text": "(bool)Stamina.Burst:(float)amount \nUndocumented",
+            "title": "Stamina.Burst"
+        },
+        {
+            "location": "/gameData/Stamina/#staminarecover",
+            "text": "(void)Stamina.Recover:(int)amount \nUndocumented",
+            "title": "Stamina.Recover"
         },
         {
             "location": "/gameData/World/",
