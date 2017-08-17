@@ -182,7 +182,7 @@
         },
         {
             "location": "/gameData/__vmtest/",
-            "text": "__vmtest\n\n\nVariables\n\n\n__vmtest.myInt\n\n\nint __vmtest.myInt\n\n\nUndocumented\n\n\n__vmtest.myFloat\n\n\nint __vmtest.myFloat\n\n\nUndocumented\n\n\nStats\n\n\nMessage\n\n\n__vmtest.mySubstractionMessage\n\n\n(float)__vmtest.mySubstractionMessage:(int)a a:(int)a\n\nUndocumented",
+            "text": "__vmtest\n\n\nVariables\n\n\n__vmtest.myInt\n\n\nint __vmtest.myInt\n\n\nUndocumented\n\n\n__vmtest.myFloat\n\n\nint __vmtest.myFloat\n\n\nUndocumented\n\n\nStats\n\n\nMessage\n\n\n__vmtest.mySubstractionMessage\n\n\n(float)__vmtest.mySubstractionMessage:(int)a b:(float)b\n\nUndocumented",
             "title": "__vmtest"
         },
         {
@@ -217,7 +217,7 @@
         },
         {
             "location": "/gameData/__vmtest/#__vmtestmysubstractionmessage",
-            "text": "(float)__vmtest.mySubstractionMessage:(int)a a:(int)a \nUndocumented",
+            "text": "(float)__vmtest.mySubstractionMessage:(int)a b:(float)b \nUndocumented",
             "title": "__vmtest.mySubstractionMessage"
         },
         {
