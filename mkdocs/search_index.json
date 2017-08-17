@@ -182,7 +182,7 @@
         },
         {
             "location": "/gameData/__vmtest/",
-            "text": "__vmtest\n\n\nData\n\n\n__vmtest.myInt\n\n\nInt __vmtest.myInt\n\n\nUndocumented\n\n\n__vmtest.myFloat\n\n\nInt __vmtest.myFloat\n\n\nUndocumented\n\n\n__vmtest.mySubstractionMessage\n\n\nFloat __vmtest.mySubstractionMessage\n\n\nUndocumented\n\n\nMethods",
+            "text": "__vmtest\n\n\nVariables\n\n\n__vmtest.myInt\n\n\nint __vmtest.myInt\n\n\nUndocumented\n\n\n__vmtest.myFloat\n\n\nint __vmtest.myFloat\n\n\nUndocumented\n\n\nStats\n\n\nMessage\n\n\n__vmtest.mySubstractionMessage\n\n\n(float)__vmtest.mySubstractionMessage:(int)a a:(int)a\n\nUndocumented",
             "title": "__vmtest"
         },
         {
@@ -191,33 +191,38 @@
             "title": "__vmtest"
         },
         {
-            "location": "/gameData/__vmtest/#data",
+            "location": "/gameData/__vmtest/#variables",
             "text": "",
-            "title": "Data"
+            "title": "Variables"
         },
         {
             "location": "/gameData/__vmtest/#__vmtestmyint",
-            "text": "Int __vmtest.myInt  Undocumented",
+            "text": "int __vmtest.myInt  Undocumented",
             "title": "__vmtest.myInt"
         },
         {
             "location": "/gameData/__vmtest/#__vmtestmyfloat",
-            "text": "Int __vmtest.myFloat  Undocumented",
+            "text": "int __vmtest.myFloat  Undocumented",
             "title": "__vmtest.myFloat"
         },
         {
+            "location": "/gameData/__vmtest/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/__vmtest/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
             "location": "/gameData/__vmtest/#__vmtestmysubstractionmessage",
-            "text": "Float __vmtest.mySubstractionMessage  Undocumented",
+            "text": "(float)__vmtest.mySubstractionMessage:(int)a a:(int)a \nUndocumented",
             "title": "__vmtest.mySubstractionMessage"
         },
         {
-            "location": "/gameData/__vmtest/#methods",
-            "text": "",
-            "title": "Methods"
-        },
-        {
             "location": "/gameData/CreatureBrain/",
-            "text": "CreatureBrain\n\n\nData\n\n\nCreatureBrain.playerDist\n\n\nFloat CreatureBrain.playerDist\n\n\nDistance to closest player.\n\n\nMethods",
+            "text": "CreatureBrain\n\n\nVariables\n\n\nCreatureBrain.playerDist\n\n\nfloat CreatureBrain.playerDist\n\n\nDistance to closest player.\n\n\nStats\n\n\nMessage",
             "title": "CreatureBrain"
         },
         {
@@ -226,23 +231,28 @@
             "title": "CreatureBrain"
         },
         {
-            "location": "/gameData/CreatureBrain/#data",
+            "location": "/gameData/CreatureBrain/#variables",
             "text": "",
-            "title": "Data"
+            "title": "Variables"
         },
         {
             "location": "/gameData/CreatureBrain/#creaturebrainplayerdist",
-            "text": "Float CreatureBrain.playerDist  Distance to closest player.",
+            "text": "float CreatureBrain.playerDist  Distance to closest player.",
             "title": "CreatureBrain.playerDist"
         },
         {
-            "location": "/gameData/CreatureBrain/#methods",
+            "location": "/gameData/CreatureBrain/#stats",
             "text": "",
-            "title": "Methods"
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/CreatureBrain/#message",
+            "text": "",
+            "title": "Message"
         },
         {
             "location": "/gameData/Explode/",
-            "text": "Explode\n\n\nData\n\n\nExplode.event\n\n\nString Explode.event\n\n\nEvent called when explode.\n\n\nExplode.effect\n\n\nString Explode.effect\n\n\nEffect triggered when explode.\n\n\nMethods",
+            "text": "Explode\n\n\nVariables\n\n\nExplode.event\n\n\nstring Explode.event\n\n\nEvent called when explode.\n\n\nExplode.effect\n\n\nstring Explode.effect\n\n\nEffect triggered when explode.\n\n\nStats\n\n\nMessage",
             "title": "Explode"
         },
         {
@@ -251,28 +261,33 @@
             "title": "Explode"
         },
         {
-            "location": "/gameData/Explode/#data",
+            "location": "/gameData/Explode/#variables",
             "text": "",
-            "title": "Data"
+            "title": "Variables"
         },
         {
             "location": "/gameData/Explode/#explodeevent",
-            "text": "String Explode.event  Event called when explode.",
+            "text": "string Explode.event  Event called when explode.",
             "title": "Explode.event"
         },
         {
             "location": "/gameData/Explode/#explodeeffect",
-            "text": "String Explode.effect  Effect triggered when explode.",
+            "text": "string Explode.effect  Effect triggered when explode.",
             "title": "Explode.effect"
         },
         {
-            "location": "/gameData/Explode/#methods",
+            "location": "/gameData/Explode/#stats",
             "text": "",
-            "title": "Methods"
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/Explode/#message",
+            "text": "",
+            "title": "Message"
         },
         {
             "location": "/gameData/Idle/",
-            "text": "Idle\n\n\nData\n\n\nMethods",
+            "text": "Idle\n\n\nVariables\n\n\nStats\n\n\nMessage",
             "title": "Idle"
         },
         {
@@ -281,18 +296,23 @@
             "title": "Idle"
         },
         {
-            "location": "/gameData/Idle/#data",
+            "location": "/gameData/Idle/#variables",
             "text": "",
-            "title": "Data"
+            "title": "Variables"
         },
         {
-            "location": "/gameData/Idle/#methods",
+            "location": "/gameData/Idle/#stats",
             "text": "",
-            "title": "Methods"
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/Idle/#message",
+            "text": "",
+            "title": "Message"
         },
         {
             "location": "/gameData/MoveOnLine/",
-            "text": "MoveOnLine\n\n\nData\n\n\nMoveOnLine.Velocity\n\n\nFloat MoveOnLine.Velocity\n\n\nUndocumented\n\n\nMethods",
+            "text": "MoveOnLine\n\n\nVariables\n\n\nStats\n\n\nMoveOnLine.Velocity\n\n\nfloat MoveOnLine.Velocity\n\n\nUndocumented\n\n\nMessage",
             "title": "MoveOnLine"
         },
         {
@@ -301,23 +321,28 @@
             "title": "MoveOnLine"
         },
         {
-            "location": "/gameData/MoveOnLine/#data",
+            "location": "/gameData/MoveOnLine/#variables",
             "text": "",
-            "title": "Data"
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/MoveOnLine/#stats",
+            "text": "",
+            "title": "Stats"
         },
         {
             "location": "/gameData/MoveOnLine/#moveonlinevelocity",
-            "text": "Float MoveOnLine.Velocity  Undocumented",
+            "text": "float MoveOnLine.Velocity  Undocumented",
             "title": "MoveOnLine.Velocity"
         },
         {
-            "location": "/gameData/MoveOnLine/#methods",
+            "location": "/gameData/MoveOnLine/#message",
             "text": "",
-            "title": "Methods"
+            "title": "Message"
         },
         {
             "location": "/gameData/Turn180/",
-            "text": "Turn180\n\n\nData\n\n\nMethods",
+            "text": "Turn180\n\n\nVariables\n\n\nStats\n\n\nMessage",
             "title": "Turn180"
         },
         {
@@ -326,18 +351,23 @@
             "title": "Turn180"
         },
         {
-            "location": "/gameData/Turn180/#data",
+            "location": "/gameData/Turn180/#variables",
             "text": "",
-            "title": "Data"
+            "title": "Variables"
         },
         {
-            "location": "/gameData/Turn180/#methods",
+            "location": "/gameData/Turn180/#stats",
             "text": "",
-            "title": "Methods"
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/Turn180/#message",
+            "text": "",
+            "title": "Message"
         },
         {
             "location": "/gameData/spawner/",
-            "text": "spawner\n\n\nData\n\n\nspawner.time\n\n\nFloat spawner.time\n\n\nUndocumented\n\n\nMethods",
+            "text": "spawner\n\n\nVariables\n\n\nspawner.time\n\n\nfloat spawner.time\n\n\nUndocumented\n\n\nStats\n\n\nMessage",
             "title": "spawner"
         },
         {
@@ -346,23 +376,28 @@
             "title": "spawner"
         },
         {
-            "location": "/gameData/spawner/#data",
+            "location": "/gameData/spawner/#variables",
             "text": "",
-            "title": "Data"
+            "title": "Variables"
         },
         {
             "location": "/gameData/spawner/#spawnertime",
-            "text": "Float spawner.time  Undocumented",
+            "text": "float spawner.time  Undocumented",
             "title": "spawner.time"
         },
         {
-            "location": "/gameData/spawner/#methods",
+            "location": "/gameData/spawner/#stats",
             "text": "",
-            "title": "Methods"
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/spawner/#message",
+            "text": "",
+            "title": "Message"
         },
         {
             "location": "/gameData/Character/",
-            "text": "Character\n\n\nData\n\n\nCharacter.Crouch_LateralSpeed\n\n\nFloat Character.Crouch_LateralSpeed\n\n\nUndocumented\n\n\nMethods",
+            "text": "Character\n\n\nVariables\n\n\nCharacter.Crouch_LateralSpeed\n\n\nfloat Character.Crouch_LateralSpeed\n\n\nUndocumented\n\n\nStats\n\n\nMessage",
             "title": "Character"
         },
         {
@@ -371,23 +406,28 @@
             "title": "Character"
         },
         {
-            "location": "/gameData/Character/#data",
+            "location": "/gameData/Character/#variables",
             "text": "",
-            "title": "Data"
+            "title": "Variables"
         },
         {
             "location": "/gameData/Character/#charactercrouch_lateralspeed",
-            "text": "Float Character.Crouch_LateralSpeed  Undocumented",
+            "text": "float Character.Crouch_LateralSpeed  Undocumented",
             "title": "Character.Crouch_LateralSpeed"
         },
         {
-            "location": "/gameData/Character/#methods",
+            "location": "/gameData/Character/#stats",
             "text": "",
-            "title": "Methods"
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/Character/#message",
+            "text": "",
+            "title": "Message"
         },
         {
             "location": "/gameData/Health/",
-            "text": "Health\n\n\nData\n\n\nHealth.Regen\n\n\nFloat Health.Regen\n\n\nUndocumented\n\n\nHealth.Pool\n\n\nFloat Health.Pool\n\n\nUndocumented\n\n\nHealth.Current\n\n\nInt Health.Current\n\n\nUndocumented\n\n\nMethods",
+            "text": "Health\n\n\nVariables\n\n\nHealth.Current\n\n\nint Health.Current\n\n\nUndocumented\n\n\nStats\n\n\nHealth.Regen\n\n\nfloat Health.Regen\n\n\nUndocumented\n\n\nHealth.Pool\n\n\nfloat Health.Pool\n\n\nUndocumented\n\n\nMessage",
             "title": "Health"
         },
         {
@@ -396,33 +436,38 @@
             "title": "Health"
         },
         {
-            "location": "/gameData/Health/#data",
+            "location": "/gameData/Health/#variables",
             "text": "",
-            "title": "Data"
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/Health/#healthcurrent",
+            "text": "int Health.Current  Undocumented",
+            "title": "Health.Current"
+        },
+        {
+            "location": "/gameData/Health/#stats",
+            "text": "",
+            "title": "Stats"
         },
         {
             "location": "/gameData/Health/#healthregen",
-            "text": "Float Health.Regen  Undocumented",
+            "text": "float Health.Regen  Undocumented",
             "title": "Health.Regen"
         },
         {
             "location": "/gameData/Health/#healthpool",
-            "text": "Float Health.Pool  Undocumented",
+            "text": "float Health.Pool  Undocumented",
             "title": "Health.Pool"
         },
         {
-            "location": "/gameData/Health/#healthcurrent",
-            "text": "Int Health.Current  Undocumented",
-            "title": "Health.Current"
-        },
-        {
-            "location": "/gameData/Health/#methods",
+            "location": "/gameData/Health/#message",
             "text": "",
-            "title": "Methods"
+            "title": "Message"
         },
         {
             "location": "/gameData/Oxygen/",
-            "text": "Oxygen\n\n\nData\n\n\nMethods",
+            "text": "Oxygen\n\n\nVariables\n\n\nStats\n\n\nMessage",
             "title": "Oxygen"
         },
         {
@@ -431,18 +476,23 @@
             "title": "Oxygen"
         },
         {
-            "location": "/gameData/Oxygen/#data",
+            "location": "/gameData/Oxygen/#variables",
             "text": "",
-            "title": "Data"
+            "title": "Variables"
         },
         {
-            "location": "/gameData/Oxygen/#methods",
+            "location": "/gameData/Oxygen/#stats",
             "text": "",
-            "title": "Methods"
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/Oxygen/#message",
+            "text": "",
+            "title": "Message"
         },
         {
             "location": "/gameData/Stamina/",
-            "text": "Stamina\n\n\nData\n\n\nStamina.Current\n\n\nFloat Stamina.Current\n\n\nUndocumented\n\n\nStamina.Capacity\n\n\nFloat Stamina.Capacity\n\n\nUndocumented\n\n\nStamina.Rate\n\n\nFloat Stamina.Rate\n\n\nUndocumented\n\n\nStamina.Burst\n\n\nFloat Stamina.Burst\n\n\nUndocumented\n\n\nMethods",
+            "text": "Stamina\n\n\nVariables\n\n\nStamina.Current\n\n\nfloat Stamina.Current\n\n\nUndocumented\n\n\nStamina.Capacity\n\n\nfloat Stamina.Capacity\n\n\nUndocumented\n\n\nStamina.Rate\n\n\nfloat Stamina.Rate\n\n\nUndocumented\n\n\nStamina.Burst\n\n\nfloat Stamina.Burst\n\n\nUndocumented\n\n\nStats\n\n\nMessage",
             "title": "Stamina"
         },
         {
@@ -451,38 +501,43 @@
             "title": "Stamina"
         },
         {
-            "location": "/gameData/Stamina/#data",
+            "location": "/gameData/Stamina/#variables",
             "text": "",
-            "title": "Data"
+            "title": "Variables"
         },
         {
             "location": "/gameData/Stamina/#staminacurrent",
-            "text": "Float Stamina.Current  Undocumented",
+            "text": "float Stamina.Current  Undocumented",
             "title": "Stamina.Current"
         },
         {
             "location": "/gameData/Stamina/#staminacapacity",
-            "text": "Float Stamina.Capacity  Undocumented",
+            "text": "float Stamina.Capacity  Undocumented",
             "title": "Stamina.Capacity"
         },
         {
             "location": "/gameData/Stamina/#staminarate",
-            "text": "Float Stamina.Rate  Undocumented",
+            "text": "float Stamina.Rate  Undocumented",
             "title": "Stamina.Rate"
         },
         {
             "location": "/gameData/Stamina/#staminaburst",
-            "text": "Float Stamina.Burst  Undocumented",
+            "text": "float Stamina.Burst  Undocumented",
             "title": "Stamina.Burst"
         },
         {
-            "location": "/gameData/Stamina/#methods",
+            "location": "/gameData/Stamina/#stats",
             "text": "",
-            "title": "Methods"
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/Stamina/#message",
+            "text": "",
+            "title": "Message"
         },
         {
             "location": "/gameData/World/",
-            "text": "World\n\n\nData\n\n\nWorld.HasGround\n\n\nBool World.HasGround\n\n\nWhether has a ground under.\n\n\nWorld.HasWallLeft\n\n\nBool World.HasWallLeft\n\n\nCheck if has a wall on left.\n\n\nWorld.HasWallRight\n\n\nBool World.HasWallRight\n\n\nHas wall on the right.\n\n\nWorld.ceil\n\n\nBool World.ceil\n\n\nHas ceiling.\n\n\nMethods",
+            "text": "World\n\n\nVariables\n\n\nWorld.HasGround\n\n\nbool World.HasGround\n\n\nWhether has a ground under.\n\n\nWorld.HasWallLeft\n\n\nbool World.HasWallLeft\n\n\nCheck if has a wall on left.\n\n\nWorld.HasWallRight\n\n\nbool World.HasWallRight\n\n\nHas wall on the right.\n\n\nWorld.ceil\n\n\nbool World.ceil\n\n\nHas ceiling.\n\n\nStats\n\n\nMessage",
             "title": "World"
         },
         {
@@ -491,34 +546,39 @@
             "title": "World"
         },
         {
-            "location": "/gameData/World/#data",
+            "location": "/gameData/World/#variables",
             "text": "",
-            "title": "Data"
+            "title": "Variables"
         },
         {
             "location": "/gameData/World/#worldhasground",
-            "text": "Bool World.HasGround  Whether has a ground under.",
+            "text": "bool World.HasGround  Whether has a ground under.",
             "title": "World.HasGround"
         },
         {
             "location": "/gameData/World/#worldhaswallleft",
-            "text": "Bool World.HasWallLeft  Check if has a wall on left.",
+            "text": "bool World.HasWallLeft  Check if has a wall on left.",
             "title": "World.HasWallLeft"
         },
         {
             "location": "/gameData/World/#worldhaswallright",
-            "text": "Bool World.HasWallRight  Has wall on the right.",
+            "text": "bool World.HasWallRight  Has wall on the right.",
             "title": "World.HasWallRight"
         },
         {
             "location": "/gameData/World/#worldceil",
-            "text": "Bool World.ceil  Has ceiling.",
+            "text": "bool World.ceil  Has ceiling.",
             "title": "World.ceil"
         },
         {
-            "location": "/gameData/World/#methods",
+            "location": "/gameData/World/#stats",
             "text": "",
-            "title": "Methods"
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/World/#message",
+            "text": "",
+            "title": "Message"
         }
     ]
 }
