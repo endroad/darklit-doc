@@ -4,6 +4,20 @@
     "theme": "material"
   },
   "other_pages": [
-    "- Home: 'index.md'"
+    "- Home: 'index.md'",
+    "- NuSpeak Reference:",
+    "    - Basics: 'nsref.basics.md'",
+    "    - External: 'nsref.ext.md'",
+    "    - Behaviour: 'nsref.beh.md'",
+    "- Script Templates:",
+    "    - Condition: 'stemp.cond.md'",
+    "    - Effect: 'stemp.effect.md'",
+    "    - Behaviour: 'stemp.beh.md'"
+  ],
+  "other": [
+    "extra:",
+    "  palette:",
+    "    primary: 'red'",
+    "    accent: 'cyan'"
   ]
 }

@@ -1,12 +1,13 @@
 # Explode
-## Data
+## Variables
 ### Explode.event
-`String Explode.event`
+`string Explode.event`
 
 Event called when explode.
 ### Explode.effect
-`String Explode.effect`
+`string Explode.effect`
 
 Effect triggered when explode.
-## Methods
+## Stats
+## Message
 

@@ -1,8 +1,9 @@
 # CreatureBrain
-## Data
+## Variables
 ### CreatureBrain.playerDist
-`Float CreatureBrain.playerDist`
+`float CreatureBrain.playerDist`
 
 Distance to closest player.
-## Methods
+## Stats
+## Message
 

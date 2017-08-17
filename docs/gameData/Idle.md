@@ -1,4 +1,5 @@
 # Idle
-## Data
-## Methods
+## Variables
+## Stats
+## Message
 

@@ -1,0 +1,4 @@
+INFO    -  Cleaning site directory 
+INFO    -  Building documentation to directory: D:\dev\endroad\darklit-doc\site 
+INFO    -  Copying 'D:\dev\endroad\darklit-doc\site' to 'gh-pages' branch and pushing to GitHub. 
+INFO    -  Your documentation should shortly be available at: https://endroad.github.io/darklit-doc/ 

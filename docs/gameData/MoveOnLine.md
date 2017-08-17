@@ -1,8 +1,9 @@
 # MoveOnLine
-## Data
+## Variables
+## Stats
 ### MoveOnLine.Velocity
-`Float MoveOnLine.Velocity`
+`float MoveOnLine.Velocity`
 
 Undocumented
-## Methods
+## Message
 
