@@ -182,7 +182,7 @@
         },
         {
             "location": "/gameData/__vmtest/",
-            "text": "__vmtest\n\n\nVariables\n\n\n__vmtest.myInt\n\n\nint __vmtest.myInt\n\n\nUndocumented\n\n\n__vmtest.myFloat\n\n\nint __vmtest.myFloat\n\n\nUndocumented\n\n\nStats\n\n\nMessage\n\n\n__vmtest.mySubstractionMessage\n\n\n(float)__vmtest.mySubstractionMessage:(int)a b:(float)b\n\nHello Workd\n\n\nArguments\n\n\nint a\n:Some usage\n\n\nfloat b\n:Some other\n\n\nReturns\n\n\nN/A",
+            "text": "__vmtest\n\n\nVariables\n\n\n__vmtest.myInt\n\n\nint __vmtest.myInt\n\n\nUndocumented\n\n\n__vmtest.myFloat\n\n\nint __vmtest.myFloat\n\n\nUndocumented\n\n\nStats\n\n\nMessage\n\n\n__vmtest.mySubstractionMessage\n\n\n(float)__vmtest.mySubstractionMessage:(int)a b:(float)b\n\nHello Workd\n\n\nArguments\n\n\nint a\n:Some usage\n\n\nfloat b\n:Some other\n\n\nReturns\n\n\nSome last",
             "title": "__vmtest"
         },
         {
@@ -227,7 +227,7 @@
         },
         {
             "location": "/gameData/__vmtest/#returns",
-            "text": "N/A",
+            "text": "Some last",
             "title": "Returns"
         },
         {
