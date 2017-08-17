@@ -11,14 +11,174 @@
             "title": "Welcome Darklit"
         },
         {
-            "location": "/nstuto/",
-            "text": "Tuto NuSpeak",
-            "title": "Tuto NuSpeak"
+            "location": "/nsref.basics/",
+            "text": "Basics\n\n\nDeclarations\n\n\nVariables\n\n\nPlain variables\n\n\nint a\nfloat b\n\n\n\nI / O\n\n\nSome variables can be retrieve or set from the C# code.\n\n\nTo use them you need to add \nin\n, \nout\n, \ninout\n in front of variable declaration\n\n\n    in int a\n    out float b\n    inout bool c\n\n\n\n\n\nTo know more about I/O usage see the script templates or consult your local programmer.\nSome scripts like \ncondition script\n requires special output variable\nto be functionnal\n\n\n\n\nEntity\n\n\nEach entity that you'll be using in your script need to be assigned from the C#\nside using a specific name. To make the link from C# to NuSpeak you need to declare it as follow:\n\n\nentity myEntity\n\n\n\n\n\nTo know more about entity usage see the script templates or consult your local programmer.\n\n\n\n\nThis\n\n\nThe entity \nthis\n (or \nself\n) is always defined and linked to the entity running the NuSpeak script.\n\n\nOperators\n\n\nArithmetics\n\n\nDefined for \nint\n and \nfloat\n\n\na + b // Addition\na - b // Substraction\na * b // Multiplication\na / b // Division\na % b // Modulo\n\n\n\nRelations\n\n\nDefined for \nint\n and \nfloat\n\n\nbool c = a > b  // Greater\nbool c = a >= b // Greater or equal\nbool c = a < b  // Less\nbool c = a <= b // Less or equal\n\n\n\nEquality\n\n\nDefined for \nbool\n, \nint\n and \nfloat\n\n\nbool c = a is b     // Equal\nbool c = a is not b // Not Equal\nbool c = a isnot b  // Not Equal (equiv.)\n\n\n\nLogic\n\n\nDefined for \nbool\n only\n\n\nbool c = a and b // And\nbool c = a or b  // Or\nbool c = not a   // Not\n\n\n\nConditions\n\n\nif a is b then\n    // do something here ...\nendif\n\n\nif a is b then\n    // do somthing here\nelse if a is c then\n    // do some other thing here\nelse\n    // do some other other thing here\nend",
+            "title": "Basics"
         },
         {
-            "location": "/nstuto/#tuto-nuspeak",
+            "location": "/nsref.basics/#basics",
             "text": "",
-            "title": "Tuto NuSpeak"
+            "title": "Basics"
+        },
+        {
+            "location": "/nsref.basics/#declarations",
+            "text": "",
+            "title": "Declarations"
+        },
+        {
+            "location": "/nsref.basics/#variables",
+            "text": "Plain variables  int a\nfloat b",
+            "title": "Variables"
+        },
+        {
+            "location": "/nsref.basics/#i-o",
+            "text": "Some variables can be retrieve or set from the C# code.  To use them you need to add  in ,  out ,  inout  in front of variable declaration      in int a\n    out float b\n    inout bool c   To know more about I/O usage see the script templates or consult your local programmer.\nSome scripts like  condition script  requires special output variable\nto be functionnal",
+            "title": "I / O"
+        },
+        {
+            "location": "/nsref.basics/#entity",
+            "text": "Each entity that you'll be using in your script need to be assigned from the C#\nside using a specific name. To make the link from C# to NuSpeak you need to declare it as follow:  entity myEntity   To know more about entity usage see the script templates or consult your local programmer.",
+            "title": "Entity"
+        },
+        {
+            "location": "/nsref.basics/#this",
+            "text": "The entity  this  (or  self ) is always defined and linked to the entity running the NuSpeak script.",
+            "title": "This"
+        },
+        {
+            "location": "/nsref.basics/#operators",
+            "text": "",
+            "title": "Operators"
+        },
+        {
+            "location": "/nsref.basics/#arithmetics",
+            "text": "Defined for  int  and  float  a + b // Addition\na - b // Substraction\na * b // Multiplication\na / b // Division\na % b // Modulo",
+            "title": "Arithmetics"
+        },
+        {
+            "location": "/nsref.basics/#relations",
+            "text": "Defined for  int  and  float  bool c = a > b  // Greater\nbool c = a >= b // Greater or equal\nbool c = a < b  // Less\nbool c = a <= b // Less or equal",
+            "title": "Relations"
+        },
+        {
+            "location": "/nsref.basics/#equality",
+            "text": "Defined for  bool ,  int  and  float  bool c = a is b     // Equal\nbool c = a is not b // Not Equal\nbool c = a isnot b  // Not Equal (equiv.)",
+            "title": "Equality"
+        },
+        {
+            "location": "/nsref.basics/#logic",
+            "text": "Defined for  bool  only  bool c = a and b // And\nbool c = a or b  // Or\nbool c = not a   // Not",
+            "title": "Logic"
+        },
+        {
+            "location": "/nsref.basics/#conditions",
+            "text": "if a is b then\n    // do something here ...\nendif\n\n\nif a is b then\n    // do somthing here\nelse if a is c then\n    // do some other thing here\nelse\n    // do some other other thing here\nend",
+            "title": "Conditions"
+        },
+        {
+            "location": "/nsref.ext/",
+            "text": "External Access\n\n\nWorking with NuSpeak often will imply to retrieve or set value from/to C#, send message or event\netc... to affect gameplay.\nHere is how to do it.\n\n\nVariables\n\n\nAccess to variable is done using the operator \n->\n on an entity.\nThen followed by the name of the variable (always of the form \nclass.variableName\n)\n\n\nentity myObj\n\n// Read\nint a = myObj->health.life\n\n// Write\nmyObj->health.life = 42\n\n\n\nStats\n\n\nStatistics are equivalent to \nfloat\n variables with the differences that we can \nadd\n effects to theme\nYou can read and write it the same way you do with plain variables.\nHowever:\n\n\n\n\nReading a \nstat\n returns the value with all effects applied to it\n\n\nWriting a \nstat\n sets the \nbase value\n of the \nstat\n.\n\n\n\n\nYou can then add effect to \nstat\n from NuSpeak:\n\n\nentity myObj\nmyObj->health.regen add \"path/to/json\"\n\n\n\nMessages\n\n\nMessages\n are a form of interprocess communication to be able to send specific message to C# or an other NuSpeak script (see Globals for more details on that).\nMessages are send to an \nentity\n and share a lot of syntax with \nvariables\n and \nstats\n.\n\n\nSend the message \nhealth.kill\n that take no arguments\n\n\nentity myObj    \n[myObj health.kill]\n\n\n\nSend a message \nstamina.burst\n that takes 1 argument and returns whether or not it succeeded\n\n\nentity myObj    \nbool didBurst = [myObj stamina.burst: 5]\n\n\n\nSend a message \nhealth.heal\n that takes 2 arguments:\n\n\nentity myObj\n[myObj health.heal:5 overTime:2.0]\n\n\n\nEvents\n\n\nEvents share a lot with \nmessages\n. They have essentially the same syntax, except that the name of the message is \nevent\n\nand the value of the first argument is a \nstring\n with the event name:\n\n\n[this event:\"myAwesomeEvent\" myArgument:5.0]\n[this event:\"awesomeExplosion\" radius:10.0 duration:1.0]\n\n\n\nEvent's arguments are a convention build between the scripter (you!) and the receiver (either FX, Animation, Sound etc...).\nPassing a 'wrong' argument to an \nevent\n will not trigger an error but you might not get the expected result in the end\ndepending on how the \nevent\n is interpreted by the C# code or by another NuSpeak script.\n\n\nGlobals\n\n\nNuSpeak uses static type checking. Which is a fancy way to say that the \ntype\n (whether it's a \nint\n or \nfloat\n etc...) of an expression (let say \na + 4.0\n) is evaluated when you compile the program.\n\n\nHowever it's possible thanks to \nglobals\n to define \ndynamic\n \nvariables\n, \nstats\n or \nmessages\n per \nentity\n.\nThus the type of these dynamic data is unknown at when you compile the program (compile-time) (it's only known when you run the program on \nentity\n)\n\n\nSo... to be able to have correct types in your programs at compile-time you \nmust\n define the type all the \nglobals\n you'll be using in your NuSpeak script.\n\n\n\n\nIt's called a \nforward declaration\n\n\n\n\nIf I'm using in my script the \nglobal\n variable \nlifetime\n I've defined in a \nJson\n file I \nmust\n defined it like that:\n\n\nglobal float lifetime        // Forward definition of 'lifetime'\nthis->global.lifetime = 0    // Usage of 'lifetime'\n\n\n\nVariables & Stats\n\n\nglobal int victoryPoints\nglobal float lifetime\n\n// Statistic\nglobal stat strength\n\n\n\nMessages\n\n\nglobal (bool)doSomething:(int)\nglobal (void)doOtherThing:(int) withArgument:(float) lotOfArguments:(bool)",
+            "title": "External"
+        },
+        {
+            "location": "/nsref.ext/#external-access",
+            "text": "Working with NuSpeak often will imply to retrieve or set value from/to C#, send message or event\netc... to affect gameplay.\nHere is how to do it.",
+            "title": "External Access"
+        },
+        {
+            "location": "/nsref.ext/#variables",
+            "text": "Access to variable is done using the operator  ->  on an entity.\nThen followed by the name of the variable (always of the form  class.variableName )  entity myObj\n\n// Read\nint a = myObj->health.life\n\n// Write\nmyObj->health.life = 42",
+            "title": "Variables"
+        },
+        {
+            "location": "/nsref.ext/#stats",
+            "text": "Statistics are equivalent to  float  variables with the differences that we can  add  effects to theme\nYou can read and write it the same way you do with plain variables.\nHowever:   Reading a  stat  returns the value with all effects applied to it  Writing a  stat  sets the  base value  of the  stat .   You can then add effect to  stat  from NuSpeak:  entity myObj\nmyObj->health.regen add \"path/to/json\"",
+            "title": "Stats"
+        },
+        {
+            "location": "/nsref.ext/#messages",
+            "text": "Messages  are a form of interprocess communication to be able to send specific message to C# or an other NuSpeak script (see Globals for more details on that).\nMessages are send to an  entity  and share a lot of syntax with  variables  and  stats .  Send the message  health.kill  that take no arguments  entity myObj    \n[myObj health.kill]  Send a message  stamina.burst  that takes 1 argument and returns whether or not it succeeded  entity myObj    \nbool didBurst = [myObj stamina.burst: 5]  Send a message  health.heal  that takes 2 arguments:  entity myObj\n[myObj health.heal:5 overTime:2.0]",
+            "title": "Messages"
+        },
+        {
+            "location": "/nsref.ext/#events",
+            "text": "Events share a lot with  messages . They have essentially the same syntax, except that the name of the message is  event \nand the value of the first argument is a  string  with the event name:  [this event:\"myAwesomeEvent\" myArgument:5.0]\n[this event:\"awesomeExplosion\" radius:10.0 duration:1.0]  Event's arguments are a convention build between the scripter (you!) and the receiver (either FX, Animation, Sound etc...).\nPassing a 'wrong' argument to an  event  will not trigger an error but you might not get the expected result in the end\ndepending on how the  event  is interpreted by the C# code or by another NuSpeak script.",
+            "title": "Events"
+        },
+        {
+            "location": "/nsref.ext/#globals",
+            "text": "NuSpeak uses static type checking. Which is a fancy way to say that the  type  (whether it's a  int  or  float  etc...) of an expression (let say  a + 4.0 ) is evaluated when you compile the program.  However it's possible thanks to  globals  to define  dynamic   variables ,  stats  or  messages  per  entity .\nThus the type of these dynamic data is unknown at when you compile the program (compile-time) (it's only known when you run the program on  entity )  So... to be able to have correct types in your programs at compile-time you  must  define the type all the  globals  you'll be using in your NuSpeak script.   It's called a  forward declaration   If I'm using in my script the  global  variable  lifetime  I've defined in a  Json  file I  must  defined it like that:  global float lifetime        // Forward definition of 'lifetime'\nthis->global.lifetime = 0    // Usage of 'lifetime'",
+            "title": "Globals"
+        },
+        {
+            "location": "/nsref.ext/#variables-stats",
+            "text": "global int victoryPoints\nglobal float lifetime\n\n// Statistic\nglobal stat strength",
+            "title": "Variables &amp; Stats"
+        },
+        {
+            "location": "/nsref.ext/#messages_1",
+            "text": "global (bool)doSomething:(int)\nglobal (void)doOtherThing:(int) withArgument:(float) lotOfArguments:(bool)",
+            "title": "Messages"
+        },
+        {
+            "location": "/nsref.beh/",
+            "text": "Behaviour\n\n\nRoutine loop\n\n\nIt's possible to define a \nloop\n in script that will \nyield\n the program execution.\nWhich means that when reaching the \nend\n of the \nloop\n, execution of the program will stop.\nNext time the program is run it will start again at the begginning of the \nloop\n.\n\n\nLet say we have the following script:\n\n\nint a = 0\nloop:\n    a = a + 1\nend\n\n\n\nWhen you run it the \nfirst\n time the value of \na\n will be:\n\n\na = 1\n\n\n\nWhen you run the same program a \nsecond time\n the value of \na\n will be:\n\n\na = 2\n\n\n\nAnd so on and so forth...\n\n\n\n\nLoop\n are used in behaviour script or scripts that are supposed to run every frame.\nHowever as a scripter you're not responsible of calling a script. It's the discretion\nof the programmer in charge to actually call the script when needed\nSo it's again a convention between programmer and scripter\n\n\n\n\nExit a loop\n\n\nYou can exit the parent loop at anytime using the instruction \n[exit]\n.\n\n\nint a = 0\nloop:\n    a = a + 1\n\n    if a >= 3 then\n        [exit]\n    end\nend\n\na = a * 2\n\n\n\nThe above script will exit the \nloop\n on the third run and then execute the code\n\n\na = a * 2\n\n\n\nThe resulting value of \na\n will be\n\n\na = 6\n\n\n\nYield\n\n\nYou can use the \n[yield]\n instruction to stop program execution and resume it to this point next time the program is run.\nAs a \nloop\n would do but this time you control the flow:\n\n\nint a = 42\n[yield]\na = 12\n\n\n\nWhen you run it the \nfirst\n time the value of \na\n will be:\n\n\na = 42\n\n\n\nWhen you run the same program a \nsecond time\n the value of \na\n will be:\n\n\na = 12\n\n\n\nAnd the second time the program will be terminated.\n\n\nState & Routine\n\n\nstate\n or \nroutine\n are code section where you can jump at at any point in your script using the instruction \nexec\n.\nIt's a convenience that allow scripter to split the code into parts that make sense.\n\n\nstate Fury:\n    this->legs.speed add \"CreatureEffects/FurySpeed\"\n    // Do some other stuff\nend\n\nloop:\n    if this->brain.playerDist < 3 then\n        [exec Fury]\n    end\nend\n\n\n\n\n\nYou can use indifferently keyword \nstate\n or \nroutine\n. They do the same thing",
+            "title": "Behaviour"
+        },
+        {
+            "location": "/nsref.beh/#behaviour",
+            "text": "",
+            "title": "Behaviour"
+        },
+        {
+            "location": "/nsref.beh/#routine-loop",
+            "text": "It's possible to define a  loop  in script that will  yield  the program execution.\nWhich means that when reaching the  end  of the  loop , execution of the program will stop.\nNext time the program is run it will start again at the begginning of the  loop .  Let say we have the following script:  int a = 0\nloop:\n    a = a + 1\nend  When you run it the  first  time the value of  a  will be:  a = 1  When you run the same program a  second time  the value of  a  will be:  a = 2  And so on and so forth...   Loop  are used in behaviour script or scripts that are supposed to run every frame.\nHowever as a scripter you're not responsible of calling a script. It's the discretion\nof the programmer in charge to actually call the script when needed\nSo it's again a convention between programmer and scripter",
+            "title": "Routine loop"
+        },
+        {
+            "location": "/nsref.beh/#exit-a-loop",
+            "text": "You can exit the parent loop at anytime using the instruction  [exit] .  int a = 0\nloop:\n    a = a + 1\n\n    if a >= 3 then\n        [exit]\n    end\nend\n\na = a * 2  The above script will exit the  loop  on the third run and then execute the code  a = a * 2  The resulting value of  a  will be  a = 6",
+            "title": "Exit a loop"
+        },
+        {
+            "location": "/nsref.beh/#yield",
+            "text": "You can use the  [yield]  instruction to stop program execution and resume it to this point next time the program is run.\nAs a  loop  would do but this time you control the flow:  int a = 42\n[yield]\na = 12  When you run it the  first  time the value of  a  will be:  a = 42  When you run the same program a  second time  the value of  a  will be:  a = 12  And the second time the program will be terminated.",
+            "title": "Yield"
+        },
+        {
+            "location": "/nsref.beh/#state-routine",
+            "text": "state  or  routine  are code section where you can jump at at any point in your script using the instruction  exec .\nIt's a convenience that allow scripter to split the code into parts that make sense.  state Fury:\n    this->legs.speed add \"CreatureEffects/FurySpeed\"\n    // Do some other stuff\nend\n\nloop:\n    if this->brain.playerDist < 3 then\n        [exec Fury]\n    end\nend   You can use indifferently keyword  state  or  routine . They do the same thing",
+            "title": "State &amp; Routine"
+        },
+        {
+            "location": "/stemp.cond/",
+            "text": "Condition Template\n\n\nUsed to evaluate a condition.\n\n\n\n\n\n\n\n\nI/O\n\n\nType\n\n\nName\n\n\nComments\n\n\n\n\n\n\n\n\n\n\nout\n\n\nbool\n\n\ncondition\n\n\nEvaluated condition",
+            "title": "Condition"
+        },
+        {
+            "location": "/stemp.cond/#condition-template",
+            "text": "Used to evaluate a condition.     I/O  Type  Name  Comments      out  bool  condition  Evaluated condition",
+            "title": "Condition Template"
+        },
+        {
+            "location": "/stemp.effect/",
+            "text": "Effect Template\n\n\nUsed to compute an effect.\n\n\n\n\n\n\n\n\nI/O\n\n\nType\n\n\nName\n\n\nComments\n\n\n\n\n\n\n\n\n\n\nin\n\n\nfloat\n\n\ninput\n\n\nBase value\n\n\n\n\n\n\nout\n\n\nfloat\n\n\noutput\n\n\nValue modified by effect",
+            "title": "Effect"
+        },
+        {
+            "location": "/stemp.effect/#effect-template",
+            "text": "Used to compute an effect.     I/O  Type  Name  Comments      in  float  input  Base value    out  float  output  Value modified by effect",
+            "title": "Effect Template"
+        },
+        {
+            "location": "/stemp.beh/",
+            "text": "Behaviour Template\n\n\nN/A",
+            "title": "Behaviour"
+        },
+        {
+            "location": "/stemp.beh/#behaviour-template",
+            "text": "N/A",
+            "title": "Behaviour Template"
         },
         {
             "location": "/gameData/__vmtest/",
