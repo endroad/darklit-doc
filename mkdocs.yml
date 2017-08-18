@@ -10,6 +10,8 @@ pages:
     - Condition: 'stemp.cond.md'
     - Effect: 'stemp.effect.md'
     - Behaviour: 'stemp.beh.md'
+- Json Templates:
+    - Condition: 'jsontemp.cond.md'
 - Game Data:
     - __vmtest: gameData/__vmtest.md
     - CreatureBrain: gameData/CreatureBrain.md
