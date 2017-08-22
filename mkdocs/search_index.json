@@ -582,7 +582,7 @@
         },
         {
             "location": "/gameData/legs/",
-            "text": "legs\n\n\nVariables\n\n\nlegs.isStopped\n\n\nbool legs.isStopped\n\n\nWhether the creature is stopped or not\n\n\nStats\n\n\nlegs.speed\n\n\nfloat legs.speed\n\n\nMoving speed.\n\n\nMessage\n\n\nlegs.MoveForward\n\n\n(void)legs.MoveForward\n\nUndocumented\n\n\nlegs.Turn\n\n\n(void)legs.Turn:(float)angle\n\nTurns the facing direction of @angle degrees\n\n\nArguments\n\n\nfloat angle\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nlegs.Stop\n\n\n(void)legs.Stop\n\nUndocumented\n\n\nlegs.Resume\n\n\n(void)legs.Resume\n\nUndocumented",
+            "text": "legs\n\n\nVariables\n\n\nlegs.isStopped\n\n\nbool legs.isStopped\n\n\nWhether the creature is stopped or not\n\n\nStats\n\n\nlegs.speed\n\n\nfloat legs.speed\n\n\nMoving speed.\n\n\nMessage\n\n\nlegs.MoveForward\n\n\n(void)legs.MoveForward\n\nUndocumented\n\n\nlegs.Turn\n\n\n(void)legs.Turn:(float)angle\n\nTurns the facing direction of @angle degrees\n\n\nArguments\n\n\nfloat angle\n: \n\n\nReturns\n\n\nN/A\n\n\nlegs.Stop\n\n\n(void)legs.Stop\n\nUndocumented\n\n\nlegs.Resume\n\n\n(void)legs.Resume\n\nUndocumented",
             "title": "legs"
         },
         {
@@ -627,7 +627,7 @@
         },
         {
             "location": "/gameData/legs/#arguments",
-            "text": "float angle : N/A",
+            "text": "float angle :",
             "title": "Arguments"
         },
         {
@@ -647,7 +647,7 @@
         },
         {
             "location": "/gameData/Health/",
-            "text": "Health\n\n\nVariables\n\n\nHealth.Current\n\n\nint Health.Current\n\n\nUndocumented\n\n\nStats\n\n\nHealth.Regen\n\n\nfloat Health.Regen\n\n\nUndocumented\n\n\nHealth.Capacity\n\n\nfloat Health.Capacity\n\n\nUndocumented\n\n\nMessage\n\n\nHealth.Damage\n\n\n(void)Health.Damage:(int)amount\n\nUndocumented\n\n\nHealth.Burst\n\n\n(bool)Health.Burst:(float)amount\n\nUndocumented\n\n\nHealth.Recover\n\n\n(void)Health.Recover:(int)amount\n\nUndocumented",
+            "text": "Health\n\n\nVariables\n\n\nHealth.Current\n\n\nint Health.Current\n\n\nUndocumented\n\n\nStats\n\n\nHealth.Regen\n\n\nfloat Health.Regen\n\n\nUndocumented\n\n\nHealth.Capacity\n\n\nfloat Health.Capacity\n\n\nUndocumented\n\n\nMessage\n\n\nHealth.Damage\n\n\n(void)Health.Damage:(int)amount\n\nApply damages: remove the amount.\n\n\nArguments\n\n\nint amount\n: Amount of damages to apply.\n\n\nReturns\n\n\nN/A\n\n\nHealth.Burst\n\n\n(bool)Health.Burst:(float)amount\n\nTry to remove a value.\n\n\nArguments\n\n\nfloat amount\n: Amount to remove\n\n\nReturns\n\n\nTrue if succeeded to remove (that is there's enough quantity to remove).\n\n\nHealth.Recover\n\n\n(void)Health.Recover:(int)amount\n\nUndocumented",
             "title": "Health"
         },
         {
@@ -687,13 +687,33 @@
         },
         {
             "location": "/gameData/Health/#healthdamage",
-            "text": "(void)Health.Damage:(int)amount \nUndocumented",
+            "text": "(void)Health.Damage:(int)amount \nApply damages: remove the amount.",
             "title": "Health.Damage"
         },
         {
+            "location": "/gameData/Health/#arguments",
+            "text": "int amount : Amount of damages to apply.",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/Health/#returns",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
             "location": "/gameData/Health/#healthburst",
-            "text": "(bool)Health.Burst:(float)amount \nUndocumented",
+            "text": "(bool)Health.Burst:(float)amount \nTry to remove a value.",
             "title": "Health.Burst"
+        },
+        {
+            "location": "/gameData/Health/#arguments_1",
+            "text": "float amount : Amount to remove",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/Health/#returns_1",
+            "text": "True if succeeded to remove (that is there's enough quantity to remove).",
+            "title": "Returns"
         },
         {
             "location": "/gameData/Health/#healthrecover",
@@ -727,7 +747,7 @@
         },
         {
             "location": "/gameData/Stamina/",
-            "text": "Stamina\n\n\nVariables\n\n\nStamina.Current\n\n\nint Stamina.Current\n\n\nUndocumented\n\n\nStats\n\n\nStamina.Regen\n\n\nfloat Stamina.Regen\n\n\nUndocumented\n\n\nStamina.Capacity\n\n\nfloat Stamina.Capacity\n\n\nUndocumented\n\n\nMessage\n\n\nStamina.Damage\n\n\n(void)Stamina.Damage:(int)amount\n\nUndocumented\n\n\nStamina.Burst\n\n\n(bool)Stamina.Burst:(float)amount\n\nUndocumented\n\n\nStamina.Recover\n\n\n(void)Stamina.Recover:(int)amount\n\nUndocumented",
+            "text": "Stamina\n\n\nVariables\n\n\nStamina.Current\n\n\nint Stamina.Current\n\n\nUndocumented\n\n\nStats\n\n\nStamina.Regen\n\n\nfloat Stamina.Regen\n\n\nUndocumented\n\n\nStamina.Capacity\n\n\nfloat Stamina.Capacity\n\n\nUndocumented\n\n\nMessage\n\n\nStamina.Damage\n\n\n(void)Stamina.Damage:(int)amount\n\nApply damages: remove the amount.\n\n\nArguments\n\n\nint amount\n: Amount of damages to apply.\n\n\nReturns\n\n\nN/A\n\n\nStamina.Burst\n\n\n(bool)Stamina.Burst:(float)amount\n\nTry to remove a value.\n\n\nArguments\n\n\nfloat amount\n: Amount to remove\n\n\nReturns\n\n\nTrue if succeeded to remove (that is there's enough quantity to remove).\n\n\nStamina.Recover\n\n\n(void)Stamina.Recover:(int)amount\n\nUndocumented",
             "title": "Stamina"
         },
         {
@@ -767,13 +787,33 @@
         },
         {
             "location": "/gameData/Stamina/#staminadamage",
-            "text": "(void)Stamina.Damage:(int)amount \nUndocumented",
+            "text": "(void)Stamina.Damage:(int)amount \nApply damages: remove the amount.",
             "title": "Stamina.Damage"
         },
         {
+            "location": "/gameData/Stamina/#arguments",
+            "text": "int amount : Amount of damages to apply.",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/Stamina/#returns",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
             "location": "/gameData/Stamina/#staminaburst",
-            "text": "(bool)Stamina.Burst:(float)amount \nUndocumented",
+            "text": "(bool)Stamina.Burst:(float)amount \nTry to remove a value.",
             "title": "Stamina.Burst"
+        },
+        {
+            "location": "/gameData/Stamina/#arguments_1",
+            "text": "float amount : Amount to remove",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/Stamina/#returns_1",
+            "text": "True if succeeded to remove (that is there's enough quantity to remove).",
+            "title": "Returns"
         },
         {
             "location": "/gameData/Stamina/#staminarecover",
