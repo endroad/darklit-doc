@@ -181,6 +181,141 @@
             "title": "Behaviour Template"
         },
         {
+            "location": "/gameData/gameObject/",
+            "text": "gameObject\n\n\nVariables\n\n\ngameObject.isActive\n\n\nbool gameObject.isActive\n\n\nReturns if the object is active.\n\n\ngameObject.isActiveInHierarchy\n\n\nbool gameObject.isActiveInHierarchy\n\n\nIs the GameObject active in the scene?\n\n\nStats\n\n\nMessage",
+            "title": "gameObject"
+        },
+        {
+            "location": "/gameData/gameObject/#gameobject",
+            "text": "",
+            "title": "gameObject"
+        },
+        {
+            "location": "/gameData/gameObject/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/gameObject/#gameobjectisactive",
+            "text": "bool gameObject.isActive  Returns if the object is active.",
+            "title": "gameObject.isActive"
+        },
+        {
+            "location": "/gameData/gameObject/#gameobjectisactiveinhierarchy",
+            "text": "bool gameObject.isActiveInHierarchy  Is the GameObject active in the scene?",
+            "title": "gameObject.isActiveInHierarchy"
+        },
+        {
+            "location": "/gameData/gameObject/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/gameObject/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/net/",
+            "text": "net\n\n\nVariables\n\n\nnet.hasAutority\n\n\nbool net.hasAutority\n\n\nThis returns true if this object is the authoritative version of the object in the distributed network application.\n\n\nnet.isServer\n\n\nbool net.isServer\n\n\nReturns true if this object is active on an active server.\n\n\nnet.isClient\n\n\nbool net.isClient\n\n\nReturns true if running as a client and this object was spawned by a server.\n\n\nnet.isLocalPlayer\n\n\nbool net.isLocalPlayer\n\n\nReturns\n\n\nStats\n\n\nMessage",
+            "title": "net"
+        },
+        {
+            "location": "/gameData/net/#net",
+            "text": "",
+            "title": "net"
+        },
+        {
+            "location": "/gameData/net/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/net/#nethasautority",
+            "text": "bool net.hasAutority  This returns true if this object is the authoritative version of the object in the distributed network application.",
+            "title": "net.hasAutority"
+        },
+        {
+            "location": "/gameData/net/#netisserver",
+            "text": "bool net.isServer  Returns true if this object is active on an active server.",
+            "title": "net.isServer"
+        },
+        {
+            "location": "/gameData/net/#netisclient",
+            "text": "bool net.isClient  Returns true if running as a client and this object was spawned by a server.",
+            "title": "net.isClient"
+        },
+        {
+            "location": "/gameData/net/#netislocalplayer",
+            "text": "bool net.isLocalPlayer  Returns",
+            "title": "net.isLocalPlayer"
+        },
+        {
+            "location": "/gameData/net/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/net/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/time/",
+            "text": "time\n\n\nVariables\n\n\ntime.dt\n\n\nfloat time.dt\n\n\nTime interval since last frame.\n\n\nStats\n\n\nMessage",
+            "title": "time"
+        },
+        {
+            "location": "/gameData/time/#time",
+            "text": "",
+            "title": "time"
+        },
+        {
+            "location": "/gameData/time/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/time/#timedt",
+            "text": "float time.dt  Time interval since last frame.",
+            "title": "time.dt"
+        },
+        {
+            "location": "/gameData/time/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/time/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/transform/",
+            "text": "transform\n\n\nVariables\n\n\nStats\n\n\nMessage",
+            "title": "transform"
+        },
+        {
+            "location": "/gameData/transform/#transform",
+            "text": "",
+            "title": "transform"
+        },
+        {
+            "location": "/gameData/transform/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/transform/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/transform/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
             "location": "/gameData/__vmtest/",
             "text": "__vmtest\n\n\nVariables\n\n\n__vmtest.myInt\n\n\nint __vmtest.myInt\n\n\nUndocumented\n\n\n__vmtest.myFloat\n\n\nint __vmtest.myFloat\n\n\nUndocumented\n\n\nStats\n\n\nMessage\n\n\n__vmtest.mySubstractionMessage\n\n\n(float)__vmtest.mySubstractionMessage:(int)a b:(float)b\n\nHello Workd\n\n\nArguments\n\n\nint a\n: Some usage\n\n\nfloat b\n: Some other\n\n\nReturns\n\n\nSome last",
             "title": "__vmtest"
@@ -229,36 +364,6 @@
             "location": "/gameData/__vmtest/#returns",
             "text": "Some last",
             "title": "Returns"
-        },
-        {
-            "location": "/gameData/CreatureBrain/",
-            "text": "CreatureBrain\n\n\nVariables\n\n\nCreatureBrain.playerDist\n\n\nfloat CreatureBrain.playerDist\n\n\nDistance to closest player.\n\n\nStats\n\n\nMessage",
-            "title": "CreatureBrain"
-        },
-        {
-            "location": "/gameData/CreatureBrain/#creaturebrain",
-            "text": "",
-            "title": "CreatureBrain"
-        },
-        {
-            "location": "/gameData/CreatureBrain/#variables",
-            "text": "",
-            "title": "Variables"
-        },
-        {
-            "location": "/gameData/CreatureBrain/#creaturebrainplayerdist",
-            "text": "float CreatureBrain.playerDist  Distance to closest player.",
-            "title": "CreatureBrain.playerDist"
-        },
-        {
-            "location": "/gameData/CreatureBrain/#stats",
-            "text": "",
-            "title": "Stats"
-        },
-        {
-            "location": "/gameData/CreatureBrain/#message",
-            "text": "",
-            "title": "Message"
         },
         {
             "location": "/gameData/Explode/",
@@ -407,7 +512,7 @@
         },
         {
             "location": "/gameData/Character/",
-            "text": "Character\n\n\nVariables\n\n\nCharacter.Crouch_LateralSpeed\n\n\nfloat Character.Crouch_LateralSpeed\n\n\nUndocumented\n\n\nStats\n\n\nMessage",
+            "text": "Character\n\n\nVariables\n\n\nCharacter.Crouch_LateralSpeed\n\n\nfloat Character.Crouch_LateralSpeed\n\n\nUndocumented\n\n\nStats\n\n\nCharacter.Motion\n\n\nfloat Character.Motion\n\n\nUndocumented\n\n\nCharacter.Damage\n\n\nfloat Character.Damage\n\n\nUndocumented\n\n\nMessage",
             "title": "Character"
         },
         {
@@ -431,13 +536,118 @@
             "title": "Stats"
         },
         {
+            "location": "/gameData/Character/#charactermotion",
+            "text": "float Character.Motion  Undocumented",
+            "title": "Character.Motion"
+        },
+        {
+            "location": "/gameData/Character/#characterdamage",
+            "text": "float Character.Damage  Undocumented",
+            "title": "Character.Damage"
+        },
+        {
             "location": "/gameData/Character/#message",
             "text": "",
             "title": "Message"
         },
         {
+            "location": "/gameData/brain/",
+            "text": "brain\n\n\nVariables\n\n\nbrain.playerDist\n\n\nfloat brain.playerDist\n\n\nDistance to closest player.\n\n\nStats\n\n\nMessage",
+            "title": "brain"
+        },
+        {
+            "location": "/gameData/brain/#brain",
+            "text": "",
+            "title": "brain"
+        },
+        {
+            "location": "/gameData/brain/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/brain/#brainplayerdist",
+            "text": "float brain.playerDist  Distance to closest player.",
+            "title": "brain.playerDist"
+        },
+        {
+            "location": "/gameData/brain/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/brain/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/legs/",
+            "text": "legs\n\n\nVariables\n\n\nlegs.isStopped\n\n\nbool legs.isStopped\n\n\nWhether the creature is stopped or not\n\n\nStats\n\n\nlegs.speed\n\n\nfloat legs.speed\n\n\nMoving speed.\n\n\nMessage\n\n\nlegs.MoveForward\n\n\n(void)legs.MoveForward\n\nUndocumented\n\n\nlegs.Turn\n\n\n(void)legs.Turn:(float)angle\n\nTurns the facing direction of @angle degrees\n\n\nArguments\n\n\nfloat angle\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nlegs.Stop\n\n\n(void)legs.Stop\n\nUndocumented\n\n\nlegs.Resume\n\n\n(void)legs.Resume\n\nUndocumented",
+            "title": "legs"
+        },
+        {
+            "location": "/gameData/legs/#legs",
+            "text": "",
+            "title": "legs"
+        },
+        {
+            "location": "/gameData/legs/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/legs/#legsisstopped",
+            "text": "bool legs.isStopped  Whether the creature is stopped or not",
+            "title": "legs.isStopped"
+        },
+        {
+            "location": "/gameData/legs/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/legs/#legsspeed",
+            "text": "float legs.speed  Moving speed.",
+            "title": "legs.speed"
+        },
+        {
+            "location": "/gameData/legs/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/legs/#legsmoveforward",
+            "text": "(void)legs.MoveForward \nUndocumented",
+            "title": "legs.MoveForward"
+        },
+        {
+            "location": "/gameData/legs/#legsturn",
+            "text": "(void)legs.Turn:(float)angle \nTurns the facing direction of @angle degrees",
+            "title": "legs.Turn"
+        },
+        {
+            "location": "/gameData/legs/#arguments",
+            "text": "float angle : N/A",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/legs/#returns",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/legs/#legsstop",
+            "text": "(void)legs.Stop \nUndocumented",
+            "title": "legs.Stop"
+        },
+        {
+            "location": "/gameData/legs/#legsresume",
+            "text": "(void)legs.Resume \nUndocumented",
+            "title": "legs.Resume"
+        },
+        {
             "location": "/gameData/Health/",
-            "text": "Health\n\n\nVariables\n\n\nHealth.Current\n\n\nint Health.Current\n\n\nUndocumented\n\n\nStats\n\n\nHealth.Regen\n\n\nfloat Health.Regen\n\n\nUndocumented\n\n\nHealth.Pool\n\n\nfloat Health.Pool\n\n\nUndocumented\n\n\nMessage\n\n\nHealth.Damage\n\n\n(void)Health.Damage:(int)amount\n\nUndocumented\n\n\nHealth.Burst\n\n\n(bool)Health.Burst:(float)amount\n\nUndocumented\n\n\nHealth.Recover\n\n\n(void)Health.Recover:(int)amount\n\nUndocumented",
+            "text": "Health\n\n\nVariables\n\n\nHealth.Current\n\n\nint Health.Current\n\n\nUndocumented\n\n\nStats\n\n\nHealth.Regen\n\n\nfloat Health.Regen\n\n\nUndocumented\n\n\nHealth.Capacity\n\n\nfloat Health.Capacity\n\n\nUndocumented\n\n\nMessage\n\n\nHealth.Damage\n\n\n(void)Health.Damage:(int)amount\n\nUndocumented\n\n\nHealth.Burst\n\n\n(bool)Health.Burst:(float)amount\n\nUndocumented\n\n\nHealth.Recover\n\n\n(void)Health.Recover:(int)amount\n\nUndocumented",
             "title": "Health"
         },
         {
@@ -466,9 +676,9 @@
             "title": "Health.Regen"
         },
         {
-            "location": "/gameData/Health/#healthpool",
-            "text": "float Health.Pool  Undocumented",
-            "title": "Health.Pool"
+            "location": "/gameData/Health/#healthcapacity",
+            "text": "float Health.Capacity  Undocumented",
+            "title": "Health.Capacity"
         },
         {
             "location": "/gameData/Health/#message",
@@ -517,7 +727,7 @@
         },
         {
             "location": "/gameData/Stamina/",
-            "text": "Stamina\n\n\nVariables\n\n\nStamina.Current\n\n\nint Stamina.Current\n\n\nUndocumented\n\n\nStats\n\n\nStamina.Regen\n\n\nfloat Stamina.Regen\n\n\nUndocumented\n\n\nStamina.Pool\n\n\nfloat Stamina.Pool\n\n\nUndocumented\n\n\nMessage\n\n\nStamina.Damage\n\n\n(void)Stamina.Damage:(int)amount\n\nUndocumented\n\n\nStamina.Burst\n\n\n(bool)Stamina.Burst:(float)amount\n\nUndocumented\n\n\nStamina.Recover\n\n\n(void)Stamina.Recover:(int)amount\n\nUndocumented",
+            "text": "Stamina\n\n\nVariables\n\n\nStamina.Current\n\n\nint Stamina.Current\n\n\nUndocumented\n\n\nStats\n\n\nStamina.Regen\n\n\nfloat Stamina.Regen\n\n\nUndocumented\n\n\nStamina.Capacity\n\n\nfloat Stamina.Capacity\n\n\nUndocumented\n\n\nMessage\n\n\nStamina.Damage\n\n\n(void)Stamina.Damage:(int)amount\n\nUndocumented\n\n\nStamina.Burst\n\n\n(bool)Stamina.Burst:(float)amount\n\nUndocumented\n\n\nStamina.Recover\n\n\n(void)Stamina.Recover:(int)amount\n\nUndocumented",
             "title": "Stamina"
         },
         {
@@ -546,9 +756,9 @@
             "title": "Stamina.Regen"
         },
         {
-            "location": "/gameData/Stamina/#staminapool",
-            "text": "float Stamina.Pool  Undocumented",
-            "title": "Stamina.Pool"
+            "location": "/gameData/Stamina/#staminacapacity",
+            "text": "float Stamina.Capacity  Undocumented",
+            "title": "Stamina.Capacity"
         },
         {
             "location": "/gameData/Stamina/#message",
