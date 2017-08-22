@@ -12,7 +12,7 @@
         },
         {
             "location": "/nsref.basics/",
-            "text": "Basics\n\n\nDeclarations\n\n\nVariables\n\n\nPlain variables\n\n\nint a\nfloat b\n\n\n\nI / O\n\n\nSome variables can be retrieve or set from the C# code.\n\n\nTo use them you need to add \nin\n, \nout\n, \ninout\n in front of variable declaration\n\n\n    in int a\n    out float b\n    inout bool c\n\n\n\n\n\nTo know more about I/O usage see the script templates or consult your local programmer.\nSome scripts like \ncondition script\n requires special output variable\nto be functionnal\n\n\n\n\nEntity\n\n\nEach entity that you'll be using in your script need to be assigned from the C#\nside using a specific name. To make the link from C# to NuSpeak you need to declare it as follow:\n\n\nentity myEntity\n\n\n\n\n\nTo know more about entity usage see the script templates or consult your local programmer.\n\n\n\n\nThis\n\n\nThe entity \nthis\n (or \nself\n) is always defined and linked to the entity running the NuSpeak script.\n\n\nOperators\n\n\nArithmetics\n\n\nDefined for \nint\n and \nfloat\n\n\na + b // Addition\na - b // Substraction\na * b // Multiplication\na / b // Division\na % b // Modulo\n\n\n\nRelations\n\n\nDefined for \nint\n and \nfloat\n\n\nbool c = a > b  // Greater\nbool c = a >= b // Greater or equal\nbool c = a < b  // Less\nbool c = a <= b // Less or equal\n\n\n\nEquality\n\n\nDefined for \nbool\n, \nint\n and \nfloat\n\n\nbool c = a is b     // Equal\nbool c = a is not b // Not Equal\nbool c = a isnot b  // Not Equal (equiv.)\n\n\n\nLogic\n\n\nDefined for \nbool\n only\n\n\nbool c = a and b // And\nbool c = a or b  // Or\nbool c = not a   // Not\n\n\n\nConditions\n\n\nif a is b then\n    // do something here ...\nendif\n\n\nif a is b then\n    // do somthing here\nelse if a is c then\n    // do some other thing here\nelse\n    // do some other other thing here\nend",
+            "text": "Basics\n\n\nDeclarations\n\n\nVariables\n\n\nPlain variables\n\n\nint a\nfloat b\n\n\n\nI / O\n\n\nSome variables can be retrieve or set from the C# code.\n\n\nTo use them you need to add \nin\n, \nout\n, \ninout\n in front of variable declaration\n\n\n    in int a\n    out float b\n    inout bool c\n\n\n\n\n\nTo know more about I/O usage see the script templates or consult your local programmer.\nSome scripts like \ncondition script\n requires special output variable\nto be functionnal\n\n\n\n\nEntity\n\n\nEach entity that you'll be using in your script need to be assigned from the C#\nside using a specific name. To make the link from C# to NuSpeak you need to declare it as follow:\n\n\nentity myEntity\n\n\n\n\n\nTo know more about entity usage see the script templates or consult your local programmer.\n\n\n\n\nReserved\n\n\nSome keyword are reserved by the language and/or the GameData framework to allow quick & easy access\nentities that are common.\n\n\n\n\n\n\n\n\nEntity Name\n\n\nUsage\n\n\n\n\n\n\n\n\n\n\nthis\n\n\nThe entity running the script.\n\n\n\n\n\n\nself\n\n\nSame as \nthis\n\n\n\n\n\n\ngame\n\n\nThe global game entity containing some useful generic stuff\n\n\n\n\n\n\n\n\nThe \nentities\n above are always defined and usable in any script.\n\n\nOperators\n\n\nArithmetics\n\n\nDefined for \nint\n and \nfloat\n\n\na + b // Addition\na - b // Substraction\na * b // Multiplication\na / b // Division\na % b // Modulo\n\n\n\nRelations\n\n\nDefined for \nint\n and \nfloat\n\n\nbool c = a > b  // Greater\nbool c = a >= b // Greater or equal\nbool c = a < b  // Less\nbool c = a <= b // Less or equal\n\n\n\nEquality\n\n\nDefined for \nbool\n, \nint\n and \nfloat\n\n\nbool c = a is b     // Equal\nbool c = a is not b // Not Equal\nbool c = a isnot b  // Not Equal (equiv.)\n\n\n\nLogic\n\n\nDefined for \nbool\n only\n\n\nbool c = a and b // And\nbool c = a or b  // Or\nbool c = not a   // Not\n\n\n\nConditions\n\n\nif a is b then\n    // do something here ...\nendif\n\n\nif a is b then\n    // do somthing here\nelse if a is c then\n    // do some other thing here\nelse\n    // do some other other thing here\nend",
             "title": "Basics"
         },
         {
@@ -41,9 +41,9 @@
             "title": "Entity"
         },
         {
-            "location": "/nsref.basics/#this",
-            "text": "The entity  this  (or  self ) is always defined and linked to the entity running the NuSpeak script.",
-            "title": "This"
+            "location": "/nsref.basics/#reserved",
+            "text": "Some keyword are reserved by the language and/or the GameData framework to allow quick & easy access\nentities that are common.     Entity Name  Usage      this  The entity running the script.    self  Same as  this    game  The global game entity containing some useful generic stuff     The  entities  above are always defined and usable in any script.",
+            "title": "Reserved"
         },
         {
             "location": "/nsref.basics/#operators",
@@ -172,13 +172,33 @@
         },
         {
             "location": "/stemp.beh/",
-            "text": "Behaviour Template\n\n\nN/A",
+            "text": "Behaviour Template\n\n\nBehaviour scripts are executed each frame.\nYou can then write whatever you want.\n\n\nThe usage of \nstate\n and  \nloop\n is espescially recommanded.\n\n\nExample:\n\n\nfloat time = 0\n\nloop:\n    time = time + game->time.dt\n\n    if time >= 3.0 then\n        [this event:\"SomeEffect\"]\n        time = 0\n    end\nend",
             "title": "Behaviour"
         },
         {
             "location": "/stemp.beh/#behaviour-template",
-            "text": "N/A",
+            "text": "Behaviour scripts are executed each frame.\nYou can then write whatever you want.  The usage of  state  and   loop  is espescially recommanded.  Example:  float time = 0\n\nloop:\n    time = time + game->time.dt\n\n    if time >= 3.0 then\n        [this event:\"SomeEffect\"]\n        time = 0\n    end\nend",
             "title": "Behaviour Template"
+        },
+        {
+            "location": "/stemp.spawner/",
+            "text": "Spawner Template\n\n\nSpawner is executed every frame while the program \nyield\n (that is inside a loop or after \n[yield]\n instructions).\nIt requires the amount of item to spawn.\n\n\n\n\n\n\n\n\nI/O\n\n\nType\n\n\nName\n\n\nComments\n\n\n\n\n\n\n\n\n\n\nout\n\n\nint\n\n\nburst\n\n\nNumber of object to spawn\n\n\n\n\n\n\n\n\nExample: One every 60s\n\n\nout int burst = 0\nint time = 0\nloop:\n    burst = 0\n    time = time + game->time.dt\n    if time >= 60 then\n        burst = 1\n    end\nend\n\n\n\nExample: One every 60s v2\n\n\nStops after spawning \n10\n\n\nout int burst = 0\nint time = 0\nint count = 0\nloop:\n    burst = 0\n    time = time + game->time.dt\n    if time >= 60 then\n        burst = 1\n        count = count + 1\n    end\n\n    if count >= 10 then\n        [exit]\n    end\nend",
+            "title": "Spawner"
+        },
+        {
+            "location": "/stemp.spawner/#spawner-template",
+            "text": "Spawner is executed every frame while the program  yield  (that is inside a loop or after  [yield]  instructions).\nIt requires the amount of item to spawn.     I/O  Type  Name  Comments      out  int  burst  Number of object to spawn",
+            "title": "Spawner Template"
+        },
+        {
+            "location": "/stemp.spawner/#example-one-every-60s",
+            "text": "out int burst = 0\nint time = 0\nloop:\n    burst = 0\n    time = time + game->time.dt\n    if time >= 60 then\n        burst = 1\n    end\nend",
+            "title": "Example: One every 60s"
+        },
+        {
+            "location": "/stemp.spawner/#example-one-every-60s-v2",
+            "text": "Stops after spawning  10  out int burst = 0\nint time = 0\nint count = 0\nloop:\n    burst = 0\n    time = time + game->time.dt\n    if time >= 60 then\n        burst = 1\n        count = count + 1\n    end\n\n    if count >= 10 then\n        [exit]\n    end\nend",
+            "title": "Example: One every 60s v2"
         },
         {
             "location": "/gameData/gameObject/",

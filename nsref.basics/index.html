@@ -230,8 +230,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#this" title="This" class="md-nav__link">
-    This
+  <a href="#reserved" title="Reserved" class="md-nav__link">
+    Reserved
   </a>
   
 </li>
@@ -383,6 +383,18 @@
   <li class="md-nav__item">
     <a href="../stemp.beh/" title="Behaviour" class="md-nav__link">
       Behaviour
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stemp.spawner/" title="Spawner" class="md-nav__link">
+      Spawner
     </a>
   </li>
 
@@ -623,8 +635,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#this" title="This" class="md-nav__link">
-    This
+  <a href="#reserved" title="Reserved" class="md-nav__link">
+    Reserved
   </a>
   
 </li>
@@ -729,8 +741,32 @@ side using a specific name. To make the link from C# to NuSpeak you need to decl
 <blockquote>
 <p>To know more about entity usage see the script templates or consult your local programmer.</p>
 </blockquote>
-<h4 id="this">This</h4>
-<p>The entity <code>this</code> (or <code>self</code>) is always defined and linked to the entity running the NuSpeak script.</p>
+<h4 id="reserved">Reserved</h4>
+<p>Some keyword are reserved by the language and/or the GameData framework to allow quick &amp; easy access
+entities that are common.</p>
+<table>
+<thead>
+<tr>
+<th>Entity Name</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>this</code></td>
+<td>The entity running the script.</td>
+</tr>
+<tr>
+<td><code>self</code></td>
+<td>Same as <code>this</code></td>
+</tr>
+<tr>
+<td><code>game</code></td>
+<td>The global game entity containing some useful generic stuff</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>entities</strong> above are always defined and usable in any script.</p>
 <h2 id="operators">Operators</h2>
 <h3 id="arithmetics">Arithmetics</h3>
 <p>Defined for <code>int</code> and <code>float</code></p>
