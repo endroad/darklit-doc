@@ -86,30 +86,6 @@
     </url>
         
     <url>
-     <loc>/gameData/Explode/</loc>
-     <lastmod>2017-08-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/gameData/Idle/</loc>
-     <lastmod>2017-08-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/gameData/MoveOnLine/</loc>
-     <lastmod>2017-08-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/gameData/Turn180/</loc>
-     <lastmod>2017-08-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc>/gameData/spawner/</loc>
      <lastmod>2017-08-22</lastmod>
      <changefreq>daily</changefreq>
