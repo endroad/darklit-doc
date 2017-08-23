@@ -16,7 +16,7 @@
     
     
       
-        <title>Spawner - Darklit</title>
+        <title>Game - Darklit</title>
       
     
     
@@ -75,11 +75,11 @@
             
               
                 <span class="md-header-nav__parent">
-                  Script Templates
+                  Commands
                 </span>
               
             
-            Spawner
+            Game
           
         </span>
       </div>
@@ -210,12 +210,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
       Script Templates
@@ -267,54 +265,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Spawner
-      </label>
-    
-    <a href="./" title="Spawner" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../stemp.spawner/" title="Spawner" class="md-nav__link">
       Spawner
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#example-one-every-60s" title="Example: One every 60s" class="md-nav__link">
-    Example: One every 60s
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-one-every-60s-v2" title="Example: One every 60s v2" class="md-nav__link">
-    Example: One every 60s v2
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -327,10 +282,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       Commands
@@ -346,11 +303,68 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../commands.game/" title="Game" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Game
+      </label>
+    
+    <a href="./" title="Game" class="md-nav__link md-nav__link--active">
       Game
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fly" title="fly" class="md-nav__link">
+    fly
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#archetype" title="archetype" class="md-nav__link">
+    archetype
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respawn" title="respawn" class="md-nav__link">
+    respawn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zombie" title="zombie" class="md-nav__link">
+    zombie
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -572,15 +586,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#example-one-every-60s" title="Example: One every 60s" class="md-nav__link">
-    Example: One every 60s
+  <a href="#fly" title="fly" class="md-nav__link">
+    fly
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-one-every-60s-v2" title="Example: One every 60s v2" class="md-nav__link">
-    Example: One every 60s v2
+  <a href="#archetype" title="archetype" class="md-nav__link">
+    archetype
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respawn" title="respawn" class="md-nav__link">
+    respawn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zombie" title="zombie" class="md-nav__link">
+    zombie
   </a>
   
 </li>
@@ -600,55 +628,22 @@
               
                 
                 
-                <h1 id="spawner-template">Spawner Template</h1>
-<p>Spawner is executed every frame while the program <strong>yield</strong> (that is inside a loop or after <code>[yield]</code> instructions).
-It requires the amount of item to spawn.</p>
-<table>
-<thead>
-<tr>
-<th>I/O</th>
-<th>Type</th>
-<th>Name</th>
-<th>Comments</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>out</code></td>
-<td><code>int</code></td>
-<td><code>burst</code></td>
-<td>Number of object to spawn</td>
-</tr>
-</tbody>
-</table>
-<h2 id="example-one-every-60s">Example: One every 60s</h2>
-<pre><code>out int burst = 0
-int time = 0
-loop:
-    burst = 0
-    time = time + game-&gt;time.dt
-    if time &gt;= 60 then
-        burst = 1
-    end
-end
+                <h1 id="developpers-commands">Developpers Commands</h1>
+<h2 id="fly"><strong>fly</strong></h2>
+<p>Switch flycam mode on and off</p>
+<pre><code>fly
 </code></pre>
-<h2 id="example-one-every-60s-v2">Example: One every 60s v2</h2>
-<p>Stops after spawning <strong>10</strong></p>
-<pre><code>out int burst = 0
-int time = 0
-int count = 0
-loop:
-    burst = 0
-    time = time + game-&gt;time.dt
-    if time &gt;= 60 then
-        burst = 1
-        count = count + 1
-    end
-
-    if count &gt;= 10 then
-        [exit]
-    end
-end
+<h2 id="archetype"><strong>archetype</strong></h2>
+<p>Load an archetype <code>myArchetype</code> on the player. This a path to JSon.</p>
+<pre><code>archetype myArchetype
+</code></pre>
+<h2 id="respawn"><strong>respawn</strong></h2>
+<p>Respawn the player to last respawn point</p>
+<pre><code>respawn
+</code></pre>
+<h2 id="zombie"><strong>zombie</strong></h2>
+<p>Enable or disable the zombie mode</p>
+<pre><code>zombie [on|off]
 </code></pre>
                 
                   
@@ -668,7 +663,7 @@ end
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../stemp.beh/" title="Behaviour" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../stemp.spawner/" title="Spawner" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -677,19 +672,19 @@ end
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Behaviour
+                Spawner
               </span>
             </div>
           </a>
         
         
-          <a href="../commands.game/" title="Game" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../commands.dev/" title="Dev" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Game
+                Dev
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

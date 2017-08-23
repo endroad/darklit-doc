@@ -414,10 +414,58 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
-      Game Data
+      Commands
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-4">
+        Commands
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../commands.game/" title="Game" class="md-nav__link">
+      Game
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../commands.dev/" title="Dev" class="md-nav__link">
+      Dev
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Game Data
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
         Game Data
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -770,11 +818,22 @@ entities that are common.</p>
 <h2 id="operators">Operators</h2>
 <h3 id="arithmetics">Arithmetics</h3>
 <p>Defined for <code>int</code> and <code>float</code></p>
-<pre><code>a + b // Addition
+<pre><code>// Binary
+a + b // Addition
 a - b // Substraction
 a * b // Multiplication
 a / b // Division
 a % b // Modulo
+
+// Unary
+a++   // Postfix increment
+++a   // Prefix increment
+a--   // Postfix decrement
+--a   // Prefix decrement
+
+// Assignment
+a += b
+a -= b
 </code></pre>
 <h3 id="relations">Relations</h3>
 <p>Defined for <code>int</code> and <code>float</code></p>
@@ -786,14 +845,22 @@ bool c = a &lt;= b // Less or equal
 <h3 id="equality">Equality</h3>
 <p>Defined for <code>bool</code>, <code>int</code> and <code>float</code></p>
 <pre><code>bool c = a is b     // Equal
+bool c = a == b     // Equal (equiv.)
+
 bool c = a is not b // Not Equal
 bool c = a isnot b  // Not Equal (equiv.)
+bool c = a != b     // Not Equal (equiv.)
 </code></pre>
 <h3 id="logic">Logic</h3>
 <p>Defined for <code>bool</code> only</p>
 <pre><code>bool c = a and b // And
+bool c = a &amp;&amp; b  // And (equiv.)
+
 bool c = a or b  // Or
+bool c = a || b  // Or (equiv.)
+
 bool c = not a   // Not
+bool c = !a      // Not (equiv.)
 </code></pre>
 <h2 id="conditions">Conditions</h2>
 <pre><code>if a is b then

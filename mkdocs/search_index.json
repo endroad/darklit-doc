@@ -12,7 +12,7 @@
         },
         {
             "location": "/nsref.basics/",
-            "text": "Basics\n\n\nDeclarations\n\n\nVariables\n\n\nPlain variables\n\n\nint a\nfloat b\n\n\n\nI / O\n\n\nSome variables can be retrieve or set from the C# code.\n\n\nTo use them you need to add \nin\n, \nout\n, \ninout\n in front of variable declaration\n\n\n    in int a\n    out float b\n    inout bool c\n\n\n\n\n\nTo know more about I/O usage see the script templates or consult your local programmer.\nSome scripts like \ncondition script\n requires special output variable\nto be functionnal\n\n\n\n\nEntity\n\n\nEach entity that you'll be using in your script need to be assigned from the C#\nside using a specific name. To make the link from C# to NuSpeak you need to declare it as follow:\n\n\nentity myEntity\n\n\n\n\n\nTo know more about entity usage see the script templates or consult your local programmer.\n\n\n\n\nReserved\n\n\nSome keyword are reserved by the language and/or the GameData framework to allow quick & easy access\nentities that are common.\n\n\n\n\n\n\n\n\nEntity Name\n\n\nUsage\n\n\n\n\n\n\n\n\n\n\nthis\n\n\nThe entity running the script.\n\n\n\n\n\n\nself\n\n\nSame as \nthis\n\n\n\n\n\n\ngame\n\n\nThe global game entity containing some useful generic stuff\n\n\n\n\n\n\n\n\nThe \nentities\n above are always defined and usable in any script.\n\n\nOperators\n\n\nArithmetics\n\n\nDefined for \nint\n and \nfloat\n\n\na + b // Addition\na - b // Substraction\na * b // Multiplication\na / b // Division\na % b // Modulo\n\n\n\nRelations\n\n\nDefined for \nint\n and \nfloat\n\n\nbool c = a > b  // Greater\nbool c = a >= b // Greater or equal\nbool c = a < b  // Less\nbool c = a <= b // Less or equal\n\n\n\nEquality\n\n\nDefined for \nbool\n, \nint\n and \nfloat\n\n\nbool c = a is b     // Equal\nbool c = a is not b // Not Equal\nbool c = a isnot b  // Not Equal (equiv.)\n\n\n\nLogic\n\n\nDefined for \nbool\n only\n\n\nbool c = a and b // And\nbool c = a or b  // Or\nbool c = not a   // Not\n\n\n\nConditions\n\n\nif a is b then\n    // do something here ...\nendif\n\n\nif a is b then\n    // do somthing here\nelse if a is c then\n    // do some other thing here\nelse\n    // do some other other thing here\nend",
+            "text": "Basics\n\n\nDeclarations\n\n\nVariables\n\n\nPlain variables\n\n\nint a\nfloat b\n\n\n\nI / O\n\n\nSome variables can be retrieve or set from the C# code.\n\n\nTo use them you need to add \nin\n, \nout\n, \ninout\n in front of variable declaration\n\n\n    in int a\n    out float b\n    inout bool c\n\n\n\n\n\nTo know more about I/O usage see the script templates or consult your local programmer.\nSome scripts like \ncondition script\n requires special output variable\nto be functionnal\n\n\n\n\nEntity\n\n\nEach entity that you'll be using in your script need to be assigned from the C#\nside using a specific name. To make the link from C# to NuSpeak you need to declare it as follow:\n\n\nentity myEntity\n\n\n\n\n\nTo know more about entity usage see the script templates or consult your local programmer.\n\n\n\n\nReserved\n\n\nSome keyword are reserved by the language and/or the GameData framework to allow quick & easy access\nentities that are common.\n\n\n\n\n\n\n\n\nEntity Name\n\n\nUsage\n\n\n\n\n\n\n\n\n\n\nthis\n\n\nThe entity running the script.\n\n\n\n\n\n\nself\n\n\nSame as \nthis\n\n\n\n\n\n\ngame\n\n\nThe global game entity containing some useful generic stuff\n\n\n\n\n\n\n\n\nThe \nentities\n above are always defined and usable in any script.\n\n\nOperators\n\n\nArithmetics\n\n\nDefined for \nint\n and \nfloat\n\n\n// Binary\na + b // Addition\na - b // Substraction\na * b // Multiplication\na / b // Division\na % b // Modulo\n\n// Unary\na++   // Postfix increment\n++a   // Prefix increment\na--   // Postfix decrement\n--a   // Prefix decrement\n\n// Assignment\na += b\na -= b\n\n\n\nRelations\n\n\nDefined for \nint\n and \nfloat\n\n\nbool c = a > b  // Greater\nbool c = a >= b // Greater or equal\nbool c = a < b  // Less\nbool c = a <= b // Less or equal\n\n\n\nEquality\n\n\nDefined for \nbool\n, \nint\n and \nfloat\n\n\nbool c = a is b     // Equal\nbool c = a == b     // Equal (equiv.)\n\nbool c = a is not b // Not Equal\nbool c = a isnot b  // Not Equal (equiv.)\nbool c = a != b     // Not Equal (equiv.)\n\n\n\nLogic\n\n\nDefined for \nbool\n only\n\n\nbool c = a and b // And\nbool c = a && b  // And (equiv.)\n\nbool c = a or b  // Or\nbool c = a || b  // Or (equiv.)\n\nbool c = not a   // Not\nbool c = !a      // Not (equiv.)\n\n\n\nConditions\n\n\nif a is b then\n    // do something here ...\nendif\n\n\nif a is b then\n    // do somthing here\nelse if a is c then\n    // do some other thing here\nelse\n    // do some other other thing here\nend",
             "title": "Basics"
         },
         {
@@ -52,7 +52,7 @@
         },
         {
             "location": "/nsref.basics/#arithmetics",
-            "text": "Defined for  int  and  float  a + b // Addition\na - b // Substraction\na * b // Multiplication\na / b // Division\na % b // Modulo",
+            "text": "Defined for  int  and  float  // Binary\na + b // Addition\na - b // Substraction\na * b // Multiplication\na / b // Division\na % b // Modulo\n\n// Unary\na++   // Postfix increment\n++a   // Prefix increment\na--   // Postfix decrement\n--a   // Prefix decrement\n\n// Assignment\na += b\na -= b",
             "title": "Arithmetics"
         },
         {
@@ -62,12 +62,12 @@
         },
         {
             "location": "/nsref.basics/#equality",
-            "text": "Defined for  bool ,  int  and  float  bool c = a is b     // Equal\nbool c = a is not b // Not Equal\nbool c = a isnot b  // Not Equal (equiv.)",
+            "text": "Defined for  bool ,  int  and  float  bool c = a is b     // Equal\nbool c = a == b     // Equal (equiv.)\n\nbool c = a is not b // Not Equal\nbool c = a isnot b  // Not Equal (equiv.)\nbool c = a != b     // Not Equal (equiv.)",
             "title": "Equality"
         },
         {
             "location": "/nsref.basics/#logic",
-            "text": "Defined for  bool  only  bool c = a and b // And\nbool c = a or b  // Or\nbool c = not a   // Not",
+            "text": "Defined for  bool  only  bool c = a and b // And\nbool c = a && b  // And (equiv.)\n\nbool c = a or b  // Or\nbool c = a || b  // Or (equiv.)\n\nbool c = not a   // Not\nbool c = !a      // Not (equiv.)",
             "title": "Logic"
         },
         {
@@ -199,6 +199,66 @@
             "location": "/stemp.spawner/#example-one-every-60s-v2",
             "text": "Stops after spawning  10  out int burst = 0\nint time = 0\nint count = 0\nloop:\n    burst = 0\n    time = time + game->time.dt\n    if time >= 60 then\n        burst = 1\n        count = count + 1\n    end\n\n    if count >= 10 then\n        [exit]\n    end\nend",
             "title": "Example: One every 60s v2"
+        },
+        {
+            "location": "/commands.game/",
+            "text": "Developpers Commands\n\n\nfly\n\n\nSwitch flycam mode on and off\n\n\nfly\n\n\n\narchetype\n\n\nLoad an archetype \nmyArchetype\n on the player. This a path to JSon.\n\n\narchetype myArchetype\n\n\n\nrespawn\n\n\nRespawn the player to last respawn point\n\n\nrespawn\n\n\n\nzombie\n\n\nEnable or disable the zombie mode\n\n\nzombie [on|off]",
+            "title": "Game"
+        },
+        {
+            "location": "/commands.game/#developpers-commands",
+            "text": "",
+            "title": "Developpers Commands"
+        },
+        {
+            "location": "/commands.game/#fly",
+            "text": "Switch flycam mode on and off  fly",
+            "title": "fly"
+        },
+        {
+            "location": "/commands.game/#archetype",
+            "text": "Load an archetype  myArchetype  on the player. This a path to JSon.  archetype myArchetype",
+            "title": "archetype"
+        },
+        {
+            "location": "/commands.game/#respawn",
+            "text": "Respawn the player to last respawn point  respawn",
+            "title": "respawn"
+        },
+        {
+            "location": "/commands.game/#zombie",
+            "text": "Enable or disable the zombie mode  zombie [on|off]",
+            "title": "zombie"
+        },
+        {
+            "location": "/commands.dev/",
+            "text": "Developpers Commands\n\n\ndatabase\n\n\ndatabase [flush | reload] [--all]\n\n\n\nflush\n Flush from the database\n\n\nreload\n Reload into the database\n\n\n--all\n Apply operation to all known data tree\n\n\nExamples\n\n\ndatabase flush --all  // flush all\ndatabase reload --all // reload all\n\n\n\nnu\n\n\nnu [dump [--irtree|--ircode|--parsetree|--symbols] [--all] [programName]]\n\n\n\ndump\n Dump program info\n\n\n--irtree\n Dump IR Tree (AST)\n\n\n--ircode\n Dump IR Code\n\n\n--parsetree\n Dump parse tree\n\n\n--symbols\n Dump debug symbols\n\n\n--all\n Apply dump to all programs\n\n\nExamples\n\n\nnu dump --ircode --all               // dump ir code of all programs\nnu dump --irtree --parsetree --all   // dump IR tree and parse tree of all programs\nnu dump --irtree \"MyFile/MyProgram\"  // dump IR tree of MyProgram located in MyFile.ns",
+            "title": "Dev"
+        },
+        {
+            "location": "/commands.dev/#developpers-commands",
+            "text": "",
+            "title": "Developpers Commands"
+        },
+        {
+            "location": "/commands.dev/#database",
+            "text": "database [flush | reload] [--all]  flush  Flush from the database  reload  Reload into the database  --all  Apply operation to all known data tree",
+            "title": "database"
+        },
+        {
+            "location": "/commands.dev/#examples",
+            "text": "database flush --all  // flush all\ndatabase reload --all // reload all",
+            "title": "Examples"
+        },
+        {
+            "location": "/commands.dev/#nu",
+            "text": "nu [dump [--irtree|--ircode|--parsetree|--symbols] [--all] [programName]]  dump  Dump program info  --irtree  Dump IR Tree (AST)  --ircode  Dump IR Code  --parsetree  Dump parse tree  --symbols  Dump debug symbols  --all  Apply dump to all programs",
+            "title": "nu"
+        },
+        {
+            "location": "/commands.dev/#examples_1",
+            "text": "nu dump --ircode --all               // dump ir code of all programs\nnu dump --irtree --parsetree --all   // dump IR tree and parse tree of all programs\nnu dump --irtree \"MyFile/MyProgram\"  // dump IR tree of MyProgram located in MyFile.ns",
+            "title": "Examples"
         },
         {
             "location": "/gameData/gameObject/",
