@@ -447,7 +447,7 @@
         },
         {
             "location": "/gameData/spawner/",
-            "text": "spawner\n\n\nVariables\n\n\nspawner.time\n\n\nfloat spawner.time\n\n\nUndocumented\n\n\nStats\n\n\nMessage",
+            "text": "spawner\n\n\nVariables\n\n\nspawner.local\n\n\nbool spawner.local\n\n\nWhether the spawned object is attached to this object.\n\n\nspawner.descriptor\n\n\nstring spawner.descriptor\n\n\nDescriptor to spawn. \n            If starts with \ndata:\n the rest will be interpreted as a json path\n            if starts with \nprefab:\n it's a name of a registered prefab\n            by default it's a prefab.\n\n\nspawner.script\n\n\nstring spawner.script\n\n\nScript that runs continuously to spawn over time.\n\n\nStats\n\n\nMessage\n\n\nspawner.burst\n\n\n(void)spawner.burst:(int)count\n\nSpawn several units.\n\n\nArguments\n\n\nint count\n: Amount to spawn.\n\n\nReturns\n\n\nN/A\n\n\nspawner.spawn\n\n\n(void)spawner.spawn\n\nUndocumented\n\n\nspawner.reset\n\n\n(void)spawner.reset\n\nUndocumented",
             "title": "spawner"
         },
         {
@@ -461,9 +461,19 @@
             "title": "Variables"
         },
         {
-            "location": "/gameData/spawner/#spawnertime",
-            "text": "float spawner.time  Undocumented",
-            "title": "spawner.time"
+            "location": "/gameData/spawner/#spawnerlocal",
+            "text": "bool spawner.local  Whether the spawned object is attached to this object.",
+            "title": "spawner.local"
+        },
+        {
+            "location": "/gameData/spawner/#spawnerdescriptor",
+            "text": "string spawner.descriptor  Descriptor to spawn. \n            If starts with  data:  the rest will be interpreted as a json path\n            if starts with  prefab:  it's a name of a registered prefab\n            by default it's a prefab.",
+            "title": "spawner.descriptor"
+        },
+        {
+            "location": "/gameData/spawner/#spawnerscript",
+            "text": "string spawner.script  Script that runs continuously to spawn over time.",
+            "title": "spawner.script"
         },
         {
             "location": "/gameData/spawner/#stats",
@@ -474,6 +484,31 @@
             "location": "/gameData/spawner/#message",
             "text": "",
             "title": "Message"
+        },
+        {
+            "location": "/gameData/spawner/#spawnerburst",
+            "text": "(void)spawner.burst:(int)count \nSpawn several units.",
+            "title": "spawner.burst"
+        },
+        {
+            "location": "/gameData/spawner/#arguments",
+            "text": "int count : Amount to spawn.",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/spawner/#returns",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/spawner/#spawnerspawn",
+            "text": "(void)spawner.spawn \nUndocumented",
+            "title": "spawner.spawn"
+        },
+        {
+            "location": "/gameData/spawner/#spawnerreset",
+            "text": "(void)spawner.reset \nUndocumented",
+            "title": "spawner.reset"
         },
         {
             "location": "/gameData/Character/",

@@ -448,8 +448,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#spawnertime" title="spawner.time" class="md-nav__link">
-    spawner.time
+  <a href="#spawnerlocal" title="spawner.local" class="md-nav__link">
+    spawner.local
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spawnerdescriptor" title="spawner.descriptor" class="md-nav__link">
+    spawner.descriptor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spawnerscript" title="spawner.script" class="md-nav__link">
+    spawner.script
   </a>
   
 </li>
@@ -470,6 +484,53 @@
   <a href="#message" title="Message" class="md-nav__link">
     Message
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spawnerburst" title="spawner.burst" class="md-nav__link">
+    spawner.burst
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments" title="Arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns" title="Returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spawnerspawn" title="spawner.spawn" class="md-nav__link">
+    spawner.spawn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spawnerreset" title="spawner.reset" class="md-nav__link">
+    spawner.reset
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -600,8 +661,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#spawnertime" title="spawner.time" class="md-nav__link">
-    spawner.time
+  <a href="#spawnerlocal" title="spawner.local" class="md-nav__link">
+    spawner.local
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spawnerdescriptor" title="spawner.descriptor" class="md-nav__link">
+    spawner.descriptor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spawnerscript" title="spawner.script" class="md-nav__link">
+    spawner.script
   </a>
   
 </li>
@@ -623,6 +698,53 @@
     Message
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spawnerburst" title="spawner.burst" class="md-nav__link">
+    spawner.burst
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments" title="Arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns" title="Returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spawnerspawn" title="spawner.spawn" class="md-nav__link">
+    spawner.spawn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spawnerreset" title="spawner.reset" class="md-nav__link">
+    spawner.reset
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -642,11 +764,33 @@
                 
                 <h1 id="spawner">spawner</h1>
 <h2 id="variables">Variables</h2>
-<h3 id="spawnertime">spawner.time</h3>
-<p><code>float spawner.time</code></p>
-<p>Undocumented</p>
+<h3 id="spawnerlocal">spawner.local</h3>
+<p><code>bool spawner.local</code></p>
+<p>Whether the spawned object is attached to this object.</p>
+<h3 id="spawnerdescriptor">spawner.descriptor</h3>
+<p><code>string spawner.descriptor</code></p>
+<p>Descriptor to spawn. 
+            If starts with <code>data:</code> the rest will be interpreted as a json path
+            if starts with <code>prefab:</code> it's a name of a registered prefab
+            by default it's a prefab.</p>
+<h3 id="spawnerscript">spawner.script</h3>
+<p><code>string spawner.script</code></p>
+<p>Script that runs continuously to spawn over time.</p>
 <h2 id="stats">Stats</h2>
 <h2 id="message">Message</h2>
+<h3 id="spawnerburst">spawner.burst</h3>
+<p><code>(void)spawner.burst:(int)count</code>
+Spawn several units.</p>
+<h4 id="arguments">Arguments</h4>
+<p><code>int count</code>: Amount to spawn.</p>
+<h4 id="returns">Returns</h4>
+<p>N/A</p>
+<h3 id="spawnerspawn">spawner.spawn</h3>
+<p><code>(void)spawner.spawn</code>
+Undocumented</p>
+<h3 id="spawnerreset">spawner.reset</h3>
+<p><code>(void)spawner.reset</code>
+Undocumented</p>
                 
                   
                 
