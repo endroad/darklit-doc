@@ -447,7 +447,7 @@
         },
         {
             "location": "/gameData/spawner/",
-            "text": "spawner\n\n\nVariables\n\n\nspawner.local\n\n\nbool spawner.local\n\n\nWhether the spawned object is attached to this object.\n\n\nspawner.descriptor\n\n\nstring spawner.descriptor\n\n\nDescriptor to spawn. \n            If starts with \ndata:\n the rest will be interpreted as a json path\n            if starts with \nprefab:\n it's a name of a registered prefab\n            by default it's a prefab.\n\n\nspawner.script\n\n\nstring spawner.script\n\n\nScript that runs continuously to spawn over time.\n\n\nStats\n\n\nMessage\n\n\nspawner.burst\n\n\n(void)spawner.burst:(int)count\n\nSpawn several units.\n\n\nArguments\n\n\nint count\n: Amount to spawn.\n\n\nReturns\n\n\nN/A\n\n\nspawner.spawn\n\n\n(void)spawner.spawn\n\nUndocumented\n\n\nspawner.reset\n\n\n(void)spawner.reset\n\nUndocumented",
+            "text": "spawner\n\n\nVariables\n\n\nspawner.local\n\n\nbool spawner.local\n\n\nWhether or not the spawn is local to\n            the current entity.\n\n\nspawner.descriptor\n\n\nstring spawner.descriptor\n\n\nDescriptor to spawn. \n            If starts with \ndata:\n the rest will be interpreted as a json path\n            if starts with \nprefab:\n it's a name of a registered prefab\n            by default it's a prefab.\n\n\nspawner.script\n\n\nstring spawner.script\n\n\nScript that runs continuously to spawn over time.\n\n\nStats\n\n\nMessage\n\n\nspawner.burst\n\n\n(void)spawner.burst:(int)count\n\nSpawn several item.\n\n\nArguments\n\n\nint count\n: Amount to spawn.\n\n\nReturns\n\n\nN/A\n\n\nspawner.spawn\n\n\n(void)spawner.spawn\n\nUndocumented\n\n\nspawner.reset\n\n\n(void)spawner.reset\n\nUndocumented",
             "title": "spawner"
         },
         {
@@ -462,7 +462,7 @@
         },
         {
             "location": "/gameData/spawner/#spawnerlocal",
-            "text": "bool spawner.local  Whether the spawned object is attached to this object.",
+            "text": "bool spawner.local  Whether or not the spawn is local to\n            the current entity.",
             "title": "spawner.local"
         },
         {
@@ -487,7 +487,7 @@
         },
         {
             "location": "/gameData/spawner/#spawnerburst",
-            "text": "(void)spawner.burst:(int)count \nSpawn several units.",
+            "text": "(void)spawner.burst:(int)count \nSpawn several item.",
             "title": "spawner.burst"
         },
         {
