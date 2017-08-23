@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-08-17</lastmod>
+     <lastmod>2017-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,19 +13,19 @@
         
     <url>
      <loc>/nsref.basics/</loc>
-     <lastmod>2017-08-17</lastmod>
+     <lastmod>2017-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/nsref.ext/</loc>
-     <lastmod>2017-08-17</lastmod>
+     <lastmod>2017-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/nsref.beh/</loc>
-     <lastmod>2017-08-17</lastmod>
+     <lastmod>2017-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -35,19 +35,25 @@
         
     <url>
      <loc>/stemp.cond/</loc>
-     <lastmod>2017-08-17</lastmod>
+     <lastmod>2017-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/stemp.effect/</loc>
-     <lastmod>2017-08-17</lastmod>
+     <lastmod>2017-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/stemp.beh/</loc>
-     <lastmod>2017-08-17</lastmod>
+     <lastmod>2017-08-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/stemp.spawner/</loc>
+     <lastmod>2017-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -56,74 +62,96 @@
     
         
     <url>
+     <loc>/commands.game/</loc>
+     <lastmod>2017-08-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/commands.dev/</loc>
+     <lastmod>2017-08-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/gameData/gameObject/</loc>
+     <lastmod>2017-08-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/gameData/net/</loc>
+     <lastmod>2017-08-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/gameData/time/</loc>
+     <lastmod>2017-08-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/gameData/transform/</loc>
+     <lastmod>2017-08-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/gameData/__vmtest/</loc>
-     <lastmod>2017-08-17</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/gameData/CreatureBrain/</loc>
-     <lastmod>2017-08-17</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/gameData/Explode/</loc>
-     <lastmod>2017-08-17</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/gameData/Idle/</loc>
-     <lastmod>2017-08-17</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/gameData/MoveOnLine/</loc>
-     <lastmod>2017-08-17</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/gameData/Turn180/</loc>
-     <lastmod>2017-08-17</lastmod>
+     <lastmod>2017-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/spawner/</loc>
-     <lastmod>2017-08-17</lastmod>
+     <lastmod>2017-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/Character/</loc>
-     <lastmod>2017-08-17</lastmod>
+     <lastmod>2017-08-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/gameData/brain/</loc>
+     <lastmod>2017-08-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/gameData/legs/</loc>
+     <lastmod>2017-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/Health/</loc>
-     <lastmod>2017-08-17</lastmod>
+     <lastmod>2017-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/Oxygen/</loc>
-     <lastmod>2017-08-17</lastmod>
+     <lastmod>2017-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/Stamina/</loc>
-     <lastmod>2017-08-17</lastmod>
+     <lastmod>2017-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/World/</loc>
-     <lastmod>2017-08-17</lastmod>
+     <lastmod>2017-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

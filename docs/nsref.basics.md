@@ -32,9 +32,18 @@ side using a specific name. To make the link from C# to NuSpeak you need to decl
 
 > To know more about entity usage see the script templates or consult your local programmer.
 
-#### This
+#### Reserved
 
-The entity `this` (or `self`) is always defined and linked to the entity running the NuSpeak script.
+Some keyword are reserved by the language and/or the GameData framework to allow quick & easy access
+entities that are common.
+
+| Entity Name | Usage |
+|-------------|-------|
+|`this` | The entity running the script. |
+|`self` | Same as `this` |
+|`game` | The global game entity containing some useful generic stuff |
+
+The **entities** above are always defined and usable in any script.
 
 ## Operators
 
@@ -42,11 +51,22 @@ The entity `this` (or `self`) is always defined and linked to the entity running
 
 Defined for `int` and `float`
 
+    // Binary
     a + b // Addition
     a - b // Substraction
     a * b // Multiplication
     a / b // Division
     a % b // Modulo
+
+    // Unary
+    a++   // Postfix increment
+    ++a   // Prefix increment
+    a--   // Postfix decrement
+    --a   // Prefix decrement
+
+    // Assignment
+    a += b
+    a -= b
 
 ### Relations
 
@@ -62,16 +82,24 @@ Defined for `int` and `float`
 Defined for `bool`, `int` and `float`
 
     bool c = a is b     // Equal
+    bool c = a == b     // Equal (equiv.)
+
     bool c = a is not b // Not Equal
     bool c = a isnot b  // Not Equal (equiv.)
+    bool c = a != b     // Not Equal (equiv.)
 
 ### Logic
 
 Defined for `bool` only
 
     bool c = a and b // And
+    bool c = a && b  // And (equiv.)
+
     bool c = a or b  // Or
+    bool c = a || b  // Or (equiv.)
+
     bool c = not a   // Not
+    bool c = !a      // Not (equiv.)
 
 ## Conditions
 

@@ -14,9 +14,9 @@ Undocumented
 `(float)__vmtest.mySubstractionMessage:(int)a b:(float)b `
 Hello Workd
 #### Arguments
-`int a`:Some usage
+`int a`: Some usage
 
-`float b`:Some other
+`float b`: Some other
 
 #### Returns
 Some last

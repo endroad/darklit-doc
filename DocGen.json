@@ -12,7 +12,11 @@
     "- Script Templates:",
     "    - Condition: 'stemp.cond.md'",
     "    - Effect: 'stemp.effect.md'",
-    "    - Behaviour: 'stemp.beh.md'"
+    "    - Behaviour: 'stemp.beh.md'",
+    "    - Spawner: 'stemp.spawner.md'",
+    "- Commands :",
+    "    - Game: 'commands.game.md'",
+    "    - Dev: 'commands.dev.md'"
   ],
   "other": [
     "extra:",

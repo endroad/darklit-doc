@@ -10,15 +10,20 @@ pages:
     - Condition: 'stemp.cond.md'
     - Effect: 'stemp.effect.md'
     - Behaviour: 'stemp.beh.md'
+    - Spawner: 'stemp.spawner.md'
+- Commands :
+    - Game: 'commands.game.md'
+    - Dev: 'commands.dev.md'
 - Game Data:
+    - gameObject: gameData/gameObject.md
+    - net: gameData/net.md
+    - time: gameData/time.md
+    - transform: gameData/transform.md
     - __vmtest: gameData/__vmtest.md
-    - CreatureBrain: gameData/CreatureBrain.md
-    - Explode: gameData/Explode.md
-    - Idle: gameData/Idle.md
-    - MoveOnLine: gameData/MoveOnLine.md
-    - Turn180: gameData/Turn180.md
     - spawner: gameData/spawner.md
     - Character: gameData/Character.md
+    - brain: gameData/brain.md
+    - legs: gameData/legs.md
     - Health: gameData/Health.md
     - Oxygen: gameData/Oxygen.md
     - Stamina: gameData/Stamina.md
