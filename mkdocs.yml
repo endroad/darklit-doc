@@ -23,10 +23,14 @@ pages:
     - spawner: gameData/spawner.md
     - Character: gameData/Character.md
     - brain: gameData/brain.md
+    - weakness: gameData/weakness.md
     - legs: gameData/legs.md
-    - Health: gameData/Health.md
+    - aoe: gameData/aoe.md
+    - throw: gameData/throw.md
+    - health: gameData/health.md
     - Oxygen: gameData/Oxygen.md
-    - Stamina: gameData/Stamina.md
+    - stamina: gameData/stamina.md
+    - Wieldable: gameData/Wieldable.md
     - World: gameData/World.md
 extra:
   palette:

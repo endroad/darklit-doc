@@ -10,8 +10,8 @@ Whether the creature is stopped or not
 
 Moving speed.
 ## Message
-### legs.MoveForward
-`(void)legs.MoveForward`
+### legs.MoveRight
+`(void)legs.MoveRight`
 Undocumented
 ### legs.Turn
 `(void)legs.Turn:(float)angle `

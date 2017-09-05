@@ -182,12 +182,12 @@
         },
         {
             "location": "/stemp.spawner/",
-            "text": "Spawner Template\n\n\nSpawner is executed every frame while the program \nyield\n (that is inside a loop or after \n[yield]\n instructions).\nIt requires the amount of item to spawn.\n\n\n\n\n\n\n\n\nI/O\n\n\nType\n\n\nName\n\n\nComments\n\n\n\n\n\n\n\n\n\n\nout\n\n\nint\n\n\nburst\n\n\nNumber of object to spawn\n\n\n\n\n\n\n\n\nExample: One every 60s\n\n\nout int burst = 0\nint time = 0\nloop:\n    burst = 0\n    time = time + game->time.dt\n    if time >= 60 then\n        burst = 1\n    end\nend\n\n\n\nExample: One every 60s v2\n\n\nStops after spawning \n10\n\n\nout int burst = 0\nint time = 0\nint count = 0\nloop:\n    burst = 0\n    time = time + game->time.dt\n    if time >= 60 then\n        burst = 1\n        count = count + 1\n    end\n\n    if count >= 10 then\n        [exit]\n    end\nend",
+            "text": "Spawner Template\n\n\nSpawner is executed every frame while the program \nyield\n (that is inside a loop or after \n[yield]\n instructions).\nIt requires the amount of item to spawn.\n\n\n\n\n\n\n\n\nI/O\n\n\nType\n\n\nName\n\n\nComments\n\n\n\n\n\n\n\n\n\n\nout\n\n\nint\n\n\nburst\n\n\nNumber of object to spawn\n\n\n\n\n\n\nout\n\n\nfloat\n\n\nprogress\n\n\nFeedback the progression of the spawning process between 0 and 1. The value is then used on jauges or progress bars to show spawning advancement\n\n\n\n\n\n\n\n\nExample: One every 60s\n\n\nout int burst = 0\nint time = 0\nloop:\n    burst = 0\n    time = time + game->time.dt\n    if time >= 60 then\n        burst = 1\n    end\nend\n\n\n\nExample: One every 60s v2\n\n\nStops after spawning \n10\n\n\nout int burst = 0\nint time = 0\nint count = 0\nloop:\n    burst = 0\n    time = time + game->time.dt\n    if time >= 60 then\n        burst = 1\n        count = count + 1\n    end\n\n    if count >= 10 then\n        [exit]\n    end\nend",
             "title": "Spawner"
         },
         {
             "location": "/stemp.spawner/#spawner-template",
-            "text": "Spawner is executed every frame while the program  yield  (that is inside a loop or after  [yield]  instructions).\nIt requires the amount of item to spawn.     I/O  Type  Name  Comments      out  int  burst  Number of object to spawn",
+            "text": "Spawner is executed every frame while the program  yield  (that is inside a loop or after  [yield]  instructions).\nIt requires the amount of item to spawn.     I/O  Type  Name  Comments      out  int  burst  Number of object to spawn    out  float  progress  Feedback the progression of the spawning process between 0 and 1. The value is then used on jauges or progress bars to show spawning advancement",
             "title": "Spawner Template"
         },
         {
@@ -262,7 +262,7 @@
         },
         {
             "location": "/gameData/gameObject/",
-            "text": "gameObject\n\n\nVariables\n\n\ngameObject.isActive\n\n\nbool gameObject.isActive\n\n\nReturns if the object is active.\n\n\ngameObject.isActiveInHierarchy\n\n\nbool gameObject.isActiveInHierarchy\n\n\nIs the GameObject active in the scene?\n\n\nStats\n\n\nMessage",
+            "text": "gameObject\n\n\nVariables\n\n\ngameObject.isActive\n\n\nbool gameObject.isActive\n\n\nReturns if the object is active.\n\n\ngameObject.isActiveInHierarchy\n\n\nbool gameObject.isActiveInHierarchy\n\n\nIs the GameObject active in the scene?\n\n\nStats\n\n\nMessage\n\n\ngameObject.destroyWithDelay\n\n\n(void)gameObject.destroyWithDelay:(float)delay\n\nDestroy with a specific delay.\n\n\nArguments\n\n\nfloat delay\n: Duration in second to wait before destroying\n\n\nReturns\n\n\nN/A\n\n\ngameObject.destroy\n\n\n(void)gameObject.destroy\n\nUndocumented",
             "title": "gameObject"
         },
         {
@@ -294,6 +294,26 @@
             "location": "/gameData/gameObject/#message",
             "text": "",
             "title": "Message"
+        },
+        {
+            "location": "/gameData/gameObject/#gameobjectdestroywithdelay",
+            "text": "(void)gameObject.destroyWithDelay:(float)delay \nDestroy with a specific delay.",
+            "title": "gameObject.destroyWithDelay"
+        },
+        {
+            "location": "/gameData/gameObject/#arguments",
+            "text": "float delay : Duration in second to wait before destroying",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/gameObject/#returns",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/gameObject/#gameobjectdestroy",
+            "text": "(void)gameObject.destroy \nUndocumented",
+            "title": "gameObject.destroy"
         },
         {
             "location": "/gameData/net/",
@@ -447,7 +467,7 @@
         },
         {
             "location": "/gameData/spawner/",
-            "text": "spawner\n\n\nVariables\n\n\nspawner.time\n\n\nfloat spawner.time\n\n\nUndocumented\n\n\nStats\n\n\nMessage",
+            "text": "spawner\n\n\nVariables\n\n\nspawner.local\n\n\nbool spawner.local\n\n\nWhether or not the spawn is local to\n            the current entity.\n\n\nspawner.descriptor\n\n\nstring spawner.descriptor\n\n\nDescriptor to spawn.\n            If starts with \ndata:\n the rest will be interpreted as a json path\n            if starts with \nprefab:\n it's a name of a registered prefab\n            by default it's a prefab.\n\n\nspawner.script\n\n\nstring spawner.script\n\n\nScript that runs continuously to spawn over time.\n\n\nStats\n\n\nMessage\n\n\nspawner.burst\n\n\n(void)spawner.burst:(int)count\n\nSpawn several item.\n\n\nArguments\n\n\nint count\n: Amount to spawn.\n\n\nReturns\n\n\nN/A\n\n\nspawner.spawn\n\n\n(void)spawner.spawn\n\nUndocumented\n\n\nspawner.reset\n\n\n(void)spawner.reset\n\nUndocumented",
             "title": "spawner"
         },
         {
@@ -461,9 +481,19 @@
             "title": "Variables"
         },
         {
-            "location": "/gameData/spawner/#spawnertime",
-            "text": "float spawner.time  Undocumented",
-            "title": "spawner.time"
+            "location": "/gameData/spawner/#spawnerlocal",
+            "text": "bool spawner.local  Whether or not the spawn is local to\n            the current entity.",
+            "title": "spawner.local"
+        },
+        {
+            "location": "/gameData/spawner/#spawnerdescriptor",
+            "text": "string spawner.descriptor  Descriptor to spawn.\n            If starts with  data:  the rest will be interpreted as a json path\n            if starts with  prefab:  it's a name of a registered prefab\n            by default it's a prefab.",
+            "title": "spawner.descriptor"
+        },
+        {
+            "location": "/gameData/spawner/#spawnerscript",
+            "text": "string spawner.script  Script that runs continuously to spawn over time.",
+            "title": "spawner.script"
         },
         {
             "location": "/gameData/spawner/#stats",
@@ -474,6 +504,31 @@
             "location": "/gameData/spawner/#message",
             "text": "",
             "title": "Message"
+        },
+        {
+            "location": "/gameData/spawner/#spawnerburst",
+            "text": "(void)spawner.burst:(int)count \nSpawn several item.",
+            "title": "spawner.burst"
+        },
+        {
+            "location": "/gameData/spawner/#arguments",
+            "text": "int count : Amount to spawn.",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/spawner/#returns",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/spawner/#spawnerspawn",
+            "text": "(void)spawner.spawn \nUndocumented",
+            "title": "spawner.spawn"
+        },
+        {
+            "location": "/gameData/spawner/#spawnerreset",
+            "text": "(void)spawner.reset \nUndocumented",
+            "title": "spawner.reset"
         },
         {
             "location": "/gameData/Character/",
@@ -546,8 +601,38 @@
             "title": "Message"
         },
         {
+            "location": "/gameData/weakness/",
+            "text": "weakness\n\n\nVariables\n\n\nweakness.vulnerable\n\n\nbool weakness.vulnerable\n\n\nUndocumented\n\n\nStats\n\n\nMessage",
+            "title": "weakness"
+        },
+        {
+            "location": "/gameData/weakness/#weakness",
+            "text": "",
+            "title": "weakness"
+        },
+        {
+            "location": "/gameData/weakness/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/weakness/#weaknessvulnerable",
+            "text": "bool weakness.vulnerable  Undocumented",
+            "title": "weakness.vulnerable"
+        },
+        {
+            "location": "/gameData/weakness/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/weakness/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
             "location": "/gameData/legs/",
-            "text": "legs\n\n\nVariables\n\n\nlegs.isStopped\n\n\nbool legs.isStopped\n\n\nWhether the creature is stopped or not\n\n\nStats\n\n\nlegs.speed\n\n\nfloat legs.speed\n\n\nMoving speed.\n\n\nMessage\n\n\nlegs.MoveForward\n\n\n(void)legs.MoveForward\n\nUndocumented\n\n\nlegs.Turn\n\n\n(void)legs.Turn:(float)angle\n\nTurns the facing direction of @angle degrees\n\n\nArguments\n\n\nfloat angle\n: \n\n\nReturns\n\n\nN/A\n\n\nlegs.Stop\n\n\n(void)legs.Stop\n\nUndocumented\n\n\nlegs.Resume\n\n\n(void)legs.Resume\n\nUndocumented",
+            "text": "legs\n\n\nVariables\n\n\nlegs.isStopped\n\n\nbool legs.isStopped\n\n\nWhether the creature is stopped or not\n\n\nStats\n\n\nlegs.speed\n\n\nfloat legs.speed\n\n\nMoving speed.\n\n\nMessage\n\n\nlegs.MoveRight\n\n\n(void)legs.MoveRight\n\nUndocumented\n\n\nlegs.Turn\n\n\n(void)legs.Turn:(float)angle\n\nTurns the facing direction of @angle degrees\n\n\nArguments\n\n\nfloat angle\n: \n\n\nReturns\n\n\nN/A\n\n\nlegs.Stop\n\n\n(void)legs.Stop\n\nUndocumented\n\n\nlegs.Resume\n\n\n(void)legs.Resume\n\nUndocumented",
             "title": "legs"
         },
         {
@@ -581,9 +666,9 @@
             "title": "Message"
         },
         {
-            "location": "/gameData/legs/#legsmoveforward",
-            "text": "(void)legs.MoveForward \nUndocumented",
-            "title": "legs.MoveForward"
+            "location": "/gameData/legs/#legsmoveright",
+            "text": "(void)legs.MoveRight \nUndocumented",
+            "title": "legs.MoveRight"
         },
         {
             "location": "/gameData/legs/#legsturn",
@@ -611,79 +696,204 @@
             "title": "legs.Resume"
         },
         {
-            "location": "/gameData/Health/",
-            "text": "Health\n\n\nVariables\n\n\nHealth.Current\n\n\nint Health.Current\n\n\nUndocumented\n\n\nStats\n\n\nHealth.Regen\n\n\nfloat Health.Regen\n\n\nUndocumented\n\n\nHealth.Capacity\n\n\nfloat Health.Capacity\n\n\nUndocumented\n\n\nMessage\n\n\nHealth.Damage\n\n\n(void)Health.Damage:(int)amount\n\nApply damages: remove the amount.\n\n\nArguments\n\n\nint amount\n: Amount of damages to apply.\n\n\nReturns\n\n\nN/A\n\n\nHealth.Burst\n\n\n(bool)Health.Burst:(float)amount\n\nTry to remove a value.\n\n\nArguments\n\n\nfloat amount\n: Amount to remove\n\n\nReturns\n\n\nTrue if succeeded to remove (that is there's enough quantity to remove).\n\n\nHealth.Recover\n\n\n(void)Health.Recover:(int)amount\n\nUndocumented",
-            "title": "Health"
+            "location": "/gameData/aoe/",
+            "text": "aoe\n\n\nVariables\n\n\naoe.radius\n\n\nfloat aoe.radius\n\n\nRadius of area.\n\n\naoe.autoStart\n\n\nbool aoe.autoStart\n\n\nWhethever or not the AoE start running on Start.\n            If \nfalse\n you would have to call \nrun\n yourself.\n\n\naoe.isRunning\n\n\nbool aoe.isRunning\n\n\nWhether the area is running or not.\n\n\naoe.descriptor\n\n\nstring aoe.descriptor\n\n\nDescriptor of AoE to run. \n            It's a json path. \n            If changed it will restart the AoE\n\n\naoe.update\n\n\nstring aoe.update\n\n\nUpdate script that runs continuously while AOE is running.\n\n\naoe.effect\n\n\nstring aoe.effect\n\n\nUpdate script that runs continuously to spawn over time.\n\n\nStats\n\n\nMessage\n\n\naoe.run\n\n\n(void)aoe.run\n\nUndocumented\n\n\naoe.resume\n\n\n(void)aoe.resume\n\nUndocumented\n\n\naoe.stop\n\n\n(void)aoe.stop\n\nUndocumented",
+            "title": "aoe"
         },
         {
-            "location": "/gameData/Health/#health",
+            "location": "/gameData/aoe/#aoe",
             "text": "",
-            "title": "Health"
+            "title": "aoe"
         },
         {
-            "location": "/gameData/Health/#variables",
+            "location": "/gameData/aoe/#variables",
             "text": "",
             "title": "Variables"
         },
         {
-            "location": "/gameData/Health/#healthcurrent",
-            "text": "int Health.Current  Undocumented",
-            "title": "Health.Current"
+            "location": "/gameData/aoe/#aoeradius",
+            "text": "float aoe.radius  Radius of area.",
+            "title": "aoe.radius"
         },
         {
-            "location": "/gameData/Health/#stats",
+            "location": "/gameData/aoe/#aoeautostart",
+            "text": "bool aoe.autoStart  Whethever or not the AoE start running on Start.\n            If  false  you would have to call  run  yourself.",
+            "title": "aoe.autoStart"
+        },
+        {
+            "location": "/gameData/aoe/#aoeisrunning",
+            "text": "bool aoe.isRunning  Whether the area is running or not.",
+            "title": "aoe.isRunning"
+        },
+        {
+            "location": "/gameData/aoe/#aoedescriptor",
+            "text": "string aoe.descriptor  Descriptor of AoE to run. \n            It's a json path. \n            If changed it will restart the AoE",
+            "title": "aoe.descriptor"
+        },
+        {
+            "location": "/gameData/aoe/#aoeupdate",
+            "text": "string aoe.update  Update script that runs continuously while AOE is running.",
+            "title": "aoe.update"
+        },
+        {
+            "location": "/gameData/aoe/#aoeeffect",
+            "text": "string aoe.effect  Update script that runs continuously to spawn over time.",
+            "title": "aoe.effect"
+        },
+        {
+            "location": "/gameData/aoe/#stats",
             "text": "",
             "title": "Stats"
         },
         {
-            "location": "/gameData/Health/#healthregen",
-            "text": "float Health.Regen  Undocumented",
-            "title": "Health.Regen"
-        },
-        {
-            "location": "/gameData/Health/#healthcapacity",
-            "text": "float Health.Capacity  Undocumented",
-            "title": "Health.Capacity"
-        },
-        {
-            "location": "/gameData/Health/#message",
+            "location": "/gameData/aoe/#message",
             "text": "",
             "title": "Message"
         },
         {
-            "location": "/gameData/Health/#healthdamage",
-            "text": "(void)Health.Damage:(int)amount \nApply damages: remove the amount.",
-            "title": "Health.Damage"
+            "location": "/gameData/aoe/#aoerun",
+            "text": "(void)aoe.run \nUndocumented",
+            "title": "aoe.run"
         },
         {
-            "location": "/gameData/Health/#arguments",
+            "location": "/gameData/aoe/#aoeresume",
+            "text": "(void)aoe.resume \nUndocumented",
+            "title": "aoe.resume"
+        },
+        {
+            "location": "/gameData/aoe/#aoestop",
+            "text": "(void)aoe.stop \nUndocumented",
+            "title": "aoe.stop"
+        },
+        {
+            "location": "/gameData/throw/",
+            "text": "throw\n\n\nVariables\n\n\nthrow.strengh\n\n\nfloat throw.strengh\n\n\nUndocumented\n\n\nthrow.angle\n\n\nfloat throw.angle\n\n\nUndocumented\n\n\nthrow.gravity\n\n\nbool throw.gravity\n\n\nUndocumented\n\n\nthrow.drag\n\n\nfloat throw.drag\n\n\nUndocumented\n\n\nthrow.use\n\n\nbool throw.use\n\n\nUndocumented\n\n\nStats\n\n\nMessage\n\n\nthrow.throw\n\n\n(void)throw.throw\n\nUndocumented",
+            "title": "throw"
+        },
+        {
+            "location": "/gameData/throw/#throw",
+            "text": "",
+            "title": "throw"
+        },
+        {
+            "location": "/gameData/throw/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/throw/#throwstrengh",
+            "text": "float throw.strengh  Undocumented",
+            "title": "throw.strengh"
+        },
+        {
+            "location": "/gameData/throw/#throwangle",
+            "text": "float throw.angle  Undocumented",
+            "title": "throw.angle"
+        },
+        {
+            "location": "/gameData/throw/#throwgravity",
+            "text": "bool throw.gravity  Undocumented",
+            "title": "throw.gravity"
+        },
+        {
+            "location": "/gameData/throw/#throwdrag",
+            "text": "float throw.drag  Undocumented",
+            "title": "throw.drag"
+        },
+        {
+            "location": "/gameData/throw/#throwuse",
+            "text": "bool throw.use  Undocumented",
+            "title": "throw.use"
+        },
+        {
+            "location": "/gameData/throw/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/throw/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/throw/#throwthrow",
+            "text": "(void)throw.throw \nUndocumented",
+            "title": "throw.throw"
+        },
+        {
+            "location": "/gameData/health/",
+            "text": "health\n\n\nVariables\n\n\nhealth.current\n\n\nint health.current\n\n\nThe current state of the bar, ergo, how many points you have for that stat\n\n\nStats\n\n\nhealth.rate\n\n\nfloat health.rate\n\n\nGame Stat that affect the bar over time, \n            positive Regen is a continuous recover\n            negative is meant for continuous damage\n\n\nhealth.capacity\n\n\nfloat health.capacity\n\n\nGame Stat that affect the total number of points for that stat\n\n\nMessage\n\n\nhealth.damage\n\n\n(void)health.damage:(int)amount\n\nApply damages: remove the amount.\n\n\nArguments\n\n\nint amount\n: Amount of damages to apply.\n\n\nReturns\n\n\nN/A\n\n\nhealth.burst\n\n\n(bool)health.burst:(float)amount\n\nTry to remove a value.\n\n\nArguments\n\n\nfloat amount\n: Amount to remove\n\n\nReturns\n\n\nTrue if succeeded to remove (that is there's enough quantity to remove).\n\n\nhealth.recover\n\n\n(void)health.recover:(int)amount\n\nUndocumented",
+            "title": "health"
+        },
+        {
+            "location": "/gameData/health/#health",
+            "text": "",
+            "title": "health"
+        },
+        {
+            "location": "/gameData/health/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/health/#healthcurrent",
+            "text": "int health.current  The current state of the bar, ergo, how many points you have for that stat",
+            "title": "health.current"
+        },
+        {
+            "location": "/gameData/health/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/health/#healthrate",
+            "text": "float health.rate  Game Stat that affect the bar over time, \n            positive Regen is a continuous recover\n            negative is meant for continuous damage",
+            "title": "health.rate"
+        },
+        {
+            "location": "/gameData/health/#healthcapacity",
+            "text": "float health.capacity  Game Stat that affect the total number of points for that stat",
+            "title": "health.capacity"
+        },
+        {
+            "location": "/gameData/health/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/health/#healthdamage",
+            "text": "(void)health.damage:(int)amount \nApply damages: remove the amount.",
+            "title": "health.damage"
+        },
+        {
+            "location": "/gameData/health/#arguments",
             "text": "int amount : Amount of damages to apply.",
             "title": "Arguments"
         },
         {
-            "location": "/gameData/Health/#returns",
+            "location": "/gameData/health/#returns",
             "text": "N/A",
             "title": "Returns"
         },
         {
-            "location": "/gameData/Health/#healthburst",
-            "text": "(bool)Health.Burst:(float)amount \nTry to remove a value.",
-            "title": "Health.Burst"
+            "location": "/gameData/health/#healthburst",
+            "text": "(bool)health.burst:(float)amount \nTry to remove a value.",
+            "title": "health.burst"
         },
         {
-            "location": "/gameData/Health/#arguments_1",
+            "location": "/gameData/health/#arguments_1",
             "text": "float amount : Amount to remove",
             "title": "Arguments"
         },
         {
-            "location": "/gameData/Health/#returns_1",
+            "location": "/gameData/health/#returns_1",
             "text": "True if succeeded to remove (that is there's enough quantity to remove).",
             "title": "Returns"
         },
         {
-            "location": "/gameData/Health/#healthrecover",
-            "text": "(void)Health.Recover:(int)amount \nUndocumented",
-            "title": "Health.Recover"
+            "location": "/gameData/health/#healthrecover",
+            "text": "(void)health.recover:(int)amount \nUndocumented",
+            "title": "health.recover"
         },
         {
             "location": "/gameData/Oxygen/",
@@ -711,83 +921,113 @@
             "title": "Message"
         },
         {
-            "location": "/gameData/Stamina/",
-            "text": "Stamina\n\n\nVariables\n\n\nStamina.Current\n\n\nint Stamina.Current\n\n\nUndocumented\n\n\nStats\n\n\nStamina.Regen\n\n\nfloat Stamina.Regen\n\n\nUndocumented\n\n\nStamina.Capacity\n\n\nfloat Stamina.Capacity\n\n\nUndocumented\n\n\nMessage\n\n\nStamina.Damage\n\n\n(void)Stamina.Damage:(int)amount\n\nApply damages: remove the amount.\n\n\nArguments\n\n\nint amount\n: Amount of damages to apply.\n\n\nReturns\n\n\nN/A\n\n\nStamina.Burst\n\n\n(bool)Stamina.Burst:(float)amount\n\nTry to remove a value.\n\n\nArguments\n\n\nfloat amount\n: Amount to remove\n\n\nReturns\n\n\nTrue if succeeded to remove (that is there's enough quantity to remove).\n\n\nStamina.Recover\n\n\n(void)Stamina.Recover:(int)amount\n\nUndocumented",
-            "title": "Stamina"
+            "location": "/gameData/stamina/",
+            "text": "stamina\n\n\nVariables\n\n\nstamina.current\n\n\nint stamina.current\n\n\nThe current state of the bar, ergo, how many points you have for that stat\n\n\nStats\n\n\nstamina.rate\n\n\nfloat stamina.rate\n\n\nGame Stat that affect the bar over time, \n            positive Regen is a continuous recover\n            negative is meant for continuous damage\n\n\nstamina.capacity\n\n\nfloat stamina.capacity\n\n\nGame Stat that affect the total number of points for that stat\n\n\nMessage\n\n\nstamina.damage\n\n\n(void)stamina.damage:(int)amount\n\nApply damages: remove the amount.\n\n\nArguments\n\n\nint amount\n: Amount of damages to apply.\n\n\nReturns\n\n\nN/A\n\n\nstamina.burst\n\n\n(bool)stamina.burst:(float)amount\n\nTry to remove a value.\n\n\nArguments\n\n\nfloat amount\n: Amount to remove\n\n\nReturns\n\n\nTrue if succeeded to remove (that is there's enough quantity to remove).\n\n\nstamina.recover\n\n\n(void)stamina.recover:(int)amount\n\nUndocumented",
+            "title": "stamina"
         },
         {
-            "location": "/gameData/Stamina/#stamina",
+            "location": "/gameData/stamina/#stamina",
             "text": "",
-            "title": "Stamina"
+            "title": "stamina"
         },
         {
-            "location": "/gameData/Stamina/#variables",
+            "location": "/gameData/stamina/#variables",
             "text": "",
             "title": "Variables"
         },
         {
-            "location": "/gameData/Stamina/#staminacurrent",
-            "text": "int Stamina.Current  Undocumented",
-            "title": "Stamina.Current"
+            "location": "/gameData/stamina/#staminacurrent",
+            "text": "int stamina.current  The current state of the bar, ergo, how many points you have for that stat",
+            "title": "stamina.current"
         },
         {
-            "location": "/gameData/Stamina/#stats",
+            "location": "/gameData/stamina/#stats",
             "text": "",
             "title": "Stats"
         },
         {
-            "location": "/gameData/Stamina/#staminaregen",
-            "text": "float Stamina.Regen  Undocumented",
-            "title": "Stamina.Regen"
+            "location": "/gameData/stamina/#staminarate",
+            "text": "float stamina.rate  Game Stat that affect the bar over time, \n            positive Regen is a continuous recover\n            negative is meant for continuous damage",
+            "title": "stamina.rate"
         },
         {
-            "location": "/gameData/Stamina/#staminacapacity",
-            "text": "float Stamina.Capacity  Undocumented",
-            "title": "Stamina.Capacity"
+            "location": "/gameData/stamina/#staminacapacity",
+            "text": "float stamina.capacity  Game Stat that affect the total number of points for that stat",
+            "title": "stamina.capacity"
         },
         {
-            "location": "/gameData/Stamina/#message",
+            "location": "/gameData/stamina/#message",
             "text": "",
             "title": "Message"
         },
         {
-            "location": "/gameData/Stamina/#staminadamage",
-            "text": "(void)Stamina.Damage:(int)amount \nApply damages: remove the amount.",
-            "title": "Stamina.Damage"
+            "location": "/gameData/stamina/#staminadamage",
+            "text": "(void)stamina.damage:(int)amount \nApply damages: remove the amount.",
+            "title": "stamina.damage"
         },
         {
-            "location": "/gameData/Stamina/#arguments",
+            "location": "/gameData/stamina/#arguments",
             "text": "int amount : Amount of damages to apply.",
             "title": "Arguments"
         },
         {
-            "location": "/gameData/Stamina/#returns",
+            "location": "/gameData/stamina/#returns",
             "text": "N/A",
             "title": "Returns"
         },
         {
-            "location": "/gameData/Stamina/#staminaburst",
-            "text": "(bool)Stamina.Burst:(float)amount \nTry to remove a value.",
-            "title": "Stamina.Burst"
+            "location": "/gameData/stamina/#staminaburst",
+            "text": "(bool)stamina.burst:(float)amount \nTry to remove a value.",
+            "title": "stamina.burst"
         },
         {
-            "location": "/gameData/Stamina/#arguments_1",
+            "location": "/gameData/stamina/#arguments_1",
             "text": "float amount : Amount to remove",
             "title": "Arguments"
         },
         {
-            "location": "/gameData/Stamina/#returns_1",
+            "location": "/gameData/stamina/#returns_1",
             "text": "True if succeeded to remove (that is there's enough quantity to remove).",
             "title": "Returns"
         },
         {
-            "location": "/gameData/Stamina/#staminarecover",
-            "text": "(void)Stamina.Recover:(int)amount \nUndocumented",
-            "title": "Stamina.Recover"
+            "location": "/gameData/stamina/#staminarecover",
+            "text": "(void)stamina.recover:(int)amount \nUndocumented",
+            "title": "stamina.recover"
+        },
+        {
+            "location": "/gameData/Wieldable/",
+            "text": "Wieldable\n\n\nVariables\n\n\nWieldable.tag\n\n\nstring Wieldable.tag\n\n\nthe tag from wich the wieldable will be wielded by an entity, \n            exemple : \"hand\" means the wieldable will be set on the slot \"hand\" on entity (if it has one)\n\n\nStats\n\n\nMessage",
+            "title": "Wieldable"
+        },
+        {
+            "location": "/gameData/Wieldable/#wieldable",
+            "text": "",
+            "title": "Wieldable"
+        },
+        {
+            "location": "/gameData/Wieldable/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/Wieldable/#wieldabletag",
+            "text": "string Wieldable.tag  the tag from wich the wieldable will be wielded by an entity, \n            exemple : \"hand\" means the wieldable will be set on the slot \"hand\" on entity (if it has one)",
+            "title": "Wieldable.tag"
+        },
+        {
+            "location": "/gameData/Wieldable/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/Wieldable/#message",
+            "text": "",
+            "title": "Message"
         },
         {
             "location": "/gameData/World/",
-            "text": "World\n\n\nVariables\n\n\nWorld.HasGround\n\n\nbool World.HasGround\n\n\nWhether has a ground under.\n\n\nWorld.HasWallLeft\n\n\nbool World.HasWallLeft\n\n\nCheck if has a wall on left.\n\n\nWorld.HasWallRight\n\n\nbool World.HasWallRight\n\n\nHas wall on the right.\n\n\nWorld.ceil\n\n\nbool World.ceil\n\n\nHas ceiling.\n\n\nStats\n\n\nMessage",
+            "text": "World\n\n\nVariables\n\n\nWorld.ground\n\n\nbool World.ground\n\n\nWhether has a ground under.\n\n\nWorld.wallLeft\n\n\nbool World.wallLeft\n\n\nCheck if has a wall on left.\n\n\nWorld.wallRight\n\n\nbool World.wallRight\n\n\nHas wall on the right.\n\n\nWorld.ceil\n\n\nbool World.ceil\n\n\nHas ceiling.\n\n\nStats\n\n\nMessage",
             "title": "World"
         },
         {
@@ -801,19 +1041,19 @@
             "title": "Variables"
         },
         {
-            "location": "/gameData/World/#worldhasground",
-            "text": "bool World.HasGround  Whether has a ground under.",
-            "title": "World.HasGround"
+            "location": "/gameData/World/#worldground",
+            "text": "bool World.ground  Whether has a ground under.",
+            "title": "World.ground"
         },
         {
-            "location": "/gameData/World/#worldhaswallleft",
-            "text": "bool World.HasWallLeft  Check if has a wall on left.",
-            "title": "World.HasWallLeft"
+            "location": "/gameData/World/#worldwallleft",
+            "text": "bool World.wallLeft  Check if has a wall on left.",
+            "title": "World.wallLeft"
         },
         {
-            "location": "/gameData/World/#worldhaswallright",
-            "text": "bool World.HasWallRight  Has wall on the right.",
-            "title": "World.HasWallRight"
+            "location": "/gameData/World/#worldwallright",
+            "text": "bool World.wallRight  Has wall on the right.",
+            "title": "World.wallRight"
         },
         {
             "location": "/gameData/World/#worldceil",

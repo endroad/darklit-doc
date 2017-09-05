@@ -10,4 +10,15 @@ Returns if the object is active.
 Is the GameObject active in the scene?
 ## Stats
 ## Message
+### gameObject.destroyWithDelay
+`(void)gameObject.destroyWithDelay:(float)delay `
+Destroy with a specific delay.
+#### Arguments
+`float delay`: Duration in second to wait before destroying
+
+#### Returns
+N/A
+### gameObject.destroy
+`(void)gameObject.destroy`
+Undocumented
 

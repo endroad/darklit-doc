@@ -1,15 +1,15 @@
 # World
 ## Variables
-### World.HasGround
-`bool World.HasGround`
+### World.ground
+`bool World.ground`
 
 Whether has a ground under.
-### World.HasWallLeft
-`bool World.HasWallLeft`
+### World.wallLeft
+`bool World.wallLeft`
 
 Check if has a wall on left.
-### World.HasWallRight
-`bool World.HasWallRight`
+### World.wallRight
+`bool World.wallRight`
 
 Has wall on the right.
 ### World.ceil
