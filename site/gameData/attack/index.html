@@ -16,7 +16,7 @@
     
     
       
-        <title>brain - Darklit</title>
+        <title>attack - Darklit</title>
       
     
     
@@ -79,7 +79,7 @@
                 </span>
               
             
-            brain
+            attack
           
         </span>
       </div>
@@ -423,11 +423,87 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../attack/" title="attack" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        attack
+      </label>
+    
+    <a href="./" title="attack" class="md-nav__link md-nav__link--active">
       attack
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#variables" title="Variables" class="md-nav__link">
+    Variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stats" title="Stats" class="md-nav__link">
+    Stats
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attackdamage" title="attack.damage" class="md-nav__link">
+    attack.damage
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message" title="Message" class="md-nav__link">
+    Message
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attackhit" title="attack.hit" class="md-nav__link">
+    attack.hit
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -447,81 +523,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        brain
-      </label>
-    
-    <a href="./" title="brain" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../brain/" title="brain" class="md-nav__link">
       brain
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#variables" title="Variables" class="md-nav__link">
-    Variables
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#brainplayerdist" title="brain.playerDist" class="md-nav__link">
-    brain.playerDist
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#brainbestattack" title="brain.bestAttack" class="md-nav__link">
-    brain.bestAttack
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stats" title="Stats" class="md-nav__link">
-    Stats
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#message" title="Message" class="md-nav__link">
-    Message
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -663,19 +669,19 @@
     Variables
   </a>
   
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stats" title="Stats" class="md-nav__link">
+    Stats
+  </a>
+  
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#brainplayerdist" title="brain.playerDist" class="md-nav__link">
-    brain.playerDist
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#brainbestattack" title="brain.bestAttack" class="md-nav__link">
-    brain.bestAttack
+  <a href="#attackdamage" title="attack.damage" class="md-nav__link">
+    attack.damage
   </a>
   
 </li>
@@ -686,16 +692,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#stats" title="Stats" class="md-nav__link">
-    Stats
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#message" title="Message" class="md-nav__link">
     Message
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attackhit" title="attack.hit" class="md-nav__link">
+    attack.hit
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -714,16 +726,16 @@
               
                 
                 
-                <h1 id="brain">brain</h1>
+                <h1 id="attack">attack</h1>
 <h2 id="variables">Variables</h2>
-<h3 id="brainplayerdist">brain.playerDist</h3>
-<p><code>float brain.playerDist</code></p>
-<p>Distance to closest player.</p>
-<h3 id="brainbestattack">brain.bestAttack</h3>
-<p><code>int brain.bestAttack</code></p>
-<p>Undocumented</p>
 <h2 id="stats">Stats</h2>
+<h3 id="attackdamage">attack.damage</h3>
+<p><code>float attack.damage</code></p>
+<p>Undocumented</p>
 <h2 id="message">Message</h2>
+<h3 id="attackhit">attack.hit</h3>
+<p><code>(void)attack.hit:(int)id</code>
+Undocumented</p>
                 
                   
                 
@@ -742,7 +754,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../Character/" title="Character" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../spawner/" title="spawner" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -751,19 +763,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Character
+                spawner
               </span>
             </div>
           </a>
         
         
-          <a href="../weakness/" title="weakness" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../Character/" title="Character" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                weakness
+                Character
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

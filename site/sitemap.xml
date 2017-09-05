@@ -114,6 +114,12 @@
     </url>
         
     <url>
+     <loc>/gameData/attack/</loc>
+     <lastmod>2017-09-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/gameData/Character/</loc>
      <lastmod>2017-09-05</lastmod>
      <changefreq>daily</changefreq>

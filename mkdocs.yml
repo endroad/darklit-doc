@@ -21,6 +21,7 @@ pages:
     - transform: gameData/transform.md
     - __vmtest: gameData/__vmtest.md
     - spawner: gameData/spawner.md
+    - attack: gameData/attack.md
     - Character: gameData/Character.md
     - brain: gameData/brain.md
     - weakness: gameData/weakness.md
