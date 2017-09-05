@@ -531,6 +531,41 @@
             "title": "spawner.reset"
         },
         {
+            "location": "/gameData/attack/",
+            "text": "attack\n\n\nVariables\n\n\nStats\n\n\nattack.damage\n\n\nfloat attack.damage\n\n\nUndocumented\n\n\nMessage\n\n\nattack.hit\n\n\n(void)attack.hit:(int)id\n\nUndocumented",
+            "title": "attack"
+        },
+        {
+            "location": "/gameData/attack/#attack",
+            "text": "",
+            "title": "attack"
+        },
+        {
+            "location": "/gameData/attack/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/attack/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/attack/#attackdamage",
+            "text": "float attack.damage  Undocumented",
+            "title": "attack.damage"
+        },
+        {
+            "location": "/gameData/attack/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/attack/#attackhit",
+            "text": "(void)attack.hit:(int)id \nUndocumented",
+            "title": "attack.hit"
+        },
+        {
             "location": "/gameData/Character/",
             "text": "Character\n\n\nVariables\n\n\nCharacter.Crouch_LateralSpeed\n\n\nfloat Character.Crouch_LateralSpeed\n\n\nUndocumented\n\n\nStats\n\n\nCharacter.Motion\n\n\nfloat Character.Motion\n\n\nUndocumented\n\n\nCharacter.Damage\n\n\nfloat Character.Damage\n\n\nUndocumented\n\n\nMessage",
             "title": "Character"
@@ -572,7 +607,7 @@
         },
         {
             "location": "/gameData/brain/",
-            "text": "brain\n\n\nVariables\n\n\nbrain.playerDist\n\n\nfloat brain.playerDist\n\n\nDistance to closest player.\n\n\nStats\n\n\nMessage",
+            "text": "brain\n\n\nVariables\n\n\nbrain.playerDist\n\n\nfloat brain.playerDist\n\n\nDistance to closest player.\n\n\nbrain.bestAttack\n\n\nint brain.bestAttack\n\n\nUndocumented\n\n\nStats\n\n\nMessage",
             "title": "brain"
         },
         {
@@ -589,6 +624,11 @@
             "location": "/gameData/brain/#brainplayerdist",
             "text": "float brain.playerDist  Distance to closest player.",
             "title": "brain.playerDist"
+        },
+        {
+            "location": "/gameData/brain/#brainbestattack",
+            "text": "int brain.bestAttack  Undocumented",
+            "title": "brain.bestAttack"
         },
         {
             "location": "/gameData/brain/#stats",
