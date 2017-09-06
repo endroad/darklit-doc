@@ -361,6 +361,66 @@
             "title": "Message"
         },
         {
+            "location": "/gameData/random/",
+            "text": "random\n\n\nVariables\n\n\nrandom.value\n\n\nfloat random.value\n\n\nget a random float value between 0 and 1\n\n\nStats\n\n\nMessage\n\n\nrandom.range\n\n\n(float)random.range:(float)min max:(float)max\n\nget a random float value between min and max\n\n\nArguments\n\n\nfloat min\n: minimal float value\n\n\nfloat max\n: maximal float value\n\n\nReturns\n\n\nreturn the random float\n\n\nrandom.rangeInt\n\n\n(int)random.rangeInt:(int)min max:(int)max\n\nsame as range but with integers\n\n\nArguments\n\n\nint min\n: minimal int value (inclusive)\n\n\nint max\n: maximal int value (also inclusive)\n\n\nReturns\n\n\nreturn the random integer",
+            "title": "random"
+        },
+        {
+            "location": "/gameData/random/#random",
+            "text": "",
+            "title": "random"
+        },
+        {
+            "location": "/gameData/random/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/random/#randomvalue",
+            "text": "float random.value  get a random float value between 0 and 1",
+            "title": "random.value"
+        },
+        {
+            "location": "/gameData/random/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/random/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/random/#randomrange",
+            "text": "(float)random.range:(float)min max:(float)max \nget a random float value between min and max",
+            "title": "random.range"
+        },
+        {
+            "location": "/gameData/random/#arguments",
+            "text": "float min : minimal float value  float max : maximal float value",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/random/#returns",
+            "text": "return the random float",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/random/#randomrangeint",
+            "text": "(int)random.rangeInt:(int)min max:(int)max \nsame as range but with integers",
+            "title": "random.rangeInt"
+        },
+        {
+            "location": "/gameData/random/#arguments_1",
+            "text": "int min : minimal int value (inclusive)  int max : maximal int value (also inclusive)",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/random/#returns_1",
+            "text": "return the random integer",
+            "title": "Returns"
+        },
+        {
             "location": "/gameData/time/",
             "text": "time\n\n\nVariables\n\n\ntime.dt\n\n\nfloat time.dt\n\n\nTime interval since last frame.\n\n\nStats\n\n\nMessage",
             "title": "time"
@@ -607,7 +667,7 @@
         },
         {
             "location": "/gameData/brain/",
-            "text": "brain\n\n\nVariables\n\n\nbrain.playerDist\n\n\nfloat brain.playerDist\n\n\nDistance to closest player.\n\n\nbrain.bestAttack\n\n\nint brain.bestAttack\n\n\nUndocumented\n\n\nStats\n\n\nMessage",
+            "text": "brain\n\n\nVariables\n\n\nbrain.settings\n\n\nint brain.settings\n\n\nFlag int that defines brain settings, to use a flag int, just sum all the options you want for the setting and set it as the code\n            exemple : target sane and alive : 1 + 4 = 5\n                TargetCharSane = 1;\n                TargetCharInsane = 2;\n                TargetAlive = 4;\n                TargetDead = 8;\n\n\nbrain.playerDist\n\n\nfloat brain.playerDist\n\n\nDistance to closest player.\n\n\nbrain.playerFront\n\n\nfloat brain.playerFront\n\n\nDot to closest player. 1 is in front of brain -1 is back\n\n\nbrain.bestAttack\n\n\nint brain.bestAttack\n\n\nUndocumented\n\n\nStats\n\n\nMessage",
             "title": "brain"
         },
         {
@@ -621,9 +681,19 @@
             "title": "Variables"
         },
         {
+            "location": "/gameData/brain/#brainsettings",
+            "text": "int brain.settings  Flag int that defines brain settings, to use a flag int, just sum all the options you want for the setting and set it as the code\n            exemple : target sane and alive : 1 + 4 = 5\n                TargetCharSane = 1;\n                TargetCharInsane = 2;\n                TargetAlive = 4;\n                TargetDead = 8;",
+            "title": "brain.settings"
+        },
+        {
             "location": "/gameData/brain/#brainplayerdist",
             "text": "float brain.playerDist  Distance to closest player.",
             "title": "brain.playerDist"
+        },
+        {
+            "location": "/gameData/brain/#brainplayerfront",
+            "text": "float brain.playerFront  Dot to closest player. 1 is in front of brain -1 is back",
+            "title": "brain.playerFront"
         },
         {
             "location": "/gameData/brain/#brainbestattack",

@@ -377,6 +377,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../random/" title="random" class="md-nav__link">
+      random
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../time/" title="time" class="md-nav__link">
       time
     </a>
@@ -484,8 +496,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#brainsettings" title="brain.settings" class="md-nav__link">
+    brain.settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#brainplayerdist" title="brain.playerDist" class="md-nav__link">
     brain.playerDist
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#brainplayerfront" title="brain.playerFront" class="md-nav__link">
+    brain.playerFront
   </a>
   
 </li>
@@ -667,8 +693,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#brainsettings" title="brain.settings" class="md-nav__link">
+    brain.settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#brainplayerdist" title="brain.playerDist" class="md-nav__link">
     brain.playerDist
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#brainplayerfront" title="brain.playerFront" class="md-nav__link">
+    brain.playerFront
   </a>
   
 </li>
@@ -716,9 +756,20 @@
                 
                 <h1 id="brain">brain</h1>
 <h2 id="variables">Variables</h2>
+<h3 id="brainsettings">brain.settings</h3>
+<p><code>int brain.settings</code></p>
+<p>Flag int that defines brain settings, to use a flag int, just sum all the options you want for the setting and set it as the code
+            exemple : target sane and alive : 1 + 4 = 5
+                TargetCharSane = 1;
+                TargetCharInsane = 2;
+                TargetAlive = 4;
+                TargetDead = 8;</p>
 <h3 id="brainplayerdist">brain.playerDist</h3>
 <p><code>float brain.playerDist</code></p>
 <p>Distance to closest player.</p>
+<h3 id="brainplayerfront">brain.playerFront</h3>
+<p><code>float brain.playerFront</code></p>
+<p>Dot to closest player. 1 is in front of brain -1 is back</p>
 <h3 id="brainbestattack">brain.bestAttack</h3>
 <p><code>int brain.bestAttack</code></p>
 <p>Undocumented</p>
