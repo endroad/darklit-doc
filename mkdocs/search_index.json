@@ -667,7 +667,7 @@
         },
         {
             "location": "/gameData/brain/",
-            "text": "brain\n\n\nVariables\n\n\nbrain.settings\n\n\nint brain.settings\n\n\nFlag int that defines brain settings, to use a flag int, just sum all the options you want for the setting and set it as the code\n            exemple : target sane and alive : 1 + 4 = 5\n                TargetCharSane = 1;\n                TargetCharInsane = 2;\n                TargetAlive = 4;\n                TargetDead = 8;\n\n\nbrain.playerDist\n\n\nfloat brain.playerDist\n\n\nDistance to closest player.\n\n\nbrain.playerFront\n\n\nfloat brain.playerFront\n\n\nDot to closest player. 1 is in front of brain -1 is back\n\n\nbrain.bestAttack\n\n\nint brain.bestAttack\n\n\nUndocumented\n\n\nStats\n\n\nMessage",
+            "text": "brain\n\n\nVariables\n\n\nbrain.settings\n\n\nint brain.settings\n\n\nFlag int that defines brain settings, to use a flag int, just sum all the options you want for the setting and set it as the code\n\n\n        exemple : the target must be sane and alive, ergo we exclude the insanes and the dead : 2 + 8 = 10\n\n        *ExcludeSane = 1;\n        *ExcludeInsane = 2;\n        *ExcludeAlive = 4;\n        *ExcludeDead = 8;\n\n\n\nbrain.playerDist\n\n\nfloat brain.playerDist\n\n\nDistance to closest player.\n\n\nbrain.playerFront\n\n\nfloat brain.playerFront\n\n\nDot to closest player. 1 is in front of brain -1 is back\n\n\nbrain.bestAttack\n\n\nint brain.bestAttack\n\n\nGet an identifier to the best attack processed by the brain, you may the use this value to trigger an attack on the attack gamedata\n\n\nStats\n\n\nMessage",
             "title": "brain"
         },
         {
@@ -682,7 +682,7 @@
         },
         {
             "location": "/gameData/brain/#brainsettings",
-            "text": "int brain.settings  Flag int that defines brain settings, to use a flag int, just sum all the options you want for the setting and set it as the code\n            exemple : target sane and alive : 1 + 4 = 5\n                TargetCharSane = 1;\n                TargetCharInsane = 2;\n                TargetAlive = 4;\n                TargetDead = 8;",
+            "text": "int brain.settings  Flag int that defines brain settings, to use a flag int, just sum all the options you want for the setting and set it as the code          exemple : the target must be sane and alive, ergo we exclude the insanes and the dead : 2 + 8 = 10\n\n        *ExcludeSane = 1;\n        *ExcludeInsane = 2;\n        *ExcludeAlive = 4;\n        *ExcludeDead = 8;",
             "title": "brain.settings"
         },
         {
@@ -697,7 +697,7 @@
         },
         {
             "location": "/gameData/brain/#brainbestattack",
-            "text": "int brain.bestAttack  Undocumented",
+            "text": "int brain.bestAttack  Get an identifier to the best attack processed by the brain, you may the use this value to trigger an attack on the attack gamedata",
             "title": "brain.bestAttack"
         },
         {
@@ -932,7 +932,7 @@
         },
         {
             "location": "/gameData/health/",
-            "text": "health\n\n\nVariables\n\n\nhealth.current\n\n\nint health.current\n\n\nThe current state of the bar, ergo, how many points you have for that stat\n\n\nStats\n\n\nhealth.rate\n\n\nfloat health.rate\n\n\nGame Stat that affect the bar over time, \n            positive Regen is a continuous recover\n            negative is meant for continuous damage\n\n\nhealth.capacity\n\n\nfloat health.capacity\n\n\nGame Stat that affect the total number of points for that stat\n\n\nMessage\n\n\nhealth.damage\n\n\n(void)health.damage:(int)amount\n\nApply damages: remove the amount.\n\n\nArguments\n\n\nint amount\n: Amount of damages to apply.\n\n\nReturns\n\n\nN/A\n\n\nhealth.burst\n\n\n(bool)health.burst:(float)amount\n\nTry to remove a value.\n\n\nArguments\n\n\nfloat amount\n: Amount to remove\n\n\nReturns\n\n\nTrue if succeeded to remove (that is there's enough quantity to remove).\n\n\nhealth.recover\n\n\n(void)health.recover:(int)amount\n\nUndocumented",
+            "text": "health\n\n\nVariables\n\n\nhealth.current\n\n\nint health.current\n\n\nThe current state of the bar, ergo, how many points you have for that stat\n\n\nStats\n\n\nhealth.rate\n\n\nfloat health.rate\n\n\nGame Stat that affect the bar over time, \n            positive Regen is a continuous recover\n            negative is meant for continuous damage\n\n\nhealth.capacity\n\n\nfloat health.capacity\n\n\nGame Stat that affect the total number of points for that stat\n\n\nMessage\n\n\nhealth.damage\n\n\n(void)health.damage:(int)amount\n\nApply damages: remove the amount.\n\n\nArguments\n\n\nint amount\n: Amount of damages to apply.\n\n\nReturns\n\n\nN/A\n\n\nhealth.burst\n\n\n(bool)health.burst:(float)amount\n\nTry to remove a value.\n\n\nArguments\n\n\nfloat amount\n: Amount to remove\n\n\nReturns\n\n\nTrue if succeeded to remove (that is there's enough quantity to remove).\n\n\nhealth.recover\n\n\n(void)health.recover:(int)amount\n\nRecover the stat by the amount specified\n\n\nArguments\n\n\nint amount\n: amount to recover\n\n\nReturns\n\n\nN/A",
             "title": "health"
         },
         {
@@ -1002,8 +1002,18 @@
         },
         {
             "location": "/gameData/health/#healthrecover",
-            "text": "(void)health.recover:(int)amount \nUndocumented",
+            "text": "(void)health.recover:(int)amount \nRecover the stat by the amount specified",
             "title": "health.recover"
+        },
+        {
+            "location": "/gameData/health/#arguments_2",
+            "text": "int amount : amount to recover",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/health/#returns_2",
+            "text": "N/A",
+            "title": "Returns"
         },
         {
             "location": "/gameData/Oxygen/",
@@ -1032,7 +1042,7 @@
         },
         {
             "location": "/gameData/stamina/",
-            "text": "stamina\n\n\nVariables\n\n\nstamina.current\n\n\nint stamina.current\n\n\nThe current state of the bar, ergo, how many points you have for that stat\n\n\nStats\n\n\nstamina.rate\n\n\nfloat stamina.rate\n\n\nGame Stat that affect the bar over time, \n            positive Regen is a continuous recover\n            negative is meant for continuous damage\n\n\nstamina.capacity\n\n\nfloat stamina.capacity\n\n\nGame Stat that affect the total number of points for that stat\n\n\nMessage\n\n\nstamina.damage\n\n\n(void)stamina.damage:(int)amount\n\nApply damages: remove the amount.\n\n\nArguments\n\n\nint amount\n: Amount of damages to apply.\n\n\nReturns\n\n\nN/A\n\n\nstamina.burst\n\n\n(bool)stamina.burst:(float)amount\n\nTry to remove a value.\n\n\nArguments\n\n\nfloat amount\n: Amount to remove\n\n\nReturns\n\n\nTrue if succeeded to remove (that is there's enough quantity to remove).\n\n\nstamina.recover\n\n\n(void)stamina.recover:(int)amount\n\nUndocumented",
+            "text": "stamina\n\n\nVariables\n\n\nstamina.current\n\n\nint stamina.current\n\n\nThe current state of the bar, ergo, how many points you have for that stat\n\n\nStats\n\n\nstamina.rate\n\n\nfloat stamina.rate\n\n\nGame Stat that affect the bar over time, \n            positive Regen is a continuous recover\n            negative is meant for continuous damage\n\n\nstamina.capacity\n\n\nfloat stamina.capacity\n\n\nGame Stat that affect the total number of points for that stat\n\n\nMessage\n\n\nstamina.damage\n\n\n(void)stamina.damage:(int)amount\n\nApply damages: remove the amount.\n\n\nArguments\n\n\nint amount\n: Amount of damages to apply.\n\n\nReturns\n\n\nN/A\n\n\nstamina.burst\n\n\n(bool)stamina.burst:(float)amount\n\nTry to remove a value.\n\n\nArguments\n\n\nfloat amount\n: Amount to remove\n\n\nReturns\n\n\nTrue if succeeded to remove (that is there's enough quantity to remove).\n\n\nstamina.recover\n\n\n(void)stamina.recover:(int)amount\n\nRecover the stat by the amount specified\n\n\nArguments\n\n\nint amount\n: amount to recover\n\n\nReturns\n\n\nN/A",
             "title": "stamina"
         },
         {
@@ -1102,8 +1112,18 @@
         },
         {
             "location": "/gameData/stamina/#staminarecover",
-            "text": "(void)stamina.recover:(int)amount \nUndocumented",
+            "text": "(void)stamina.recover:(int)amount \nRecover the stat by the amount specified",
             "title": "stamina.recover"
+        },
+        {
+            "location": "/gameData/stamina/#arguments_2",
+            "text": "int amount : amount to recover",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/stamina/#returns_2",
+            "text": "N/A",
+            "title": "Returns"
         },
         {
             "location": "/gameData/Wieldable/",
