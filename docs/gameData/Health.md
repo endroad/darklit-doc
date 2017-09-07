@@ -34,5 +34,10 @@ Try to remove a value.
 True if succeeded to remove (that is there's enough quantity to remove).
 ### health.recover
 `(void)health.recover:(int)amount `
-Undocumented
+Recover the stat by the amount specified
+#### Arguments
+`int amount`: amount to recover
+
+#### Returns
+N/A
 
