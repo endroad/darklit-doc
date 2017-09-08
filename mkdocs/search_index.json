@@ -667,7 +667,7 @@
         },
         {
             "location": "/gameData/brain/",
-            "text": "brain\n\n\nVariables\n\n\nbrain.settings\n\n\nint brain.settings\n\n\nFlag int that defines brain settings, to use a flag int, just sum all the options you want for the setting and set it as the code\n\n\n        exemple : the target must be sane and alive, ergo we exclude the insanes and the dead : 2 + 8 = 10\n\n        *ExcludeSane = 1;\n        *ExcludeInsane = 2;\n        *ExcludeAlive = 4;\n        *ExcludeDead = 8;\n\n\n\nbrain.playerDist\n\n\nfloat brain.playerDist\n\n\nDistance to closest player.\n\n\nbrain.playerFront\n\n\nfloat brain.playerFront\n\n\nDot to closest player. 1 is in front of brain -1 is back\n\n\nbrain.bestAttack\n\n\nint brain.bestAttack\n\n\nGet an identifier to the best attack processed by the brain, you may the use this value to trigger an attack on the attack gamedata\n\n\nStats\n\n\nMessage",
+            "text": "brain\n\n\nVariables\n\n\nbrain.settings\n\n\nint brain.settings\n\n\nFlag int that defines brain settings, to use a flag int, just sum all the options you want for the setting and set it as the code\n\n\n        exemple : the target must be sane and alive, ergo we exclude the insanes and the dead : 2 + 8 = 10\n\n        *ExcludeSane = 1;\n        *ExcludeInsane = 2;\n        *ExcludeAlive = 4;\n        *ExcludeDead = 8;\n\n\n\nbrain.playerDist\n\n\nfloat brain.playerDist\n\n\nDistance to closest player.\n\n\nbrain.playerFront\n\n\nfloat brain.playerFront\n\n\nDot to closest player. 1 is in front of brain -1 is back\n\n\nbrain.playerLateral\n\n\nfloat brain.playerLateral\n\n\nDistance to closest player on the lateral axis. Meaning how far on the left or the right\n\n\nbrain.playerVertical\n\n\nfloat brain.playerVertical\n\n\nDistance to closest player on the vertical axis. Positive is above, negative is below\n\n\nbrain.bestAttack\n\n\nint brain.bestAttack\n\n\nGet an identifier to the best attack processed by the brain, you may the use this value to trigger an attack on the attack gamedata\n\n\nStats\n\n\nMessage",
             "title": "brain"
         },
         {
@@ -694,6 +694,16 @@
             "location": "/gameData/brain/#brainplayerfront",
             "text": "float brain.playerFront  Dot to closest player. 1 is in front of brain -1 is back",
             "title": "brain.playerFront"
+        },
+        {
+            "location": "/gameData/brain/#brainplayerlateral",
+            "text": "float brain.playerLateral  Distance to closest player on the lateral axis. Meaning how far on the left or the right",
+            "title": "brain.playerLateral"
+        },
+        {
+            "location": "/gameData/brain/#brainplayervertical",
+            "text": "float brain.playerVertical  Distance to closest player on the vertical axis. Positive is above, negative is below",
+            "title": "brain.playerVertical"
         },
         {
             "location": "/gameData/brain/#brainbestattack",
@@ -1157,7 +1167,7 @@
         },
         {
             "location": "/gameData/World/",
-            "text": "World\n\n\nVariables\n\n\nWorld.ground\n\n\nbool World.ground\n\n\nWhether has a ground under.\n\n\nWorld.wallLeft\n\n\nbool World.wallLeft\n\n\nCheck if has a wall on left.\n\n\nWorld.wallRight\n\n\nbool World.wallRight\n\n\nHas wall on the right.\n\n\nWorld.ceil\n\n\nbool World.ceil\n\n\nHas ceiling.\n\n\nStats\n\n\nMessage",
+            "text": "World\n\n\nVariables\n\n\nWorld.ground\n\n\nbool World.ground\n\n\nWhether has a ground under.\n\n\nWorld.wallLeft\n\n\nbool World.wallLeft\n\n\nCheck if has a wall on left.\n\n\nWorld.wallRight\n\n\nbool World.wallRight\n\n\nHas wall on the right.\n\n\nWorld.ceil\n\n\nbool World.ceil\n\n\nHas ceiling.\n\n\nStats\n\n\nMessage\n\n\nWorld.addLayer\n\n\n(void)World.addLayer:(string)layerName\n\nWill add the specified layer to the world detection, meaning the world knowledge will be able to detect collison from that layer\n\n\nArguments\n\n\nstring layerName\n: The name of the layer to Add\n\n\nReturns\n\n\nN/A\n\n\nWorld.removeLayer\n\n\n(void)World.removeLayer:(string)layerName\n\nWill remove the specified layer from the world detection, meaning the world knowledge will not be able to detect collison from that layer\n\n\nArguments\n\n\nstring layerName\n: The name of the layer to Add\n\n\nReturns\n\n\nN/A\n\n\nWorld.resetMask\n\n\n(void)World.resetMask\n\nUndocumented",
             "title": "World"
         },
         {
@@ -1199,6 +1209,41 @@
             "location": "/gameData/World/#message",
             "text": "",
             "title": "Message"
+        },
+        {
+            "location": "/gameData/World/#worldaddlayer",
+            "text": "(void)World.addLayer:(string)layerName \nWill add the specified layer to the world detection, meaning the world knowledge will be able to detect collison from that layer",
+            "title": "World.addLayer"
+        },
+        {
+            "location": "/gameData/World/#arguments",
+            "text": "string layerName : The name of the layer to Add",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/World/#returns",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/World/#worldremovelayer",
+            "text": "(void)World.removeLayer:(string)layerName \nWill remove the specified layer from the world detection, meaning the world knowledge will not be able to detect collison from that layer",
+            "title": "World.removeLayer"
+        },
+        {
+            "location": "/gameData/World/#arguments_1",
+            "text": "string layerName : The name of the layer to Add",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/World/#returns_1",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/World/#worldresetmask",
+            "text": "(void)World.resetMask \nUndocumented",
+            "title": "World.resetMask"
         }
     ]
 }
