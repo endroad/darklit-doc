@@ -19,6 +19,14 @@ Distance to closest player.
 `float brain.playerFront`
 
 Dot to closest player. 1 is in front of brain -1 is back
+### brain.playerLateral
+`float brain.playerLateral`
+
+Distance to closest player on the lateral axis. Meaning how far on the left or the right
+### brain.playerVertical
+`float brain.playerVertical`
+
+Distance to closest player on the vertical axis. Positive is above, negative is below
 ### brain.bestAttack
 `int brain.bestAttack`
 
