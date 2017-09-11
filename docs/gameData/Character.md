@@ -1,7 +1,7 @@
 # Character
 ## Variables
-### Character.Crouch_LateralSpeed
-`float Character.Crouch_LateralSpeed`
+### Character.vulnerable
+`bool Character.vulnerable`
 
 Undocumented
 ## Stats
