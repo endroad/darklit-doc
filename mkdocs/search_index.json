@@ -627,7 +627,7 @@
         },
         {
             "location": "/gameData/Character/",
-            "text": "Character\n\n\nVariables\n\n\nCharacter.Crouch_LateralSpeed\n\n\nfloat Character.Crouch_LateralSpeed\n\n\nUndocumented\n\n\nStats\n\n\nCharacter.Motion\n\n\nfloat Character.Motion\n\n\nUndocumented\n\n\nCharacter.Damage\n\n\nfloat Character.Damage\n\n\nUndocumented\n\n\nMessage",
+            "text": "Character\n\n\nVariables\n\n\nCharacter.vulnerable\n\n\nbool Character.vulnerable\n\n\nUndocumented\n\n\nStats\n\n\nCharacter.Motion\n\n\nfloat Character.Motion\n\n\nUndocumented\n\n\nCharacter.Damage\n\n\nfloat Character.Damage\n\n\nUndocumented\n\n\nMessage",
             "title": "Character"
         },
         {
@@ -641,9 +641,9 @@
             "title": "Variables"
         },
         {
-            "location": "/gameData/Character/#charactercrouch_lateralspeed",
-            "text": "float Character.Crouch_LateralSpeed  Undocumented",
-            "title": "Character.Crouch_LateralSpeed"
+            "location": "/gameData/Character/#charactervulnerable",
+            "text": "bool Character.vulnerable  Undocumented",
+            "title": "Character.vulnerable"
         },
         {
             "location": "/gameData/Character/#stats",
