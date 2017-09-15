@@ -11,6 +11,8 @@ pages:
     - Effect: 'stemp.effect.md'
     - Behaviour: 'stemp.beh.md'
     - Spawner: 'stemp.spawner.md'
+- Json Templates:
+    - Condition: 'jsontemp.cond.md'
 - Commands :
     - Game: 'commands.game.md'
     - Dev: 'commands.dev.md'

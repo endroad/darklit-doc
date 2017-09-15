@@ -27,4 +27,12 @@ Undocumented
 ### legs.Resume
 `(void)legs.Resume`
 Undocumented
+### legs.Jump
+`(void)legs.Jump:(float)strengh `
+Make the creature jump, please check that a rigidbody is there and has UseGravity enabled
+#### Arguments
+`float strengh`: 
+
+#### Returns
+N/A
 
