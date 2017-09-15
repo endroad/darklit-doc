@@ -10,6 +10,7 @@
     "    - External: 'nsref.ext.md'",
     "    - Behaviour: 'nsref.beh.md'",
     "- Script Templates:",
+	"    - AOE: 'stemp.AOE.md'",
     "    - Condition: 'stemp.cond.md'",
     "    - Effect: 'stemp.effect.md'",
     "    - Behaviour: 'stemp.beh.md'",
