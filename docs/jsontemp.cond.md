@@ -18,12 +18,12 @@ parameters that are specific to the Data type Condition
 ### op : string (REQUIRED)			 
 operator for condition , can recieve the following values
 
-	"less",
-	"lessorequal", "lequal",
-	"greater",
-	"greaterorequal", "gequal",
-	"equal",
-	"notequal", "nequal"
+    "less",
+    "lessorequal", "lequal",
+    "greater",
+    "greaterorequal", "gequal",
+    "equal",
+    "notequal", "nequal"
 
 ### left : GameData	(REQUIRED)
 the gamedata on the left of the expression

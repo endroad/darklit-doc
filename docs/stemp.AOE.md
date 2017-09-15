@@ -28,7 +28,7 @@ it is there to say if the AOE will do something.
 		end
 	  end
 
-	endscript 
+	endscript
 
 
 #AOE Effect Template

@@ -227,7 +227,7 @@
         },
         {
             "location": "/jsontemp.cond/",
-            "text": "Condition\n\n\nMuch like any programming language, conditions are used to gate a process (such as triggering an action) using boolean expressions\n\n\nRequired Parameters\n\n\ntype : string\n\n\ncan recieve the following values\n\n\n\"compound\"      //Multiple Conditions\n\"data\"          //Compare GameData with constant\n\"time\"          //Chrono, beware as it only runs when the condition is evaluated\n\n\n\nData Parameters\n\n\nparameters that are specific to the Data type Condition\n\n\nop : string (REQUIRED)\n\n\noperator for condition , can recieve the following values\n\n\n\"less\",\n\"lessorequal\", \"lequal\",\n\"greater\",\n\"greaterorequal\", \"gequal\",\n\"equal\",\n\"notequal\", \"nequal\"\n\n\n\nleft : GameData (REQUIRED)\n\n\nthe gamedata on the left of the expression\n\n\nright : value (REQUIRED)\n\n\nvalue which type depends on the game data compared with\n\n\nCompound Parameters\n\n\nop : string (REQUIRED)\n\n\noperator for condition , can recieve the following values\n\n\n\"and\",          // requires all conditions to be true, evalution will stop at first faillure\n\"or\",           // requires one condition to be true, evalution will stop at first success\n\"not\"\n\n\n\n0 : Condition (REQUIRED)\n\n\ndefines the first condition, note that it starts a new Condition descriptor\n\n\n1 : Condition\n\n\ndefines the second condition, it is unnecessarary for \"not\" operator\n\n\n... : Condition\n\n\nsubsequent conditions, would be pretty dumb to be limited to 2 using same operator, right ? Just don't forget to increment the value\n\n\nTime Parameters\n\n\nduration : float(REQUIRED)\n\n\nfloat that acts as the chrono threshold",
+            "text": "Condition\n\n\nMuch like any programming language, conditions are used to gate a process (such as triggering an action) using boolean expressions\n\n\nRequired Parameters\n\n\ntype : string\n\n\ncan recieve the following values\n\n\n\"compound\"      //Multiple Conditions\n\"data\"          //Compare GameData with constant\n\"time\"          //Chrono, beware as it only runs when the condition is evaluated\n\n\n\nData Parameters\n\n\nparameters that are specific to the Data type Condition\n\n\nop : string (REQUIRED)\n\n\noperator for condition , can recieve the following values\n\n\n\"less\",\n\n\n\"lessorequal\", \"lequal\",\n\n\n\"greater\",\n\n\n\"greaterorequal\", \"gequal\",\n\n\n\"equal\",\n\n\n\"notequal\", \"nequal\"\n\n\nleft : GameData (REQUIRED)\n\n\nthe gamedata on the left of the expression\n\n\nright : value (REQUIRED)\n\n\nvalue which type depends on the game data compared with\n\n\nCompound Parameters\n\n\nop : string (REQUIRED)\n\n\noperator for condition , can recieve the following values\n\n\n\"and\",          // requires all conditions to be true, evalution will stop at first faillure\n\"or\",           // requires one condition to be true, evalution will stop at first success\n\"not\"\n\n\n\n0 : Condition (REQUIRED)\n\n\ndefines the first condition, note that it starts a new Condition descriptor\n\n\n1 : Condition\n\n\ndefines the second condition, it is unnecessarary for \"not\" operator\n\n\n... : Condition\n\n\nsubsequent conditions, would be pretty dumb to be limited to 2 using same operator, right ? Just don't forget to increment the value\n\n\nTime Parameters\n\n\nduration : float(REQUIRED)\n\n\nfloat that acts as the chrono threshold",
             "title": "Condition"
         },
         {
@@ -252,8 +252,38 @@
         },
         {
             "location": "/jsontemp.cond/#op-string-required",
-            "text": "operator for condition , can recieve the following values  \"less\",\n\"lessorequal\", \"lequal\",\n\"greater\",\n\"greaterorequal\", \"gequal\",\n\"equal\",\n\"notequal\", \"nequal\"",
+            "text": "operator for condition , can recieve the following values",
             "title": "op : string (REQUIRED)"
+        },
+        {
+            "location": "/jsontemp.cond/#less",
+            "text": "",
+            "title": "\"less\","
+        },
+        {
+            "location": "/jsontemp.cond/#lessorequal-lequal",
+            "text": "",
+            "title": "\"lessorequal\", \"lequal\","
+        },
+        {
+            "location": "/jsontemp.cond/#greater",
+            "text": "",
+            "title": "\"greater\","
+        },
+        {
+            "location": "/jsontemp.cond/#greaterorequal-gequal",
+            "text": "",
+            "title": "\"greaterorequal\", \"gequal\","
+        },
+        {
+            "location": "/jsontemp.cond/#equal",
+            "text": "",
+            "title": "\"equal\","
+        },
+        {
+            "location": "/jsontemp.cond/#notequal-nequal",
+            "text": "",
+            "title": "\"notequal\", \"nequal\""
         },
         {
             "location": "/jsontemp.cond/#left-gamedata-required",
