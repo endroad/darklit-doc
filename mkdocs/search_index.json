@@ -201,6 +201,81 @@
             "title": "Example: One every 60s v2"
         },
         {
+            "location": "/jsontemp.cond/",
+            "text": "Condition\n\n\nMuch like any programming language, conditions are used to gate a process (such as triggering an action) using boolean expressions\n\n\nRequired Parameters\n\n\ntype : string\n\n\ncan recieve the following values\n    \"compound\"      //Multiple Conditions\n    \"data\"          //Compare GameData with constant\n    \"time\"          //Chrono, beware as it only runs when the condition is evaluated\n\n\nData Parameters\n\n\nparameters that are specific to the Data type Condition\n\n\nop : string (REQUIRED)\n\n\noperator for condition , can recieve the following values\n    \"less\", \n    \"lessorequal\", \"lequal\", \n    \"greater\", \n    \"greaterorequal\", \"gequal\", \n    \"equal\", \n    \"notequal\", \"nequal\"\n\n\nleft : GameData (REQUIRED)\n\n\nthe gamedata on the left of the expression\n\n\nright : value (REQUIRED)\n\n\nvalue which type depends on the game data compared with\n\n\nCompound Parameters\n\n\nop : string (REQUIRED)\n\n\noperator for condition , can recieve the following values\n    \"and\",          // requires all conditions to be true, evalution will stop at first faillure\n    \"or\",           // requires one condition to be true, evalution will stop at first success\n    \"not\"           \n\n\n0 : Condition (REQUIRED)\n\n\ndefines the first condition, note that it starts a new Condition descriptor\n\n\n1 : Condition\n\n\ndefines the second condition, it is unnecessarary for \"not\" operator\n\n\n... : Condition\n\n\nsubsequent conditions, would be pretty dumb to be limited to 2 using same operator, right ? Just don't forget to increment the value\n\n\nTime Parameters\n\n\nduration : float(REQUIRED)\n\n\nfloat that acts as the chrono threshold",
+            "title": "Condition"
+        },
+        {
+            "location": "/jsontemp.cond/#condition",
+            "text": "Much like any programming language, conditions are used to gate a process (such as triggering an action) using boolean expressions",
+            "title": "Condition"
+        },
+        {
+            "location": "/jsontemp.cond/#required-parameters",
+            "text": "",
+            "title": "Required Parameters"
+        },
+        {
+            "location": "/jsontemp.cond/#type-string",
+            "text": "can recieve the following values\n    \"compound\"      //Multiple Conditions\n    \"data\"          //Compare GameData with constant\n    \"time\"          //Chrono, beware as it only runs when the condition is evaluated",
+            "title": "type : string"
+        },
+        {
+            "location": "/jsontemp.cond/#data-parameters",
+            "text": "parameters that are specific to the Data type Condition",
+            "title": "Data Parameters"
+        },
+        {
+            "location": "/jsontemp.cond/#op-string-required",
+            "text": "operator for condition , can recieve the following values\n    \"less\", \n    \"lessorequal\", \"lequal\", \n    \"greater\", \n    \"greaterorequal\", \"gequal\", \n    \"equal\", \n    \"notequal\", \"nequal\"",
+            "title": "op : string (REQUIRED)"
+        },
+        {
+            "location": "/jsontemp.cond/#left-gamedata-required",
+            "text": "the gamedata on the left of the expression",
+            "title": "left : GameData (REQUIRED)"
+        },
+        {
+            "location": "/jsontemp.cond/#right-value-required",
+            "text": "value which type depends on the game data compared with",
+            "title": "right : value (REQUIRED)"
+        },
+        {
+            "location": "/jsontemp.cond/#compound-parameters",
+            "text": "",
+            "title": "Compound Parameters"
+        },
+        {
+            "location": "/jsontemp.cond/#op-string-required_1",
+            "text": "operator for condition , can recieve the following values\n    \"and\",          // requires all conditions to be true, evalution will stop at first faillure\n    \"or\",           // requires one condition to be true, evalution will stop at first success\n    \"not\"",
+            "title": "op : string (REQUIRED)"
+        },
+        {
+            "location": "/jsontemp.cond/#0-condition-required",
+            "text": "defines the first condition, note that it starts a new Condition descriptor",
+            "title": "0 : Condition (REQUIRED)"
+        },
+        {
+            "location": "/jsontemp.cond/#1-condition",
+            "text": "defines the second condition, it is unnecessarary for \"not\" operator",
+            "title": "1 : Condition"
+        },
+        {
+            "location": "/jsontemp.cond/#condition_1",
+            "text": "subsequent conditions, would be pretty dumb to be limited to 2 using same operator, right ? Just don't forget to increment the value",
+            "title": "... : Condition"
+        },
+        {
+            "location": "/jsontemp.cond/#time-parameters",
+            "text": "",
+            "title": "Time Parameters"
+        },
+        {
+            "location": "/jsontemp.cond/#duration-floatrequired",
+            "text": "float that acts as the chrono threshold",
+            "title": "duration : float(REQUIRED)"
+        },
+        {
             "location": "/commands.game/",
             "text": "Developpers Commands\n\n\nfly\n\n\nSwitch flycam mode on and off\n\n\nfly\n\n\n\narchetype\n\n\nLoad an archetype \nmyArchetype\n on the player. This a path to JSon.\n\n\narchetype myArchetype\n\n\n\nrespawn\n\n\nRespawn the player to last respawn point\n\n\nrespawn\n\n\n\nzombie\n\n\nEnable or disable the zombie mode\n\n\nzombie [on|off]",
             "title": "Game"
@@ -627,7 +702,7 @@
         },
         {
             "location": "/gameData/Character/",
-            "text": "Character\n\n\nVariables\n\n\nCharacter.vulnerable\n\n\nbool Character.vulnerable\n\n\nUndocumented\n\n\nStats\n\n\nCharacter.Motion\n\n\nfloat Character.Motion\n\n\nUndocumented\n\n\nCharacter.Damage\n\n\nfloat Character.Damage\n\n\nUndocumented\n\n\nMessage",
+            "text": "Character\n\n\nVariables\n\n\nCharacter.vulnerable\n\n\nbool Character.vulnerable\n\n\na boolean to know if the character can recieve hit damage\n\n\nStats\n\n\nCharacter.Damage\n\n\nfloat Character.Damage\n\n\nUndocumented\n\n\nCharacter.Gravity\n\n\nfloat Character.Gravity\n\n\nUndocumented\n\n\nCharacter.Motion\n\n\nfloat Character.Motion\n\n\nUndocumented\n\n\nMessage\n\n\nCharacter.SetInvincible\n\n\n(void)Character.SetInvincible:(float)duration\n\nUndocumented",
             "title": "Character"
         },
         {
@@ -642,7 +717,7 @@
         },
         {
             "location": "/gameData/Character/#charactervulnerable",
-            "text": "bool Character.vulnerable  Undocumented",
+            "text": "bool Character.vulnerable  a boolean to know if the character can recieve hit damage",
             "title": "Character.vulnerable"
         },
         {
@@ -651,19 +726,29 @@
             "title": "Stats"
         },
         {
-            "location": "/gameData/Character/#charactermotion",
-            "text": "float Character.Motion  Undocumented",
-            "title": "Character.Motion"
-        },
-        {
             "location": "/gameData/Character/#characterdamage",
             "text": "float Character.Damage  Undocumented",
             "title": "Character.Damage"
         },
         {
+            "location": "/gameData/Character/#charactergravity",
+            "text": "float Character.Gravity  Undocumented",
+            "title": "Character.Gravity"
+        },
+        {
+            "location": "/gameData/Character/#charactermotion",
+            "text": "float Character.Motion  Undocumented",
+            "title": "Character.Motion"
+        },
+        {
             "location": "/gameData/Character/#message",
             "text": "",
             "title": "Message"
+        },
+        {
+            "location": "/gameData/Character/#charactersetinvincible",
+            "text": "(void)Character.SetInvincible:(float)duration \nUndocumented",
+            "title": "Character.SetInvincible"
         },
         {
             "location": "/gameData/brain/",
@@ -752,7 +837,7 @@
         },
         {
             "location": "/gameData/legs/",
-            "text": "legs\n\n\nVariables\n\n\nlegs.isStopped\n\n\nbool legs.isStopped\n\n\nWhether the creature is stopped or not\n\n\nStats\n\n\nlegs.speed\n\n\nfloat legs.speed\n\n\nMoving speed.\n\n\nMessage\n\n\nlegs.MoveRight\n\n\n(void)legs.MoveRight\n\nUndocumented\n\n\nlegs.Turn\n\n\n(void)legs.Turn:(float)angle\n\nTurns the facing direction of @angle degrees\n\n\nArguments\n\n\nfloat angle\n: \n\n\nReturns\n\n\nN/A\n\n\nlegs.Stop\n\n\n(void)legs.Stop\n\nUndocumented\n\n\nlegs.Resume\n\n\n(void)legs.Resume\n\nUndocumented",
+            "text": "legs\n\n\nVariables\n\n\nlegs.isStopped\n\n\nbool legs.isStopped\n\n\nWhether the creature is stopped or not\n\n\nStats\n\n\nlegs.speed\n\n\nfloat legs.speed\n\n\nMoving speed.\n\n\nMessage\n\n\nlegs.MoveRight\n\n\n(void)legs.MoveRight\n\nUndocumented\n\n\nlegs.Turn\n\n\n(void)legs.Turn:(float)angle\n\nTurns the facing direction of @angle degrees\n\n\nArguments\n\n\nfloat angle\n: \n\n\nReturns\n\n\nN/A\n\n\nlegs.Stop\n\n\n(void)legs.Stop\n\nUndocumented\n\n\nlegs.Resume\n\n\n(void)legs.Resume\n\nUndocumented\n\n\nlegs.Jump\n\n\n(void)legs.Jump:(float)strengh\n\nMake the creature jump, please check that a rigidbody is there and has UseGravity enabled\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nReturns\n\n\nN/A",
             "title": "legs"
         },
         {
@@ -814,6 +899,21 @@
             "location": "/gameData/legs/#legsresume",
             "text": "(void)legs.Resume \nUndocumented",
             "title": "legs.Resume"
+        },
+        {
+            "location": "/gameData/legs/#legsjump",
+            "text": "(void)legs.Jump:(float)strengh \nMake the creature jump, please check that a rigidbody is there and has UseGravity enabled",
+            "title": "legs.Jump"
+        },
+        {
+            "location": "/gameData/legs/#arguments_1",
+            "text": "float strengh :",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/legs/#returns_1",
+            "text": "N/A",
+            "title": "Returns"
         },
         {
             "location": "/gameData/aoe/",
