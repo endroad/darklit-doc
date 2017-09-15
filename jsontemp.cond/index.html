@@ -231,6 +231,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../stemp.AOE/" title="AOE" class="md-nav__link">
+      AOE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../stemp.cond/" title="Condition" class="md-nav__link">
       Condition
     </a>
@@ -914,30 +926,33 @@
 <p>Much like any programming language, conditions are used to gate a process (such as triggering an action) using boolean expressions</p>
 <h2 id="required-parameters">Required Parameters</h2>
 <h3 id="type-string">type : string</h3>
-<p>can recieve the following values
-    "compound"      //Multiple Conditions
-    "data"          //Compare GameData with constant
-    "time"          //Chrono, beware as it only runs when the condition is evaluated</p>
+<p>can recieve the following values</p>
+<pre><code>"compound"      //Multiple Conditions
+"data"          //Compare GameData with constant
+"time"          //Chrono, beware as it only runs when the condition is evaluated
+</code></pre>
 <h2 id="data-parameters">Data Parameters</h2>
 <p>parameters that are specific to the Data type Condition</p>
 <h3 id="op-string-required">op : string (REQUIRED)</h3>
-<p>operator for condition , can recieve the following values
-    "less", 
-    "lessorequal", "lequal", 
-    "greater", 
-    "greaterorequal", "gequal", 
-    "equal", 
-    "notequal", "nequal"</p>
+<p>operator for condition , can recieve the following values</p>
+<pre><code>"less",
+"lessorequal", "lequal",
+"greater",
+"greaterorequal", "gequal",
+"equal",
+"notequal", "nequal"
+</code></pre>
 <h3 id="left-gamedata-required">left : GameData (REQUIRED)</h3>
 <p>the gamedata on the left of the expression</p>
 <h3 id="right-value-required">right : value (REQUIRED)</h3>
 <p>value which type depends on the game data compared with</p>
 <h2 id="compound-parameters">Compound Parameters</h2>
 <h3 id="op-string-required_1">op : string (REQUIRED)</h3>
-<p>operator for condition , can recieve the following values
-    "and",          // requires all conditions to be true, evalution will stop at first faillure
-    "or",           // requires one condition to be true, evalution will stop at first success
-    "not"           </p>
+<p>operator for condition , can recieve the following values</p>
+<pre><code>"and",          // requires all conditions to be true, evalution will stop at first faillure
+"or",           // requires one condition to be true, evalution will stop at first success
+"not"
+</code></pre>
 <h3 id="0-condition-required">0 : Condition (REQUIRED)</h3>
 <p>defines the first condition, note that it starts a new Condition descriptor</p>
 <h3 id="1-condition">1 : Condition</h3>
@@ -946,7 +961,7 @@
 <p>subsequent conditions, would be pretty dumb to be limited to 2 using same operator, right ? Just don't forget to increment the value</p>
 <h2 id="time-parameters">Time Parameters</h2>
 <h3 id="duration-floatrequired">duration : float(REQUIRED)</h3>
-<p>float that acts as the chrono threshold </p>
+<p>float that acts as the chrono threshold</p>
                 
                   
                 

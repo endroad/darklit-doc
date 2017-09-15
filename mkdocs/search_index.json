@@ -151,6 +151,31 @@
             "title": "State &amp; Routine"
         },
         {
+            "location": "/stemp.AOE/",
+            "text": "Areas of effect, as a component, works with 2 scripts:\n\n\nAOE Update Template\n\n\nIt is ran on every frame one single time until it exits,\nit is mainly used to define if the effect will be ran on this frame,\nit is there to say if the AOE will do something.\n\n\n\n\n\n\n\n\nI/O\n\n\nType\n\n\nName\n\n\nComments\n\n\n\n\n\n\n\n\n\n\nout\n\n\nbool\n\n\nexecute\n\n\nwill execute the AOE effect\n\n\n\n\n\n\n\n\nExemple : A script that activate the effect once per second\n\n\nscript: OncePerSecond\n\n  out bool execute\n  float timer = 0\n  float duration = 1\n\n  loop:\n    if timer > duration then\n      execute = true\n      timer = 0\n    else\n      execute = false\n      timer = timer + game->time.dt\n    end\n  end\n\nendscript\n\n\n\nAOE Effect Template\n\n\nShould the update script returns as 'true' for 'execute', the effect script will be ran\nfor every entity in the defined zone.\n\n\n\n\n\n\n\n\nI/O\n\n\nType\n\n\nName\n\n\nComments\n\n\n\n\n\n\n\n\n\n\nin\n\n\nentity\n\n\nother\n\n\nthe entity affected by the AOE\n\n\n\n\n\n\n\n\nExemple : A script that does stamina damage in one go\n\n\nscript: StaminaDamage\n\n  entity other\n  [other stamina.damage: 15]\n\nendscript",
+            "title": "AOE"
+        },
+        {
+            "location": "/stemp.AOE/#aoe-update-template",
+            "text": "It is ran on every frame one single time until it exits,\nit is mainly used to define if the effect will be ran on this frame,\nit is there to say if the AOE will do something.     I/O  Type  Name  Comments      out  bool  execute  will execute the AOE effect",
+            "title": "AOE Update Template"
+        },
+        {
+            "location": "/stemp.AOE/#exemple-a-script-that-activate-the-effect-once-per-second",
+            "text": "script: OncePerSecond\n\n  out bool execute\n  float timer = 0\n  float duration = 1\n\n  loop:\n    if timer > duration then\n      execute = true\n      timer = 0\n    else\n      execute = false\n      timer = timer + game->time.dt\n    end\n  end\n\nendscript",
+            "title": "Exemple : A script that activate the effect once per second"
+        },
+        {
+            "location": "/stemp.AOE/#aoe-effect-template",
+            "text": "Should the update script returns as 'true' for 'execute', the effect script will be ran\nfor every entity in the defined zone.     I/O  Type  Name  Comments      in  entity  other  the entity affected by the AOE",
+            "title": "AOE Effect Template"
+        },
+        {
+            "location": "/stemp.AOE/#exemple-a-script-that-does-stamina-damage-in-one-go",
+            "text": "script: StaminaDamage\n\n  entity other\n  [other stamina.damage: 15]\n\nendscript",
+            "title": "Exemple : A script that does stamina damage in one go"
+        },
+        {
             "location": "/stemp.cond/",
             "text": "Condition Template\n\n\nUsed to evaluate a condition.\n\n\n\n\n\n\n\n\nI/O\n\n\nType\n\n\nName\n\n\nComments\n\n\n\n\n\n\n\n\n\n\nout\n\n\nbool\n\n\ncondition\n\n\nEvaluated condition",
             "title": "Condition"
@@ -202,7 +227,7 @@
         },
         {
             "location": "/jsontemp.cond/",
-            "text": "Condition\n\n\nMuch like any programming language, conditions are used to gate a process (such as triggering an action) using boolean expressions\n\n\nRequired Parameters\n\n\ntype : string\n\n\ncan recieve the following values\n    \"compound\"      //Multiple Conditions\n    \"data\"          //Compare GameData with constant\n    \"time\"          //Chrono, beware as it only runs when the condition is evaluated\n\n\nData Parameters\n\n\nparameters that are specific to the Data type Condition\n\n\nop : string (REQUIRED)\n\n\noperator for condition , can recieve the following values\n    \"less\", \n    \"lessorequal\", \"lequal\", \n    \"greater\", \n    \"greaterorequal\", \"gequal\", \n    \"equal\", \n    \"notequal\", \"nequal\"\n\n\nleft : GameData (REQUIRED)\n\n\nthe gamedata on the left of the expression\n\n\nright : value (REQUIRED)\n\n\nvalue which type depends on the game data compared with\n\n\nCompound Parameters\n\n\nop : string (REQUIRED)\n\n\noperator for condition , can recieve the following values\n    \"and\",          // requires all conditions to be true, evalution will stop at first faillure\n    \"or\",           // requires one condition to be true, evalution will stop at first success\n    \"not\"           \n\n\n0 : Condition (REQUIRED)\n\n\ndefines the first condition, note that it starts a new Condition descriptor\n\n\n1 : Condition\n\n\ndefines the second condition, it is unnecessarary for \"not\" operator\n\n\n... : Condition\n\n\nsubsequent conditions, would be pretty dumb to be limited to 2 using same operator, right ? Just don't forget to increment the value\n\n\nTime Parameters\n\n\nduration : float(REQUIRED)\n\n\nfloat that acts as the chrono threshold",
+            "text": "Condition\n\n\nMuch like any programming language, conditions are used to gate a process (such as triggering an action) using boolean expressions\n\n\nRequired Parameters\n\n\ntype : string\n\n\ncan recieve the following values\n\n\n\"compound\"      //Multiple Conditions\n\"data\"          //Compare GameData with constant\n\"time\"          //Chrono, beware as it only runs when the condition is evaluated\n\n\n\nData Parameters\n\n\nparameters that are specific to the Data type Condition\n\n\nop : string (REQUIRED)\n\n\noperator for condition , can recieve the following values\n\n\n\"less\",\n\"lessorequal\", \"lequal\",\n\"greater\",\n\"greaterorequal\", \"gequal\",\n\"equal\",\n\"notequal\", \"nequal\"\n\n\n\nleft : GameData (REQUIRED)\n\n\nthe gamedata on the left of the expression\n\n\nright : value (REQUIRED)\n\n\nvalue which type depends on the game data compared with\n\n\nCompound Parameters\n\n\nop : string (REQUIRED)\n\n\noperator for condition , can recieve the following values\n\n\n\"and\",          // requires all conditions to be true, evalution will stop at first faillure\n\"or\",           // requires one condition to be true, evalution will stop at first success\n\"not\"\n\n\n\n0 : Condition (REQUIRED)\n\n\ndefines the first condition, note that it starts a new Condition descriptor\n\n\n1 : Condition\n\n\ndefines the second condition, it is unnecessarary for \"not\" operator\n\n\n... : Condition\n\n\nsubsequent conditions, would be pretty dumb to be limited to 2 using same operator, right ? Just don't forget to increment the value\n\n\nTime Parameters\n\n\nduration : float(REQUIRED)\n\n\nfloat that acts as the chrono threshold",
             "title": "Condition"
         },
         {
@@ -217,7 +242,7 @@
         },
         {
             "location": "/jsontemp.cond/#type-string",
-            "text": "can recieve the following values\n    \"compound\"      //Multiple Conditions\n    \"data\"          //Compare GameData with constant\n    \"time\"          //Chrono, beware as it only runs when the condition is evaluated",
+            "text": "can recieve the following values  \"compound\"      //Multiple Conditions\n\"data\"          //Compare GameData with constant\n\"time\"          //Chrono, beware as it only runs when the condition is evaluated",
             "title": "type : string"
         },
         {
@@ -227,7 +252,7 @@
         },
         {
             "location": "/jsontemp.cond/#op-string-required",
-            "text": "operator for condition , can recieve the following values\n    \"less\", \n    \"lessorequal\", \"lequal\", \n    \"greater\", \n    \"greaterorequal\", \"gequal\", \n    \"equal\", \n    \"notequal\", \"nequal\"",
+            "text": "operator for condition , can recieve the following values  \"less\",\n\"lessorequal\", \"lequal\",\n\"greater\",\n\"greaterorequal\", \"gequal\",\n\"equal\",\n\"notequal\", \"nequal\"",
             "title": "op : string (REQUIRED)"
         },
         {
@@ -247,7 +272,7 @@
         },
         {
             "location": "/jsontemp.cond/#op-string-required_1",
-            "text": "operator for condition , can recieve the following values\n    \"and\",          // requires all conditions to be true, evalution will stop at first faillure\n    \"or\",           // requires one condition to be true, evalution will stop at first success\n    \"not\"",
+            "text": "operator for condition , can recieve the following values  \"and\",          // requires all conditions to be true, evalution will stop at first faillure\n\"or\",           // requires one condition to be true, evalution will stop at first success\n\"not\"",
             "title": "op : string (REQUIRED)"
         },
         {
