@@ -17,8 +17,30 @@ Undocumented
 `float Character.Motion`
 
 Undocumented
+### Character.KnockDamp
+`float Character.KnockDamp`
+
+Undocumented
 ## Message
+### Character.UpwardBoost
+`(void)Character.UpwardBoost:(float)boost `
+Undocumented
 ### Character.SetInvincible
 `(void)Character.SetInvincible:(float)duration `
 Undocumented
+### Character.Knock
+`(void)Character.Knock:(float)strengh x:(float)x y:(float)y z:(float)z `
+knock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)
+            all you need is strengh and origin
+#### Arguments
+`float strengh`: 
+
+`float x`: 
+
+`float y`: 
+
+`float z`: 
+
+#### Returns
+N/A
 

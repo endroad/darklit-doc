@@ -25,18 +25,19 @@ pages:
     - transform: gameData/transform.md
     - __vmtest: gameData/__vmtest.md
     - spawner: gameData/spawner.md
+    - aoes: gameData/aoes.md
     - attack: gameData/attack.md
     - Character: gameData/Character.md
     - brain: gameData/brain.md
     - weakness: gameData/weakness.md
     - legs: gameData/legs.md
-    - aoe: gameData/aoe.md
     - throw: gameData/throw.md
     - health: gameData/health.md
     - Oxygen: gameData/Oxygen.md
+    - skills: gameData/skills.md
     - stamina: gameData/stamina.md
-    - Wieldable: gameData/Wieldable.md
     - World: gameData/World.md
+    - navigation: gameData/navigation.md
 extra:
   palette:
     primary: 'red'

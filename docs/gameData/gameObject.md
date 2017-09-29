@@ -21,4 +21,12 @@ N/A
 ### gameObject.destroy
 `(void)gameObject.destroy`
 Undocumented
+### gameObject.setLayer
+`(void)gameObject.setLayer:(string)layerName `
+change the game object physic layer, which affects the world collision
+#### Arguments
+`string layerName`: name of the new layer
+
+#### Returns
+N/A
 
