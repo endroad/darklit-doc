@@ -362,7 +362,7 @@
         },
         {
             "location": "/gameData/gameObject/",
-            "text": "gameObject\n\n\nVariables\n\n\ngameObject.isActive\n\n\nbool gameObject.isActive\n\n\nReturns if the object is active.\n\n\ngameObject.isActiveInHierarchy\n\n\nbool gameObject.isActiveInHierarchy\n\n\nIs the GameObject active in the scene?\n\n\nStats\n\n\nMessage\n\n\ngameObject.destroyWithDelay\n\n\n(void)gameObject.destroyWithDelay:(float)delay\n\nDestroy with a specific delay.\n\n\nArguments\n\n\nfloat delay\n: Duration in second to wait before destroying\n\n\nReturns\n\n\nN/A\n\n\ngameObject.destroy\n\n\n(void)gameObject.destroy\n\nUndocumented",
+            "text": "gameObject\n\n\nVariables\n\n\ngameObject.isActive\n\n\nbool gameObject.isActive\n\n\nReturns if the object is active.\n\n\ngameObject.isActiveInHierarchy\n\n\nbool gameObject.isActiveInHierarchy\n\n\nIs the GameObject active in the scene?\n\n\nStats\n\n\nMessage\n\n\ngameObject.destroyWithDelay\n\n\n(void)gameObject.destroyWithDelay:(float)delay\n\nDestroy with a specific delay.\n\n\nArguments\n\n\nfloat delay\n: Duration in second to wait before destroying\n\n\nReturns\n\n\nN/A\n\n\ngameObject.destroy\n\n\n(void)gameObject.destroy\n\nUndocumented\n\n\ngameObject.setLayer\n\n\n(void)gameObject.setLayer:(string)layerName\n\nchange the game object physic layer, which affects the world collision\n\n\nArguments\n\n\nstring layerName\n: name of the new layer\n\n\nReturns\n\n\nN/A",
             "title": "gameObject"
         },
         {
@@ -414,6 +414,21 @@
             "location": "/gameData/gameObject/#gameobjectdestroy",
             "text": "(void)gameObject.destroy \nUndocumented",
             "title": "gameObject.destroy"
+        },
+        {
+            "location": "/gameData/gameObject/#gameobjectsetlayer",
+            "text": "(void)gameObject.setLayer:(string)layerName \nchange the game object physic layer, which affects the world collision",
+            "title": "gameObject.setLayer"
+        },
+        {
+            "location": "/gameData/gameObject/#arguments_1",
+            "text": "string layerName : name of the new layer",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/gameObject/#returns_1",
+            "text": "N/A",
+            "title": "Returns"
         },
         {
             "location": "/gameData/net/",
@@ -552,7 +567,7 @@
         },
         {
             "location": "/gameData/transform/",
-            "text": "transform\n\n\nVariables\n\n\nStats\n\n\nMessage",
+            "text": "transform\n\n\nVariables\n\n\ntransform.posx\n\n\nfloat transform.posx\n\n\nUndocumented\n\n\ntransform.posy\n\n\nfloat transform.posy\n\n\nUndocumented\n\n\ntransform.posz\n\n\nfloat transform.posz\n\n\nUndocumented\n\n\nStats\n\n\nMessage",
             "title": "transform"
         },
         {
@@ -564,6 +579,21 @@
             "location": "/gameData/transform/#variables",
             "text": "",
             "title": "Variables"
+        },
+        {
+            "location": "/gameData/transform/#transformposx",
+            "text": "float transform.posx  Undocumented",
+            "title": "transform.posx"
+        },
+        {
+            "location": "/gameData/transform/#transformposy",
+            "text": "float transform.posy  Undocumented",
+            "title": "transform.posy"
+        },
+        {
+            "location": "/gameData/transform/#transformposz",
+            "text": "float transform.posz  Undocumented",
+            "title": "transform.posz"
         },
         {
             "location": "/gameData/transform/#stats",
@@ -691,6 +721,76 @@
             "title": "spawner.reset"
         },
         {
+            "location": "/gameData/aoes/",
+            "text": "aoes\n\n\nVariables\n\n\nStats\n\n\nMessage\n\n\naoes.run\n\n\n(void)aoes.run:(string)keyid\n\nStart or restart the update script.\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A\n\n\naoes.resume\n\n\n(void)aoes.resume:(string)keyid\n\nResume execution of update script.\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A\n\n\naoes.stop\n\n\n(void)aoes.stop:(string)keyid\n\nStop execution of update script.\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A",
+            "title": "aoes"
+        },
+        {
+            "location": "/gameData/aoes/#aoes",
+            "text": "",
+            "title": "aoes"
+        },
+        {
+            "location": "/gameData/aoes/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/aoes/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/aoes/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/aoes/#aoesrun",
+            "text": "(void)aoes.run:(string)keyid \nStart or restart the update script.",
+            "title": "aoes.run"
+        },
+        {
+            "location": "/gameData/aoes/#arguments",
+            "text": "string keyid : N/A",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/aoes/#returns",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/aoes/#aoesresume",
+            "text": "(void)aoes.resume:(string)keyid \nResume execution of update script.",
+            "title": "aoes.resume"
+        },
+        {
+            "location": "/gameData/aoes/#arguments_1",
+            "text": "string keyid : N/A",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/aoes/#returns_1",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/aoes/#aoesstop",
+            "text": "(void)aoes.stop:(string)keyid \nStop execution of update script.",
+            "title": "aoes.stop"
+        },
+        {
+            "location": "/gameData/aoes/#arguments_2",
+            "text": "string keyid : N/A",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/aoes/#returns_2",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
             "location": "/gameData/attack/",
             "text": "attack\n\n\nVariables\n\n\nStats\n\n\nattack.damage\n\n\nfloat attack.damage\n\n\nUndocumented\n\n\nMessage\n\n\nattack.hit\n\n\n(void)attack.hit:(int)id\n\nUndocumented",
             "title": "attack"
@@ -727,7 +827,7 @@
         },
         {
             "location": "/gameData/Character/",
-            "text": "Character\n\n\nVariables\n\n\nCharacter.vulnerable\n\n\nbool Character.vulnerable\n\n\na boolean to know if the character can recieve hit damage\n\n\nStats\n\n\nCharacter.Damage\n\n\nfloat Character.Damage\n\n\nUndocumented\n\n\nCharacter.Gravity\n\n\nfloat Character.Gravity\n\n\nUndocumented\n\n\nCharacter.Motion\n\n\nfloat Character.Motion\n\n\nUndocumented\n\n\nMessage\n\n\nCharacter.SetInvincible\n\n\n(void)Character.SetInvincible:(float)duration\n\nUndocumented",
+            "text": "Character\n\n\nVariables\n\n\nCharacter.vulnerable\n\n\nbool Character.vulnerable\n\n\na boolean to know if the character can recieve hit damage\n\n\nStats\n\n\nCharacter.Damage\n\n\nfloat Character.Damage\n\n\nUndocumented\n\n\nCharacter.Gravity\n\n\nfloat Character.Gravity\n\n\nUndocumented\n\n\nCharacter.Motion\n\n\nfloat Character.Motion\n\n\nUndocumented\n\n\nCharacter.KnockDamp\n\n\nfloat Character.KnockDamp\n\n\nUndocumented\n\n\nMessage\n\n\nCharacter.UpwardBoost\n\n\n(void)Character.UpwardBoost:(float)boost\n\nUndocumented\n\n\nCharacter.SetInvincible\n\n\n(void)Character.SetInvincible:(float)duration\n\nUndocumented\n\n\nCharacter.Knock\n\n\n(void)Character.Knock:(float)strengh x:(float)x y:(float)y z:(float)z\n\nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\n            all you need is strengh and origin\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nfloat x\n: \n\n\nfloat y\n: \n\n\nfloat z\n: \n\n\nReturns\n\n\nN/A",
             "title": "Character"
         },
         {
@@ -766,14 +866,39 @@
             "title": "Character.Motion"
         },
         {
+            "location": "/gameData/Character/#characterknockdamp",
+            "text": "float Character.KnockDamp  Undocumented",
+            "title": "Character.KnockDamp"
+        },
+        {
             "location": "/gameData/Character/#message",
             "text": "",
             "title": "Message"
         },
         {
+            "location": "/gameData/Character/#characterupwardboost",
+            "text": "(void)Character.UpwardBoost:(float)boost \nUndocumented",
+            "title": "Character.UpwardBoost"
+        },
+        {
             "location": "/gameData/Character/#charactersetinvincible",
             "text": "(void)Character.SetInvincible:(float)duration \nUndocumented",
             "title": "Character.SetInvincible"
+        },
+        {
+            "location": "/gameData/Character/#characterknock",
+            "text": "(void)Character.Knock:(float)strengh x:(float)x y:(float)y z:(float)z \nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\n            all you need is strengh and origin",
+            "title": "Character.Knock"
+        },
+        {
+            "location": "/gameData/Character/#arguments",
+            "text": "float strengh :   float x :   float y :   float z :",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/Character/#returns",
+            "text": "N/A",
+            "title": "Returns"
         },
         {
             "location": "/gameData/brain/",
@@ -862,7 +987,7 @@
         },
         {
             "location": "/gameData/legs/",
-            "text": "legs\n\n\nVariables\n\n\nlegs.isStopped\n\n\nbool legs.isStopped\n\n\nWhether the creature is stopped or not\n\n\nStats\n\n\nlegs.speed\n\n\nfloat legs.speed\n\n\nMoving speed.\n\n\nMessage\n\n\nlegs.MoveRight\n\n\n(void)legs.MoveRight\n\nUndocumented\n\n\nlegs.Turn\n\n\n(void)legs.Turn:(float)angle\n\nTurns the facing direction of @angle degrees\n\n\nArguments\n\n\nfloat angle\n: \n\n\nReturns\n\n\nN/A\n\n\nlegs.Stop\n\n\n(void)legs.Stop\n\nUndocumented\n\n\nlegs.Resume\n\n\n(void)legs.Resume\n\nUndocumented\n\n\nlegs.Jump\n\n\n(void)legs.Jump:(float)strengh\n\nMake the creature jump, please check that a rigidbody is there and has UseGravity enabled\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nReturns\n\n\nN/A",
+            "text": "legs\n\n\nVariables\n\n\nlegs.isStopped\n\n\nbool legs.isStopped\n\n\nWhether the creature is stopped or not\n\n\nStats\n\n\nlegs.speed\n\n\nfloat legs.speed\n\n\nMoving speed.\n\n\nlegs.knockDamp\n\n\nfloat legs.knockDamp\n\n\nthe rate at which a knockforce is reduced.\n\n\nMessage\n\n\nlegs.MoveRight\n\n\n(void)legs.MoveRight\n\nUndocumented\n\n\nlegs.Turn\n\n\n(void)legs.Turn:(float)angle\n\nTurns the facing direction of @angle degrees\n\n\nArguments\n\n\nfloat angle\n: \n\n\nReturns\n\n\nN/A\n\n\nlegs.Stop\n\n\n(void)legs.Stop\n\nUndocumented\n\n\nlegs.Resume\n\n\n(void)legs.Resume\n\nUndocumented\n\n\nlegs.Jump\n\n\n(void)legs.Jump:(float)strengh\n\nMake the creature jump, please check that a rigidbody is there and has UseGravity enabled\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nReturns\n\n\nN/A\n\n\nlegs.Knock\n\n\n(void)legs.Knock:(float)strengh x:(float)x y:(float)y z:(float)z\n\nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\n            all you need is strengh and origin\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nfloat x\n: \n\n\nfloat y\n: \n\n\nfloat z\n: \n\n\nReturns\n\n\nN/A",
             "title": "legs"
         },
         {
@@ -889,6 +1014,11 @@
             "location": "/gameData/legs/#legsspeed",
             "text": "float legs.speed  Moving speed.",
             "title": "legs.speed"
+        },
+        {
+            "location": "/gameData/legs/#legsknockdamp",
+            "text": "float legs.knockDamp  the rate at which a knockforce is reduced.",
+            "title": "legs.knockDamp"
         },
         {
             "location": "/gameData/legs/#message",
@@ -941,74 +1071,19 @@
             "title": "Returns"
         },
         {
-            "location": "/gameData/aoe/",
-            "text": "aoe\n\n\nVariables\n\n\naoe.radius\n\n\nfloat aoe.radius\n\n\nRadius of area.\n\n\naoe.autoStart\n\n\nbool aoe.autoStart\n\n\nWhethever or not the AoE start running on Start.\n            If \nfalse\n you would have to call \nrun\n yourself.\n\n\naoe.isRunning\n\n\nbool aoe.isRunning\n\n\nWhether the area is running or not.\n\n\naoe.descriptor\n\n\nstring aoe.descriptor\n\n\nDescriptor of AoE to run. \n            It's a json path. \n            If changed it will restart the AoE\n\n\naoe.update\n\n\nstring aoe.update\n\n\nUpdate script that runs continuously while AOE is running.\n\n\naoe.effect\n\n\nstring aoe.effect\n\n\nUpdate script that runs continuously to spawn over time.\n\n\nStats\n\n\nMessage\n\n\naoe.run\n\n\n(void)aoe.run\n\nUndocumented\n\n\naoe.resume\n\n\n(void)aoe.resume\n\nUndocumented\n\n\naoe.stop\n\n\n(void)aoe.stop\n\nUndocumented",
-            "title": "aoe"
+            "location": "/gameData/legs/#legsknock",
+            "text": "(void)legs.Knock:(float)strengh x:(float)x y:(float)y z:(float)z \nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\n            all you need is strengh and origin",
+            "title": "legs.Knock"
         },
         {
-            "location": "/gameData/aoe/#aoe",
-            "text": "",
-            "title": "aoe"
+            "location": "/gameData/legs/#arguments_2",
+            "text": "float strengh :   float x :   float y :   float z :",
+            "title": "Arguments"
         },
         {
-            "location": "/gameData/aoe/#variables",
-            "text": "",
-            "title": "Variables"
-        },
-        {
-            "location": "/gameData/aoe/#aoeradius",
-            "text": "float aoe.radius  Radius of area.",
-            "title": "aoe.radius"
-        },
-        {
-            "location": "/gameData/aoe/#aoeautostart",
-            "text": "bool aoe.autoStart  Whethever or not the AoE start running on Start.\n            If  false  you would have to call  run  yourself.",
-            "title": "aoe.autoStart"
-        },
-        {
-            "location": "/gameData/aoe/#aoeisrunning",
-            "text": "bool aoe.isRunning  Whether the area is running or not.",
-            "title": "aoe.isRunning"
-        },
-        {
-            "location": "/gameData/aoe/#aoedescriptor",
-            "text": "string aoe.descriptor  Descriptor of AoE to run. \n            It's a json path. \n            If changed it will restart the AoE",
-            "title": "aoe.descriptor"
-        },
-        {
-            "location": "/gameData/aoe/#aoeupdate",
-            "text": "string aoe.update  Update script that runs continuously while AOE is running.",
-            "title": "aoe.update"
-        },
-        {
-            "location": "/gameData/aoe/#aoeeffect",
-            "text": "string aoe.effect  Update script that runs continuously to spawn over time.",
-            "title": "aoe.effect"
-        },
-        {
-            "location": "/gameData/aoe/#stats",
-            "text": "",
-            "title": "Stats"
-        },
-        {
-            "location": "/gameData/aoe/#message",
-            "text": "",
-            "title": "Message"
-        },
-        {
-            "location": "/gameData/aoe/#aoerun",
-            "text": "(void)aoe.run \nUndocumented",
-            "title": "aoe.run"
-        },
-        {
-            "location": "/gameData/aoe/#aoeresume",
-            "text": "(void)aoe.resume \nUndocumented",
-            "title": "aoe.resume"
-        },
-        {
-            "location": "/gameData/aoe/#aoestop",
-            "text": "(void)aoe.stop \nUndocumented",
-            "title": "aoe.stop"
+            "location": "/gameData/legs/#returns_2",
+            "text": "N/A",
+            "title": "Returns"
         },
         {
             "location": "/gameData/throw/",
@@ -1176,6 +1251,51 @@
             "title": "Message"
         },
         {
+            "location": "/gameData/skills/",
+            "text": "skills\n\n\nVariables\n\n\nStats\n\n\nMessage\n\n\nskills.inflictall\n\n\n(void)skills.inflictall:(string)key\n\nUndocumented\n\n\nskills.inflict\n\n\n(void)skills.inflict:(int)slot key:(string)key\n\nusing a key effect, the ailement will be given to a slot specific skill\n\n\nArguments\n\n\nint slot\n: \n\n\nstring key\n: \n\n\nReturns\n\n\nN/A",
+            "title": "skills"
+        },
+        {
+            "location": "/gameData/skills/#skills",
+            "text": "",
+            "title": "skills"
+        },
+        {
+            "location": "/gameData/skills/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/skills/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/skills/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/skills/#skillsinflictall",
+            "text": "(void)skills.inflictall:(string)key \nUndocumented",
+            "title": "skills.inflictall"
+        },
+        {
+            "location": "/gameData/skills/#skillsinflict",
+            "text": "(void)skills.inflict:(int)slot key:(string)key \nusing a key effect, the ailement will be given to a slot specific skill",
+            "title": "skills.inflict"
+        },
+        {
+            "location": "/gameData/skills/#arguments",
+            "text": "int slot :   string key :",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/skills/#returns",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
             "location": "/gameData/stamina/",
             "text": "stamina\n\n\nVariables\n\n\nstamina.current\n\n\nint stamina.current\n\n\nThe current state of the bar, ergo, how many points you have for that stat\n\n\nStats\n\n\nstamina.rate\n\n\nfloat stamina.rate\n\n\nGame Stat that affect the bar over time, \n            positive Regen is a continuous recover\n            negative is meant for continuous damage\n\n\nstamina.capacity\n\n\nfloat stamina.capacity\n\n\nGame Stat that affect the total number of points for that stat\n\n\nMessage\n\n\nstamina.damage\n\n\n(void)stamina.damage:(int)amount\n\nApply damages: remove the amount.\n\n\nArguments\n\n\nint amount\n: Amount of damages to apply.\n\n\nReturns\n\n\nN/A\n\n\nstamina.burst\n\n\n(bool)stamina.burst:(float)amount\n\nTry to remove a value.\n\n\nArguments\n\n\nfloat amount\n: Amount to remove\n\n\nReturns\n\n\nTrue if succeeded to remove (that is there's enough quantity to remove).\n\n\nstamina.recover\n\n\n(void)stamina.recover:(int)amount\n\nRecover the stat by the amount specified\n\n\nArguments\n\n\nint amount\n: amount to recover\n\n\nReturns\n\n\nN/A",
             "title": "stamina"
@@ -1261,36 +1381,6 @@
             "title": "Returns"
         },
         {
-            "location": "/gameData/Wieldable/",
-            "text": "Wieldable\n\n\nVariables\n\n\nWieldable.tag\n\n\nstring Wieldable.tag\n\n\nthe tag from wich the wieldable will be wielded by an entity, \n            exemple : \"hand\" means the wieldable will be set on the slot \"hand\" on entity (if it has one)\n\n\nStats\n\n\nMessage",
-            "title": "Wieldable"
-        },
-        {
-            "location": "/gameData/Wieldable/#wieldable",
-            "text": "",
-            "title": "Wieldable"
-        },
-        {
-            "location": "/gameData/Wieldable/#variables",
-            "text": "",
-            "title": "Variables"
-        },
-        {
-            "location": "/gameData/Wieldable/#wieldabletag",
-            "text": "string Wieldable.tag  the tag from wich the wieldable will be wielded by an entity, \n            exemple : \"hand\" means the wieldable will be set on the slot \"hand\" on entity (if it has one)",
-            "title": "Wieldable.tag"
-        },
-        {
-            "location": "/gameData/Wieldable/#stats",
-            "text": "",
-            "title": "Stats"
-        },
-        {
-            "location": "/gameData/Wieldable/#message",
-            "text": "",
-            "title": "Message"
-        },
-        {
             "location": "/gameData/World/",
             "text": "World\n\n\nVariables\n\n\nWorld.ground\n\n\nbool World.ground\n\n\nWhether has a ground under.\n\n\nWorld.wallLeft\n\n\nbool World.wallLeft\n\n\nCheck if has a wall on left.\n\n\nWorld.wallRight\n\n\nbool World.wallRight\n\n\nHas wall on the right.\n\n\nWorld.ceil\n\n\nbool World.ceil\n\n\nHas ceiling.\n\n\nStats\n\n\nMessage\n\n\nWorld.addLayer\n\n\n(void)World.addLayer:(string)layerName\n\nWill add the specified layer to the world detection, meaning the world knowledge will be able to detect collison from that layer\n\n\nArguments\n\n\nstring layerName\n: The name of the layer to Add\n\n\nReturns\n\n\nN/A\n\n\nWorld.removeLayer\n\n\n(void)World.removeLayer:(string)layerName\n\nWill remove the specified layer from the world detection, meaning the world knowledge will not be able to detect collison from that layer\n\n\nArguments\n\n\nstring layerName\n: The name of the layer to Add\n\n\nReturns\n\n\nN/A\n\n\nWorld.resetMask\n\n\n(void)World.resetMask\n\nUndocumented",
             "title": "World"
@@ -1369,6 +1459,61 @@
             "location": "/gameData/World/#worldresetmask",
             "text": "(void)World.resetMask \nUndocumented",
             "title": "World.resetMask"
+        },
+        {
+            "location": "/gameData/navigation/",
+            "text": "navigation\n\n\nVariables\n\n\nStats\n\n\nnavigation.Gravity\n\n\nfloat navigation.Gravity\n\n\nUndocumented\n\n\nnavigation.Motion\n\n\nfloat navigation.Motion\n\n\nUndocumented\n\n\nnavigation.KnockDamp\n\n\nfloat navigation.KnockDamp\n\n\nUndocumented\n\n\nMessage\n\n\nnavigation.Knock\n\n\n(void)navigation.Knock:(float)strengh x:(float)x y:(float)y z:(float)z\n\nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\n            all you need is strengh and origin\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nfloat x\n: \n\n\nfloat y\n: \n\n\nfloat z\n: \n\n\nReturns\n\n\nN/A",
+            "title": "navigation"
+        },
+        {
+            "location": "/gameData/navigation/#navigation",
+            "text": "",
+            "title": "navigation"
+        },
+        {
+            "location": "/gameData/navigation/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/navigation/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/navigation/#navigationgravity",
+            "text": "float navigation.Gravity  Undocumented",
+            "title": "navigation.Gravity"
+        },
+        {
+            "location": "/gameData/navigation/#navigationmotion",
+            "text": "float navigation.Motion  Undocumented",
+            "title": "navigation.Motion"
+        },
+        {
+            "location": "/gameData/navigation/#navigationknockdamp",
+            "text": "float navigation.KnockDamp  Undocumented",
+            "title": "navigation.KnockDamp"
+        },
+        {
+            "location": "/gameData/navigation/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/navigation/#navigationknock",
+            "text": "(void)navigation.Knock:(float)strengh x:(float)x y:(float)y z:(float)z \nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\n            all you need is strengh and origin",
+            "title": "navigation.Knock"
+        },
+        {
+            "location": "/gameData/navigation/#arguments",
+            "text": "float strengh :   float x :   float y :   float z :",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/navigation/#returns",
+            "text": "N/A",
+            "title": "Returns"
         }
     ]
 }
