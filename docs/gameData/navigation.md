@@ -14,6 +14,9 @@ Undocumented
 
 Undocumented
 ## Message
+### navigation.Jump
+`(void)navigation.Jump:(float)strengh `
+Undocumented
 ### navigation.Knock
 `(void)navigation.Knock:(float)strengh x:(float)x y:(float)y z:(float)z `
 knock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)

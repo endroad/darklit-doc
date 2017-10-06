@@ -10,6 +10,14 @@ Start or restart the update script.
 
 #### Returns
 N/A
+### aoes.instant
+`(void)aoes.instant:(string)keyid `
+Start or restart the update script.
+#### Arguments
+`string keyid`: N/A
+
+#### Returns
+N/A
 ### aoes.resume
 `(void)aoes.resume:(string)keyid `
 Resume execution of update script.

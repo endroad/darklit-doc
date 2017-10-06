@@ -361,6 +361,81 @@
             "title": "Examples"
         },
         {
+            "location": "/gameData/entity/",
+            "text": "entity\n\n\nVariables\n\n\nStats\n\n\nentity.decision\n\n\nfloat entity.decision\n\n\nUndocumented\n\n\nMessage\n\n\nentity.addEffect\n\n\n(void)entity.addEffect:(string)gameStat op:(string)op value:(float)value script:(string)script priority:(float)priority\n\nAdd a permanent effect on a gameStat\n\n\nArguments\n\n\nstring gameStat\n: the game stat affected by the effect\n\n\nstring op\n: operator of the effect, possible parameters are add/mult/over/script\n\n\nfloat value\n: value applied by operators add/mult/over\n\n\nstring script\n: script applied by operator script\n\n\nfloat priority\n: the priority of the effect, a greater number means the effect will be executed later\n\n\nReturns\n\n\nN/A\n\n\nentity.addEffectTimed\n\n\n(void)entity.addEffectTimed:(string)gameStat op:(string)op value:(float)value script:(string)script priority:(float)priority duration:(float)duration\n\nAdd a timed effect on a gameStat\n\n\nArguments\n\n\nstring gameStat\n: N/A\n\n\nstring op\n: N/A\n\n\nfloat value\n: N/A\n\n\nstring script\n: N/A\n\n\nfloat priority\n: N/A\n\n\nfloat duration\n: duration of the effect, once elapsed, it will be removed\n\n\nReturns\n\n\nN/A\n\n\nentity.addEffectAlter\n\n\n(void)entity.addEffectAlter:(string)gameStat op:(string)op value:(float)value script:(string)script priority:(float)priority alter:(string)alter\n\nAdd a alteration bound effect on a gameStat, the effect will remain as long as the alteration is inflicted. \n            Once the alteration is cured or elapsed, the effect will be removed\n\n\nArguments\n\n\nstring gameStat\n: N/A\n\n\nstring op\n: N/A\n\n\nfloat value\n: N/A\n\n\nstring script\n: N/A\n\n\nfloat priority\n: N/A\n\n\nstring alter\n: link to alteration\n\n\nReturns\n\n\nN/A",
+            "title": "entity"
+        },
+        {
+            "location": "/gameData/entity/#entity",
+            "text": "",
+            "title": "entity"
+        },
+        {
+            "location": "/gameData/entity/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/entity/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/entity/#entitydecision",
+            "text": "float entity.decision  Undocumented",
+            "title": "entity.decision"
+        },
+        {
+            "location": "/gameData/entity/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/entity/#entityaddeffect",
+            "text": "(void)entity.addEffect:(string)gameStat op:(string)op value:(float)value script:(string)script priority:(float)priority \nAdd a permanent effect on a gameStat",
+            "title": "entity.addEffect"
+        },
+        {
+            "location": "/gameData/entity/#arguments",
+            "text": "string gameStat : the game stat affected by the effect  string op : operator of the effect, possible parameters are add/mult/over/script  float value : value applied by operators add/mult/over  string script : script applied by operator script  float priority : the priority of the effect, a greater number means the effect will be executed later",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/entity/#returns",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/entity/#entityaddeffecttimed",
+            "text": "(void)entity.addEffectTimed:(string)gameStat op:(string)op value:(float)value script:(string)script priority:(float)priority duration:(float)duration \nAdd a timed effect on a gameStat",
+            "title": "entity.addEffectTimed"
+        },
+        {
+            "location": "/gameData/entity/#arguments_1",
+            "text": "string gameStat : N/A  string op : N/A  float value : N/A  string script : N/A  float priority : N/A  float duration : duration of the effect, once elapsed, it will be removed",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/entity/#returns_1",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/entity/#entityaddeffectalter",
+            "text": "(void)entity.addEffectAlter:(string)gameStat op:(string)op value:(float)value script:(string)script priority:(float)priority alter:(string)alter \nAdd a alteration bound effect on a gameStat, the effect will remain as long as the alteration is inflicted. \n            Once the alteration is cured or elapsed, the effect will be removed",
+            "title": "entity.addEffectAlter"
+        },
+        {
+            "location": "/gameData/entity/#arguments_2",
+            "text": "string gameStat : N/A  string op : N/A  float value : N/A  string script : N/A  float priority : N/A  string alter : link to alteration",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/entity/#returns_2",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
             "location": "/gameData/gameObject/",
             "text": "gameObject\n\n\nVariables\n\n\ngameObject.isActive\n\n\nbool gameObject.isActive\n\n\nReturns if the object is active.\n\n\ngameObject.isActiveInHierarchy\n\n\nbool gameObject.isActiveInHierarchy\n\n\nIs the GameObject active in the scene?\n\n\nStats\n\n\nMessage\n\n\ngameObject.destroyWithDelay\n\n\n(void)gameObject.destroyWithDelay:(float)delay\n\nDestroy with a specific delay.\n\n\nArguments\n\n\nfloat delay\n: Duration in second to wait before destroying\n\n\nReturns\n\n\nN/A\n\n\ngameObject.destroy\n\n\n(void)gameObject.destroy\n\nUndocumented\n\n\ngameObject.setLayer\n\n\n(void)gameObject.setLayer:(string)layerName\n\nchange the game object physic layer, which affects the world collision\n\n\nArguments\n\n\nstring layerName\n: name of the new layer\n\n\nReturns\n\n\nN/A",
             "title": "gameObject"
@@ -656,73 +731,8 @@
             "title": "Returns"
         },
         {
-            "location": "/gameData/spawner/",
-            "text": "spawner\n\n\nVariables\n\n\nspawner.local\n\n\nbool spawner.local\n\n\nWhether or not the spawn is local to\n            the current entity.\n\n\nspawner.descriptor\n\n\nstring spawner.descriptor\n\n\nDescriptor to spawn.\n            If starts with \ndata:\n the rest will be interpreted as a json path\n            if starts with \nprefab:\n it's a name of a registered prefab\n            by default it's a prefab.\n\n\nspawner.script\n\n\nstring spawner.script\n\n\nScript that runs continuously to spawn over time.\n\n\nStats\n\n\nMessage\n\n\nspawner.burst\n\n\n(void)spawner.burst:(int)count\n\nSpawn several item.\n\n\nArguments\n\n\nint count\n: Amount to spawn.\n\n\nReturns\n\n\nN/A\n\n\nspawner.spawn\n\n\n(void)spawner.spawn\n\nUndocumented\n\n\nspawner.reset\n\n\n(void)spawner.reset\n\nUndocumented",
-            "title": "spawner"
-        },
-        {
-            "location": "/gameData/spawner/#spawner",
-            "text": "",
-            "title": "spawner"
-        },
-        {
-            "location": "/gameData/spawner/#variables",
-            "text": "",
-            "title": "Variables"
-        },
-        {
-            "location": "/gameData/spawner/#spawnerlocal",
-            "text": "bool spawner.local  Whether or not the spawn is local to\n            the current entity.",
-            "title": "spawner.local"
-        },
-        {
-            "location": "/gameData/spawner/#spawnerdescriptor",
-            "text": "string spawner.descriptor  Descriptor to spawn.\n            If starts with  data:  the rest will be interpreted as a json path\n            if starts with  prefab:  it's a name of a registered prefab\n            by default it's a prefab.",
-            "title": "spawner.descriptor"
-        },
-        {
-            "location": "/gameData/spawner/#spawnerscript",
-            "text": "string spawner.script  Script that runs continuously to spawn over time.",
-            "title": "spawner.script"
-        },
-        {
-            "location": "/gameData/spawner/#stats",
-            "text": "",
-            "title": "Stats"
-        },
-        {
-            "location": "/gameData/spawner/#message",
-            "text": "",
-            "title": "Message"
-        },
-        {
-            "location": "/gameData/spawner/#spawnerburst",
-            "text": "(void)spawner.burst:(int)count \nSpawn several item.",
-            "title": "spawner.burst"
-        },
-        {
-            "location": "/gameData/spawner/#arguments",
-            "text": "int count : Amount to spawn.",
-            "title": "Arguments"
-        },
-        {
-            "location": "/gameData/spawner/#returns",
-            "text": "N/A",
-            "title": "Returns"
-        },
-        {
-            "location": "/gameData/spawner/#spawnerspawn",
-            "text": "(void)spawner.spawn \nUndocumented",
-            "title": "spawner.spawn"
-        },
-        {
-            "location": "/gameData/spawner/#spawnerreset",
-            "text": "(void)spawner.reset \nUndocumented",
-            "title": "spawner.reset"
-        },
-        {
             "location": "/gameData/aoes/",
-            "text": "aoes\n\n\nVariables\n\n\nStats\n\n\nMessage\n\n\naoes.run\n\n\n(void)aoes.run:(string)keyid\n\nStart or restart the update script.\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A\n\n\naoes.resume\n\n\n(void)aoes.resume:(string)keyid\n\nResume execution of update script.\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A\n\n\naoes.stop\n\n\n(void)aoes.stop:(string)keyid\n\nStop execution of update script.\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A",
+            "text": "aoes\n\n\nVariables\n\n\nStats\n\n\nMessage\n\n\naoes.run\n\n\n(void)aoes.run:(string)keyid\n\nStart or restart the update script.\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A\n\n\naoes.instant\n\n\n(void)aoes.instant:(string)keyid\n\nStart or restart the update script.\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A\n\n\naoes.resume\n\n\n(void)aoes.resume:(string)keyid\n\nResume execution of update script.\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A\n\n\naoes.stop\n\n\n(void)aoes.stop:(string)keyid\n\nStop execution of update script.\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A",
             "title": "aoes"
         },
         {
@@ -761,9 +771,9 @@
             "title": "Returns"
         },
         {
-            "location": "/gameData/aoes/#aoesresume",
-            "text": "(void)aoes.resume:(string)keyid \nResume execution of update script.",
-            "title": "aoes.resume"
+            "location": "/gameData/aoes/#aoesinstant",
+            "text": "(void)aoes.instant:(string)keyid \nStart or restart the update script.",
+            "title": "aoes.instant"
         },
         {
             "location": "/gameData/aoes/#arguments_1",
@@ -776,9 +786,9 @@
             "title": "Returns"
         },
         {
-            "location": "/gameData/aoes/#aoesstop",
-            "text": "(void)aoes.stop:(string)keyid \nStop execution of update script.",
-            "title": "aoes.stop"
+            "location": "/gameData/aoes/#aoesresume",
+            "text": "(void)aoes.resume:(string)keyid \nResume execution of update script.",
+            "title": "aoes.resume"
         },
         {
             "location": "/gameData/aoes/#arguments_2",
@@ -789,6 +799,106 @@
             "location": "/gameData/aoes/#returns_2",
             "text": "N/A",
             "title": "Returns"
+        },
+        {
+            "location": "/gameData/aoes/#aoesstop",
+            "text": "(void)aoes.stop:(string)keyid \nStop execution of update script.",
+            "title": "aoes.stop"
+        },
+        {
+            "location": "/gameData/aoes/#arguments_3",
+            "text": "string keyid : N/A",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/aoes/#returns_3",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/alteration/",
+            "text": "alteration\n\n\nVariables\n\n\nStats\n\n\nalteration.recovery\n\n\nfloat alteration.recovery\n\n\nwhen recovering from certain ailment, this is the duration an entity needs to get back on its feet\n            like a micro stun\n\n\nMessage\n\n\nalteration.HasInflicted\n\n\n(bool)alteration.HasInflicted:(string)alter\n\nUndocumented\n\n\nalteration.HasResistance\n\n\n(bool)alteration.HasResistance:(string)alter\n\nUndocumented\n\n\nalteration.Inflict\n\n\n(void)alteration.Inflict:(string)alter duration:(float)duration\n\nInflict a string based alteration to the entity, for a duration. The nature of the alter is\n            up to your very imagination, though we consider at the moment that alters are not stackable,\n            ergo you cant inflict a double poison for exemple\n\n\nArguments\n\n\nstring alter\n: \n\n\nfloat duration\n: \n\n\nReturns\n\n\nN/A\n\n\nalteration.Resist\n\n\n(void)alteration.Resist:(string)alter duration:(float)duration\n\nAdd a timed resistance to an alteration, as such if the entity was inflicted that alteration, \n            it will be cured as a result\n\n\nArguments\n\n\nstring alter\n: \n\n\nfloat duration\n: \n\n\nReturns\n\n\nN/A\n\n\nalteration.CureAll\n\n\n(void)alteration.CureAll\n\nUndocumented\n\n\nalteration.DisruptAll\n\n\n(void)alteration.DisruptAll\n\nUndocumented\n\n\nalteration.Clear\n\n\n(void)alteration.Clear\n\nUndocumented",
+            "title": "alteration"
+        },
+        {
+            "location": "/gameData/alteration/#alteration",
+            "text": "",
+            "title": "alteration"
+        },
+        {
+            "location": "/gameData/alteration/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/alteration/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/alteration/#alterationrecovery",
+            "text": "float alteration.recovery  when recovering from certain ailment, this is the duration an entity needs to get back on its feet\n            like a micro stun",
+            "title": "alteration.recovery"
+        },
+        {
+            "location": "/gameData/alteration/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/alteration/#alterationhasinflicted",
+            "text": "(bool)alteration.HasInflicted:(string)alter \nUndocumented",
+            "title": "alteration.HasInflicted"
+        },
+        {
+            "location": "/gameData/alteration/#alterationhasresistance",
+            "text": "(bool)alteration.HasResistance:(string)alter \nUndocumented",
+            "title": "alteration.HasResistance"
+        },
+        {
+            "location": "/gameData/alteration/#alterationinflict",
+            "text": "(void)alteration.Inflict:(string)alter duration:(float)duration \nInflict a string based alteration to the entity, for a duration. The nature of the alter is\n            up to your very imagination, though we consider at the moment that alters are not stackable,\n            ergo you cant inflict a double poison for exemple",
+            "title": "alteration.Inflict"
+        },
+        {
+            "location": "/gameData/alteration/#arguments",
+            "text": "string alter :   float duration :",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/alteration/#returns",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/alteration/#alterationresist",
+            "text": "(void)alteration.Resist:(string)alter duration:(float)duration \nAdd a timed resistance to an alteration, as such if the entity was inflicted that alteration, \n            it will be cured as a result",
+            "title": "alteration.Resist"
+        },
+        {
+            "location": "/gameData/alteration/#arguments_1",
+            "text": "string alter :   float duration :",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/alteration/#returns_1",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/alteration/#alterationcureall",
+            "text": "(void)alteration.CureAll \nUndocumented",
+            "title": "alteration.CureAll"
+        },
+        {
+            "location": "/gameData/alteration/#alterationdisruptall",
+            "text": "(void)alteration.DisruptAll \nUndocumented",
+            "title": "alteration.DisruptAll"
+        },
+        {
+            "location": "/gameData/alteration/#alterationclear",
+            "text": "(void)alteration.Clear \nUndocumented",
+            "title": "alteration.Clear"
         },
         {
             "location": "/gameData/attack/",
@@ -827,7 +937,7 @@
         },
         {
             "location": "/gameData/Character/",
-            "text": "Character\n\n\nVariables\n\n\nCharacter.vulnerable\n\n\nbool Character.vulnerable\n\n\na boolean to know if the character can recieve hit damage\n\n\nStats\n\n\nCharacter.Damage\n\n\nfloat Character.Damage\n\n\nUndocumented\n\n\nCharacter.Gravity\n\n\nfloat Character.Gravity\n\n\nUndocumented\n\n\nCharacter.Motion\n\n\nfloat Character.Motion\n\n\nUndocumented\n\n\nCharacter.KnockDamp\n\n\nfloat Character.KnockDamp\n\n\nUndocumented\n\n\nMessage\n\n\nCharacter.UpwardBoost\n\n\n(void)Character.UpwardBoost:(float)boost\n\nUndocumented\n\n\nCharacter.SetInvincible\n\n\n(void)Character.SetInvincible:(float)duration\n\nUndocumented\n\n\nCharacter.Knock\n\n\n(void)Character.Knock:(float)strengh x:(float)x y:(float)y z:(float)z\n\nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\n            all you need is strengh and origin\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nfloat x\n: \n\n\nfloat y\n: \n\n\nfloat z\n: \n\n\nReturns\n\n\nN/A",
+            "text": "Character\n\n\nVariables\n\n\nCharacter.vulnerable\n\n\nbool Character.vulnerable\n\n\na boolean to know if the character can recieve hit damage\n\n\nStats\n\n\nCharacter.Damage\n\n\nfloat Character.Damage\n\n\nUndocumented\n\n\nCharacter.Gravity\n\n\nfloat Character.Gravity\n\n\nUndocumented\n\n\nCharacter.Motion\n\n\nfloat Character.Motion\n\n\nUndocumented\n\n\nCharacter.KnockDamp\n\n\nfloat Character.KnockDamp\n\n\nUndocumented\n\n\nMessage\n\n\nCharacter.UpwardBoost\n\n\n(void)Character.UpwardBoost:(float)boost\n\nUndocumented\n\n\nCharacter.SetInvincible\n\n\n(void)Character.SetInvincible:(float)duration\n\nUndocumented\n\n\nCharacter.Jump\n\n\n(void)Character.Jump:(float)strengh\n\nUndocumented\n\n\nCharacter.Knock\n\n\n(void)Character.Knock:(float)strengh x:(float)x y:(float)y z:(float)z\n\nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\n            all you need is strengh and origin\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nfloat x\n: \n\n\nfloat y\n: \n\n\nfloat z\n: \n\n\nReturns\n\n\nN/A",
             "title": "Character"
         },
         {
@@ -884,6 +994,11 @@
             "location": "/gameData/Character/#charactersetinvincible",
             "text": "(void)Character.SetInvincible:(float)duration \nUndocumented",
             "title": "Character.SetInvincible"
+        },
+        {
+            "location": "/gameData/Character/#characterjump",
+            "text": "(void)Character.Jump:(float)strengh \nUndocumented",
+            "title": "Character.Jump"
         },
         {
             "location": "/gameData/Character/#characterknock",
@@ -1296,6 +1411,66 @@
             "title": "Returns"
         },
         {
+            "location": "/gameData/spawner/",
+            "text": "spawner\n\n\nVariables\n\n\nStats\n\n\nMessage\n\n\nspawner.burst\n\n\n(void)spawner.burst:(string)keyid count:(int)count\n\nUndocumented\n\n\nspawner.spawn\n\n\n(void)spawner.spawn:(string)keyid\n\nSpawn a single item.\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nspawner.reset\n\n\n(void)spawner.reset:(string)keyid\n\nReset spawner script update.\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A",
+            "title": "spawner"
+        },
+        {
+            "location": "/gameData/spawner/#spawner",
+            "text": "",
+            "title": "spawner"
+        },
+        {
+            "location": "/gameData/spawner/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/spawner/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/spawner/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/spawner/#spawnerburst",
+            "text": "(void)spawner.burst:(string)keyid count:(int)count \nUndocumented",
+            "title": "spawner.burst"
+        },
+        {
+            "location": "/gameData/spawner/#spawnerspawn",
+            "text": "(void)spawner.spawn:(string)keyid \nSpawn a single item.",
+            "title": "spawner.spawn"
+        },
+        {
+            "location": "/gameData/spawner/#arguments",
+            "text": "string keyid : N/A",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/spawner/#returns",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/spawner/#spawnerreset",
+            "text": "(void)spawner.reset:(string)keyid \nReset spawner script update.",
+            "title": "spawner.reset"
+        },
+        {
+            "location": "/gameData/spawner/#arguments_1",
+            "text": "string keyid : N/A",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/spawner/#returns_1",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
             "location": "/gameData/stamina/",
             "text": "stamina\n\n\nVariables\n\n\nstamina.current\n\n\nint stamina.current\n\n\nThe current state of the bar, ergo, how many points you have for that stat\n\n\nStats\n\n\nstamina.rate\n\n\nfloat stamina.rate\n\n\nGame Stat that affect the bar over time, \n            positive Regen is a continuous recover\n            negative is meant for continuous damage\n\n\nstamina.capacity\n\n\nfloat stamina.capacity\n\n\nGame Stat that affect the total number of points for that stat\n\n\nMessage\n\n\nstamina.damage\n\n\n(void)stamina.damage:(int)amount\n\nApply damages: remove the amount.\n\n\nArguments\n\n\nint amount\n: Amount of damages to apply.\n\n\nReturns\n\n\nN/A\n\n\nstamina.burst\n\n\n(bool)stamina.burst:(float)amount\n\nTry to remove a value.\n\n\nArguments\n\n\nfloat amount\n: Amount to remove\n\n\nReturns\n\n\nTrue if succeeded to remove (that is there's enough quantity to remove).\n\n\nstamina.recover\n\n\n(void)stamina.recover:(int)amount\n\nRecover the stat by the amount specified\n\n\nArguments\n\n\nint amount\n: amount to recover\n\n\nReturns\n\n\nN/A",
             "title": "stamina"
@@ -1462,7 +1637,7 @@
         },
         {
             "location": "/gameData/navigation/",
-            "text": "navigation\n\n\nVariables\n\n\nStats\n\n\nnavigation.Gravity\n\n\nfloat navigation.Gravity\n\n\nUndocumented\n\n\nnavigation.Motion\n\n\nfloat navigation.Motion\n\n\nUndocumented\n\n\nnavigation.KnockDamp\n\n\nfloat navigation.KnockDamp\n\n\nUndocumented\n\n\nMessage\n\n\nnavigation.Knock\n\n\n(void)navigation.Knock:(float)strengh x:(float)x y:(float)y z:(float)z\n\nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\n            all you need is strengh and origin\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nfloat x\n: \n\n\nfloat y\n: \n\n\nfloat z\n: \n\n\nReturns\n\n\nN/A",
+            "text": "navigation\n\n\nVariables\n\n\nStats\n\n\nnavigation.Gravity\n\n\nfloat navigation.Gravity\n\n\nUndocumented\n\n\nnavigation.Motion\n\n\nfloat navigation.Motion\n\n\nUndocumented\n\n\nnavigation.KnockDamp\n\n\nfloat navigation.KnockDamp\n\n\nUndocumented\n\n\nMessage\n\n\nnavigation.Jump\n\n\n(void)navigation.Jump:(float)strengh\n\nUndocumented\n\n\nnavigation.Knock\n\n\n(void)navigation.Knock:(float)strengh x:(float)x y:(float)y z:(float)z\n\nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\n            all you need is strengh and origin\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nfloat x\n: \n\n\nfloat y\n: \n\n\nfloat z\n: \n\n\nReturns\n\n\nN/A",
             "title": "navigation"
         },
         {
@@ -1499,6 +1674,11 @@
             "location": "/gameData/navigation/#message",
             "text": "",
             "title": "Message"
+        },
+        {
+            "location": "/gameData/navigation/#navigationjump",
+            "text": "(void)navigation.Jump:(float)strengh \nUndocumented",
+            "title": "navigation.Jump"
         },
         {
             "location": "/gameData/navigation/#navigationknock",

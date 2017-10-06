@@ -28,6 +28,9 @@ Undocumented
 ### Character.SetInvincible
 `(void)Character.SetInvincible:(float)duration `
 Undocumented
+### Character.Jump
+`(void)Character.Jump:(float)strengh `
+Undocumented
 ### Character.Knock
 `(void)Character.Knock:(float)strengh x:(float)x y:(float)y z:(float)z `
 knock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)

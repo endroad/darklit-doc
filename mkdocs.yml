@@ -18,14 +18,15 @@ pages:
     - Game: 'commands.game.md'
     - Dev: 'commands.dev.md'
 - Game Data:
+    - entity: gameData/entity.md
     - gameObject: gameData/gameObject.md
     - net: gameData/net.md
     - random: gameData/random.md
     - time: gameData/time.md
     - transform: gameData/transform.md
     - __vmtest: gameData/__vmtest.md
-    - spawner: gameData/spawner.md
     - aoes: gameData/aoes.md
+    - alteration: gameData/alteration.md
     - attack: gameData/attack.md
     - Character: gameData/Character.md
     - brain: gameData/brain.md
@@ -35,6 +36,7 @@ pages:
     - health: gameData/health.md
     - Oxygen: gameData/Oxygen.md
     - skills: gameData/skills.md
+    - spawner: gameData/spawner.md
     - stamina: gameData/stamina.md
     - World: gameData/World.md
     - navigation: gameData/navigation.md
