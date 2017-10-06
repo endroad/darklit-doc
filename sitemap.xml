@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,19 +13,19 @@
         
     <url>
      <loc>/nsref.basics/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/nsref.ext/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/nsref.beh/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -35,31 +35,31 @@
         
     <url>
      <loc>/stemp.AOE/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/stemp.cond/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/stemp.effect/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/stemp.beh/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/stemp.spawner/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -69,7 +69,7 @@
         
     <url>
      <loc>/jsontemp.cond/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -79,13 +79,13 @@
         
     <url>
      <loc>/commands.game/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/commands.dev/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -94,122 +94,134 @@
     
         
     <url>
+     <loc>/gameData/entity/</loc>
+     <lastmod>2017-10-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/gameData/gameObject/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/net/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/random/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/time/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/transform/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/__vmtest/</loc>
-     <lastmod>2017-09-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/gameData/spawner/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/aoes/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/gameData/alteration/</loc>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/attack/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/Character/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/brain/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/weakness/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/legs/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/throw/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/health/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/Oxygen/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/skills/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/gameData/spawner/</loc>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/stamina/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/World/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gameData/navigation/</loc>
-     <lastmod>2017-09-29</lastmod>
+     <lastmod>2017-10-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
