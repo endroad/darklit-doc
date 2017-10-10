@@ -362,7 +362,7 @@
         },
         {
             "location": "/gameData/entity/",
-            "text": "entity\n\n\nVariables\n\n\nStats\n\n\nentity.decision\n\n\nfloat entity.decision\n\n\nUndocumented\n\n\nMessage\n\n\nentity.addEffect\n\n\n(void)entity.addEffect:(string)gameStat op:(string)op value:(float)value script:(string)script priority:(float)priority\n\nAdd a permanent effect on a gameStat\n\n\nArguments\n\n\nstring gameStat\n: the game stat affected by the effect\n\n\nstring op\n: operator of the effect, possible parameters are add/mult/over/script\n\n\nfloat value\n: value applied by operators add/mult/over\n\n\nstring script\n: script applied by operator script\n\n\nfloat priority\n: the priority of the effect, a greater number means the effect will be executed later\n\n\nReturns\n\n\nN/A\n\n\nentity.addEffectTimed\n\n\n(void)entity.addEffectTimed:(string)gameStat op:(string)op value:(float)value script:(string)script priority:(float)priority duration:(float)duration\n\nAdd a timed effect on a gameStat\n\n\nArguments\n\n\nstring gameStat\n: N/A\n\n\nstring op\n: N/A\n\n\nfloat value\n: N/A\n\n\nstring script\n: N/A\n\n\nfloat priority\n: N/A\n\n\nfloat duration\n: duration of the effect, once elapsed, it will be removed\n\n\nReturns\n\n\nN/A\n\n\nentity.addEffectAlter\n\n\n(void)entity.addEffectAlter:(string)gameStat op:(string)op value:(float)value script:(string)script priority:(float)priority alter:(string)alter\n\nAdd a alteration bound effect on a gameStat, the effect will remain as long as the alteration is inflicted. \n            Once the alteration is cured or elapsed, the effect will be removed\n\n\nArguments\n\n\nstring gameStat\n: N/A\n\n\nstring op\n: N/A\n\n\nfloat value\n: N/A\n\n\nstring script\n: N/A\n\n\nfloat priority\n: N/A\n\n\nstring alter\n: link to alteration\n\n\nReturns\n\n\nN/A",
+            "text": "entity\n\n\nVariables\n\n\nStats\n\n\nentity.decision\n\n\nfloat entity.decision\n\n\nUndocumented\n\n\nMessage\n\n\nentity.addEffect\n\n\n(void)entity.addEffect:(string)gameStat op:(string)op value:(float)value priority:(float)priority\n\nAdd a permanent effect on a gameStat\n\n\nArguments\n\n\nstring gameStat\n: the game stat affected by the effect\n\n\nstring op\n: operator of the effect, possible parameters are add/mult/over/ and any script path\n\n\nfloat value\n: value applied by operators add/mult/over\n\n\nfloat priority\n: the priority of the effect, a greater number means the effect will be executed later\n\n\nReturns\n\n\nN/A\n\n\nentity.addEffectTimed\n\n\n(void)entity.addEffectTimed:(string)gameStat op:(string)op value:(float)value priority:(float)priority duration:(float)duration\n\nAdd a timed effect on a gameStat\n\n\nArguments\n\n\nstring gameStat\n: N/A\n\n\nstring op\n: N/A\n\n\nfloat value\n: N/A\n\n\nfloat priority\n: N/A\n\n\nfloat duration\n: duration of the effect, once elapsed, it will be removed\n\n\nReturns\n\n\nN/A\n\n\nentity.addEffectAlter\n\n\n(void)entity.addEffectAlter:(string)gameStat op:(string)op value:(float)value priority:(float)priority alter:(string)alter\n\nAdd a alteration bound effect on a gameStat, the effect will remain as long as the alteration is inflicted. \n            Once the alteration is cured or elapsed, the effect will be removed\n\n\nArguments\n\n\nstring gameStat\n: N/A\n\n\nstring op\n: N/A\n\n\nfloat value\n: N/A\n\n\nfloat priority\n: N/A\n\n\nstring alter\n: link to alteration\n\n\nReturns\n\n\nN/A\n\n\nentity.play\n\n\n(void)entity.play:(string)name\n\nUndocumented\n\n\nentity.stop\n\n\n(void)entity.stop:(string)name\n\nUndocumented\n\n\nentity.pause\n\n\n(void)entity.pause:(string)name\n\nUndocumented\n\n\nentity.reset\n\n\n(void)entity.reset:(string)name\n\nUndocumented",
             "title": "entity"
         },
         {
@@ -392,12 +392,12 @@
         },
         {
             "location": "/gameData/entity/#entityaddeffect",
-            "text": "(void)entity.addEffect:(string)gameStat op:(string)op value:(float)value script:(string)script priority:(float)priority \nAdd a permanent effect on a gameStat",
+            "text": "(void)entity.addEffect:(string)gameStat op:(string)op value:(float)value priority:(float)priority \nAdd a permanent effect on a gameStat",
             "title": "entity.addEffect"
         },
         {
             "location": "/gameData/entity/#arguments",
-            "text": "string gameStat : the game stat affected by the effect  string op : operator of the effect, possible parameters are add/mult/over/script  float value : value applied by operators add/mult/over  string script : script applied by operator script  float priority : the priority of the effect, a greater number means the effect will be executed later",
+            "text": "string gameStat : the game stat affected by the effect  string op : operator of the effect, possible parameters are add/mult/over/ and any script path  float value : value applied by operators add/mult/over  float priority : the priority of the effect, a greater number means the effect will be executed later",
             "title": "Arguments"
         },
         {
@@ -407,12 +407,12 @@
         },
         {
             "location": "/gameData/entity/#entityaddeffecttimed",
-            "text": "(void)entity.addEffectTimed:(string)gameStat op:(string)op value:(float)value script:(string)script priority:(float)priority duration:(float)duration \nAdd a timed effect on a gameStat",
+            "text": "(void)entity.addEffectTimed:(string)gameStat op:(string)op value:(float)value priority:(float)priority duration:(float)duration \nAdd a timed effect on a gameStat",
             "title": "entity.addEffectTimed"
         },
         {
             "location": "/gameData/entity/#arguments_1",
-            "text": "string gameStat : N/A  string op : N/A  float value : N/A  string script : N/A  float priority : N/A  float duration : duration of the effect, once elapsed, it will be removed",
+            "text": "string gameStat : N/A  string op : N/A  float value : N/A  float priority : N/A  float duration : duration of the effect, once elapsed, it will be removed",
             "title": "Arguments"
         },
         {
@@ -422,18 +422,38 @@
         },
         {
             "location": "/gameData/entity/#entityaddeffectalter",
-            "text": "(void)entity.addEffectAlter:(string)gameStat op:(string)op value:(float)value script:(string)script priority:(float)priority alter:(string)alter \nAdd a alteration bound effect on a gameStat, the effect will remain as long as the alteration is inflicted. \n            Once the alteration is cured or elapsed, the effect will be removed",
+            "text": "(void)entity.addEffectAlter:(string)gameStat op:(string)op value:(float)value priority:(float)priority alter:(string)alter \nAdd a alteration bound effect on a gameStat, the effect will remain as long as the alteration is inflicted. \n            Once the alteration is cured or elapsed, the effect will be removed",
             "title": "entity.addEffectAlter"
         },
         {
             "location": "/gameData/entity/#arguments_2",
-            "text": "string gameStat : N/A  string op : N/A  float value : N/A  string script : N/A  float priority : N/A  string alter : link to alteration",
+            "text": "string gameStat : N/A  string op : N/A  float value : N/A  float priority : N/A  string alter : link to alteration",
             "title": "Arguments"
         },
         {
             "location": "/gameData/entity/#returns_2",
             "text": "N/A",
             "title": "Returns"
+        },
+        {
+            "location": "/gameData/entity/#entityplay",
+            "text": "(void)entity.play:(string)name \nUndocumented",
+            "title": "entity.play"
+        },
+        {
+            "location": "/gameData/entity/#entitystop",
+            "text": "(void)entity.stop:(string)name \nUndocumented",
+            "title": "entity.stop"
+        },
+        {
+            "location": "/gameData/entity/#entitypause",
+            "text": "(void)entity.pause:(string)name \nUndocumented",
+            "title": "entity.pause"
+        },
+        {
+            "location": "/gameData/entity/#entityreset",
+            "text": "(void)entity.reset:(string)name \nUndocumented",
+            "title": "entity.reset"
         },
         {
             "location": "/gameData/gameObject/",
@@ -642,7 +662,7 @@
         },
         {
             "location": "/gameData/transform/",
-            "text": "transform\n\n\nVariables\n\n\ntransform.posx\n\n\nfloat transform.posx\n\n\nUndocumented\n\n\ntransform.posy\n\n\nfloat transform.posy\n\n\nUndocumented\n\n\ntransform.posz\n\n\nfloat transform.posz\n\n\nUndocumented\n\n\nStats\n\n\nMessage",
+            "text": "transform\n\n\nVariables\n\n\ntransform.posx\n\n\nfloat transform.posx\n\n\nUndocumented\n\n\ntransform.posy\n\n\nfloat transform.posy\n\n\nUndocumented\n\n\ntransform.posz\n\n\nfloat transform.posz\n\n\nUndocumented\n\n\nStats\n\n\nMessage\n\n\ntransform.IsFacing\n\n\n(bool)transform.IsFacing:(float)x y:(float)y z:(float)z\n\nUndocumented",
             "title": "transform"
         },
         {
@@ -679,6 +699,11 @@
             "location": "/gameData/transform/#message",
             "text": "",
             "title": "Message"
+        },
+        {
+            "location": "/gameData/transform/#transformisfacing",
+            "text": "(bool)transform.IsFacing:(float)x y:(float)y z:(float)z \nUndocumented",
+            "title": "transform.IsFacing"
         },
         {
             "location": "/gameData/__vmtest/",
@@ -817,7 +842,7 @@
         },
         {
             "location": "/gameData/alteration/",
-            "text": "alteration\n\n\nVariables\n\n\nStats\n\n\nalteration.recovery\n\n\nfloat alteration.recovery\n\n\nwhen recovering from certain ailment, this is the duration an entity needs to get back on its feet\n            like a micro stun\n\n\nMessage\n\n\nalteration.HasInflicted\n\n\n(bool)alteration.HasInflicted:(string)alter\n\nUndocumented\n\n\nalteration.HasResistance\n\n\n(bool)alteration.HasResistance:(string)alter\n\nUndocumented\n\n\nalteration.Inflict\n\n\n(void)alteration.Inflict:(string)alter duration:(float)duration\n\nInflict a string based alteration to the entity, for a duration. The nature of the alter is\n            up to your very imagination, though we consider at the moment that alters are not stackable,\n            ergo you cant inflict a double poison for exemple\n\n\nArguments\n\n\nstring alter\n: \n\n\nfloat duration\n: \n\n\nReturns\n\n\nN/A\n\n\nalteration.Resist\n\n\n(void)alteration.Resist:(string)alter duration:(float)duration\n\nAdd a timed resistance to an alteration, as such if the entity was inflicted that alteration, \n            it will be cured as a result\n\n\nArguments\n\n\nstring alter\n: \n\n\nfloat duration\n: \n\n\nReturns\n\n\nN/A\n\n\nalteration.CureAll\n\n\n(void)alteration.CureAll\n\nUndocumented\n\n\nalteration.DisruptAll\n\n\n(void)alteration.DisruptAll\n\nUndocumented\n\n\nalteration.Clear\n\n\n(void)alteration.Clear\n\nUndocumented",
+            "text": "alteration\n\n\nVariables\n\n\nStats\n\n\nalteration.recovery\n\n\nfloat alteration.recovery\n\n\nwhen recovering from certain ailment, this is the duration an entity needs to get back on its feet\n            like a micro stun\n\n\nMessage\n\n\nalteration.HasInflicted\n\n\n(bool)alteration.HasInflicted:(string)alter\n\nUndocumented\n\n\nalteration.HasResistance\n\n\n(bool)alteration.HasResistance:(string)alter\n\nUndocumented\n\n\nalteration.Inflict\n\n\n(void)alteration.Inflict:(string)alter duration:(float)duration\n\nInflict a string based alteration to the entity, for a duration. The nature of the alter is\n            up to your very imagination, though we consider at the moment that alters are not stackable,\n            ergo you cant inflict a double poison for exemple\n\n\nArguments\n\n\nstring alter\n: \n\n\nfloat duration\n: \n\n\nReturns\n\n\nN/A\n\n\nalteration.Resist\n\n\n(void)alteration.Resist:(string)alter duration:(float)duration\n\nAdd a timed resistance to an alteration, as such if the entity was inflicted that alteration, \n            it will be cured as a result\n\n\nArguments\n\n\nstring alter\n: \n\n\nfloat duration\n: \n\n\nReturns\n\n\nN/A\n\n\nalteration.CureAll\n\n\n(void)alteration.CureAll:(int)morality\n\nWill cure all inflicted alterations reguarding the morality on this entity\n            Permanents alterations are not affected\n\n\nArguments\n\n\nint morality\n: morality of alters to cure\n\n\nReturns\n\n\nN/A\n\n\nalteration.Cure\n\n\n(void)alteration.Cure:(string)alter\n\nWill cure a specific alter\n\n\nArguments\n\n\nstring alter\n: the alter to cure\n\n\nReturns\n\n\nN/A\n\n\nalteration.DisruptAll\n\n\n(void)alteration.DisruptAll:(int)morality\n\nWill disrupt all resistances to an alter regarding the morality on this entity\n            Permanents alterations are not affected\n\n\nArguments\n\n\nint morality\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nalteration.Disrupt\n\n\n(void)alteration.Disrupt:(string)alter\n\nWill disrupt a resistance to a specific alter\n\n\nArguments\n\n\nstring alter\n: the alter to cure\n\n\nReturns\n\n\nN/A\n\n\nalteration.Clear\n\n\n(void)alteration.Clear\n\nUndocumented",
             "title": "alteration"
         },
         {
@@ -887,13 +912,63 @@
         },
         {
             "location": "/gameData/alteration/#alterationcureall",
-            "text": "(void)alteration.CureAll \nUndocumented",
+            "text": "(void)alteration.CureAll:(int)morality \nWill cure all inflicted alterations reguarding the morality on this entity\n            Permanents alterations are not affected",
             "title": "alteration.CureAll"
         },
         {
+            "location": "/gameData/alteration/#arguments_2",
+            "text": "int morality : morality of alters to cure",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/alteration/#returns_2",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/alteration/#alterationcure",
+            "text": "(void)alteration.Cure:(string)alter \nWill cure a specific alter",
+            "title": "alteration.Cure"
+        },
+        {
+            "location": "/gameData/alteration/#arguments_3",
+            "text": "string alter : the alter to cure",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/alteration/#returns_3",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
             "location": "/gameData/alteration/#alterationdisruptall",
-            "text": "(void)alteration.DisruptAll \nUndocumented",
+            "text": "(void)alteration.DisruptAll:(int)morality \nWill disrupt all resistances to an alter regarding the morality on this entity\n            Permanents alterations are not affected",
             "title": "alteration.DisruptAll"
+        },
+        {
+            "location": "/gameData/alteration/#arguments_4",
+            "text": "int morality : N/A",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/alteration/#returns_4",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/alteration/#alterationdisrupt",
+            "text": "(void)alteration.Disrupt:(string)alter \nWill disrupt a resistance to a specific alter",
+            "title": "alteration.Disrupt"
+        },
+        {
+            "location": "/gameData/alteration/#arguments_5",
+            "text": "string alter : the alter to cure",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/alteration/#returns_5",
+            "text": "N/A",
+            "title": "Returns"
         },
         {
             "location": "/gameData/alteration/#alterationclear",
@@ -937,7 +1012,7 @@
         },
         {
             "location": "/gameData/Character/",
-            "text": "Character\n\n\nVariables\n\n\nCharacter.vulnerable\n\n\nbool Character.vulnerable\n\n\na boolean to know if the character can recieve hit damage\n\n\nStats\n\n\nCharacter.Damage\n\n\nfloat Character.Damage\n\n\nUndocumented\n\n\nCharacter.Gravity\n\n\nfloat Character.Gravity\n\n\nUndocumented\n\n\nCharacter.Motion\n\n\nfloat Character.Motion\n\n\nUndocumented\n\n\nCharacter.KnockDamp\n\n\nfloat Character.KnockDamp\n\n\nUndocumented\n\n\nMessage\n\n\nCharacter.UpwardBoost\n\n\n(void)Character.UpwardBoost:(float)boost\n\nUndocumented\n\n\nCharacter.SetInvincible\n\n\n(void)Character.SetInvincible:(float)duration\n\nUndocumented\n\n\nCharacter.Jump\n\n\n(void)Character.Jump:(float)strengh\n\nUndocumented\n\n\nCharacter.Knock\n\n\n(void)Character.Knock:(float)strengh x:(float)x y:(float)y z:(float)z\n\nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\n            all you need is strengh and origin\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nfloat x\n: \n\n\nfloat y\n: \n\n\nfloat z\n: \n\n\nReturns\n\n\nN/A",
+            "text": "Character\n\n\nVariables\n\n\nCharacter.vulnerable\n\n\nbool Character.vulnerable\n\n\na boolean to know if the character can recieve hit damage\n\n\nStats\n\n\nCharacter.Damage\n\n\nfloat Character.Damage\n\n\nUndocumented\n\n\nCharacter.acknowledgable\n\n\nfloat Character.acknowledgable\n\n\nthe capacity to be spotted by IA\n\n\nCharacter.Gravity\n\n\nfloat Character.Gravity\n\n\nUndocumented\n\n\nCharacter.Motion\n\n\nfloat Character.Motion\n\n\nUndocumented\n\n\nCharacter.KnockDamp\n\n\nfloat Character.KnockDamp\n\n\nUndocumented\n\n\nMessage\n\n\nCharacter.UpwardBoost\n\n\n(void)Character.UpwardBoost:(float)boost\n\nUndocumented\n\n\nCharacter.SetInvincible\n\n\n(void)Character.SetInvincible:(float)duration\n\nUndocumented\n\n\nCharacter.SetState\n\n\n(void)Character.SetState:(int)state\n\nUndocumented\n\n\nCharacter.Jump\n\n\n(void)Character.Jump:(float)strengh\n\nUndocumented\n\n\nCharacter.MoveForward\n\n\n(void)Character.MoveForward:(float)speed\n\nUndocumented\n\n\nCharacter.Knock\n\n\n(void)Character.Knock:(float)strengh x:(float)x y:(float)y z:(float)z\n\nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\n            all you need is strengh and origin\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nfloat x\n: \n\n\nfloat y\n: \n\n\nfloat z\n: \n\n\nReturns\n\n\nN/A",
             "title": "Character"
         },
         {
@@ -964,6 +1039,11 @@
             "location": "/gameData/Character/#characterdamage",
             "text": "float Character.Damage  Undocumented",
             "title": "Character.Damage"
+        },
+        {
+            "location": "/gameData/Character/#characteracknowledgable",
+            "text": "float Character.acknowledgable  the capacity to be spotted by IA",
+            "title": "Character.acknowledgable"
         },
         {
             "location": "/gameData/Character/#charactergravity",
@@ -996,9 +1076,19 @@
             "title": "Character.SetInvincible"
         },
         {
+            "location": "/gameData/Character/#charactersetstate",
+            "text": "(void)Character.SetState:(int)state \nUndocumented",
+            "title": "Character.SetState"
+        },
+        {
             "location": "/gameData/Character/#characterjump",
             "text": "(void)Character.Jump:(float)strengh \nUndocumented",
             "title": "Character.Jump"
+        },
+        {
+            "location": "/gameData/Character/#charactermoveforward",
+            "text": "(void)Character.MoveForward:(float)speed \nUndocumented",
+            "title": "Character.MoveForward"
         },
         {
             "location": "/gameData/Character/#characterknock",
@@ -1637,7 +1727,7 @@
         },
         {
             "location": "/gameData/navigation/",
-            "text": "navigation\n\n\nVariables\n\n\nStats\n\n\nnavigation.Gravity\n\n\nfloat navigation.Gravity\n\n\nUndocumented\n\n\nnavigation.Motion\n\n\nfloat navigation.Motion\n\n\nUndocumented\n\n\nnavigation.KnockDamp\n\n\nfloat navigation.KnockDamp\n\n\nUndocumented\n\n\nMessage\n\n\nnavigation.Jump\n\n\n(void)navigation.Jump:(float)strengh\n\nUndocumented\n\n\nnavigation.Knock\n\n\n(void)navigation.Knock:(float)strengh x:(float)x y:(float)y z:(float)z\n\nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\n            all you need is strengh and origin\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nfloat x\n: \n\n\nfloat y\n: \n\n\nfloat z\n: \n\n\nReturns\n\n\nN/A",
+            "text": "navigation\n\n\nVariables\n\n\nStats\n\n\nnavigation.Gravity\n\n\nfloat navigation.Gravity\n\n\nUndocumented\n\n\nnavigation.Motion\n\n\nfloat navigation.Motion\n\n\nUndocumented\n\n\nnavigation.KnockDamp\n\n\nfloat navigation.KnockDamp\n\n\nUndocumented\n\n\nMessage\n\n\nnavigation.Jump\n\n\n(void)navigation.Jump:(float)strengh\n\nUndocumented\n\n\nnavigation.MoveForward\n\n\n(void)navigation.MoveForward:(float)speed\n\nUndocumented\n\n\nnavigation.Knock\n\n\n(void)navigation.Knock:(float)strengh x:(float)x y:(float)y z:(float)z\n\nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\n            all you need is strengh and origin\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nfloat x\n: \n\n\nfloat y\n: \n\n\nfloat z\n: \n\n\nReturns\n\n\nN/A",
             "title": "navigation"
         },
         {
@@ -1679,6 +1769,11 @@
             "location": "/gameData/navigation/#navigationjump",
             "text": "(void)navigation.Jump:(float)strengh \nUndocumented",
             "title": "navigation.Jump"
+        },
+        {
+            "location": "/gameData/navigation/#navigationmoveforward",
+            "text": "(void)navigation.MoveForward:(float)speed \nUndocumented",
+            "title": "navigation.MoveForward"
         },
         {
             "location": "/gameData/navigation/#navigationknock",

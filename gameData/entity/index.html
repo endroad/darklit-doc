@@ -543,6 +543,34 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#entityplay" title="entity.play" class="md-nav__link">
+    entity.play
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entitystop" title="entity.stop" class="md-nav__link">
+    entity.stop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entitypause" title="entity.pause" class="md-nav__link">
+    entity.pause
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entityreset" title="entity.reset" class="md-nav__link">
+    entity.reset
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -950,6 +978,34 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#entityplay" title="entity.play" class="md-nav__link">
+    entity.play
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entitystop" title="entity.stop" class="md-nav__link">
+    entity.stop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entitypause" title="entity.pause" class="md-nav__link">
+    entity.pause
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entityreset" title="entity.reset" class="md-nav__link">
+    entity.reset
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -978,41 +1034,50 @@
 <p>Undocumented</p>
 <h2 id="message">Message</h2>
 <h3 id="entityaddeffect">entity.addEffect</h3>
-<p><code>(void)entity.addEffect:(string)gameStat op:(string)op value:(float)value script:(string)script priority:(float)priority</code>
+<p><code>(void)entity.addEffect:(string)gameStat op:(string)op value:(float)value priority:(float)priority</code>
 Add a permanent effect on a gameStat</p>
 <h4 id="arguments">Arguments</h4>
 <p><code>string gameStat</code>: the game stat affected by the effect</p>
-<p><code>string op</code>: operator of the effect, possible parameters are add/mult/over/script</p>
+<p><code>string op</code>: operator of the effect, possible parameters are add/mult/over/ and any script path</p>
 <p><code>float value</code>: value applied by operators add/mult/over</p>
-<p><code>string script</code>: script applied by operator script</p>
 <p><code>float priority</code>: the priority of the effect, a greater number means the effect will be executed later</p>
 <h4 id="returns">Returns</h4>
 <p>N/A</p>
 <h3 id="entityaddeffecttimed">entity.addEffectTimed</h3>
-<p><code>(void)entity.addEffectTimed:(string)gameStat op:(string)op value:(float)value script:(string)script priority:(float)priority duration:(float)duration</code>
+<p><code>(void)entity.addEffectTimed:(string)gameStat op:(string)op value:(float)value priority:(float)priority duration:(float)duration</code>
 Add a timed effect on a gameStat</p>
 <h4 id="arguments_1">Arguments</h4>
 <p><code>string gameStat</code>: N/A</p>
 <p><code>string op</code>: N/A</p>
 <p><code>float value</code>: N/A</p>
-<p><code>string script</code>: N/A</p>
 <p><code>float priority</code>: N/A</p>
 <p><code>float duration</code>: duration of the effect, once elapsed, it will be removed</p>
 <h4 id="returns_1">Returns</h4>
 <p>N/A</p>
 <h3 id="entityaddeffectalter">entity.addEffectAlter</h3>
-<p><code>(void)entity.addEffectAlter:(string)gameStat op:(string)op value:(float)value script:(string)script priority:(float)priority alter:(string)alter</code>
+<p><code>(void)entity.addEffectAlter:(string)gameStat op:(string)op value:(float)value priority:(float)priority alter:(string)alter</code>
 Add a alteration bound effect on a gameStat, the effect will remain as long as the alteration is inflicted. 
             Once the alteration is cured or elapsed, the effect will be removed</p>
 <h4 id="arguments_2">Arguments</h4>
 <p><code>string gameStat</code>: N/A</p>
 <p><code>string op</code>: N/A</p>
 <p><code>float value</code>: N/A</p>
-<p><code>string script</code>: N/A</p>
 <p><code>float priority</code>: N/A</p>
 <p><code>string alter</code>: link to alteration</p>
 <h4 id="returns_2">Returns</h4>
 <p>N/A</p>
+<h3 id="entityplay">entity.play</h3>
+<p><code>(void)entity.play:(string)name</code>
+Undocumented</p>
+<h3 id="entitystop">entity.stop</h3>
+<p><code>(void)entity.stop:(string)name</code>
+Undocumented</p>
+<h3 id="entitypause">entity.pause</h3>
+<p><code>(void)entity.pause:(string)name</code>
+Undocumented</p>
+<h3 id="entityreset">entity.reset</h3>
+<p><code>(void)entity.reset:(string)name</code>
+Undocumented</p>
                 
                   
                 

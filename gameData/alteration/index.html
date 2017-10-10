@@ -631,12 +631,106 @@
     alteration.CureAll
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments_2" title="Arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" title="Returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alterationcure" title="alteration.Cure" class="md-nav__link">
+    alteration.Cure
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments_3" title="Arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" title="Returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
   <a href="#alterationdisruptall" title="alteration.DisruptAll" class="md-nav__link">
     alteration.DisruptAll
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments_4" title="Arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" title="Returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alterationdisrupt" title="alteration.Disrupt" class="md-nav__link">
+    alteration.Disrupt
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments_5" title="Arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_5" title="Returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -950,12 +1044,106 @@
     alteration.CureAll
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments_2" title="Arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" title="Returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alterationcure" title="alteration.Cure" class="md-nav__link">
+    alteration.Cure
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments_3" title="Arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" title="Returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
   <a href="#alterationdisruptall" title="alteration.DisruptAll" class="md-nav__link">
     alteration.DisruptAll
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments_4" title="Arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_4" title="Returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alterationdisrupt" title="alteration.Disrupt" class="md-nav__link">
+    alteration.Disrupt
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments_5" title="Arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_5" title="Returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1020,11 +1208,35 @@ Add a timed resistance to an alteration, as such if the entity was inflicted tha
 <h4 id="returns_1">Returns</h4>
 <p>N/A</p>
 <h3 id="alterationcureall">alteration.CureAll</h3>
-<p><code>(void)alteration.CureAll</code>
-Undocumented</p>
+<p><code>(void)alteration.CureAll:(int)morality</code>
+Will cure all inflicted alterations reguarding the morality on this entity
+            Permanents alterations are not affected</p>
+<h4 id="arguments_2">Arguments</h4>
+<p><code>int morality</code>: morality of alters to cure</p>
+<h4 id="returns_2">Returns</h4>
+<p>N/A</p>
+<h3 id="alterationcure">alteration.Cure</h3>
+<p><code>(void)alteration.Cure:(string)alter</code>
+Will cure a specific alter</p>
+<h4 id="arguments_3">Arguments</h4>
+<p><code>string alter</code>: the alter to cure</p>
+<h4 id="returns_3">Returns</h4>
+<p>N/A</p>
 <h3 id="alterationdisruptall">alteration.DisruptAll</h3>
-<p><code>(void)alteration.DisruptAll</code>
-Undocumented</p>
+<p><code>(void)alteration.DisruptAll:(int)morality</code>
+Will disrupt all resistances to an alter regarding the morality on this entity
+            Permanents alterations are not affected</p>
+<h4 id="arguments_4">Arguments</h4>
+<p><code>int morality</code>: N/A</p>
+<h4 id="returns_4">Returns</h4>
+<p>N/A</p>
+<h3 id="alterationdisrupt">alteration.Disrupt</h3>
+<p><code>(void)alteration.Disrupt:(string)alter</code>
+Will disrupt a resistance to a specific alter</p>
+<h4 id="arguments_5">Arguments</h4>
+<p><code>string alter</code>: the alter to cure</p>
+<h4 id="returns_5">Returns</h4>
+<p>N/A</p>
 <h3 id="alterationclear">alteration.Clear</h3>
 <p><code>(void)alteration.Clear</code>
 Undocumented</p>
