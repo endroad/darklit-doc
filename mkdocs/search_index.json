@@ -756,6 +756,36 @@
             "title": "Returns"
         },
         {
+            "location": "/gameData/chest/",
+            "text": "chest\n\n\nVariables\n\n\nStats\n\n\nMessage\n\n\nchest.Open\n\n\n(void)chest.Open\n\nUndocumented",
+            "title": "chest"
+        },
+        {
+            "location": "/gameData/chest/#chest",
+            "text": "",
+            "title": "chest"
+        },
+        {
+            "location": "/gameData/chest/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/chest/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/chest/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/chest/#chestopen",
+            "text": "(void)chest.Open \nUndocumented",
+            "title": "chest.Open"
+        },
+        {
             "location": "/gameData/aoes/",
             "text": "aoes\n\n\nVariables\n\n\nStats\n\n\nMessage\n\n\naoes.run\n\n\n(void)aoes.run:(string)keyid\n\nStart or restart the update script.\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A\n\n\naoes.instant\n\n\n(void)aoes.instant:(string)keyid\n\nStart or restart the update script.\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A\n\n\naoes.resume\n\n\n(void)aoes.resume:(string)keyid\n\nResume execution of update script.\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A\n\n\naoes.stop\n\n\n(void)aoes.stop:(string)keyid\n\nStop execution of update script.\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A",
             "title": "aoes"
