@@ -1,7 +1,6 @@
 {
   "project": {
-    "name": "Darklit",
-    "theme": "material"
+    "name": "Darklit"
   },
   "other_pages": [
     "- Home: 'index.md'",
@@ -19,9 +18,23 @@
     "    - Dev: 'commands.dev.md'"
   ],
   "other": [
-    "extra:",
+    "theme:",
+    "  name: 'material'",
+    "  logo:",
+    "    icon: 'developer board'",
+    "  font:",
+    "    text: 'Roboto'",
+    "    code: 'Roboto Mono'",
     "  palette:",
-    "    primary: 'red'",
-    "    accent: 'cyan'"
+    "    primary: 'cyan'",
+    "    accent: 'pink'",
+    "  feature:",
+    "    tabs: true",
+    "markdown_extensions:",
+    "  - admonition",
+    "  - codehilite:",
+    "      linenums: true",
+    "extra_css:",
+    "  - 'stylesheets/extra.css'"
   ]
 }
