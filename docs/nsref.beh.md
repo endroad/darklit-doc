@@ -82,7 +82,7 @@ It's a convenience that allow scripter to split the code into parts that make se
 
     loop:
         if this->brain.playerDist < 3 then
-            [exec Fury]
+            [self exec:Fury]
         end
     end
 

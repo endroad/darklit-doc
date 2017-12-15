@@ -1,28 +1,73 @@
 # throw
 ## Variables
-### throw.strengh
+### **throw.strengh**
 `float throw.strengh`
 
-Undocumented
-### throw.angle
+
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+this->throw.strengh = -1.0
+```
+### **throw.angle**
 `float throw.angle`
 
-Undocumented
-### throw.gravity
+
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+this->throw.angle = 3.14159
+```
+### **throw.gravity**
 `bool throw.gravity`
 
-Undocumented
-### throw.drag
+
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+this->throw.gravity = true
+```
+### **throw.drag**
 `float throw.drag`
 
-Undocumented
-### throw.use
+
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+this->throw.drag = -1.0
+```
+### **throw.use**
 `bool throw.use`
 
-Undocumented
-## Stats
+
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+this->throw.use = false
+```
 ## Message
-### throw.throw
+### **throw.throw**
 `(void)throw.throw`
-Undocumented
+
+
+#### Arguments
+#### Returns
+
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+[this throw.throw]
+```
 

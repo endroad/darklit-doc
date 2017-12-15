@@ -1,9 +1,14 @@
 # time
 ## Variables
-### time.dt
+### **time.dt**
 `float time.dt`
 
 Time interval since last frame.
-## Stats
-## Message
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+this->time.dt = 3.14159
+```
 

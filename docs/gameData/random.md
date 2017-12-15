@@ -1,13 +1,20 @@
 # random
 ## Variables
-### random.value
+### **random.value**
 `float random.value`
 
 get a random float value between 0 and 1
-## Stats
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+this->random.value = 2.9
+```
 ## Message
-### random.range
+### **random.range**
 `(float)random.range:(float)min max:(float)max `
+
 get a random float value between min and max
 #### Arguments
 `float min`: minimal float value
@@ -16,8 +23,16 @@ get a random float value between min and max
 
 #### Returns
 return the random float
-### random.rangeInt
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+[this random.range:-1.0 max:3.14159]
+```
+### **random.rangeInt**
 `(int)random.rangeInt:(int)min max:(int)max `
+
 same as range but with integers
 #### Arguments
 `int min`: minimal int value (inclusive)
@@ -26,4 +41,11 @@ same as range but with integers
 
 #### Returns
 return the random integer
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+[this random.rangeInt:1337 max:1337]
+```
 

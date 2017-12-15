@@ -1,11 +1,11 @@
 site_name: "Darklit"
-theme: "material"
 pages:
 - Home: 'index.md'
 - NuSpeak Reference:
     - Basics: 'nsref.basics.md'
     - External: 'nsref.ext.md'
     - Behaviour: 'nsref.beh.md'
+    - Fibers: 'nsref.fibers.md'
 - Script Templates:
     - AOE: 'stemp.AOE.md'
     - Condition: 'stemp.cond.md'
@@ -18,30 +18,48 @@ pages:
     - Game: 'commands.game.md'
     - Dev: 'commands.dev.md'
 - Game Data:
+    - alteration: gameData/alteration.md
+    - aoes: gameData/aoes.md
+    - attack: gameData/attack.md
+    - brain: gameData/brain.md
+    - character: gameData/character.md
+    - chest: gameData/chest.md
     - entity: gameData/entity.md
     - gameObject: gameData/gameObject.md
-    - net: gameData/net.md
-    - random: gameData/random.md
-    - time: gameData/time.md
-    - transform: gameData/transform.md
-    - __vmtest: gameData/__vmtest.md
-    - aoes: gameData/aoes.md
-    - alteration: gameData/alteration.md
-    - attack: gameData/attack.md
-    - Character: gameData/Character.md
-    - brain: gameData/brain.md
-    - weakness: gameData/weakness.md
-    - legs: gameData/legs.md
-    - throw: gameData/throw.md
     - health: gameData/health.md
-    - Oxygen: gameData/Oxygen.md
+    - health: gameData/health.md
+    - legs: gameData/legs.md
+    - navigation: gameData/navigation.md
+    - net: gameData/net.md
+    - oxygen: gameData/oxygen.md
+    - random: gameData/random.md
     - skills: gameData/skills.md
     - spawner: gameData/spawner.md
     - stamina: gameData/stamina.md
-    - World: gameData/World.md
-    - navigation: gameData/navigation.md
-extra:
+    - target: gameData/target.md
+    - throw: gameData/throw.md
+    - time: gameData/time.md
+    - transform: gameData/transform.md
+    - visual: gameData/visual.md
+    - weakness: gameData/weakness.md
+    - wielder: gameData/wielder.md
+    - world: gameData/world.md
+theme:
+  name: 'material'
+  logo:
+    icon: 'developer board'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
   palette:
-    primary: 'red'
-    accent: 'cyan'
+    primary: 'cyan'
+    accent: 'pink'
+  feature:
+    tabs: true
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: true
+extra_css:
+  - 'stylesheets/extra.css'
 

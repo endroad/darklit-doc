@@ -1,8 +1,13 @@
 INFO    -  Cleaning site directory 
-INFO    -  Building documentation to directory: C:\Users\Fabien\Desktop\Projets\darklit-doc\site 
-INFO    -  Copying 'C:\Users\Fabien\Desktop\Projets\darklit-doc\site' to 'gh-pages' branch and pushing to GitHub. 
+INFO    -  Building documentation to directory: D:\dev\endroad\darklit-doc\site 
+INFO    -  Copying 'D:\dev\endroad\darklit-doc\site' to 'gh-pages' branch and pushing to GitHub. 
 ERROR   -  Failed to deploy to GitHub with error: 
-bash: /dev/tty: No such device or address
-error: failed to execute prompt script (exit code 1)
-fatal: could not read Username for 'https://github.com': No error
+To https://github.com/endroad/darklit-doc.git
+ ! [rejected]        gh-pages -> gh-pages (fetch first)
+error: failed to push some refs to 'https://github.com/endroad/darklit-doc.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
  

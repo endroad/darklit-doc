@@ -8,6 +8,7 @@
     "    - Basics: 'nsref.basics.md'",
     "    - External: 'nsref.ext.md'",
     "    - Behaviour: 'nsref.beh.md'",
+    "    - Fibers: 'nsref.fibers.md'",
     "- Script Templates:",
 	"    - AOE: 'stemp.AOE.md'",
     "    - Condition: 'stemp.cond.md'",

@@ -1,48 +1,119 @@
 # legs
 ## Variables
-### legs.isStopped
+### **legs.isStopped**
 `bool legs.isStopped`
 
 Whether the creature is stopped or not
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+this->legs.isStopped = false
+```
 ## Stats
-### legs.speed
+### **legs.speed**
 `float legs.speed`
 
 Moving speed.
-### legs.knockDamp
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+this->legs.speed = 3.14159
+```
+### **legs.knockDamp**
 `float legs.knockDamp`
 
 the rate at which a knockforce is reduced.
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+this->legs.knockDamp = 3.14159
+```
 ## Message
-### legs.MoveRight
-`(void)legs.MoveRight`
-Undocumented
-### legs.Turn
-`(void)legs.Turn:(float)angle `
+### **legs.moveRight**
+`(void)legs.moveRight`
+
+
+#### Arguments
+#### Returns
+
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+[this legs.moveRight]
+```
+### **legs.turn**
+`(void)legs.turn:(float)angle `
+
 Turns the facing direction of @angle degrees
 #### Arguments
 `float angle`: 
 
 #### Returns
 N/A
-### legs.Stop
-`(void)legs.Stop`
-Undocumented
-### legs.Resume
-`(void)legs.Resume`
-Undocumented
-### legs.Jump
-`(void)legs.Jump:(float)strengh `
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+[this legs.turn:3.14159]
+```
+### **legs.stop**
+`(void)legs.stop`
+
+
+#### Arguments
+#### Returns
+
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+[this legs.stop]
+```
+### **legs.resume**
+`(void)legs.resume`
+
+
+#### Arguments
+#### Returns
+
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+[this legs.resume]
+```
+### **legs.jump**
+`(void)legs.jump:(float)strengh `
+
 Make the creature jump, please check that a rigidbody is there and has UseGravity enabled
 #### Arguments
 `float strengh`: 
 
 #### Returns
 N/A
-### legs.Knock
-`(void)legs.Knock:(float)strengh x:(float)x y:(float)y z:(float)z `
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+[this legs.jump:3.14159]
+```
+### **legs.knock**
+`(void)legs.knock:(float)strengh x:(float)x y:(float)y z:(float)z `
+
 knock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)
-            all you need is strengh and origin
+all you need is strengh and origin
 #### Arguments
 `float strengh`: 
 
@@ -54,4 +125,11 @@ knock the creature, impose a locomotion force that cannot be opposed with consci
 
 #### Returns
 N/A
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+[this legs.knock:2.9 x:-1.0 y:2.9 z:-1.0]
+```
 

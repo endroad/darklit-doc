@@ -63,32 +63,32 @@ Event's arguments are a convention build between the scripter (you!) and the rec
 Passing a 'wrong' argument to an `event` will not trigger an error but you might not get the expected result in the end
 depending on how the `event` is interpreted by the C# code or by another NuSpeak script.
 
-## Globals
+## Extern
 
-NuSpeak uses static type checking. Which is a fancy way to say that the **type** (whether it's a `int` or `float` etc...) of an expression (let say `a + 4.0`) is evaluated when you compile the program.
+NuSpeak uses static type checking. Which is a fancy way to say the **type** (whether it's a `int` or `float` etc...) of an expression (let say `a + 4.0`) is evaluated when you compile the program.
 
-However it's possible thanks to `globals` to define **dynamic** `variables`, `stats` or `messages` per `entity`.
-Thus the type of these dynamic data is unknown at when you compile the program (compile-time) (it's only known when you run the program on `entity`)
+However it's possible thanks to `extern` to define **dynamic** `variables`, `stats` or `messages`.
+The type of these dynamic data is unknown when you compile the program (compile-time).
 
-So... to be able to have correct types in your programs at compile-time you **must** define the type all the `globals` you'll be using in your NuSpeak script.
+So... to be able to have correct types in your programs at compile-time you **must** define the type all the `extern` you'll be using in your NuSpeak script.
 
 > It's called a **forward declaration**
 
-If I'm using in my script the `global` variable `lifetime` I've defined in a **Json** file I **must** defined it like that:
+If I'm using in my script the `extern` variable `lifetime` I've defined in a **Json** file I **must** defined it like that:
 
-    global float lifetime        // Forward definition of 'lifetime'
+    extern float lifetime        // Forward definition of 'lifetime'
     this->global.lifetime = 0    // Usage of 'lifetime'
 
 ### Variables & Stats
 
-    global int victoryPoints
-    global float lifetime
+    extern int victoryPoints
+    extern float lifetime
 
     // Statistic
-    global stat strength
+    extern stat strength
 
 
 ### Messages
 
-    global (bool)doSomething:(int)
-    global (void)doOtherThing:(int) withArgument:(float) lotOfArguments:(bool)
+    extern (bool)doSomething:(int)
+    extern (void)doOtherThing:(int) withArgument:(float) lotOfArguments:(bool)

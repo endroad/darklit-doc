@@ -1,9 +1,14 @@
 # weakness
 ## Variables
-### weakness.vulnerable
+### **weakness.vulnerable**
 `bool weakness.vulnerable`
 
-Undocumented
-## Stats
-## Message
+
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+this->weakness.vulnerable = true
+```
 

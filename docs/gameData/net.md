@@ -1,21 +1,47 @@
 # net
 ## Variables
-### net.hasAutority
+### **net.hasAutority**
 `bool net.hasAutority`
 
 This returns true if this object is the authoritative version of the object in the distributed network application.
-### net.isServer
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+this->net.hasAutority = true
+```
+### **net.isServer**
 `bool net.isServer`
 
 Returns true if this object is active on an active server.
-### net.isClient
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+this->net.isServer = false
+```
+### **net.isClient**
 `bool net.isClient`
 
 Returns true if running as a client and this object was spawned by a server.
-### net.isLocalPlayer
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+this->net.isClient = false
+```
+### **net.isLocalPlayer**
 `bool net.isLocalPlayer`
 
 Returns
-## Stats
-## Message
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+this->net.isLocalPlayer = true
+```
 
