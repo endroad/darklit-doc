@@ -5,6 +5,7 @@ It requires the amount of item to spawn.
 | I/O  | Type     | Name        | Comments |
 |------|----------|-------------|----------|
 | `out` | `int`  | `burst`     | Number of object to spawn |
+| `out` | `float` | `progress` | Feedback the progression of the spawning process between 0 and 1. The value is then used on jauges or progress bars to show spawning advancement |
 
 ## Example: One every 60s
 

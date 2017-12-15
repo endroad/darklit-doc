@@ -1,15 +1,15 @@
 # World
 ## Variables
-### World.HasGround
-`bool World.HasGround`
+### World.ground
+`bool World.ground`
 
 Whether has a ground under.
-### World.HasWallLeft
-`bool World.HasWallLeft`
+### World.wallLeft
+`bool World.wallLeft`
 
 Check if has a wall on left.
-### World.HasWallRight
-`bool World.HasWallRight`
+### World.wallRight
+`bool World.wallRight`
 
 Has wall on the right.
 ### World.ceil
@@ -18,4 +18,23 @@ Has wall on the right.
 Has ceiling.
 ## Stats
 ## Message
+### World.addLayer
+`(void)World.addLayer:(string)layerName `
+Will add the specified layer to the world detection, meaning the world knowledge will be able to detect collison from that layer
+#### Arguments
+`string layerName`: The name of the layer to Add
+
+#### Returns
+N/A
+### World.removeLayer
+`(void)World.removeLayer:(string)layerName `
+Will remove the specified layer from the world detection, meaning the world knowledge will not be able to detect collison from that layer
+#### Arguments
+`string layerName`: The name of the layer to Add
+
+#### Returns
+N/A
+### World.resetMask
+`(void)World.resetMask`
+Undocumented
 

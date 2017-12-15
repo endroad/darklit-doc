@@ -1,36 +1,43 @@
-# Stamina
+# stamina
 ## Variables
-### Stamina.Current
-`int Stamina.Current`
+### stamina.current
+`int stamina.current`
 
-Undocumented
+The current state of the bar, ergo, how many points you have for that stat
 ## Stats
-### Stamina.Regen
-`float Stamina.Regen`
+### stamina.rate
+`float stamina.rate`
 
-Undocumented
-### Stamina.Capacity
-`float Stamina.Capacity`
+Game Stat that affect the bar over time, 
+            positive Regen is a continuous recover
+            negative is meant for continuous damage
+### stamina.capacity
+`float stamina.capacity`
 
-Undocumented
+Game Stat that affect the total number of points for that stat
 ## Message
-### Stamina.Damage
-`(void)Stamina.Damage:(int)amount `
+### stamina.damage
+`(void)stamina.damage:(int)amount `
 Apply damages: remove the amount.
 #### Arguments
 `int amount`: Amount of damages to apply.
 
 #### Returns
 N/A
-### Stamina.Burst
-`(bool)Stamina.Burst:(float)amount `
+### stamina.burst
+`(bool)stamina.burst:(float)amount `
 Try to remove a value.
 #### Arguments
 `float amount`: Amount to remove
 
 #### Returns
 True if succeeded to remove (that is there's enough quantity to remove).
-### Stamina.Recover
-`(void)Stamina.Recover:(int)amount `
-Undocumented
+### stamina.recover
+`(void)stamina.recover:(int)amount `
+Recover the stat by the amount specified
+#### Arguments
+`int amount`: amount to recover
+
+#### Returns
+N/A
 

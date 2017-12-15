@@ -151,6 +151,31 @@
             "title": "State &amp; Routine"
         },
         {
+            "location": "/stemp.AOE/",
+            "text": "Areas of effect, as a component, works with 2 scripts:\n\n\nAOE Update Template\n\n\nIt is ran on every frame one single time until it exits,\nit is mainly used to define if the effect will be ran on this frame,\nit is there to say if the AOE will do something.\n\n\n\n\n\n\n\n\nI/O\n\n\nType\n\n\nName\n\n\nComments\n\n\n\n\n\n\n\n\n\n\nout\n\n\nbool\n\n\nexecute\n\n\nwill execute the AOE effect\n\n\n\n\n\n\n\n\nExemple : A script that activate the effect once per second\n\n\nscript: OncePerSecond\n\n  out bool execute\n  float timer = 0\n  float duration = 1\n\n  loop:\n    if timer > duration then\n      execute = true\n      timer = 0\n    else\n      execute = false\n      timer = timer + game->time.dt\n    end\n  end\n\nendscript\n\n\n\nAOE Effect Template\n\n\nShould the update script returns as 'true' for 'execute', the effect script will be ran\nfor every entity in the defined zone.\n\n\n\n\n\n\n\n\nI/O\n\n\nType\n\n\nName\n\n\nComments\n\n\n\n\n\n\n\n\n\n\nin\n\n\nentity\n\n\nother\n\n\nthe entity affected by the AOE\n\n\n\n\n\n\n\n\nExemple : A script that does stamina damage in one go\n\n\nscript: StaminaDamage\n\n  entity other\n  [other stamina.damage: 15]\n\nendscript",
+            "title": "AOE"
+        },
+        {
+            "location": "/stemp.AOE/#aoe-update-template",
+            "text": "It is ran on every frame one single time until it exits,\nit is mainly used to define if the effect will be ran on this frame,\nit is there to say if the AOE will do something.     I/O  Type  Name  Comments      out  bool  execute  will execute the AOE effect",
+            "title": "AOE Update Template"
+        },
+        {
+            "location": "/stemp.AOE/#exemple-a-script-that-activate-the-effect-once-per-second",
+            "text": "script: OncePerSecond\n\n  out bool execute\n  float timer = 0\n  float duration = 1\n\n  loop:\n    if timer > duration then\n      execute = true\n      timer = 0\n    else\n      execute = false\n      timer = timer + game->time.dt\n    end\n  end\n\nendscript",
+            "title": "Exemple : A script that activate the effect once per second"
+        },
+        {
+            "location": "/stemp.AOE/#aoe-effect-template",
+            "text": "Should the update script returns as 'true' for 'execute', the effect script will be ran\nfor every entity in the defined zone.     I/O  Type  Name  Comments      in  entity  other  the entity affected by the AOE",
+            "title": "AOE Effect Template"
+        },
+        {
+            "location": "/stemp.AOE/#exemple-a-script-that-does-stamina-damage-in-one-go",
+            "text": "script: StaminaDamage\n\n  entity other\n  [other stamina.damage: 15]\n\nendscript",
+            "title": "Exemple : A script that does stamina damage in one go"
+        },
+        {
             "location": "/stemp.cond/",
             "text": "Condition Template\n\n\nUsed to evaluate a condition.\n\n\n\n\n\n\n\n\nI/O\n\n\nType\n\n\nName\n\n\nComments\n\n\n\n\n\n\n\n\n\n\nout\n\n\nbool\n\n\ncondition\n\n\nEvaluated condition",
             "title": "Condition"
@@ -182,12 +207,12 @@
         },
         {
             "location": "/stemp.spawner/",
-            "text": "Spawner Template\n\n\nSpawner is executed every frame while the program \nyield\n (that is inside a loop or after \n[yield]\n instructions).\nIt requires the amount of item to spawn.\n\n\n\n\n\n\n\n\nI/O\n\n\nType\n\n\nName\n\n\nComments\n\n\n\n\n\n\n\n\n\n\nout\n\n\nint\n\n\nburst\n\n\nNumber of object to spawn\n\n\n\n\n\n\n\n\nExample: One every 60s\n\n\nout int burst = 0\nint time = 0\nloop:\n    burst = 0\n    time = time + game->time.dt\n    if time >= 60 then\n        burst = 1\n    end\nend\n\n\n\nExample: One every 60s v2\n\n\nStops after spawning \n10\n\n\nout int burst = 0\nint time = 0\nint count = 0\nloop:\n    burst = 0\n    time = time + game->time.dt\n    if time >= 60 then\n        burst = 1\n        count = count + 1\n    end\n\n    if count >= 10 then\n        [exit]\n    end\nend",
+            "text": "Spawner Template\n\n\nSpawner is executed every frame while the program \nyield\n (that is inside a loop or after \n[yield]\n instructions).\nIt requires the amount of item to spawn.\n\n\n\n\n\n\n\n\nI/O\n\n\nType\n\n\nName\n\n\nComments\n\n\n\n\n\n\n\n\n\n\nout\n\n\nint\n\n\nburst\n\n\nNumber of object to spawn\n\n\n\n\n\n\nout\n\n\nfloat\n\n\nprogress\n\n\nFeedback the progression of the spawning process between 0 and 1. The value is then used on jauges or progress bars to show spawning advancement\n\n\n\n\n\n\n\n\nExample: One every 60s\n\n\nout int burst = 0\nint time = 0\nloop:\n    burst = 0\n    time = time + game->time.dt\n    if time >= 60 then\n        burst = 1\n    end\nend\n\n\n\nExample: One every 60s v2\n\n\nStops after spawning \n10\n\n\nout int burst = 0\nint time = 0\nint count = 0\nloop:\n    burst = 0\n    time = time + game->time.dt\n    if time >= 60 then\n        burst = 1\n        count = count + 1\n    end\n\n    if count >= 10 then\n        [exit]\n    end\nend",
             "title": "Spawner"
         },
         {
             "location": "/stemp.spawner/#spawner-template",
-            "text": "Spawner is executed every frame while the program  yield  (that is inside a loop or after  [yield]  instructions).\nIt requires the amount of item to spawn.     I/O  Type  Name  Comments      out  int  burst  Number of object to spawn",
+            "text": "Spawner is executed every frame while the program  yield  (that is inside a loop or after  [yield]  instructions).\nIt requires the amount of item to spawn.     I/O  Type  Name  Comments      out  int  burst  Number of object to spawn    out  float  progress  Feedback the progression of the spawning process between 0 and 1. The value is then used on jauges or progress bars to show spawning advancement",
             "title": "Spawner Template"
         },
         {
@@ -199,6 +224,81 @@
             "location": "/stemp.spawner/#example-one-every-60s-v2",
             "text": "Stops after spawning  10  out int burst = 0\nint time = 0\nint count = 0\nloop:\n    burst = 0\n    time = time + game->time.dt\n    if time >= 60 then\n        burst = 1\n        count = count + 1\n    end\n\n    if count >= 10 then\n        [exit]\n    end\nend",
             "title": "Example: One every 60s v2"
+        },
+        {
+            "location": "/jsontemp.cond/",
+            "text": "Condition\n\n\nMuch like any programming language, conditions are used to gate a process (such as triggering an action) using boolean expressions\n\n\nRequired Parameters\n\n\ntype : string\n\n\ncan recieve the following values\n\n\n\"compound\"      //Multiple Conditions\n\"data\"          //Compare GameData with constant\n\"time\"          //Chrono, beware as it only runs when the condition is evaluated\n\n\n\nData Parameters\n\n\nparameters that are specific to the Data type Condition\n\n\nop : string (REQUIRED)\n\n\noperator for condition , can recieve the following values\n\n\n\"less\",\n\"lessorequal\", \"lequal\",\n\"greater\",\n\"greaterorequal\", \"gequal\",\n\"equal\",\n\"notequal\", \"nequal\"\n\n\n\nleft : GameData (REQUIRED)\n\n\nthe gamedata on the left of the expression\n\n\nright : value (REQUIRED)\n\n\nvalue which type depends on the game data compared with\n\n\nCompound Parameters\n\n\nop : string (REQUIRED)\n\n\noperator for condition , can recieve the following values\n\n\n\"and\",          // requires all conditions to be true, evalution will stop at first faillure\n\"or\",           // requires one condition to be true, evalution will stop at first success\n\"not\"\n\n\n\n0 : Condition (REQUIRED)\n\n\ndefines the first condition, note that it starts a new Condition descriptor\n\n\n1 : Condition\n\n\ndefines the second condition, it is unnecessarary for \"not\" operator\n\n\n... : Condition\n\n\nsubsequent conditions, would be pretty dumb to be limited to 2 using same operator, right ? Just don't forget to increment the value\n\n\nTime Parameters\n\n\nduration : float(REQUIRED)\n\n\nfloat that acts as the chrono threshold",
+            "title": "Condition"
+        },
+        {
+            "location": "/jsontemp.cond/#condition",
+            "text": "Much like any programming language, conditions are used to gate a process (such as triggering an action) using boolean expressions",
+            "title": "Condition"
+        },
+        {
+            "location": "/jsontemp.cond/#required-parameters",
+            "text": "",
+            "title": "Required Parameters"
+        },
+        {
+            "location": "/jsontemp.cond/#type-string",
+            "text": "can recieve the following values  \"compound\"      //Multiple Conditions\n\"data\"          //Compare GameData with constant\n\"time\"          //Chrono, beware as it only runs when the condition is evaluated",
+            "title": "type : string"
+        },
+        {
+            "location": "/jsontemp.cond/#data-parameters",
+            "text": "parameters that are specific to the Data type Condition",
+            "title": "Data Parameters"
+        },
+        {
+            "location": "/jsontemp.cond/#op-string-required",
+            "text": "operator for condition , can recieve the following values  \"less\",\n\"lessorequal\", \"lequal\",\n\"greater\",\n\"greaterorequal\", \"gequal\",\n\"equal\",\n\"notequal\", \"nequal\"",
+            "title": "op : string (REQUIRED)"
+        },
+        {
+            "location": "/jsontemp.cond/#left-gamedata-required",
+            "text": "the gamedata on the left of the expression",
+            "title": "left : GameData (REQUIRED)"
+        },
+        {
+            "location": "/jsontemp.cond/#right-value-required",
+            "text": "value which type depends on the game data compared with",
+            "title": "right : value (REQUIRED)"
+        },
+        {
+            "location": "/jsontemp.cond/#compound-parameters",
+            "text": "",
+            "title": "Compound Parameters"
+        },
+        {
+            "location": "/jsontemp.cond/#op-string-required_1",
+            "text": "operator for condition , can recieve the following values  \"and\",          // requires all conditions to be true, evalution will stop at first faillure\n\"or\",           // requires one condition to be true, evalution will stop at first success\n\"not\"",
+            "title": "op : string (REQUIRED)"
+        },
+        {
+            "location": "/jsontemp.cond/#0-condition-required",
+            "text": "defines the first condition, note that it starts a new Condition descriptor",
+            "title": "0 : Condition (REQUIRED)"
+        },
+        {
+            "location": "/jsontemp.cond/#1-condition",
+            "text": "defines the second condition, it is unnecessarary for \"not\" operator",
+            "title": "1 : Condition"
+        },
+        {
+            "location": "/jsontemp.cond/#condition_1",
+            "text": "subsequent conditions, would be pretty dumb to be limited to 2 using same operator, right ? Just don't forget to increment the value",
+            "title": "... : Condition"
+        },
+        {
+            "location": "/jsontemp.cond/#time-parameters",
+            "text": "",
+            "title": "Time Parameters"
+        },
+        {
+            "location": "/jsontemp.cond/#duration-floatrequired",
+            "text": "float that acts as the chrono threshold",
+            "title": "duration : float(REQUIRED)"
         },
         {
             "location": "/commands.game/",
@@ -261,8 +361,83 @@
             "title": "Examples"
         },
         {
+            "location": "/gameData/entity/",
+            "text": "entity\n\n\nVariables\n\n\nStats\n\n\nentity.decision\n\n\nfloat entity.decision\n\n\nUndocumented\n\n\nMessage\n\n\nentity.addEffect\n\n\n(void)entity.addEffect:(string)gameStat op:(string)op value:(float)value script:(string)script priority:(float)priority\n\nAdd a permanent effect on a gameStat\n\n\nArguments\n\n\nstring gameStat\n: the game stat affected by the effect\n\n\nstring op\n: operator of the effect, possible parameters are add/mult/over/script\n\n\nfloat value\n: value applied by operators add/mult/over\n\n\nstring script\n: script applied by operator script\n\n\nfloat priority\n: the priority of the effect, a greater number means the effect will be executed later\n\n\nReturns\n\n\nN/A\n\n\nentity.addEffectTimed\n\n\n(void)entity.addEffectTimed:(string)gameStat op:(string)op value:(float)value script:(string)script priority:(float)priority duration:(float)duration\n\nAdd a timed effect on a gameStat\n\n\nArguments\n\n\nstring gameStat\n: N/A\n\n\nstring op\n: N/A\n\n\nfloat value\n: N/A\n\n\nstring script\n: N/A\n\n\nfloat priority\n: N/A\n\n\nfloat duration\n: duration of the effect, once elapsed, it will be removed\n\n\nReturns\n\n\nN/A\n\n\nentity.addEffectAlter\n\n\n(void)entity.addEffectAlter:(string)gameStat op:(string)op value:(float)value script:(string)script priority:(float)priority alter:(string)alter\n\nAdd a alteration bound effect on a gameStat, the effect will remain as long as the alteration is inflicted. \n            Once the alteration is cured or elapsed, the effect will be removed\n\n\nArguments\n\n\nstring gameStat\n: N/A\n\n\nstring op\n: N/A\n\n\nfloat value\n: N/A\n\n\nstring script\n: N/A\n\n\nfloat priority\n: N/A\n\n\nstring alter\n: link to alteration\n\n\nReturns\n\n\nN/A",
+            "title": "entity"
+        },
+        {
+            "location": "/gameData/entity/#entity",
+            "text": "",
+            "title": "entity"
+        },
+        {
+            "location": "/gameData/entity/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/entity/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/entity/#entitydecision",
+            "text": "float entity.decision  Undocumented",
+            "title": "entity.decision"
+        },
+        {
+            "location": "/gameData/entity/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/entity/#entityaddeffect",
+            "text": "(void)entity.addEffect:(string)gameStat op:(string)op value:(float)value script:(string)script priority:(float)priority \nAdd a permanent effect on a gameStat",
+            "title": "entity.addEffect"
+        },
+        {
+            "location": "/gameData/entity/#arguments",
+            "text": "string gameStat : the game stat affected by the effect  string op : operator of the effect, possible parameters are add/mult/over/script  float value : value applied by operators add/mult/over  string script : script applied by operator script  float priority : the priority of the effect, a greater number means the effect will be executed later",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/entity/#returns",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/entity/#entityaddeffecttimed",
+            "text": "(void)entity.addEffectTimed:(string)gameStat op:(string)op value:(float)value script:(string)script priority:(float)priority duration:(float)duration \nAdd a timed effect on a gameStat",
+            "title": "entity.addEffectTimed"
+        },
+        {
+            "location": "/gameData/entity/#arguments_1",
+            "text": "string gameStat : N/A  string op : N/A  float value : N/A  string script : N/A  float priority : N/A  float duration : duration of the effect, once elapsed, it will be removed",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/entity/#returns_1",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/entity/#entityaddeffectalter",
+            "text": "(void)entity.addEffectAlter:(string)gameStat op:(string)op value:(float)value script:(string)script priority:(float)priority alter:(string)alter \nAdd a alteration bound effect on a gameStat, the effect will remain as long as the alteration is inflicted. \n            Once the alteration is cured or elapsed, the effect will be removed",
+            "title": "entity.addEffectAlter"
+        },
+        {
+            "location": "/gameData/entity/#arguments_2",
+            "text": "string gameStat : N/A  string op : N/A  float value : N/A  string script : N/A  float priority : N/A  string alter : link to alteration",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/entity/#returns_2",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
             "location": "/gameData/gameObject/",
-            "text": "gameObject\n\n\nVariables\n\n\ngameObject.isActive\n\n\nbool gameObject.isActive\n\n\nReturns if the object is active.\n\n\ngameObject.isActiveInHierarchy\n\n\nbool gameObject.isActiveInHierarchy\n\n\nIs the GameObject active in the scene?\n\n\nStats\n\n\nMessage",
+            "text": "gameObject\n\n\nVariables\n\n\ngameObject.isActive\n\n\nbool gameObject.isActive\n\n\nReturns if the object is active.\n\n\ngameObject.isActiveInHierarchy\n\n\nbool gameObject.isActiveInHierarchy\n\n\nIs the GameObject active in the scene?\n\n\nStats\n\n\nMessage\n\n\ngameObject.destroyWithDelay\n\n\n(void)gameObject.destroyWithDelay:(float)delay\n\nDestroy with a specific delay.\n\n\nArguments\n\n\nfloat delay\n: Duration in second to wait before destroying\n\n\nReturns\n\n\nN/A\n\n\ngameObject.destroy\n\n\n(void)gameObject.destroy\n\nUndocumented\n\n\ngameObject.setLayer\n\n\n(void)gameObject.setLayer:(string)layerName\n\nchange the game object physic layer, which affects the world collision\n\n\nArguments\n\n\nstring layerName\n: name of the new layer\n\n\nReturns\n\n\nN/A",
             "title": "gameObject"
         },
         {
@@ -294,6 +469,41 @@
             "location": "/gameData/gameObject/#message",
             "text": "",
             "title": "Message"
+        },
+        {
+            "location": "/gameData/gameObject/#gameobjectdestroywithdelay",
+            "text": "(void)gameObject.destroyWithDelay:(float)delay \nDestroy with a specific delay.",
+            "title": "gameObject.destroyWithDelay"
+        },
+        {
+            "location": "/gameData/gameObject/#arguments",
+            "text": "float delay : Duration in second to wait before destroying",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/gameObject/#returns",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/gameObject/#gameobjectdestroy",
+            "text": "(void)gameObject.destroy \nUndocumented",
+            "title": "gameObject.destroy"
+        },
+        {
+            "location": "/gameData/gameObject/#gameobjectsetlayer",
+            "text": "(void)gameObject.setLayer:(string)layerName \nchange the game object physic layer, which affects the world collision",
+            "title": "gameObject.setLayer"
+        },
+        {
+            "location": "/gameData/gameObject/#arguments_1",
+            "text": "string layerName : name of the new layer",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/gameObject/#returns_1",
+            "text": "N/A",
+            "title": "Returns"
         },
         {
             "location": "/gameData/net/",
@@ -341,6 +551,66 @@
             "title": "Message"
         },
         {
+            "location": "/gameData/random/",
+            "text": "random\n\n\nVariables\n\n\nrandom.value\n\n\nfloat random.value\n\n\nget a random float value between 0 and 1\n\n\nStats\n\n\nMessage\n\n\nrandom.range\n\n\n(float)random.range:(float)min max:(float)max\n\nget a random float value between min and max\n\n\nArguments\n\n\nfloat min\n: minimal float value\n\n\nfloat max\n: maximal float value\n\n\nReturns\n\n\nreturn the random float\n\n\nrandom.rangeInt\n\n\n(int)random.rangeInt:(int)min max:(int)max\n\nsame as range but with integers\n\n\nArguments\n\n\nint min\n: minimal int value (inclusive)\n\n\nint max\n: maximal int value (also inclusive)\n\n\nReturns\n\n\nreturn the random integer",
+            "title": "random"
+        },
+        {
+            "location": "/gameData/random/#random",
+            "text": "",
+            "title": "random"
+        },
+        {
+            "location": "/gameData/random/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/random/#randomvalue",
+            "text": "float random.value  get a random float value between 0 and 1",
+            "title": "random.value"
+        },
+        {
+            "location": "/gameData/random/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/random/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/random/#randomrange",
+            "text": "(float)random.range:(float)min max:(float)max \nget a random float value between min and max",
+            "title": "random.range"
+        },
+        {
+            "location": "/gameData/random/#arguments",
+            "text": "float min : minimal float value  float max : maximal float value",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/random/#returns",
+            "text": "return the random float",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/random/#randomrangeint",
+            "text": "(int)random.rangeInt:(int)min max:(int)max \nsame as range but with integers",
+            "title": "random.rangeInt"
+        },
+        {
+            "location": "/gameData/random/#arguments_1",
+            "text": "int min : minimal int value (inclusive)  int max : maximal int value (also inclusive)",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/random/#returns_1",
+            "text": "return the random integer",
+            "title": "Returns"
+        },
+        {
             "location": "/gameData/time/",
             "text": "time\n\n\nVariables\n\n\ntime.dt\n\n\nfloat time.dt\n\n\nTime interval since last frame.\n\n\nStats\n\n\nMessage",
             "title": "time"
@@ -372,7 +642,7 @@
         },
         {
             "location": "/gameData/transform/",
-            "text": "transform\n\n\nVariables\n\n\nStats\n\n\nMessage",
+            "text": "transform\n\n\nVariables\n\n\ntransform.posx\n\n\nfloat transform.posx\n\n\nUndocumented\n\n\ntransform.posy\n\n\nfloat transform.posy\n\n\nUndocumented\n\n\ntransform.posz\n\n\nfloat transform.posz\n\n\nUndocumented\n\n\nStats\n\n\nMessage",
             "title": "transform"
         },
         {
@@ -384,6 +654,21 @@
             "location": "/gameData/transform/#variables",
             "text": "",
             "title": "Variables"
+        },
+        {
+            "location": "/gameData/transform/#transformposx",
+            "text": "float transform.posx  Undocumented",
+            "title": "transform.posx"
+        },
+        {
+            "location": "/gameData/transform/#transformposy",
+            "text": "float transform.posy  Undocumented",
+            "title": "transform.posy"
+        },
+        {
+            "location": "/gameData/transform/#transformposz",
+            "text": "float transform.posz  Undocumented",
+            "title": "transform.posz"
         },
         {
             "location": "/gameData/transform/#stats",
@@ -446,38 +731,213 @@
             "title": "Returns"
         },
         {
-            "location": "/gameData/spawner/",
-            "text": "spawner\n\n\nVariables\n\n\nspawner.time\n\n\nfloat spawner.time\n\n\nUndocumented\n\n\nStats\n\n\nMessage",
-            "title": "spawner"
+            "location": "/gameData/aoes/",
+            "text": "aoes\n\n\nVariables\n\n\nStats\n\n\nMessage\n\n\naoes.run\n\n\n(void)aoes.run:(string)keyid\n\nStart or restart the update script.\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A\n\n\naoes.instant\n\n\n(void)aoes.instant:(string)keyid\n\nStart or restart the update script.\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A\n\n\naoes.resume\n\n\n(void)aoes.resume:(string)keyid\n\nResume execution of update script.\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A\n\n\naoes.stop\n\n\n(void)aoes.stop:(string)keyid\n\nStop execution of update script.\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A",
+            "title": "aoes"
         },
         {
-            "location": "/gameData/spawner/#spawner",
+            "location": "/gameData/aoes/#aoes",
             "text": "",
-            "title": "spawner"
+            "title": "aoes"
         },
         {
-            "location": "/gameData/spawner/#variables",
+            "location": "/gameData/aoes/#variables",
             "text": "",
             "title": "Variables"
         },
         {
-            "location": "/gameData/spawner/#spawnertime",
-            "text": "float spawner.time  Undocumented",
-            "title": "spawner.time"
-        },
-        {
-            "location": "/gameData/spawner/#stats",
+            "location": "/gameData/aoes/#stats",
             "text": "",
             "title": "Stats"
         },
         {
-            "location": "/gameData/spawner/#message",
+            "location": "/gameData/aoes/#message",
             "text": "",
             "title": "Message"
         },
         {
+            "location": "/gameData/aoes/#aoesrun",
+            "text": "(void)aoes.run:(string)keyid \nStart or restart the update script.",
+            "title": "aoes.run"
+        },
+        {
+            "location": "/gameData/aoes/#arguments",
+            "text": "string keyid : N/A",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/aoes/#returns",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/aoes/#aoesinstant",
+            "text": "(void)aoes.instant:(string)keyid \nStart or restart the update script.",
+            "title": "aoes.instant"
+        },
+        {
+            "location": "/gameData/aoes/#arguments_1",
+            "text": "string keyid : N/A",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/aoes/#returns_1",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/aoes/#aoesresume",
+            "text": "(void)aoes.resume:(string)keyid \nResume execution of update script.",
+            "title": "aoes.resume"
+        },
+        {
+            "location": "/gameData/aoes/#arguments_2",
+            "text": "string keyid : N/A",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/aoes/#returns_2",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/aoes/#aoesstop",
+            "text": "(void)aoes.stop:(string)keyid \nStop execution of update script.",
+            "title": "aoes.stop"
+        },
+        {
+            "location": "/gameData/aoes/#arguments_3",
+            "text": "string keyid : N/A",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/aoes/#returns_3",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/alteration/",
+            "text": "alteration\n\n\nVariables\n\n\nStats\n\n\nalteration.recovery\n\n\nfloat alteration.recovery\n\n\nwhen recovering from certain ailment, this is the duration an entity needs to get back on its feet\n            like a micro stun\n\n\nMessage\n\n\nalteration.HasInflicted\n\n\n(bool)alteration.HasInflicted:(string)alter\n\nUndocumented\n\n\nalteration.HasResistance\n\n\n(bool)alteration.HasResistance:(string)alter\n\nUndocumented\n\n\nalteration.Inflict\n\n\n(void)alteration.Inflict:(string)alter duration:(float)duration\n\nInflict a string based alteration to the entity, for a duration. The nature of the alter is\n            up to your very imagination, though we consider at the moment that alters are not stackable,\n            ergo you cant inflict a double poison for exemple\n\n\nArguments\n\n\nstring alter\n: \n\n\nfloat duration\n: \n\n\nReturns\n\n\nN/A\n\n\nalteration.Resist\n\n\n(void)alteration.Resist:(string)alter duration:(float)duration\n\nAdd a timed resistance to an alteration, as such if the entity was inflicted that alteration, \n            it will be cured as a result\n\n\nArguments\n\n\nstring alter\n: \n\n\nfloat duration\n: \n\n\nReturns\n\n\nN/A\n\n\nalteration.CureAll\n\n\n(void)alteration.CureAll\n\nUndocumented\n\n\nalteration.DisruptAll\n\n\n(void)alteration.DisruptAll\n\nUndocumented\n\n\nalteration.Clear\n\n\n(void)alteration.Clear\n\nUndocumented",
+            "title": "alteration"
+        },
+        {
+            "location": "/gameData/alteration/#alteration",
+            "text": "",
+            "title": "alteration"
+        },
+        {
+            "location": "/gameData/alteration/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/alteration/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/alteration/#alterationrecovery",
+            "text": "float alteration.recovery  when recovering from certain ailment, this is the duration an entity needs to get back on its feet\n            like a micro stun",
+            "title": "alteration.recovery"
+        },
+        {
+            "location": "/gameData/alteration/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/alteration/#alterationhasinflicted",
+            "text": "(bool)alteration.HasInflicted:(string)alter \nUndocumented",
+            "title": "alteration.HasInflicted"
+        },
+        {
+            "location": "/gameData/alteration/#alterationhasresistance",
+            "text": "(bool)alteration.HasResistance:(string)alter \nUndocumented",
+            "title": "alteration.HasResistance"
+        },
+        {
+            "location": "/gameData/alteration/#alterationinflict",
+            "text": "(void)alteration.Inflict:(string)alter duration:(float)duration \nInflict a string based alteration to the entity, for a duration. The nature of the alter is\n            up to your very imagination, though we consider at the moment that alters are not stackable,\n            ergo you cant inflict a double poison for exemple",
+            "title": "alteration.Inflict"
+        },
+        {
+            "location": "/gameData/alteration/#arguments",
+            "text": "string alter :   float duration :",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/alteration/#returns",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/alteration/#alterationresist",
+            "text": "(void)alteration.Resist:(string)alter duration:(float)duration \nAdd a timed resistance to an alteration, as such if the entity was inflicted that alteration, \n            it will be cured as a result",
+            "title": "alteration.Resist"
+        },
+        {
+            "location": "/gameData/alteration/#arguments_1",
+            "text": "string alter :   float duration :",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/alteration/#returns_1",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/alteration/#alterationcureall",
+            "text": "(void)alteration.CureAll \nUndocumented",
+            "title": "alteration.CureAll"
+        },
+        {
+            "location": "/gameData/alteration/#alterationdisruptall",
+            "text": "(void)alteration.DisruptAll \nUndocumented",
+            "title": "alteration.DisruptAll"
+        },
+        {
+            "location": "/gameData/alteration/#alterationclear",
+            "text": "(void)alteration.Clear \nUndocumented",
+            "title": "alteration.Clear"
+        },
+        {
+            "location": "/gameData/attack/",
+            "text": "attack\n\n\nVariables\n\n\nStats\n\n\nattack.damage\n\n\nfloat attack.damage\n\n\nUndocumented\n\n\nMessage\n\n\nattack.hit\n\n\n(void)attack.hit:(int)id\n\nUndocumented",
+            "title": "attack"
+        },
+        {
+            "location": "/gameData/attack/#attack",
+            "text": "",
+            "title": "attack"
+        },
+        {
+            "location": "/gameData/attack/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/attack/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/attack/#attackdamage",
+            "text": "float attack.damage  Undocumented",
+            "title": "attack.damage"
+        },
+        {
+            "location": "/gameData/attack/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/attack/#attackhit",
+            "text": "(void)attack.hit:(int)id \nUndocumented",
+            "title": "attack.hit"
+        },
+        {
             "location": "/gameData/Character/",
-            "text": "Character\n\n\nVariables\n\n\nCharacter.Crouch_LateralSpeed\n\n\nfloat Character.Crouch_LateralSpeed\n\n\nUndocumented\n\n\nStats\n\n\nCharacter.Motion\n\n\nfloat Character.Motion\n\n\nUndocumented\n\n\nCharacter.Damage\n\n\nfloat Character.Damage\n\n\nUndocumented\n\n\nMessage",
+            "text": "Character\n\n\nVariables\n\n\nCharacter.vulnerable\n\n\nbool Character.vulnerable\n\n\na boolean to know if the character can recieve hit damage\n\n\nStats\n\n\nCharacter.Damage\n\n\nfloat Character.Damage\n\n\nUndocumented\n\n\nCharacter.Gravity\n\n\nfloat Character.Gravity\n\n\nUndocumented\n\n\nCharacter.Motion\n\n\nfloat Character.Motion\n\n\nUndocumented\n\n\nCharacter.KnockDamp\n\n\nfloat Character.KnockDamp\n\n\nUndocumented\n\n\nMessage\n\n\nCharacter.UpwardBoost\n\n\n(void)Character.UpwardBoost:(float)boost\n\nUndocumented\n\n\nCharacter.SetInvincible\n\n\n(void)Character.SetInvincible:(float)duration\n\nUndocumented\n\n\nCharacter.Jump\n\n\n(void)Character.Jump:(float)strengh\n\nUndocumented\n\n\nCharacter.Knock\n\n\n(void)Character.Knock:(float)strengh x:(float)x y:(float)y z:(float)z\n\nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\n            all you need is strengh and origin\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nfloat x\n: \n\n\nfloat y\n: \n\n\nfloat z\n: \n\n\nReturns\n\n\nN/A",
             "title": "Character"
         },
         {
@@ -491,9 +951,9 @@
             "title": "Variables"
         },
         {
-            "location": "/gameData/Character/#charactercrouch_lateralspeed",
-            "text": "float Character.Crouch_LateralSpeed  Undocumented",
-            "title": "Character.Crouch_LateralSpeed"
+            "location": "/gameData/Character/#charactervulnerable",
+            "text": "bool Character.vulnerable  a boolean to know if the character can recieve hit damage",
+            "title": "Character.vulnerable"
         },
         {
             "location": "/gameData/Character/#stats",
@@ -501,14 +961,24 @@
             "title": "Stats"
         },
         {
+            "location": "/gameData/Character/#characterdamage",
+            "text": "float Character.Damage  Undocumented",
+            "title": "Character.Damage"
+        },
+        {
+            "location": "/gameData/Character/#charactergravity",
+            "text": "float Character.Gravity  Undocumented",
+            "title": "Character.Gravity"
+        },
+        {
             "location": "/gameData/Character/#charactermotion",
             "text": "float Character.Motion  Undocumented",
             "title": "Character.Motion"
         },
         {
-            "location": "/gameData/Character/#characterdamage",
-            "text": "float Character.Damage  Undocumented",
-            "title": "Character.Damage"
+            "location": "/gameData/Character/#characterknockdamp",
+            "text": "float Character.KnockDamp  Undocumented",
+            "title": "Character.KnockDamp"
         },
         {
             "location": "/gameData/Character/#message",
@@ -516,8 +986,38 @@
             "title": "Message"
         },
         {
+            "location": "/gameData/Character/#characterupwardboost",
+            "text": "(void)Character.UpwardBoost:(float)boost \nUndocumented",
+            "title": "Character.UpwardBoost"
+        },
+        {
+            "location": "/gameData/Character/#charactersetinvincible",
+            "text": "(void)Character.SetInvincible:(float)duration \nUndocumented",
+            "title": "Character.SetInvincible"
+        },
+        {
+            "location": "/gameData/Character/#characterjump",
+            "text": "(void)Character.Jump:(float)strengh \nUndocumented",
+            "title": "Character.Jump"
+        },
+        {
+            "location": "/gameData/Character/#characterknock",
+            "text": "(void)Character.Knock:(float)strengh x:(float)x y:(float)y z:(float)z \nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\n            all you need is strengh and origin",
+            "title": "Character.Knock"
+        },
+        {
+            "location": "/gameData/Character/#arguments",
+            "text": "float strengh :   float x :   float y :   float z :",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/Character/#returns",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
             "location": "/gameData/brain/",
-            "text": "brain\n\n\nVariables\n\n\nbrain.playerDist\n\n\nfloat brain.playerDist\n\n\nDistance to closest player.\n\n\nStats\n\n\nMessage",
+            "text": "brain\n\n\nVariables\n\n\nbrain.settings\n\n\nint brain.settings\n\n\nFlag int that defines brain settings, to use a flag int, just sum all the options you want for the setting and set it as the code\n\n\n        exemple : the target must be sane and alive, ergo we exclude the insanes and the dead : 2 + 8 = 10\n\n        *ExcludeSane = 1;\n        *ExcludeInsane = 2;\n        *ExcludeAlive = 4;\n        *ExcludeDead = 8;\n\n\n\nbrain.playerDist\n\n\nfloat brain.playerDist\n\n\nDistance to closest player.\n\n\nbrain.playerFront\n\n\nfloat brain.playerFront\n\n\nDot to closest player. 1 is in front of brain -1 is back\n\n\nbrain.playerLateral\n\n\nfloat brain.playerLateral\n\n\nDistance to closest player on the lateral axis. Meaning how far on the left or the right\n\n\nbrain.playerVertical\n\n\nfloat brain.playerVertical\n\n\nDistance to closest player on the vertical axis. Positive is above, negative is below\n\n\nbrain.bestAttack\n\n\nint brain.bestAttack\n\n\nGet an identifier to the best attack processed by the brain, you may the use this value to trigger an attack on the attack gamedata\n\n\nStats\n\n\nMessage",
             "title": "brain"
         },
         {
@@ -531,9 +1031,34 @@
             "title": "Variables"
         },
         {
+            "location": "/gameData/brain/#brainsettings",
+            "text": "int brain.settings  Flag int that defines brain settings, to use a flag int, just sum all the options you want for the setting and set it as the code          exemple : the target must be sane and alive, ergo we exclude the insanes and the dead : 2 + 8 = 10\n\n        *ExcludeSane = 1;\n        *ExcludeInsane = 2;\n        *ExcludeAlive = 4;\n        *ExcludeDead = 8;",
+            "title": "brain.settings"
+        },
+        {
             "location": "/gameData/brain/#brainplayerdist",
             "text": "float brain.playerDist  Distance to closest player.",
             "title": "brain.playerDist"
+        },
+        {
+            "location": "/gameData/brain/#brainplayerfront",
+            "text": "float brain.playerFront  Dot to closest player. 1 is in front of brain -1 is back",
+            "title": "brain.playerFront"
+        },
+        {
+            "location": "/gameData/brain/#brainplayerlateral",
+            "text": "float brain.playerLateral  Distance to closest player on the lateral axis. Meaning how far on the left or the right",
+            "title": "brain.playerLateral"
+        },
+        {
+            "location": "/gameData/brain/#brainplayervertical",
+            "text": "float brain.playerVertical  Distance to closest player on the vertical axis. Positive is above, negative is below",
+            "title": "brain.playerVertical"
+        },
+        {
+            "location": "/gameData/brain/#brainbestattack",
+            "text": "int brain.bestAttack  Get an identifier to the best attack processed by the brain, you may the use this value to trigger an attack on the attack gamedata",
+            "title": "brain.bestAttack"
         },
         {
             "location": "/gameData/brain/#stats",
@@ -546,8 +1071,38 @@
             "title": "Message"
         },
         {
+            "location": "/gameData/weakness/",
+            "text": "weakness\n\n\nVariables\n\n\nweakness.vulnerable\n\n\nbool weakness.vulnerable\n\n\nUndocumented\n\n\nStats\n\n\nMessage",
+            "title": "weakness"
+        },
+        {
+            "location": "/gameData/weakness/#weakness",
+            "text": "",
+            "title": "weakness"
+        },
+        {
+            "location": "/gameData/weakness/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/weakness/#weaknessvulnerable",
+            "text": "bool weakness.vulnerable  Undocumented",
+            "title": "weakness.vulnerable"
+        },
+        {
+            "location": "/gameData/weakness/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/weakness/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
             "location": "/gameData/legs/",
-            "text": "legs\n\n\nVariables\n\n\nlegs.isStopped\n\n\nbool legs.isStopped\n\n\nWhether the creature is stopped or not\n\n\nStats\n\n\nlegs.speed\n\n\nfloat legs.speed\n\n\nMoving speed.\n\n\nMessage\n\n\nlegs.MoveForward\n\n\n(void)legs.MoveForward\n\nUndocumented\n\n\nlegs.Turn\n\n\n(void)legs.Turn:(float)angle\n\nTurns the facing direction of @angle degrees\n\n\nArguments\n\n\nfloat angle\n: \n\n\nReturns\n\n\nN/A\n\n\nlegs.Stop\n\n\n(void)legs.Stop\n\nUndocumented\n\n\nlegs.Resume\n\n\n(void)legs.Resume\n\nUndocumented",
+            "text": "legs\n\n\nVariables\n\n\nlegs.isStopped\n\n\nbool legs.isStopped\n\n\nWhether the creature is stopped or not\n\n\nStats\n\n\nlegs.speed\n\n\nfloat legs.speed\n\n\nMoving speed.\n\n\nlegs.knockDamp\n\n\nfloat legs.knockDamp\n\n\nthe rate at which a knockforce is reduced.\n\n\nMessage\n\n\nlegs.MoveRight\n\n\n(void)legs.MoveRight\n\nUndocumented\n\n\nlegs.Turn\n\n\n(void)legs.Turn:(float)angle\n\nTurns the facing direction of @angle degrees\n\n\nArguments\n\n\nfloat angle\n: \n\n\nReturns\n\n\nN/A\n\n\nlegs.Stop\n\n\n(void)legs.Stop\n\nUndocumented\n\n\nlegs.Resume\n\n\n(void)legs.Resume\n\nUndocumented\n\n\nlegs.Jump\n\n\n(void)legs.Jump:(float)strengh\n\nMake the creature jump, please check that a rigidbody is there and has UseGravity enabled\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nReturns\n\n\nN/A\n\n\nlegs.Knock\n\n\n(void)legs.Knock:(float)strengh x:(float)x y:(float)y z:(float)z\n\nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\n            all you need is strengh and origin\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nfloat x\n: \n\n\nfloat y\n: \n\n\nfloat z\n: \n\n\nReturns\n\n\nN/A",
             "title": "legs"
         },
         {
@@ -576,14 +1131,19 @@
             "title": "legs.speed"
         },
         {
+            "location": "/gameData/legs/#legsknockdamp",
+            "text": "float legs.knockDamp  the rate at which a knockforce is reduced.",
+            "title": "legs.knockDamp"
+        },
+        {
             "location": "/gameData/legs/#message",
             "text": "",
             "title": "Message"
         },
         {
-            "location": "/gameData/legs/#legsmoveforward",
-            "text": "(void)legs.MoveForward \nUndocumented",
-            "title": "legs.MoveForward"
+            "location": "/gameData/legs/#legsmoveright",
+            "text": "(void)legs.MoveRight \nUndocumented",
+            "title": "legs.MoveRight"
         },
         {
             "location": "/gameData/legs/#legsturn",
@@ -611,79 +1171,174 @@
             "title": "legs.Resume"
         },
         {
-            "location": "/gameData/Health/",
-            "text": "Health\n\n\nVariables\n\n\nHealth.Current\n\n\nint Health.Current\n\n\nUndocumented\n\n\nStats\n\n\nHealth.Regen\n\n\nfloat Health.Regen\n\n\nUndocumented\n\n\nHealth.Capacity\n\n\nfloat Health.Capacity\n\n\nUndocumented\n\n\nMessage\n\n\nHealth.Damage\n\n\n(void)Health.Damage:(int)amount\n\nApply damages: remove the amount.\n\n\nArguments\n\n\nint amount\n: Amount of damages to apply.\n\n\nReturns\n\n\nN/A\n\n\nHealth.Burst\n\n\n(bool)Health.Burst:(float)amount\n\nTry to remove a value.\n\n\nArguments\n\n\nfloat amount\n: Amount to remove\n\n\nReturns\n\n\nTrue if succeeded to remove (that is there's enough quantity to remove).\n\n\nHealth.Recover\n\n\n(void)Health.Recover:(int)amount\n\nUndocumented",
-            "title": "Health"
+            "location": "/gameData/legs/#legsjump",
+            "text": "(void)legs.Jump:(float)strengh \nMake the creature jump, please check that a rigidbody is there and has UseGravity enabled",
+            "title": "legs.Jump"
         },
         {
-            "location": "/gameData/Health/#health",
-            "text": "",
-            "title": "Health"
-        },
-        {
-            "location": "/gameData/Health/#variables",
-            "text": "",
-            "title": "Variables"
-        },
-        {
-            "location": "/gameData/Health/#healthcurrent",
-            "text": "int Health.Current  Undocumented",
-            "title": "Health.Current"
-        },
-        {
-            "location": "/gameData/Health/#stats",
-            "text": "",
-            "title": "Stats"
-        },
-        {
-            "location": "/gameData/Health/#healthregen",
-            "text": "float Health.Regen  Undocumented",
-            "title": "Health.Regen"
-        },
-        {
-            "location": "/gameData/Health/#healthcapacity",
-            "text": "float Health.Capacity  Undocumented",
-            "title": "Health.Capacity"
-        },
-        {
-            "location": "/gameData/Health/#message",
-            "text": "",
-            "title": "Message"
-        },
-        {
-            "location": "/gameData/Health/#healthdamage",
-            "text": "(void)Health.Damage:(int)amount \nApply damages: remove the amount.",
-            "title": "Health.Damage"
-        },
-        {
-            "location": "/gameData/Health/#arguments",
-            "text": "int amount : Amount of damages to apply.",
+            "location": "/gameData/legs/#arguments_1",
+            "text": "float strengh :",
             "title": "Arguments"
         },
         {
-            "location": "/gameData/Health/#returns",
+            "location": "/gameData/legs/#returns_1",
             "text": "N/A",
             "title": "Returns"
         },
         {
-            "location": "/gameData/Health/#healthburst",
-            "text": "(bool)Health.Burst:(float)amount \nTry to remove a value.",
-            "title": "Health.Burst"
+            "location": "/gameData/legs/#legsknock",
+            "text": "(void)legs.Knock:(float)strengh x:(float)x y:(float)y z:(float)z \nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\n            all you need is strengh and origin",
+            "title": "legs.Knock"
         },
         {
-            "location": "/gameData/Health/#arguments_1",
+            "location": "/gameData/legs/#arguments_2",
+            "text": "float strengh :   float x :   float y :   float z :",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/legs/#returns_2",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/throw/",
+            "text": "throw\n\n\nVariables\n\n\nthrow.strengh\n\n\nfloat throw.strengh\n\n\nUndocumented\n\n\nthrow.angle\n\n\nfloat throw.angle\n\n\nUndocumented\n\n\nthrow.gravity\n\n\nbool throw.gravity\n\n\nUndocumented\n\n\nthrow.drag\n\n\nfloat throw.drag\n\n\nUndocumented\n\n\nthrow.use\n\n\nbool throw.use\n\n\nUndocumented\n\n\nStats\n\n\nMessage\n\n\nthrow.throw\n\n\n(void)throw.throw\n\nUndocumented",
+            "title": "throw"
+        },
+        {
+            "location": "/gameData/throw/#throw",
+            "text": "",
+            "title": "throw"
+        },
+        {
+            "location": "/gameData/throw/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/throw/#throwstrengh",
+            "text": "float throw.strengh  Undocumented",
+            "title": "throw.strengh"
+        },
+        {
+            "location": "/gameData/throw/#throwangle",
+            "text": "float throw.angle  Undocumented",
+            "title": "throw.angle"
+        },
+        {
+            "location": "/gameData/throw/#throwgravity",
+            "text": "bool throw.gravity  Undocumented",
+            "title": "throw.gravity"
+        },
+        {
+            "location": "/gameData/throw/#throwdrag",
+            "text": "float throw.drag  Undocumented",
+            "title": "throw.drag"
+        },
+        {
+            "location": "/gameData/throw/#throwuse",
+            "text": "bool throw.use  Undocumented",
+            "title": "throw.use"
+        },
+        {
+            "location": "/gameData/throw/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/throw/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/throw/#throwthrow",
+            "text": "(void)throw.throw \nUndocumented",
+            "title": "throw.throw"
+        },
+        {
+            "location": "/gameData/health/",
+            "text": "health\n\n\nVariables\n\n\nhealth.current\n\n\nint health.current\n\n\nThe current state of the bar, ergo, how many points you have for that stat\n\n\nStats\n\n\nhealth.rate\n\n\nfloat health.rate\n\n\nGame Stat that affect the bar over time, \n            positive Regen is a continuous recover\n            negative is meant for continuous damage\n\n\nhealth.capacity\n\n\nfloat health.capacity\n\n\nGame Stat that affect the total number of points for that stat\n\n\nMessage\n\n\nhealth.damage\n\n\n(void)health.damage:(int)amount\n\nApply damages: remove the amount.\n\n\nArguments\n\n\nint amount\n: Amount of damages to apply.\n\n\nReturns\n\n\nN/A\n\n\nhealth.burst\n\n\n(bool)health.burst:(float)amount\n\nTry to remove a value.\n\n\nArguments\n\n\nfloat amount\n: Amount to remove\n\n\nReturns\n\n\nTrue if succeeded to remove (that is there's enough quantity to remove).\n\n\nhealth.recover\n\n\n(void)health.recover:(int)amount\n\nRecover the stat by the amount specified\n\n\nArguments\n\n\nint amount\n: amount to recover\n\n\nReturns\n\n\nN/A",
+            "title": "health"
+        },
+        {
+            "location": "/gameData/health/#health",
+            "text": "",
+            "title": "health"
+        },
+        {
+            "location": "/gameData/health/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/health/#healthcurrent",
+            "text": "int health.current  The current state of the bar, ergo, how many points you have for that stat",
+            "title": "health.current"
+        },
+        {
+            "location": "/gameData/health/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/health/#healthrate",
+            "text": "float health.rate  Game Stat that affect the bar over time, \n            positive Regen is a continuous recover\n            negative is meant for continuous damage",
+            "title": "health.rate"
+        },
+        {
+            "location": "/gameData/health/#healthcapacity",
+            "text": "float health.capacity  Game Stat that affect the total number of points for that stat",
+            "title": "health.capacity"
+        },
+        {
+            "location": "/gameData/health/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/health/#healthdamage",
+            "text": "(void)health.damage:(int)amount \nApply damages: remove the amount.",
+            "title": "health.damage"
+        },
+        {
+            "location": "/gameData/health/#arguments",
+            "text": "int amount : Amount of damages to apply.",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/health/#returns",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/health/#healthburst",
+            "text": "(bool)health.burst:(float)amount \nTry to remove a value.",
+            "title": "health.burst"
+        },
+        {
+            "location": "/gameData/health/#arguments_1",
             "text": "float amount : Amount to remove",
             "title": "Arguments"
         },
         {
-            "location": "/gameData/Health/#returns_1",
+            "location": "/gameData/health/#returns_1",
             "text": "True if succeeded to remove (that is there's enough quantity to remove).",
             "title": "Returns"
         },
         {
-            "location": "/gameData/Health/#healthrecover",
-            "text": "(void)Health.Recover:(int)amount \nUndocumented",
-            "title": "Health.Recover"
+            "location": "/gameData/health/#healthrecover",
+            "text": "(void)health.recover:(int)amount \nRecover the stat by the amount specified",
+            "title": "health.recover"
+        },
+        {
+            "location": "/gameData/health/#arguments_2",
+            "text": "int amount : amount to recover",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/health/#returns_2",
+            "text": "N/A",
+            "title": "Returns"
         },
         {
             "location": "/gameData/Oxygen/",
@@ -711,83 +1366,198 @@
             "title": "Message"
         },
         {
-            "location": "/gameData/Stamina/",
-            "text": "Stamina\n\n\nVariables\n\n\nStamina.Current\n\n\nint Stamina.Current\n\n\nUndocumented\n\n\nStats\n\n\nStamina.Regen\n\n\nfloat Stamina.Regen\n\n\nUndocumented\n\n\nStamina.Capacity\n\n\nfloat Stamina.Capacity\n\n\nUndocumented\n\n\nMessage\n\n\nStamina.Damage\n\n\n(void)Stamina.Damage:(int)amount\n\nApply damages: remove the amount.\n\n\nArguments\n\n\nint amount\n: Amount of damages to apply.\n\n\nReturns\n\n\nN/A\n\n\nStamina.Burst\n\n\n(bool)Stamina.Burst:(float)amount\n\nTry to remove a value.\n\n\nArguments\n\n\nfloat amount\n: Amount to remove\n\n\nReturns\n\n\nTrue if succeeded to remove (that is there's enough quantity to remove).\n\n\nStamina.Recover\n\n\n(void)Stamina.Recover:(int)amount\n\nUndocumented",
-            "title": "Stamina"
+            "location": "/gameData/skills/",
+            "text": "skills\n\n\nVariables\n\n\nStats\n\n\nMessage\n\n\nskills.inflictall\n\n\n(void)skills.inflictall:(string)key\n\nUndocumented\n\n\nskills.inflict\n\n\n(void)skills.inflict:(int)slot key:(string)key\n\nusing a key effect, the ailement will be given to a slot specific skill\n\n\nArguments\n\n\nint slot\n: \n\n\nstring key\n: \n\n\nReturns\n\n\nN/A",
+            "title": "skills"
         },
         {
-            "location": "/gameData/Stamina/#stamina",
+            "location": "/gameData/skills/#skills",
             "text": "",
-            "title": "Stamina"
+            "title": "skills"
         },
         {
-            "location": "/gameData/Stamina/#variables",
+            "location": "/gameData/skills/#variables",
             "text": "",
             "title": "Variables"
         },
         {
-            "location": "/gameData/Stamina/#staminacurrent",
-            "text": "int Stamina.Current  Undocumented",
-            "title": "Stamina.Current"
-        },
-        {
-            "location": "/gameData/Stamina/#stats",
+            "location": "/gameData/skills/#stats",
             "text": "",
             "title": "Stats"
         },
         {
-            "location": "/gameData/Stamina/#staminaregen",
-            "text": "float Stamina.Regen  Undocumented",
-            "title": "Stamina.Regen"
-        },
-        {
-            "location": "/gameData/Stamina/#staminacapacity",
-            "text": "float Stamina.Capacity  Undocumented",
-            "title": "Stamina.Capacity"
-        },
-        {
-            "location": "/gameData/Stamina/#message",
+            "location": "/gameData/skills/#message",
             "text": "",
             "title": "Message"
         },
         {
-            "location": "/gameData/Stamina/#staminadamage",
-            "text": "(void)Stamina.Damage:(int)amount \nApply damages: remove the amount.",
-            "title": "Stamina.Damage"
+            "location": "/gameData/skills/#skillsinflictall",
+            "text": "(void)skills.inflictall:(string)key \nUndocumented",
+            "title": "skills.inflictall"
         },
         {
-            "location": "/gameData/Stamina/#arguments",
-            "text": "int amount : Amount of damages to apply.",
+            "location": "/gameData/skills/#skillsinflict",
+            "text": "(void)skills.inflict:(int)slot key:(string)key \nusing a key effect, the ailement will be given to a slot specific skill",
+            "title": "skills.inflict"
+        },
+        {
+            "location": "/gameData/skills/#arguments",
+            "text": "int slot :   string key :",
             "title": "Arguments"
         },
         {
-            "location": "/gameData/Stamina/#returns",
+            "location": "/gameData/skills/#returns",
             "text": "N/A",
             "title": "Returns"
         },
         {
-            "location": "/gameData/Stamina/#staminaburst",
-            "text": "(bool)Stamina.Burst:(float)amount \nTry to remove a value.",
-            "title": "Stamina.Burst"
+            "location": "/gameData/spawner/",
+            "text": "spawner\n\n\nVariables\n\n\nStats\n\n\nMessage\n\n\nspawner.burst\n\n\n(void)spawner.burst:(string)keyid count:(int)count\n\nUndocumented\n\n\nspawner.spawn\n\n\n(void)spawner.spawn:(string)keyid\n\nSpawn a single item.\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nspawner.reset\n\n\n(void)spawner.reset:(string)keyid\n\nReset spawner script update.\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A",
+            "title": "spawner"
         },
         {
-            "location": "/gameData/Stamina/#arguments_1",
+            "location": "/gameData/spawner/#spawner",
+            "text": "",
+            "title": "spawner"
+        },
+        {
+            "location": "/gameData/spawner/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/spawner/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/spawner/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/spawner/#spawnerburst",
+            "text": "(void)spawner.burst:(string)keyid count:(int)count \nUndocumented",
+            "title": "spawner.burst"
+        },
+        {
+            "location": "/gameData/spawner/#spawnerspawn",
+            "text": "(void)spawner.spawn:(string)keyid \nSpawn a single item.",
+            "title": "spawner.spawn"
+        },
+        {
+            "location": "/gameData/spawner/#arguments",
+            "text": "string keyid : N/A",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/spawner/#returns",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/spawner/#spawnerreset",
+            "text": "(void)spawner.reset:(string)keyid \nReset spawner script update.",
+            "title": "spawner.reset"
+        },
+        {
+            "location": "/gameData/spawner/#arguments_1",
+            "text": "string keyid : N/A",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/spawner/#returns_1",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/stamina/",
+            "text": "stamina\n\n\nVariables\n\n\nstamina.current\n\n\nint stamina.current\n\n\nThe current state of the bar, ergo, how many points you have for that stat\n\n\nStats\n\n\nstamina.rate\n\n\nfloat stamina.rate\n\n\nGame Stat that affect the bar over time, \n            positive Regen is a continuous recover\n            negative is meant for continuous damage\n\n\nstamina.capacity\n\n\nfloat stamina.capacity\n\n\nGame Stat that affect the total number of points for that stat\n\n\nMessage\n\n\nstamina.damage\n\n\n(void)stamina.damage:(int)amount\n\nApply damages: remove the amount.\n\n\nArguments\n\n\nint amount\n: Amount of damages to apply.\n\n\nReturns\n\n\nN/A\n\n\nstamina.burst\n\n\n(bool)stamina.burst:(float)amount\n\nTry to remove a value.\n\n\nArguments\n\n\nfloat amount\n: Amount to remove\n\n\nReturns\n\n\nTrue if succeeded to remove (that is there's enough quantity to remove).\n\n\nstamina.recover\n\n\n(void)stamina.recover:(int)amount\n\nRecover the stat by the amount specified\n\n\nArguments\n\n\nint amount\n: amount to recover\n\n\nReturns\n\n\nN/A",
+            "title": "stamina"
+        },
+        {
+            "location": "/gameData/stamina/#stamina",
+            "text": "",
+            "title": "stamina"
+        },
+        {
+            "location": "/gameData/stamina/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/stamina/#staminacurrent",
+            "text": "int stamina.current  The current state of the bar, ergo, how many points you have for that stat",
+            "title": "stamina.current"
+        },
+        {
+            "location": "/gameData/stamina/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/stamina/#staminarate",
+            "text": "float stamina.rate  Game Stat that affect the bar over time, \n            positive Regen is a continuous recover\n            negative is meant for continuous damage",
+            "title": "stamina.rate"
+        },
+        {
+            "location": "/gameData/stamina/#staminacapacity",
+            "text": "float stamina.capacity  Game Stat that affect the total number of points for that stat",
+            "title": "stamina.capacity"
+        },
+        {
+            "location": "/gameData/stamina/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/stamina/#staminadamage",
+            "text": "(void)stamina.damage:(int)amount \nApply damages: remove the amount.",
+            "title": "stamina.damage"
+        },
+        {
+            "location": "/gameData/stamina/#arguments",
+            "text": "int amount : Amount of damages to apply.",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/stamina/#returns",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/stamina/#staminaburst",
+            "text": "(bool)stamina.burst:(float)amount \nTry to remove a value.",
+            "title": "stamina.burst"
+        },
+        {
+            "location": "/gameData/stamina/#arguments_1",
             "text": "float amount : Amount to remove",
             "title": "Arguments"
         },
         {
-            "location": "/gameData/Stamina/#returns_1",
+            "location": "/gameData/stamina/#returns_1",
             "text": "True if succeeded to remove (that is there's enough quantity to remove).",
             "title": "Returns"
         },
         {
-            "location": "/gameData/Stamina/#staminarecover",
-            "text": "(void)Stamina.Recover:(int)amount \nUndocumented",
-            "title": "Stamina.Recover"
+            "location": "/gameData/stamina/#staminarecover",
+            "text": "(void)stamina.recover:(int)amount \nRecover the stat by the amount specified",
+            "title": "stamina.recover"
+        },
+        {
+            "location": "/gameData/stamina/#arguments_2",
+            "text": "int amount : amount to recover",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/stamina/#returns_2",
+            "text": "N/A",
+            "title": "Returns"
         },
         {
             "location": "/gameData/World/",
-            "text": "World\n\n\nVariables\n\n\nWorld.HasGround\n\n\nbool World.HasGround\n\n\nWhether has a ground under.\n\n\nWorld.HasWallLeft\n\n\nbool World.HasWallLeft\n\n\nCheck if has a wall on left.\n\n\nWorld.HasWallRight\n\n\nbool World.HasWallRight\n\n\nHas wall on the right.\n\n\nWorld.ceil\n\n\nbool World.ceil\n\n\nHas ceiling.\n\n\nStats\n\n\nMessage",
+            "text": "World\n\n\nVariables\n\n\nWorld.ground\n\n\nbool World.ground\n\n\nWhether has a ground under.\n\n\nWorld.wallLeft\n\n\nbool World.wallLeft\n\n\nCheck if has a wall on left.\n\n\nWorld.wallRight\n\n\nbool World.wallRight\n\n\nHas wall on the right.\n\n\nWorld.ceil\n\n\nbool World.ceil\n\n\nHas ceiling.\n\n\nStats\n\n\nMessage\n\n\nWorld.addLayer\n\n\n(void)World.addLayer:(string)layerName\n\nWill add the specified layer to the world detection, meaning the world knowledge will be able to detect collison from that layer\n\n\nArguments\n\n\nstring layerName\n: The name of the layer to Add\n\n\nReturns\n\n\nN/A\n\n\nWorld.removeLayer\n\n\n(void)World.removeLayer:(string)layerName\n\nWill remove the specified layer from the world detection, meaning the world knowledge will not be able to detect collison from that layer\n\n\nArguments\n\n\nstring layerName\n: The name of the layer to Add\n\n\nReturns\n\n\nN/A\n\n\nWorld.resetMask\n\n\n(void)World.resetMask\n\nUndocumented",
             "title": "World"
         },
         {
@@ -801,19 +1571,19 @@
             "title": "Variables"
         },
         {
-            "location": "/gameData/World/#worldhasground",
-            "text": "bool World.HasGround  Whether has a ground under.",
-            "title": "World.HasGround"
+            "location": "/gameData/World/#worldground",
+            "text": "bool World.ground  Whether has a ground under.",
+            "title": "World.ground"
         },
         {
-            "location": "/gameData/World/#worldhaswallleft",
-            "text": "bool World.HasWallLeft  Check if has a wall on left.",
-            "title": "World.HasWallLeft"
+            "location": "/gameData/World/#worldwallleft",
+            "text": "bool World.wallLeft  Check if has a wall on left.",
+            "title": "World.wallLeft"
         },
         {
-            "location": "/gameData/World/#worldhaswallright",
-            "text": "bool World.HasWallRight  Has wall on the right.",
-            "title": "World.HasWallRight"
+            "location": "/gameData/World/#worldwallright",
+            "text": "bool World.wallRight  Has wall on the right.",
+            "title": "World.wallRight"
         },
         {
             "location": "/gameData/World/#worldceil",
@@ -829,6 +1599,101 @@
             "location": "/gameData/World/#message",
             "text": "",
             "title": "Message"
+        },
+        {
+            "location": "/gameData/World/#worldaddlayer",
+            "text": "(void)World.addLayer:(string)layerName \nWill add the specified layer to the world detection, meaning the world knowledge will be able to detect collison from that layer",
+            "title": "World.addLayer"
+        },
+        {
+            "location": "/gameData/World/#arguments",
+            "text": "string layerName : The name of the layer to Add",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/World/#returns",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/World/#worldremovelayer",
+            "text": "(void)World.removeLayer:(string)layerName \nWill remove the specified layer from the world detection, meaning the world knowledge will not be able to detect collison from that layer",
+            "title": "World.removeLayer"
+        },
+        {
+            "location": "/gameData/World/#arguments_1",
+            "text": "string layerName : The name of the layer to Add",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/World/#returns_1",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/World/#worldresetmask",
+            "text": "(void)World.resetMask \nUndocumented",
+            "title": "World.resetMask"
+        },
+        {
+            "location": "/gameData/navigation/",
+            "text": "navigation\n\n\nVariables\n\n\nStats\n\n\nnavigation.Gravity\n\n\nfloat navigation.Gravity\n\n\nUndocumented\n\n\nnavigation.Motion\n\n\nfloat navigation.Motion\n\n\nUndocumented\n\n\nnavigation.KnockDamp\n\n\nfloat navigation.KnockDamp\n\n\nUndocumented\n\n\nMessage\n\n\nnavigation.Jump\n\n\n(void)navigation.Jump:(float)strengh\n\nUndocumented\n\n\nnavigation.Knock\n\n\n(void)navigation.Knock:(float)strengh x:(float)x y:(float)y z:(float)z\n\nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\n            all you need is strengh and origin\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nfloat x\n: \n\n\nfloat y\n: \n\n\nfloat z\n: \n\n\nReturns\n\n\nN/A",
+            "title": "navigation"
+        },
+        {
+            "location": "/gameData/navigation/#navigation",
+            "text": "",
+            "title": "navigation"
+        },
+        {
+            "location": "/gameData/navigation/#variables",
+            "text": "",
+            "title": "Variables"
+        },
+        {
+            "location": "/gameData/navigation/#stats",
+            "text": "",
+            "title": "Stats"
+        },
+        {
+            "location": "/gameData/navigation/#navigationgravity",
+            "text": "float navigation.Gravity  Undocumented",
+            "title": "navigation.Gravity"
+        },
+        {
+            "location": "/gameData/navigation/#navigationmotion",
+            "text": "float navigation.Motion  Undocumented",
+            "title": "navigation.Motion"
+        },
+        {
+            "location": "/gameData/navigation/#navigationknockdamp",
+            "text": "float navigation.KnockDamp  Undocumented",
+            "title": "navigation.KnockDamp"
+        },
+        {
+            "location": "/gameData/navigation/#message",
+            "text": "",
+            "title": "Message"
+        },
+        {
+            "location": "/gameData/navigation/#navigationjump",
+            "text": "(void)navigation.Jump:(float)strengh \nUndocumented",
+            "title": "navigation.Jump"
+        },
+        {
+            "location": "/gameData/navigation/#navigationknock",
+            "text": "(void)navigation.Knock:(float)strengh x:(float)x y:(float)y z:(float)z \nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\n            all you need is strengh and origin",
+            "title": "navigation.Knock"
+        },
+        {
+            "location": "/gameData/navigation/#arguments",
+            "text": "float strengh :   float x :   float y :   float z :",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/navigation/#returns",
+            "text": "N/A",
+            "title": "Returns"
         }
     ]
 }

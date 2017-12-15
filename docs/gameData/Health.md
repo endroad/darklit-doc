@@ -1,36 +1,43 @@
-# Health
+# health
 ## Variables
-### Health.Current
-`int Health.Current`
+### health.current
+`int health.current`
 
-Undocumented
+The current state of the bar, ergo, how many points you have for that stat
 ## Stats
-### Health.Regen
-`float Health.Regen`
+### health.rate
+`float health.rate`
 
-Undocumented
-### Health.Capacity
-`float Health.Capacity`
+Game Stat that affect the bar over time, 
+            positive Regen is a continuous recover
+            negative is meant for continuous damage
+### health.capacity
+`float health.capacity`
 
-Undocumented
+Game Stat that affect the total number of points for that stat
 ## Message
-### Health.Damage
-`(void)Health.Damage:(int)amount `
+### health.damage
+`(void)health.damage:(int)amount `
 Apply damages: remove the amount.
 #### Arguments
 `int amount`: Amount of damages to apply.
 
 #### Returns
 N/A
-### Health.Burst
-`(bool)Health.Burst:(float)amount `
+### health.burst
+`(bool)health.burst:(float)amount `
 Try to remove a value.
 #### Arguments
 `float amount`: Amount to remove
 
 #### Returns
 True if succeeded to remove (that is there's enough quantity to remove).
-### Health.Recover
-`(void)Health.Recover:(int)amount `
-Undocumented
+### health.recover
+`(void)health.recover:(int)amount `
+Recover the stat by the amount specified
+#### Arguments
+`int amount`: amount to recover
+
+#### Returns
+N/A
 
