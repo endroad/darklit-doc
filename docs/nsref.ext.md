@@ -76,19 +76,18 @@ So... to be able to have correct types in your programs at compile-time you **mu
 
 If I'm using in my script the `extern` variable `lifetime` I've defined in a **Json** file I **must** defined it like that:
 
-    extern float lifetime        // Forward definition of 'lifetime'
-    this->global.lifetime = 0    // Usage of 'lifetime'
+    extern float entity.lifetime        // Forward definition of 'lifetime'
+    this->lifetime = 0    // Usage of 'lifetime'
 
 ### Variables & Stats
 
-    extern int victoryPoints
-    extern float lifetime
+    extern int entity.victoryPoints
+    extern float entity.lifetime
 
     // Statistic
-    extern stat strength
-
+    extern stat entity.strength
 
 ### Messages
 
-    extern (bool)doSomething:(int)
-    extern (void)doOtherThing:(int) withArgument:(float) lotOfArguments:(bool)
+    extern bool entity.doSomething:int
+    extern void entity.doOtherThing:int withArgument:float lotOfArguments:bool
