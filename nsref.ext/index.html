@@ -799,44 +799,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../gameData/chest/" title="chest" class="md-nav__link">
-      chest
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../gameData/aoes/" title="aoes" class="md-nav__link">
-      aoes
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../gameData/alteration/" title="alteration" class="md-nav__link">
-      alteration
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../gameData/attack/" title="attack" class="md-nav__link">
-      attack
+    <a href="../gameData/spawner/" title="spawner" class="md-nav__link">
+      spawner
     </a>
   </li>
 
@@ -945,18 +909,6 @@
   <li class="md-nav__item">
     <a href="../gameData/world/" title="world" class="md-nav__link">
       world
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../gameData/navigation/" title="navigation" class="md-nav__link">
-      navigation
     </a>
   </li>
 
@@ -1140,8 +1092,8 @@ The type of these dynamic data is unknown when you compile the program (compile-
 </blockquote>
 <p>If I'm using in my script the <code>extern</code> variable <code>lifetime</code> I've defined in a <strong>Json</strong> file I <strong>must</strong> defined it like that:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>extern float lifetime        // Forward definition of &#39;lifetime&#39;
-this-&gt;global.lifetime = 0    // Usage of &#39;lifetime&#39;
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>extern float entity.lifetime        // Forward definition of &#39;lifetime&#39;
+this-&gt;lifetime = 0    // Usage of &#39;lifetime&#39;
 </pre></div>
 </td></tr></table>
 
@@ -1150,18 +1102,18 @@ this-&gt;global.lifetime = 0    // Usage of &#39;lifetime&#39;
 2
 3
 4
-5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>extern int victoryPoints
-extern float lifetime
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>extern int entity.victoryPoints
+extern float entity.lifetime
 
 // Statistic
-extern stat strength
+extern stat entity.strength
 </pre></div>
 </td></tr></table>
 
 <h3 id="messages_1">Messages</h3>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>extern (bool)doSomething:(int)
-extern (void)doOtherThing:(int) withArgument:(float) lotOfArguments:(bool)
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>extern bool entity.doSomething:int
+extern void entity.doOtherThing:int withArgument:float lotOfArguments:bool
 </pre></div>
 </td></tr></table>
                 
