@@ -167,7 +167,7 @@
         },
         {
             "location": "/nsref.fibers/",
-            "text": "Fibers\n\n\nFibers are the equivalent of coroutines. They represent a program's execution thread.\nThey can be manipulated as well as any other object type in NuSpeak.\n\n\nGetting started\n\n\nYou can declare a variable of type \nfiber\n as follow:\n\n\n1\nfiber myFiber\n\n\n\n\n\n\nThe reference to the current program's execution thread is made using the keyword \nself\n\n\n1\nfiber currentRunningFiber = self\n\n\n\n\n\n\nExecution flow\n\n\nYou can modify the execution flow of a \nfiber\n using the built-in fibers functions.\n\n\nThese functions can be called on both the current \nfiber\n or any \nother\n.\n\n\nexec\n\n\nSet the execution point of a fiber.\n\n\n1\n2\n3\n4\n5\n// Retrieve a fiber name \"awesomeFiber\" in the current entity\n\n\nfiber\n \nsomeOtherFiber\n \n=\n \n[\nthis\n \nentity\n.\ngetFiber\n(\n\"awesomeFiber\"\n)]\n\n\n\n// Execute the state DoSomethingAmazing\n\n\n[\nsomeOtherFiber\n \nexec\n:\nDoSomethingAmazing\n]",
+            "text": "Fibers\n\n\nFibers are the equivalent of coroutines. They represent a program's execution thread.\nThey can be manipulated as well as any other object type in NuSpeak.\n\n\nGetting started\n\n\nYou can declare a variable of type \nfiber\n as follow:\n\n\n1\nfiber myFiber\n\n\n\n\n\n\nThe reference to the current program's execution thread is made using the keyword \nself\n\n\n1\nfiber currentRunningFiber = self\n\n\n\n\n\n\nMessages\n\n\nThese messages can be called on both the current \nfiber\n (\nself\n) or any \nother\n.\n\n\nexec\n\n\nSet the execution state of a fiber.\n\n\n1\n2\n3\n4\n5\n// Retrieve a fiber name \"awesomeFiber\" in the current entity\n\n\nfiber\n \nsomeOtherFiber\n \n=\n \n[\nthis\n \nentity\n.\ngetFiber\n(\n\"awesomeFiber\"\n)]\n\n\n\n// Execute the state DoSomethingAmazing\n\n\n[\nsomeOtherFiber\n \nexec\n:\nDoSomethingAmazing\n]\n\n\n\n\n\n\n\nhasState\n\n\nCheck if a fiber implements the specified state:\n\n\n1\n2\n// Check if awesomeFiber has a state \"Attack\" in the program currently attached\n\n\nbool\n \nhasAttackState\n \n=\n \n[\nawesomeFiber\n \nhasState\n:\nAttack\n]\n\n\n\n\n\n\n\n\n\nYou \ndon't\n need quote symbols \" surrondding the state name. However using quotes\nis still a valid syntax\n\n\n\n\nhasTag\n\n\nCheck if a fiber has the specified tag:\n\n\n1\n2\n// Check if awesomeFiber has the tag \"helloTag\"\n\n\nbool\n \nhasHelloTag\n \n=\n \n[\nawesomeFiber\n \nhasTag\n:\n\"helloTag\"\n]\n\n\n\n\n\n\n\nTags\n\n\nYou can add any number of tags to a script as follow:\n\n\n1\n2\n3\n4\n5\n6\n7\n8\nscript MySuperCoolScript:\n\n#someTag\n#otherTag #immediatelly #followed #by #others\n\n// rest of the script\n\nendscript\n\n\n\n\n\n\n\n\nYou can add tags anywhere in your script\nHowever it's good practice to keep them at the beginning of the script\nto ease readability\n\n\n\n\nTags can then be check using \n[aFiber hasTag:\"someTag\"]\n\n\nReserved tags\n\n\nSome tags are reserved by the system (compiler, interpreter or VM)\nHere is the list of reserved tags\n\n\n\n\n\n\n\n\nReserved tag\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nbreak\n\n\nAdd a breakpoint to the script at the specified location",
             "title": "Fibers"
         },
         {
@@ -181,14 +181,34 @@
             "title": "Getting started"
         },
         {
-            "location": "/nsref.fibers/#execution-flow",
-            "text": "You can modify the execution flow of a  fiber  using the built-in fibers functions.  These functions can be called on both the current  fiber  or any  other .",
-            "title": "Execution flow"
+            "location": "/nsref.fibers/#messages",
+            "text": "These messages can be called on both the current  fiber  ( self ) or any  other .",
+            "title": "Messages"
         },
         {
             "location": "/nsref.fibers/#exec",
-            "text": "Set the execution point of a fiber.  1\n2\n3\n4\n5 // Retrieve a fiber name \"awesomeFiber\" in the current entity  fiber   someOtherFiber   =   [ this   entity . getFiber ( \"awesomeFiber\" )]  // Execute the state DoSomethingAmazing  [ someOtherFiber   exec : DoSomethingAmazing ]",
+            "text": "Set the execution state of a fiber.  1\n2\n3\n4\n5 // Retrieve a fiber name \"awesomeFiber\" in the current entity  fiber   someOtherFiber   =   [ this   entity . getFiber ( \"awesomeFiber\" )]  // Execute the state DoSomethingAmazing  [ someOtherFiber   exec : DoSomethingAmazing ]",
             "title": "exec"
+        },
+        {
+            "location": "/nsref.fibers/#hasstate",
+            "text": "Check if a fiber implements the specified state:  1\n2 // Check if awesomeFiber has a state \"Attack\" in the program currently attached  bool   hasAttackState   =   [ awesomeFiber   hasState : Attack ]     You  don't  need quote symbols \" surrondding the state name. However using quotes\nis still a valid syntax",
+            "title": "hasState"
+        },
+        {
+            "location": "/nsref.fibers/#hastag",
+            "text": "Check if a fiber has the specified tag:  1\n2 // Check if awesomeFiber has the tag \"helloTag\"  bool   hasHelloTag   =   [ awesomeFiber   hasTag : \"helloTag\" ]",
+            "title": "hasTag"
+        },
+        {
+            "location": "/nsref.fibers/#tags",
+            "text": "You can add any number of tags to a script as follow:  1\n2\n3\n4\n5\n6\n7\n8 script MySuperCoolScript:\n\n#someTag\n#otherTag #immediatelly #followed #by #others\n\n// rest of the script\n\nendscript    You can add tags anywhere in your script\nHowever it's good practice to keep them at the beginning of the script\nto ease readability   Tags can then be check using  [aFiber hasTag:\"someTag\"]",
+            "title": "Tags"
+        },
+        {
+            "location": "/nsref.fibers/#reserved-tags",
+            "text": "Some tags are reserved by the system (compiler, interpreter or VM)\nHere is the list of reserved tags     Reserved tag  Description      break  Add a breakpoint to the script at the specified location",
+            "title": "Reserved tags"
         },
         {
             "location": "/stemp.AOE/",
