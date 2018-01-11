@@ -136,6 +136,12 @@
     </url>
         
     <url>
+     <loc>/gameData/dk/</loc>
+     <lastmod>2018-01-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/gameData/entity/</loc>
      <lastmod>2018-01-11</lastmod>
      <changefreq>daily</changefreq>

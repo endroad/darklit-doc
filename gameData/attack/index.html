@@ -586,19 +586,6 @@
     attack.targets
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example" title="Example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
       </ul>
@@ -619,19 +606,6 @@
     attack.damage
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example_1" title="Example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
       </ul>
@@ -651,33 +625,6 @@
   <a href="#attackhit" title="attack.hit" class="md-nav__link">
     attack.hit
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#arguments" title="Arguments" class="md-nav__link">
-    Arguments
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#returns" title="Returns" class="md-nav__link">
-    Returns
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example_2" title="Example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -727,6 +674,18 @@
   <li class="md-nav__item">
     <a href="../chest/" title="chest" class="md-nav__link">
       chest
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dk/" title="dk" class="md-nav__link">
+      dk
     </a>
   </li>
 
@@ -1009,19 +968,6 @@
     attack.targets
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example" title="Example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
       </ul>
@@ -1042,19 +988,6 @@
     attack.damage
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example_1" title="Example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
       </ul>
@@ -1074,33 +1007,6 @@
   <a href="#attackhit" title="attack.hit" class="md-nav__link">
     attack.hit
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#arguments" title="Arguments" class="md-nav__link">
-    Arguments
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#returns" title="Returns" class="md-nav__link">
-    Returns
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example_2" title="Example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1128,35 +1034,42 @@
 <h2 id="variables">Variables</h2>
 <h3 id="attacktargets"><strong>attack.targets</strong></h3>
 <p><code>int attack.targets</code></p>
-<h4 id="example">Example</h4>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">// This example is automatically generated: don&#39;t trust values</span>
-<span class="k">this</span><span class="o">-&gt;</span><span class="n">attack</span><span class="p">.</span><span class="n">targets</span> <span class="o">=</span> <span class="mi">42</span>
-</pre></div>
-</td></tr></table>
-
+<div class="admonition bug">
+<p class="admonition-title">Bug</p>
+<p><strong>Something went wrong!</strong>
+Could not generate documentation for 'attack.targets'
+Exception: Object reference not set to an instance of an object
+Stack:   at XmlUtils.FindFirst (System.Xml.XmlNode node, .Selector selector) [0x0003a] in D:\dev\endroad\darklit\dev\trunk\Darklit\Assets\Framework\Scripts\Endroad.Xml\XmlUtils.cs:19 </p>
+</div>
+<p>at Endroad.GameDataDocGenerator.FindXmlDocumentation (System.String fullName) [0x00025] in D:\dev\endroad\darklit\dev\trunk\Darklit\Assets\Framework\Editor\Windows\GameDataDocGenerator.cs:641 
+  at Endroad.GameDataDocGenerator.WriteDocumentation_Unsafe (Endroad.GameDataGenerator.GameDataObjectTypeInfo typeInfo, GameDataReflectionInfo gameDataInfo) [0x0000c] in D:\dev\endroad\darklit\dev\trunk\Darklit\Assets\Framework\Editor\Windows\GameDataDocGenerator.cs:424 
+  at Endroad.GameDataDocGenerator.WriteDocumentation (Endroad.GameDataGenerator.GameDataObjectTypeInfo typeInfo, GameDataReflectionInfo gameDataInfo) [0x00005] in D:\dev\endroad\darklit\dev\trunk\Darklit\Assets\Framework\Editor\Windows\GameDataDocGenerator.cs:371 </p>
 <h2 id="stats">Stats</h2>
 <h3 id="attackdamage"><strong>attack.damage</strong></h3>
 <p><code>float attack.damage</code></p>
-<h4 id="example_1">Example</h4>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">// This example is automatically generated: don&#39;t trust values</span>
-<span class="k">this</span><span class="o">-&gt;</span><span class="n">attack</span><span class="p">.</span><span class="n">damage</span> <span class="o">=</span> <span class="mf">2.9</span>
-</pre></div>
-</td></tr></table>
-
+<div class="admonition bug">
+<p class="admonition-title">Bug</p>
+<p><strong>Something went wrong!</strong>
+Could not generate documentation for 'attack.damage'
+Exception: Object reference not set to an instance of an object
+Stack:   at XmlUtils.FindFirst (System.Xml.XmlNode node, .Selector selector) [0x0003a] in D:\dev\endroad\darklit\dev\trunk\Darklit\Assets\Framework\Scripts\Endroad.Xml\XmlUtils.cs:19 </p>
+</div>
+<p>at Endroad.GameDataDocGenerator.FindXmlDocumentation (System.String fullName) [0x00025] in D:\dev\endroad\darklit\dev\trunk\Darklit\Assets\Framework\Editor\Windows\GameDataDocGenerator.cs:641 
+  at Endroad.GameDataDocGenerator.WriteDocumentation_Unsafe (Endroad.GameDataGenerator.GameDataObjectTypeInfo typeInfo, GameDataReflectionInfo gameDataInfo) [0x0000c] in D:\dev\endroad\darklit\dev\trunk\Darklit\Assets\Framework\Editor\Windows\GameDataDocGenerator.cs:424 
+  at Endroad.GameDataDocGenerator.WriteDocumentation (Endroad.GameDataGenerator.GameDataObjectTypeInfo typeInfo, GameDataReflectionInfo gameDataInfo) [0x00005] in D:\dev\endroad\darklit\dev\trunk\Darklit\Assets\Framework\Editor\Windows\GameDataDocGenerator.cs:371 </p>
 <h2 id="message">Message</h2>
 <h3 id="attackhit"><strong>attack.hit</strong></h3>
 <p><code>(void)attack.hit:(int)id</code></p>
-<h4 id="arguments">Arguments</h4>
-<p><code>int id</code>: </p>
-<h4 id="returns">Returns</h4>
-<h4 id="example_2">Example</h4>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">// This example is automatically generated: don&#39;t trust values</span>
-<span class="p">[</span><span class="k">this</span> <span class="n">attack</span><span class="p">.</span><span class="nl">hit</span><span class="p">:</span><span class="mi">42</span><span class="p">]</span>
-</pre></div>
-</td></tr></table>
+<div class="admonition bug">
+<p class="admonition-title">Bug</p>
+<p><strong>Something went wrong!</strong>
+Could not generate documentation for 'attack.hit'
+Exception: Object reference not set to an instance of an object
+Stack:   at XmlUtils.FindFirst (System.Xml.XmlNode node, .Selector selector) [0x0003a] in D:\dev\endroad\darklit\dev\trunk\Darklit\Assets\Framework\Scripts\Endroad.Xml\XmlUtils.cs:19 </p>
+</div>
+<p>at Endroad.GameDataDocGenerator.FindXmlDocumentation (System.String fullName) [0x00025] in D:\dev\endroad\darklit\dev\trunk\Darklit\Assets\Framework\Editor\Windows\GameDataDocGenerator.cs:641 
+  at Endroad.GameDataDocGenerator.WriteDocumentation_Unsafe (Endroad.GameDataGenerator.GameDataObjectTypeInfo typeInfo, GameDataReflectionInfo gameDataInfo) [0x0000c] in D:\dev\endroad\darklit\dev\trunk\Darklit\Assets\Framework\Editor\Windows\GameDataDocGenerator.cs:424 
+  at Endroad.GameDataDocGenerator.WriteDocumentation (Endroad.GameDataGenerator.GameDataObjectTypeInfo typeInfo, GameDataReflectionInfo gameDataInfo) [0x00005] in D:\dev\endroad\darklit\dev\trunk\Darklit\Assets\Framework\Editor\Windows\GameDataDocGenerator.cs:371 </p>
                 
                   
                 
