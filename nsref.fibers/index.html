@@ -368,6 +368,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#step" title="step" class="md-nav__link">
+    step
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#hasstate" title="hasState" class="md-nav__link">
     hasState
   </a>
@@ -979,6 +986,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#step" title="step" class="md-nav__link">
+    step
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#hasstate" title="hasState" class="md-nav__link">
     hasState
   </a>
@@ -1049,7 +1063,7 @@ They can be manipulated as well as any other object type in NuSpeak.</p>
 <h2 id="messages">Messages</h2>
 <p>These messages can be called on both the current <code>fiber</code> (<code>self</code>) or any <strong>other</strong>.</p>
 <h3 id="exec"><strong>exec</strong></h3>
-<p>Set the execution state of a fiber.</p>
+<p>Set the execution state of a fiber. It simply goes to the specified state.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -1057,11 +1071,37 @@ They can be manipulated as well as any other object type in NuSpeak.</p>
 5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">// Retrieve a fiber name &quot;awesomeFiber&quot; in the current entity</span>
 <span class="n">fiber</span> <span class="n">someOtherFiber</span> <span class="o">=</span> <span class="p">[</span><span class="n">this</span> <span class="n">entity</span><span class="p">.</span><span class="n">getFiber</span><span class="p">(</span><span class="s">&quot;awesomeFiber&quot;</span><span class="p">)]</span>
 
-<span class="c1">// Execute the state DoSomethingAmazing</span>
+<span class="c1">// Move to the state DoSomethingAmazing</span>
 <span class="p">[</span><span class="n">someOtherFiber</span> <span class="nl">exec</span><span class="p">:</span><span class="n">DoSomethingAmazing</span><span class="p">]</span>
 </pre></div>
 </td></tr></table>
 
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The fiber is not run. If you want to immediately run the fiber, call <code>step</code> on the fiber: <code>[someOtherFiber step]</code></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If called on <code>self</code> it carries on with the execution after moving to the specified state until yielding or end of program.</p>
+</div>
+<h3 id="step"><strong>step</strong></h3>
+<p>Immediately executes (if possible) the fiber in its current state.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">// Retrieve a fiber name &quot;awesomeFiber&quot; in the current entity</span>
+<span class="n">fiber</span> <span class="n">someOtherFiber</span> <span class="o">=</span> <span class="p">[</span><span class="n">this</span> <span class="n">entity</span><span class="p">.</span><span class="n">getFiber</span><span class="p">(</span><span class="s">&quot;awesomeFiber&quot;</span><span class="p">)]</span>
+
+<span class="c1">// Run the fiber immediately</span>
+<span class="p">[</span><span class="n">someOtherFiber</span> <span class="n">step</span><span class="p">]</span>
+</pre></div>
+</td></tr></table>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not call on <code>self</code>. It'll create a runtime error. </p>
+</div>
 <h3 id="hasstate"><strong>hasState</strong></h3>
 <p>Check if a fiber implements the specified state:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
