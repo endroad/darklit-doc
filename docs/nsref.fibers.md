@@ -39,13 +39,13 @@ Set the execution state of a fiber. It simply goes to the specified state.
 Immediately executes (if possible) the fiber in its current state.
 
     // Retrieve a fiber name "awesomeFiber" in the current entity
-    fiber someOtherFiber = [this entity.getFiber("awesomeFiber")]
+    fiber someOtherFiber = [this entity.getFiber:"awesomeFiber"]
 
     // Run the fiber immediately
     [someOtherFiber step]
 
 !!! warning
-    Do not call on `self`. It'll create a runtime error. 
+    Do not call on `self`. It'll create a runtime error.
 
 
 ### **hasState**
