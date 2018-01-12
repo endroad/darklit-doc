@@ -365,6 +365,19 @@
     State &amp; Routine
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exit-a-state" title="Exit a state" class="md-nav__link">
+    Exit a state
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -961,6 +974,19 @@
     State &amp; Routine
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exit-a-state" title="Exit a state" class="md-nav__link">
+    Exit a state
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -1095,6 +1121,21 @@ It's a convenience that allow scripter to split the code into parts that make se
 <blockquote>
 <p>You can use indifferently keyword <code>state</code> or <code>routine</code>. They do the same thing</p>
 </blockquote>
+<h3 id="exit-a-state">Exit a state</h3>
+<p>Use the instruction <code>[exit state]</code> to exit the current state or <code>[exit]</code> if not in a loop</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">19</span>
+<span class="n">state</span> <span class="nl">Fury</span><span class="p">:</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="p">[</span><span class="n">exit</span> <span class="n">state</span><span class="p">]</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="mi">10</span>
+<span class="n">end</span>
+</pre></div>
+</td></tr></table>
                 
                   
                 
