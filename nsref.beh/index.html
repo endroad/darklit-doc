@@ -380,6 +380,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#abort" title="Abort" class="md-nav__link">
+    Abort
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -611,8 +618,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../gameData/aoes/" title="aoes" class="md-nav__link">
-      aoes
+    <a href="../gameData/areas/" title="areas" class="md-nav__link">
+      areas
     </a>
   </li>
 
@@ -647,8 +654,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../gameData/character/" title="character" class="md-nav__link">
-      character
+    <a href="../gameData/chest/" title="chest" class="md-nav__link">
+      chest
     </a>
   </li>
 
@@ -659,8 +666,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../gameData/chest/" title="chest" class="md-nav__link">
-      chest
+    <a href="../gameData/chip/" title="chip" class="md-nav__link">
+      chip
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gameData/debug/" title="debug" class="md-nav__link">
+      debug
     </a>
   </li>
 
@@ -685,6 +704,18 @@
   <li class="md-nav__item">
     <a href="../gameData/entity/" title="entity" class="md-nav__link">
       entity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gameData/faction/" title="faction" class="md-nav__link">
+      faction
     </a>
   </li>
 
@@ -733,6 +764,30 @@
   <li class="md-nav__item">
     <a href="../gameData/legs/" title="legs" class="md-nav__link">
       legs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gameData/math/" title="math" class="md-nav__link">
+      math
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gameData/navigation/" title="navigation" class="md-nav__link">
+      navigation
     </a>
   </li>
 
@@ -803,6 +858,30 @@
 
 
   <li class="md-nav__item">
+    <a href="../gameData/skillsin/" title="skillsin" class="md-nav__link">
+      skillsin
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gameData/skillsout/" title="skillsout" class="md-nav__link">
+      skillsout
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../gameData/spawner/" title="spawner" class="md-nav__link">
       spawner
     </a>
@@ -817,6 +896,18 @@
   <li class="md-nav__item">
     <a href="../gameData/stamina/" title="stamina" class="md-nav__link">
       stamina
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gameData/target/" title="target" class="md-nav__link">
+      target
     </a>
   </li>
 
@@ -877,18 +968,6 @@
   <li class="md-nav__item">
     <a href="../gameData/visual/" title="visual" class="md-nav__link">
       visual
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../gameData/weakness/" title="weakness" class="md-nav__link">
-      weakness
     </a>
   </li>
 
@@ -989,6 +1068,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#abort" title="Abort" class="md-nav__link">
+    Abort
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -1038,7 +1124,7 @@ of the programmer in charge to actually call the script when needed
 So it's again a convention between programmer and scripter</p>
 </blockquote>
 <h3 id="exit-a-loop">Exit a loop</h3>
-<p>You can exit the parent loop at anytime using the instruction <code>[exit]</code>.</p>
+<p>You can exit the parent loop at anytime using the instruction <code>[exit]</code> or <code>[exit loop]</code>.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -1122,20 +1208,64 @@ It's a convenience that allow scripter to split the code into parts that make se
 <p>You can use indifferently keyword <code>state</code> or <code>routine</code>. They do the same thing</p>
 </blockquote>
 <h3 id="exit-a-state">Exit a state</h3>
-<p>Use the instruction <code>[exit state]</code> to exit the current state or <code>[exit]</code> if not in a loop</p>
+<p>Use the instruction <code>[exit]</code> or <code>[exit state]</code> to exit the current state.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
 5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">19</span>
-<span class="n">state</span> <span class="nl">Fury</span><span class="p">:</span>
-    <span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
-    <span class="p">[</span><span class="n">exit</span> <span class="n">state</span><span class="p">]</span>
-    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="mi">10</span>
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>int a = 19
+state Fury:
+    a = 2
+    [exit]
+    a = a * 10
+end
+</pre></div>
+</td></tr></table>
+
+<p>In the example above the expected value of <code>a</code> will be</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you use the <code>[exit]</code> instruction the compiler will target the enclosing state <strong>or</strong> loop</p>
+<p>If you want to explicitly exit the current state from <strong>inside a loop</strong> you need to specify
+it clearly to the compiler by using <code>[exit state]</code></p>
+<p>The equivalent code with a <code>loop</code> would be:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">state</span> <span class="nl">Fury</span><span class="p">:</span>
+    <span class="nl">loop</span><span class="p">:</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+        <span class="p">[</span><span class="n">exit</span> <span class="n">state</span><span class="p">]</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="mi">10</span>
+    <span class="n">end</span>
 <span class="n">end</span>
 </pre></div>
 </td></tr></table>
+
+</div>
+<h2 id="abort">Abort</h2>
+<p>You can abort program execution at any point in the program with the instruction <code>[abort]</code></p>
+<p>For example, the following will finish program's execution if the <code>entity</code> has no <code>legs.motion</code> data.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>if not(this has legs.motion) then
+    [abort]
+end
+
+this-&gt;legs.speed = 1.0
+// etc ...
+</pre></div>
+</td></tr></table>
+
+<p>When <code>aborted</code>, program will have a finished status as it's reached the end of the program normally.
+It's really just a shortcut to terminate program in unwanted situation.</p>
                 
                   
                 
