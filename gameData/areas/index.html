@@ -604,8 +604,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#areasdetect" title="areas.detect" class="md-nav__link">
-    areas.detect
+  <a href="#areasdetectall" title="areas.detectAll" class="md-nav__link">
+    areas.detectAll
   </a>
   
     <nav class="md-nav">
@@ -638,8 +638,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#areascollide" title="areas.collide" class="md-nav__link">
-    areas.collide
+  <a href="#areasdetect" title="areas.detect" class="md-nav__link">
+    areas.detect
   </a>
   
     <nav class="md-nav">
@@ -661,6 +661,40 @@
         
           <li class="md-nav__item">
   <a href="#example_2" title="Example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#areascollide" title="areas.collide" class="md-nav__link">
+    areas.collide
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments_3" title="Arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" title="Returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_3" title="Example" class="md-nav__link">
     Example
   </a>
   
@@ -741,6 +775,18 @@
   <li class="md-nav__item">
     <a href="../debug/" title="debug" class="md-nav__link">
       debug
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../detection/" title="detection" class="md-nav__link">
+      detection
     </a>
   </li>
 
@@ -1125,8 +1171,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#areasdetect" title="areas.detect" class="md-nav__link">
-    areas.detect
+  <a href="#areasdetectall" title="areas.detectAll" class="md-nav__link">
+    areas.detectAll
   </a>
   
     <nav class="md-nav">
@@ -1159,8 +1205,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#areascollide" title="areas.collide" class="md-nav__link">
-    areas.collide
+  <a href="#areasdetect" title="areas.detect" class="md-nav__link">
+    areas.detect
   </a>
   
     <nav class="md-nav">
@@ -1182,6 +1228,40 @@
         
           <li class="md-nav__item">
   <a href="#example_2" title="Example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#areascollide" title="areas.collide" class="md-nav__link">
+    areas.collide
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments_3" title="Arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_3" title="Returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_3" title="Example" class="md-nav__link">
     Example
   </a>
   
@@ -1225,13 +1305,14 @@
 <h4 id="example">Example</h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">// This example is automatically generated: don&#39;t trust values</span>
-<span class="p">[</span><span class="k">this</span> <span class="n">areas</span><span class="p">.</span><span class="nl">effect</span><span class="p">:</span><span class="s">&quot;helloWorld&quot;</span> <span class="nl">fiber</span><span class="p">:</span><span class="n">someOtherFiber</span><span class="p">]</span>
+<span class="p">[</span><span class="k">this</span> <span class="n">areas</span><span class="p">.</span><span class="nl">effect</span><span class="p">:</span><span class="s">&quot;yolo&quot;</span> <span class="nl">fiber</span><span class="p">:</span><span class="n">someOtherFiber</span><span class="p">]</span>
 </pre></div>
 </td></tr></table>
 
-<h3 id="areasdetect"><strong>areas.detect</strong></h3>
-<p><code>(int)areas.detect:(string)keyid</code></p>
-<p>Runs a detection over the shape(s) with specified keyid, returns how many tresspassers were detected</p>
+<h3 id="areasdetectall"><strong>areas.detectAll</strong></h3>
+<p><code>(int)areas.detectAll:(string)keyid</code></p>
+<p>Runs a detection over the shape(s) with specified keyid, returns how many tresspassers were detected
+A tresspasser must have a hitbox, in other words, a collider with Attackable layer on it</p>
 <h4 id="arguments_1">Arguments</h4>
 <p><code>string keyid</code>: N/A</p>
 <h4 id="returns_1">Returns</h4>
@@ -1239,18 +1320,34 @@
 <h4 id="example_1">Example</h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">// This example is automatically generated: don&#39;t trust values</span>
-<span class="p">[</span><span class="k">this</span> <span class="n">areas</span><span class="p">.</span><span class="nl">detect</span><span class="p">:</span><span class="s">&quot;helloWorld&quot;</span><span class="p">]</span>
+<span class="p">[</span><span class="k">this</span> <span class="n">areas</span><span class="p">.</span><span class="nl">detectAll</span><span class="p">:</span><span class="s">&quot;helloWorld&quot;</span><span class="p">]</span>
+</pre></div>
+</td></tr></table>
+
+<h3 id="areasdetect"><strong>areas.detect</strong></h3>
+<p><code>(int)areas.detect:(string)keyid code:(int)code</code></p>
+<p>Runs a detection over the shape(s) with specified keyid, returns how many tresspassers were detected
+A tresspasser must have a hitbox, in other words, a collider with Attackable layer on it</p>
+<h4 id="arguments_2">Arguments</h4>
+<p><code>string keyid</code>: N/A</p>
+<p><code>int code</code>: N/A</p>
+<h4 id="returns_2">Returns</h4>
+<p>N/A</p>
+<h4 id="example_2">Example</h4>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">// This example is automatically generated: don&#39;t trust values</span>
+<span class="p">[</span><span class="k">this</span> <span class="n">areas</span><span class="p">.</span><span class="nl">detect</span><span class="p">:</span><span class="s">&quot;yolo&quot;</span> <span class="nl">code</span><span class="p">:</span><span class="mi">80085</span><span class="p">]</span>
 </pre></div>
 </td></tr></table>
 
 <h3 id="areascollide"><strong>areas.collide</strong></h3>
 <p><code>(bool)areas.collide:(string)shapeTag</code></p>
 <p>Returns true if the shape is colliding with a collider, regarding the shape layer !</p>
-<h4 id="arguments_2">Arguments</h4>
+<h4 id="arguments_3">Arguments</h4>
 <p><code>string shapeTag</code>: N/A</p>
-<h4 id="returns_2">Returns</h4>
+<h4 id="returns_3">Returns</h4>
 <p>N/A</p>
-<h4 id="example_2">Example</h4>
+<h4 id="example_3">Example</h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">// This example is automatically generated: don&#39;t trust values</span>
 <span class="p">[</span><span class="k">this</span> <span class="n">areas</span><span class="p">.</span><span class="nl">collide</span><span class="p">:</span><span class="s">&quot;somethingCorrect&quot;</span><span class="p">]</span>

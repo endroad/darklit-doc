@@ -437,7 +437,7 @@
         },
         {
             "location": "/gameData/alteration/",
-            "text": "alteration\n\n\nStats\n\n\nalteration.recovery\n\n\nfloat alteration.recovery\n\n\nwhen recovering from certain ailment, this is the duration an entity needs to get back on its feet\nlike a micro stun\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nalteration\n.\nrecovery\n \n=\n \n3.14159\n\n\n\n\n\n\n\nMessage\n\n\nalteration.hasInflicted\n\n\n(bool)alteration.hasInflicted:(string)alter\n\n\nArguments\n\n\nstring alter\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\nhasInflicted\n:\n\"somethingCorrect\"\n]\n\n\n\n\n\n\n\nalteration.hasResistance\n\n\n(bool)alteration.hasResistance:(string)alter\n\n\nArguments\n\n\nstring alter\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\nhasResistance\n:\n\"yolo\"\n]\n\n\n\n\n\n\n\nalteration.inflict\n\n\n(void)alteration.inflict:(string)alter duration:(float)duration\n\n\nInflict a string based alteration to the entity, for a duration. The nature of the alter is\nup to your very imagination, though we consider at the moment that alters are not stackable,\nergo you cant inflict a double poison for exemple\n\n\nArguments\n\n\nstring alter\n: \n\n\nfloat duration\n: \n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\ninflict\n:\n\"helloWorld\"\n \nduration\n:\n2.9\n]\n\n\n\n\n\n\n\nalteration.resist\n\n\n(void)alteration.resist:(string)alter duration:(float)duration\n\n\nAdd a timed resistance to an alteration, as such if the entity was inflicted that alteration, \nit will be cured as a result\n\n\nArguments\n\n\nstring alter\n: \n\n\nfloat duration\n: \n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\nresist\n:\n\"yolo\"\n \nduration\n:\n3.14159\n]\n\n\n\n\n\n\n\nalteration.cureAll\n\n\n(void)alteration.cureAll:(int)morality\n\n\nWill cure all inflicted alterations reguarding the morality on this entity\nPermanents alterations are not affected\n\n\nArguments\n\n\nint morality\n: morality of alters to cure\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\ncureAll\n:\n42\n]\n\n\n\n\n\n\n\nalteration.cure\n\n\n(void)alteration.cure:(string)alter\n\n\nWill cure a specific alter\n\n\nArguments\n\n\nstring alter\n: the alter to cure\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\ncure\n:\n\"yolo\"\n]\n\n\n\n\n\n\n\nalteration.disruptAll\n\n\n(void)alteration.disruptAll:(int)morality\n\n\nWill disrupt all resistances to an alter regarding the morality on this entity\nPermanents alterations are not affected\n\n\nArguments\n\n\nint morality\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\ndisruptAll\n:\n1337\n]\n\n\n\n\n\n\n\nalteration.disrupt\n\n\n(void)alteration.disrupt:(string)alter\n\n\nWill disrupt a resistance to a specific alter\n\n\nArguments\n\n\nstring alter\n: the alter to cure\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\ndisrupt\n:\n\"helloWorld\"\n]\n\n\n\n\n\n\n\nalteration.clear\n\n\n(void)alteration.clear\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\nclear\n]",
+            "text": "alteration\n\n\nStats\n\n\nalteration.recovery\n\n\nfloat alteration.recovery\n\n\nwhen recovering from certain ailment, this is the duration an entity needs to get back on its feet\nlike a micro stun\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nalteration\n.\nrecovery\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nMessage\n\n\nalteration.inflict\n\n\n(void)alteration.inflict:(string)alter duration:(float)duration\n\n\nInflict a string based alteration to the entity, for a duration. The nature of the alter is\nup to your scripting imagination, though we consider at the moment that alters are not stackable,\nergo you cant inflict a double poison for exemple\n\n\nArguments\n\n\nstring alter\n: \n\n\nfloat duration\n: \n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\ninflict\n:\n\"yolo\"\n \nduration\n:\n2.9\n]\n\n\n\n\n\n\n\nalteration.new\n\n\n(void)alteration.new:(string)alter duration:(float)duration priority:(float)priority\n\n\nMost of the time Alters are simple enough to just use the Inflict Message and then let it go\nbut then some alters require more complexity than others, this message creates a new alter, based \non the name and push it as the context for this entity, you may then proceed in parametter setters\nusing the provided SET messages, much like the Attack context.\nUnlike the Attack context however, properties of Alters context are solely based on the Ins and Outs of \nthe alter script. Exemple : Poison has a \"in int damages\", thus the parameter int damages will\nbe available for editing.\nWhen you are done with editing, use the message Push to inflict the alter, context will not be available\nafter that.\n\n\nArguments\n\n\nstring alter\n: name of the alter, crucial\n\n\nfloat duration\n: how long this alter will stay when inflicted\n\n\nfloat priority\n: how \"powerful\" this alter is, meaning which version will be used in case of multiple inflict of the same alter\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\nnew\n:\n\"helloWorld\"\n \nduration\n:\n2.9\n \npriority\n:\n2.9\n]\n\n\n\n\n\n\n\nalteration.push\n\n\n(void)alteration.push\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\npush\n]\n\n\n\n\n\n\n\nalteration.setBool\n\n\n(void)alteration.setBool:(string)property value:(bool)value\n\n\nArguments\n\n\nstring property\n: \n\n\nbool value\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\nsetBool\n:\n\"somethingCorrect\"\n \nvalue\n:\ntrue\n]\n\n\n\n\n\n\n\nalteration.setFloat\n\n\n(void)alteration.setFloat:(string)property value:(float)value\n\n\nArguments\n\n\nstring property\n: \n\n\nfloat value\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\nsetFloat\n:\n\"helloWorld\"\n \nvalue\n:\n-\n1.0\n]\n\n\n\n\n\n\n\nalteration.setInt\n\n\n(void)alteration.setInt:(string)property value:(int)value\n\n\nArguments\n\n\nstring property\n: \n\n\nint value\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\nsetInt\n:\n\"somethingCorrect\"\n \nvalue\n:\n42\n]\n\n\n\n\n\n\n\nalteration.setEntity\n\n\n(void)alteration.setEntity:(string)property value:(entity)value\n\n\nArguments\n\n\nstring property\n: \n\n\nentity value\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\nsetEntity\n:\n\"yolo\"\n \nvalue\n:\nsomeEntity\n]\n\n\n\n\n\n\n\nalteration.hasInflicted\n\n\n(bool)alteration.hasInflicted:(string)alter\n\n\nIs the entity Inflicted by the specified alter\n\n\nArguments\n\n\nstring alter\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\nhasInflicted\n:\n\"yolo\"\n]\n\n\n\n\n\n\n\nalteration.hasResistance\n\n\n(bool)alteration.hasResistance:(string)alter\n\n\nDoes the entity have a resistance to the specified alter\n\n\nArguments\n\n\nstring alter\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\nhasResistance\n:\n\"helloWorld\"\n]\n\n\n\n\n\n\n\nalteration.resist\n\n\n(void)alteration.resist:(string)alter duration:(float)duration\n\n\nAdd a timed resistance to an alteration, as such if the entity was inflicted that alteration, \nit will be cured as a result\n\n\nArguments\n\n\nstring alter\n: \n\n\nfloat duration\n: \n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\nresist\n:\n\"helloWorld\"\n \nduration\n:\n2.9\n]\n\n\n\n\n\n\n\nalteration.cureAll\n\n\n(void)alteration.cureAll:(int)morality\n\n\nWill cure all inflicted alterations reguarding the morality on this entity\nPermanents alterations are not affected\n\n\nArguments\n\n\nint morality\n: morality of alters to cure\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\ncureAll\n:\n1337\n]\n\n\n\n\n\n\n\nalteration.cure\n\n\n(void)alteration.cure:(string)alter\n\n\nWill cure a specific alter\n\n\nArguments\n\n\nstring alter\n: the alter to cure\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\ncure\n:\n\"yolo\"\n]\n\n\n\n\n\n\n\nalteration.disruptAll\n\n\n(void)alteration.disruptAll:(int)morality\n\n\nWill disrupt all resistances to an alter regarding the morality on this entity\nPermanents alterations are not affected\n\n\nArguments\n\n\nint morality\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\ndisruptAll\n:\n666\n]\n\n\n\n\n\n\n\nalteration.disrupt\n\n\n(void)alteration.disrupt:(string)alter\n\n\nWill disrupt a resistance to a specific alter\n\n\nArguments\n\n\nstring alter\n: the alter to cure\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\ndisrupt\n:\n\"helloWorld\"\n]\n\n\n\n\n\n\n\nalteration.clear\n\n\n(void)alteration.clear\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nalteration\n.\nclear\n]",
             "title": "alteration"
         },
         {
@@ -457,7 +457,7 @@
         },
         {
             "location": "/gameData/alteration/#example",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> alteration . recovery   =   3.14159",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> alteration . recovery   =   - 1.0",
             "title": "Example"
         },
         {
@@ -466,153 +466,153 @@
             "title": "Message"
         },
         {
-            "location": "/gameData/alteration/#alterationhasinflicted",
-            "text": "(bool)alteration.hasInflicted:(string)alter",
-            "title": "alteration.hasInflicted"
+            "location": "/gameData/alteration/#alterationinflict",
+            "text": "(void)alteration.inflict:(string)alter duration:(float)duration  Inflict a string based alteration to the entity, for a duration. The nature of the alter is\nup to your scripting imagination, though we consider at the moment that alters are not stackable,\nergo you cant inflict a double poison for exemple",
+            "title": "alteration.inflict"
         },
         {
             "location": "/gameData/alteration/#arguments",
-            "text": "string alter :",
+            "text": "string alter :   float duration :",
             "title": "Arguments"
         },
         {
             "location": "/gameData/alteration/#returns",
-            "text": "",
+            "text": "N/A",
             "title": "Returns"
         },
         {
             "location": "/gameData/alteration/#example_1",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   alteration . hasInflicted : \"somethingCorrect\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   alteration . inflict : \"yolo\"   duration : 2.9 ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/alteration/#alterationhasresistance",
-            "text": "(bool)alteration.hasResistance:(string)alter",
-            "title": "alteration.hasResistance"
+            "location": "/gameData/alteration/#alterationnew",
+            "text": "(void)alteration.new:(string)alter duration:(float)duration priority:(float)priority  Most of the time Alters are simple enough to just use the Inflict Message and then let it go\nbut then some alters require more complexity than others, this message creates a new alter, based \non the name and push it as the context for this entity, you may then proceed in parametter setters\nusing the provided SET messages, much like the Attack context.\nUnlike the Attack context however, properties of Alters context are solely based on the Ins and Outs of \nthe alter script. Exemple : Poison has a \"in int damages\", thus the parameter int damages will\nbe available for editing.\nWhen you are done with editing, use the message Push to inflict the alter, context will not be available\nafter that.",
+            "title": "alteration.new"
         },
         {
             "location": "/gameData/alteration/#arguments_1",
-            "text": "string alter :",
+            "text": "string alter : name of the alter, crucial  float duration : how long this alter will stay when inflicted  float priority : how \"powerful\" this alter is, meaning which version will be used in case of multiple inflict of the same alter",
             "title": "Arguments"
         },
         {
             "location": "/gameData/alteration/#returns_1",
-            "text": "",
+            "text": "N/A",
             "title": "Returns"
         },
         {
             "location": "/gameData/alteration/#example_2",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   alteration . hasResistance : \"yolo\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   alteration . new : \"helloWorld\"   duration : 2.9   priority : 2.9 ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/alteration/#alterationinflict",
-            "text": "(void)alteration.inflict:(string)alter duration:(float)duration  Inflict a string based alteration to the entity, for a duration. The nature of the alter is\nup to your very imagination, though we consider at the moment that alters are not stackable,\nergo you cant inflict a double poison for exemple",
-            "title": "alteration.inflict"
+            "location": "/gameData/alteration/#alterationpush",
+            "text": "(void)alteration.push",
+            "title": "alteration.push"
         },
         {
             "location": "/gameData/alteration/#arguments_2",
-            "text": "string alter :   float duration :",
+            "text": "",
             "title": "Arguments"
         },
         {
             "location": "/gameData/alteration/#returns_2",
-            "text": "N/A",
+            "text": "",
             "title": "Returns"
         },
         {
             "location": "/gameData/alteration/#example_3",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   alteration . inflict : \"helloWorld\"   duration : 2.9 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   alteration . push ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/alteration/#alterationresist",
-            "text": "(void)alteration.resist:(string)alter duration:(float)duration  Add a timed resistance to an alteration, as such if the entity was inflicted that alteration, \nit will be cured as a result",
-            "title": "alteration.resist"
+            "location": "/gameData/alteration/#alterationsetbool",
+            "text": "(void)alteration.setBool:(string)property value:(bool)value",
+            "title": "alteration.setBool"
         },
         {
             "location": "/gameData/alteration/#arguments_3",
-            "text": "string alter :   float duration :",
+            "text": "string property :   bool value :",
             "title": "Arguments"
         },
         {
             "location": "/gameData/alteration/#returns_3",
-            "text": "N/A",
+            "text": "",
             "title": "Returns"
         },
         {
             "location": "/gameData/alteration/#example_4",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   alteration . resist : \"yolo\"   duration : 3.14159 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   alteration . setBool : \"somethingCorrect\"   value : true ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/alteration/#alterationcureall",
-            "text": "(void)alteration.cureAll:(int)morality  Will cure all inflicted alterations reguarding the morality on this entity\nPermanents alterations are not affected",
-            "title": "alteration.cureAll"
+            "location": "/gameData/alteration/#alterationsetfloat",
+            "text": "(void)alteration.setFloat:(string)property value:(float)value",
+            "title": "alteration.setFloat"
         },
         {
             "location": "/gameData/alteration/#arguments_4",
-            "text": "int morality : morality of alters to cure",
+            "text": "string property :   float value :",
             "title": "Arguments"
         },
         {
             "location": "/gameData/alteration/#returns_4",
-            "text": "N/A",
+            "text": "",
             "title": "Returns"
         },
         {
             "location": "/gameData/alteration/#example_5",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   alteration . cureAll : 42 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   alteration . setFloat : \"helloWorld\"   value : - 1.0 ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/alteration/#alterationcure",
-            "text": "(void)alteration.cure:(string)alter  Will cure a specific alter",
-            "title": "alteration.cure"
+            "location": "/gameData/alteration/#alterationsetint",
+            "text": "(void)alteration.setInt:(string)property value:(int)value",
+            "title": "alteration.setInt"
         },
         {
             "location": "/gameData/alteration/#arguments_5",
-            "text": "string alter : the alter to cure",
+            "text": "string property :   int value :",
             "title": "Arguments"
         },
         {
             "location": "/gameData/alteration/#returns_5",
-            "text": "N/A",
+            "text": "",
             "title": "Returns"
         },
         {
             "location": "/gameData/alteration/#example_6",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   alteration . cure : \"yolo\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   alteration . setInt : \"somethingCorrect\"   value : 42 ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/alteration/#alterationdisruptall",
-            "text": "(void)alteration.disruptAll:(int)morality  Will disrupt all resistances to an alter regarding the morality on this entity\nPermanents alterations are not affected",
-            "title": "alteration.disruptAll"
+            "location": "/gameData/alteration/#alterationsetentity",
+            "text": "(void)alteration.setEntity:(string)property value:(entity)value",
+            "title": "alteration.setEntity"
         },
         {
             "location": "/gameData/alteration/#arguments_6",
-            "text": "int morality : N/A",
+            "text": "string property :   entity value :",
             "title": "Arguments"
         },
         {
             "location": "/gameData/alteration/#returns_6",
-            "text": "N/A",
+            "text": "",
             "title": "Returns"
         },
         {
             "location": "/gameData/alteration/#example_7",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   alteration . disruptAll : 1337 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   alteration . setEntity : \"yolo\"   value : someEntity ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/alteration/#alterationdisrupt",
-            "text": "(void)alteration.disrupt:(string)alter  Will disrupt a resistance to a specific alter",
-            "title": "alteration.disrupt"
+            "location": "/gameData/alteration/#alterationhasinflicted",
+            "text": "(bool)alteration.hasInflicted:(string)alter  Is the entity Inflicted by the specified alter",
+            "title": "alteration.hasInflicted"
         },
         {
             "location": "/gameData/alteration/#arguments_7",
-            "text": "string alter : the alter to cure",
+            "text": "string alter : N/A",
             "title": "Arguments"
         },
         {
@@ -622,6 +622,126 @@
         },
         {
             "location": "/gameData/alteration/#example_8",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   alteration . hasInflicted : \"yolo\" ]",
+            "title": "Example"
+        },
+        {
+            "location": "/gameData/alteration/#alterationhasresistance",
+            "text": "(bool)alteration.hasResistance:(string)alter  Does the entity have a resistance to the specified alter",
+            "title": "alteration.hasResistance"
+        },
+        {
+            "location": "/gameData/alteration/#arguments_8",
+            "text": "string alter : N/A",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/alteration/#returns_8",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/alteration/#example_9",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   alteration . hasResistance : \"helloWorld\" ]",
+            "title": "Example"
+        },
+        {
+            "location": "/gameData/alteration/#alterationresist",
+            "text": "(void)alteration.resist:(string)alter duration:(float)duration  Add a timed resistance to an alteration, as such if the entity was inflicted that alteration, \nit will be cured as a result",
+            "title": "alteration.resist"
+        },
+        {
+            "location": "/gameData/alteration/#arguments_9",
+            "text": "string alter :   float duration :",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/alteration/#returns_9",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/alteration/#example_10",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   alteration . resist : \"helloWorld\"   duration : 2.9 ]",
+            "title": "Example"
+        },
+        {
+            "location": "/gameData/alteration/#alterationcureall",
+            "text": "(void)alteration.cureAll:(int)morality  Will cure all inflicted alterations reguarding the morality on this entity\nPermanents alterations are not affected",
+            "title": "alteration.cureAll"
+        },
+        {
+            "location": "/gameData/alteration/#arguments_10",
+            "text": "int morality : morality of alters to cure",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/alteration/#returns_10",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/alteration/#example_11",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   alteration . cureAll : 1337 ]",
+            "title": "Example"
+        },
+        {
+            "location": "/gameData/alteration/#alterationcure",
+            "text": "(void)alteration.cure:(string)alter  Will cure a specific alter",
+            "title": "alteration.cure"
+        },
+        {
+            "location": "/gameData/alteration/#arguments_11",
+            "text": "string alter : the alter to cure",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/alteration/#returns_11",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/alteration/#example_12",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   alteration . cure : \"yolo\" ]",
+            "title": "Example"
+        },
+        {
+            "location": "/gameData/alteration/#alterationdisruptall",
+            "text": "(void)alteration.disruptAll:(int)morality  Will disrupt all resistances to an alter regarding the morality on this entity\nPermanents alterations are not affected",
+            "title": "alteration.disruptAll"
+        },
+        {
+            "location": "/gameData/alteration/#arguments_12",
+            "text": "int morality : N/A",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/alteration/#returns_12",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/alteration/#example_13",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   alteration . disruptAll : 666 ]",
+            "title": "Example"
+        },
+        {
+            "location": "/gameData/alteration/#alterationdisrupt",
+            "text": "(void)alteration.disrupt:(string)alter  Will disrupt a resistance to a specific alter",
+            "title": "alteration.disrupt"
+        },
+        {
+            "location": "/gameData/alteration/#arguments_13",
+            "text": "string alter : the alter to cure",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/alteration/#returns_13",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/alteration/#example_14",
             "text": "1\n2 // This example is automatically generated: don't trust values  [ this   alteration . disrupt : \"helloWorld\" ]",
             "title": "Example"
         },
@@ -631,23 +751,23 @@
             "title": "alteration.clear"
         },
         {
-            "location": "/gameData/alteration/#arguments_8",
+            "location": "/gameData/alteration/#arguments_14",
             "text": "",
             "title": "Arguments"
         },
         {
-            "location": "/gameData/alteration/#returns_8",
+            "location": "/gameData/alteration/#returns_14",
             "text": "",
             "title": "Returns"
         },
         {
-            "location": "/gameData/alteration/#example_9",
+            "location": "/gameData/alteration/#example_15",
             "text": "1\n2 // This example is automatically generated: don't trust values  [ this   alteration . clear ]",
             "title": "Example"
         },
         {
             "location": "/gameData/areas/",
-            "text": "areas\n\n\nMessage\n\n\nareas.effect\n\n\n(void)areas.effect:(string)keyid fiber:(fiber)fiber\n\n\nApplies an effect immediatly over the specified area id\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nfiber fiber\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nareas\n.\neffect\n:\n\"helloWorld\"\n \nfiber\n:\nsomeOtherFiber\n]\n\n\n\n\n\n\n\nareas.detect\n\n\n(int)areas.detect:(string)keyid\n\n\nRuns a detection over the shape(s) with specified keyid, returns how many tresspassers were detected\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nareas\n.\ndetect\n:\n\"helloWorld\"\n]\n\n\n\n\n\n\n\nareas.collide\n\n\n(bool)areas.collide:(string)shapeTag\n\n\nReturns true if the shape is colliding with a collider, regarding the shape layer !\n\n\nArguments\n\n\nstring shapeTag\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nareas\n.\ncollide\n:\n\"somethingCorrect\"\n]",
+            "text": "areas\n\n\nMessage\n\n\nareas.effect\n\n\n(void)areas.effect:(string)keyid fiber:(fiber)fiber\n\n\nApplies an effect immediatly over the specified area id\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nfiber fiber\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nareas\n.\neffect\n:\n\"yolo\"\n \nfiber\n:\nsomeOtherFiber\n]\n\n\n\n\n\n\n\nareas.detectAll\n\n\n(int)areas.detectAll:(string)keyid\n\n\nRuns a detection over the shape(s) with specified keyid, returns how many tresspassers were detected\nA tresspasser must have a hitbox, in other words, a collider with Attackable layer on it\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nareas\n.\ndetectAll\n:\n\"helloWorld\"\n]\n\n\n\n\n\n\n\nareas.detect\n\n\n(int)areas.detect:(string)keyid code:(int)code\n\n\nRuns a detection over the shape(s) with specified keyid, returns how many tresspassers were detected\nA tresspasser must have a hitbox, in other words, a collider with Attackable layer on it\n\n\nArguments\n\n\nstring keyid\n: N/A\n\n\nint code\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nareas\n.\ndetect\n:\n\"yolo\"\n \ncode\n:\n80085\n]\n\n\n\n\n\n\n\nareas.collide\n\n\n(bool)areas.collide:(string)shapeTag\n\n\nReturns true if the shape is colliding with a collider, regarding the shape layer !\n\n\nArguments\n\n\nstring shapeTag\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nareas\n.\ncollide\n:\n\"somethingCorrect\"\n]",
             "title": "areas"
         },
         {
@@ -677,13 +797,13 @@
         },
         {
             "location": "/gameData/areas/#example",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   areas . effect : \"helloWorld\"   fiber : someOtherFiber ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   areas . effect : \"yolo\"   fiber : someOtherFiber ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/areas/#areasdetect",
-            "text": "(int)areas.detect:(string)keyid  Runs a detection over the shape(s) with specified keyid, returns how many tresspassers were detected",
-            "title": "areas.detect"
+            "location": "/gameData/areas/#areasdetectall",
+            "text": "(int)areas.detectAll:(string)keyid  Runs a detection over the shape(s) with specified keyid, returns how many tresspassers were detected\nA tresspasser must have a hitbox, in other words, a collider with Attackable layer on it",
+            "title": "areas.detectAll"
         },
         {
             "location": "/gameData/areas/#arguments_1",
@@ -697,17 +817,17 @@
         },
         {
             "location": "/gameData/areas/#example_1",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   areas . detect : \"helloWorld\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   areas . detectAll : \"helloWorld\" ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/areas/#areascollide",
-            "text": "(bool)areas.collide:(string)shapeTag  Returns true if the shape is colliding with a collider, regarding the shape layer !",
-            "title": "areas.collide"
+            "location": "/gameData/areas/#areasdetect",
+            "text": "(int)areas.detect:(string)keyid code:(int)code  Runs a detection over the shape(s) with specified keyid, returns how many tresspassers were detected\nA tresspasser must have a hitbox, in other words, a collider with Attackable layer on it",
+            "title": "areas.detect"
         },
         {
             "location": "/gameData/areas/#arguments_2",
-            "text": "string shapeTag : N/A",
+            "text": "string keyid : N/A  int code : N/A",
             "title": "Arguments"
         },
         {
@@ -717,12 +837,32 @@
         },
         {
             "location": "/gameData/areas/#example_2",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   areas . detect : \"yolo\"   code : 80085 ]",
+            "title": "Example"
+        },
+        {
+            "location": "/gameData/areas/#areascollide",
+            "text": "(bool)areas.collide:(string)shapeTag  Returns true if the shape is colliding with a collider, regarding the shape layer !",
+            "title": "areas.collide"
+        },
+        {
+            "location": "/gameData/areas/#arguments_3",
+            "text": "string shapeTag : N/A",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/areas/#returns_3",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/areas/#example_3",
             "text": "1\n2 // This example is automatically generated: don't trust values  [ this   areas . collide : \"somethingCorrect\" ]",
             "title": "Example"
         },
         {
             "location": "/gameData/attack/",
-            "text": "attack\n\n\nVariables\n\n\nattack.area\n\n\nstring attack.area\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nattack\n.\narea\n \n=\n \n\"helloWorld\"\n\n\n\n\n\n\n\nMessage\n\n\nattack.new\n\n\n(void)attack.new:(string)name\n\n\nUsing a name as identifier creates a new attack \nIt also makes it the current attack context of the 'atk' GameDataObject,\nthe attack though is considered dormant, meaning you will have to start it at some point\nfrom this function you may then alter the attack properties\n\n\nArguments\n\n\nstring name\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\nnew\n:\n\"yolo\"\n]\n\n\n\n\n\n\n\nattack.get\n\n\n(bool)attack.get:(string)name\n\n\nUsing a name as identifier, get the referenced attack, returns true if it got your attack\nIt also makes it the current attack context of the 'atk' GameDataObject, \nfrom this function you may then alter the attack properties\n\n\nArguments\n\n\nstring name\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\nget\n:\n\"yolo\"\n]\n\n\n\n\n\n\n\nattack.cast\n\n\n(void)attack.cast\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\ncast\n]\n\n\n\n\n\n\n\nattack.start\n\n\n(void)attack.start\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\nstart\n]\n\n\n\n\n\n\n\nattack.stop\n\n\n(void)attack.stop\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\nstop\n]\n\n\n\n\n\n\n\nattack.kill\n\n\n(void)attack.kill\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\nkill\n]\n\n\n\n\n\n\n\nattack.setFloat\n\n\n(void)attack.setFloat:(string)property value:(float)value\n\n\nArguments\n\n\nstring property\n: \n\n\nfloat value\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\nsetFloat\n:\n\"somethingCorrect\"\n \nvalue\n:\n-\n1.0\n]\n\n\n\n\n\n\n\nattack.setInt\n\n\n(void)attack.setInt:(string)property value:(int)value\n\n\nArguments\n\n\nstring property\n: \n\n\nint value\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\nsetInt\n:\n\"yolo\"\n \nvalue\n:\n42\n]\n\n\n\n\n\n\n\nattack.setString\n\n\n(void)attack.setString:(string)property value:(string)value\n\n\nArguments\n\n\nstring property\n: \n\n\nstring value\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\nsetString\n:\n\"helloWorld\"\n \nvalue\n:\n\"helloWorld\"\n]\n\n\n\n\n\n\n\nattack.getFloat\n\n\n(float)attack.getFloat:(string)property\n\n\nArguments\n\n\nstring property\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\ngetFloat\n:\n\"helloWorld\"\n]\n\n\n\n\n\n\n\nattack.getInt\n\n\n(int)attack.getInt:(string)property\n\n\nArguments\n\n\nstring property\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\ngetInt\n:\n\"somethingCorrect\"\n]\n\n\n\n\n\n\n\nattack.getString\n\n\n(string)attack.getString:(string)property\n\n\nArguments\n\n\nstring property\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\ngetString\n:\n\"yolo\"\n]\n\n\n\n\n\n\n\nattack.hasProperty\n\n\n(bool)attack.hasProperty:(string)property\n\n\nArguments\n\n\nstring property\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\nhasProperty\n:\n\"yolo\"\n]\n\n\n\n\n\n\n\nattack.addTag\n\n\n(void)attack.addTag:(string)tag\n\n\nArguments\n\n\nstring tag\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\naddTag\n:\n\"helloWorld\"\n]\n\n\n\n\n\n\n\nattack.hasTag\n\n\n(bool)attack.hasTag:(string)tag\n\n\nArguments\n\n\nstring tag\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\nhasTag\n:\n\"helloWorld\"\n]",
+            "text": "attack\n\n\nVariables\n\n\nattack.area\n\n\nstring attack.area\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nattack\n.\narea\n \n=\n \n\"yolo\"\n\n\n\n\n\n\n\nMessage\n\n\nattack.new\n\n\n(void)attack.new:(string)name\n\n\nUsing a name as identifier creates a new attack \nIt also makes it the current attack context of the 'atk' GameDataObject,\nthe attack though is considered dormant, meaning you will have to start it at some point\nfrom this function you may then alter the attack properties\n\n\nArguments\n\n\nstring name\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\nnew\n:\n\"yolo\"\n]\n\n\n\n\n\n\n\nattack.get\n\n\n(bool)attack.get:(string)name\n\n\nUsing a name as identifier, get the referenced attack, returns true if it got your attack\nIt also makes it the current attack context of the 'atk' GameDataObject, \nfrom this function you may then alter the attack properties\n\n\nArguments\n\n\nstring name\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\nget\n:\n\"yolo\"\n]\n\n\n\n\n\n\n\nattack.getCast\n\n\n(void)attack.getCast\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\ngetCast\n]\n\n\n\n\n\n\n\nattack.cast\n\n\n(void)attack.cast\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\ncast\n]\n\n\n\n\n\n\n\nattack.start\n\n\n(void)attack.start\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\nstart\n]\n\n\n\n\n\n\n\nattack.stop\n\n\n(void)attack.stop\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\nstop\n]\n\n\n\n\n\n\n\nattack.kill\n\n\n(void)attack.kill\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\nkill\n]\n\n\n\n\n\n\n\nattack.setFloat\n\n\n(void)attack.setFloat:(string)property value:(float)value\n\n\nArguments\n\n\nstring property\n: \n\n\nfloat value\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\nsetFloat\n:\n\"somethingCorrect\"\n \nvalue\n:\n3.14159\n]\n\n\n\n\n\n\n\nattack.setInt\n\n\n(void)attack.setInt:(string)property value:(int)value\n\n\nArguments\n\n\nstring property\n: \n\n\nint value\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\nsetInt\n:\n\"yolo\"\n \nvalue\n:\n666\n]\n\n\n\n\n\n\n\nattack.setString\n\n\n(void)attack.setString:(string)property value:(string)value\n\n\nArguments\n\n\nstring property\n: \n\n\nstring value\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\nsetString\n:\n\"yolo\"\n \nvalue\n:\n\"helloWorld\"\n]\n\n\n\n\n\n\n\nattack.getFloat\n\n\n(float)attack.getFloat:(string)property\n\n\nArguments\n\n\nstring property\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\ngetFloat\n:\n\"somethingCorrect\"\n]\n\n\n\n\n\n\n\nattack.getInt\n\n\n(int)attack.getInt:(string)property\n\n\nArguments\n\n\nstring property\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\ngetInt\n:\n\"helloWorld\"\n]\n\n\n\n\n\n\n\nattack.getString\n\n\n(string)attack.getString:(string)property\n\n\nArguments\n\n\nstring property\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\ngetString\n:\n\"somethingCorrect\"\n]\n\n\n\n\n\n\n\nattack.hasProperty\n\n\n(bool)attack.hasProperty:(string)property\n\n\nArguments\n\n\nstring property\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\nhasProperty\n:\n\"somethingCorrect\"\n]\n\n\n\n\n\n\n\nattack.addTag\n\n\n(void)attack.addTag:(string)tag\n\n\nArguments\n\n\nstring tag\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\naddTag\n:\n\"yolo\"\n]\n\n\n\n\n\n\n\nattack.hasTag\n\n\n(bool)attack.hasTag:(string)tag\n\n\nArguments\n\n\nstring tag\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nattack\n.\nhasTag\n:\n\"yolo\"\n]",
             "title": "attack"
         },
         {
@@ -742,7 +882,7 @@
         },
         {
             "location": "/gameData/attack/#example",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> attack . area   =   \"helloWorld\"",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> attack . area   =   \"yolo\"",
             "title": "Example"
         },
         {
@@ -791,9 +931,9 @@
             "title": "Example"
         },
         {
-            "location": "/gameData/attack/#attackcast",
-            "text": "(void)attack.cast",
-            "title": "attack.cast"
+            "location": "/gameData/attack/#attackgetcast",
+            "text": "(void)attack.getCast",
+            "title": "attack.getCast"
         },
         {
             "location": "/gameData/attack/#arguments_2",
@@ -807,13 +947,13 @@
         },
         {
             "location": "/gameData/attack/#example_3",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . cast ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . getCast ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/attack/#attackstart",
-            "text": "(void)attack.start",
-            "title": "attack.start"
+            "location": "/gameData/attack/#attackcast",
+            "text": "(void)attack.cast",
+            "title": "attack.cast"
         },
         {
             "location": "/gameData/attack/#arguments_3",
@@ -827,13 +967,13 @@
         },
         {
             "location": "/gameData/attack/#example_4",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . start ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . cast ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/attack/#attackstop",
-            "text": "(void)attack.stop",
-            "title": "attack.stop"
+            "location": "/gameData/attack/#attackstart",
+            "text": "(void)attack.start",
+            "title": "attack.start"
         },
         {
             "location": "/gameData/attack/#arguments_4",
@@ -847,13 +987,13 @@
         },
         {
             "location": "/gameData/attack/#example_5",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . stop ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . start ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/attack/#attackkill",
-            "text": "(void)attack.kill",
-            "title": "attack.kill"
+            "location": "/gameData/attack/#attackstop",
+            "text": "(void)attack.stop",
+            "title": "attack.stop"
         },
         {
             "location": "/gameData/attack/#arguments_5",
@@ -867,17 +1007,17 @@
         },
         {
             "location": "/gameData/attack/#example_6",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . kill ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . stop ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/attack/#attacksetfloat",
-            "text": "(void)attack.setFloat:(string)property value:(float)value",
-            "title": "attack.setFloat"
+            "location": "/gameData/attack/#attackkill",
+            "text": "(void)attack.kill",
+            "title": "attack.kill"
         },
         {
             "location": "/gameData/attack/#arguments_6",
-            "text": "string property :   float value :",
+            "text": "",
             "title": "Arguments"
         },
         {
@@ -887,17 +1027,17 @@
         },
         {
             "location": "/gameData/attack/#example_7",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . setFloat : \"somethingCorrect\"   value : - 1.0 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . kill ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/attack/#attacksetint",
-            "text": "(void)attack.setInt:(string)property value:(int)value",
-            "title": "attack.setInt"
+            "location": "/gameData/attack/#attacksetfloat",
+            "text": "(void)attack.setFloat:(string)property value:(float)value",
+            "title": "attack.setFloat"
         },
         {
             "location": "/gameData/attack/#arguments_7",
-            "text": "string property :   int value :",
+            "text": "string property :   float value :",
             "title": "Arguments"
         },
         {
@@ -907,17 +1047,17 @@
         },
         {
             "location": "/gameData/attack/#example_8",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . setInt : \"yolo\"   value : 42 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . setFloat : \"somethingCorrect\"   value : 3.14159 ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/attack/#attacksetstring",
-            "text": "(void)attack.setString:(string)property value:(string)value",
-            "title": "attack.setString"
+            "location": "/gameData/attack/#attacksetint",
+            "text": "(void)attack.setInt:(string)property value:(int)value",
+            "title": "attack.setInt"
         },
         {
             "location": "/gameData/attack/#arguments_8",
-            "text": "string property :   string value :",
+            "text": "string property :   int value :",
             "title": "Arguments"
         },
         {
@@ -927,17 +1067,17 @@
         },
         {
             "location": "/gameData/attack/#example_9",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . setString : \"helloWorld\"   value : \"helloWorld\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . setInt : \"yolo\"   value : 666 ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/attack/#attackgetfloat",
-            "text": "(float)attack.getFloat:(string)property",
-            "title": "attack.getFloat"
+            "location": "/gameData/attack/#attacksetstring",
+            "text": "(void)attack.setString:(string)property value:(string)value",
+            "title": "attack.setString"
         },
         {
             "location": "/gameData/attack/#arguments_9",
-            "text": "string property :",
+            "text": "string property :   string value :",
             "title": "Arguments"
         },
         {
@@ -947,13 +1087,13 @@
         },
         {
             "location": "/gameData/attack/#example_10",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . getFloat : \"helloWorld\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . setString : \"yolo\"   value : \"helloWorld\" ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/attack/#attackgetint",
-            "text": "(int)attack.getInt:(string)property",
-            "title": "attack.getInt"
+            "location": "/gameData/attack/#attackgetfloat",
+            "text": "(float)attack.getFloat:(string)property",
+            "title": "attack.getFloat"
         },
         {
             "location": "/gameData/attack/#arguments_10",
@@ -967,13 +1107,13 @@
         },
         {
             "location": "/gameData/attack/#example_11",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . getInt : \"somethingCorrect\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . getFloat : \"somethingCorrect\" ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/attack/#attackgetstring",
-            "text": "(string)attack.getString:(string)property",
-            "title": "attack.getString"
+            "location": "/gameData/attack/#attackgetint",
+            "text": "(int)attack.getInt:(string)property",
+            "title": "attack.getInt"
         },
         {
             "location": "/gameData/attack/#arguments_11",
@@ -987,13 +1127,13 @@
         },
         {
             "location": "/gameData/attack/#example_12",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . getString : \"yolo\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . getInt : \"helloWorld\" ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/attack/#attackhasproperty",
-            "text": "(bool)attack.hasProperty:(string)property",
-            "title": "attack.hasProperty"
+            "location": "/gameData/attack/#attackgetstring",
+            "text": "(string)attack.getString:(string)property",
+            "title": "attack.getString"
         },
         {
             "location": "/gameData/attack/#arguments_12",
@@ -1007,17 +1147,17 @@
         },
         {
             "location": "/gameData/attack/#example_13",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . hasProperty : \"yolo\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . getString : \"somethingCorrect\" ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/attack/#attackaddtag",
-            "text": "(void)attack.addTag:(string)tag",
-            "title": "attack.addTag"
+            "location": "/gameData/attack/#attackhasproperty",
+            "text": "(bool)attack.hasProperty:(string)property",
+            "title": "attack.hasProperty"
         },
         {
             "location": "/gameData/attack/#arguments_13",
-            "text": "string tag :",
+            "text": "string property :",
             "title": "Arguments"
         },
         {
@@ -1027,13 +1167,13 @@
         },
         {
             "location": "/gameData/attack/#example_14",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . addTag : \"helloWorld\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . hasProperty : \"somethingCorrect\" ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/attack/#attackhastag",
-            "text": "(bool)attack.hasTag:(string)tag",
-            "title": "attack.hasTag"
+            "location": "/gameData/attack/#attackaddtag",
+            "text": "(void)attack.addTag:(string)tag",
+            "title": "attack.addTag"
         },
         {
             "location": "/gameData/attack/#arguments_14",
@@ -1047,12 +1187,32 @@
         },
         {
             "location": "/gameData/attack/#example_15",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . hasTag : \"helloWorld\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . addTag : \"yolo\" ]",
+            "title": "Example"
+        },
+        {
+            "location": "/gameData/attack/#attackhastag",
+            "text": "(bool)attack.hasTag:(string)tag",
+            "title": "attack.hasTag"
+        },
+        {
+            "location": "/gameData/attack/#arguments_15",
+            "text": "string tag :",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/attack/#returns_15",
+            "text": "",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/attack/#example_16",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   attack . hasTag : \"yolo\" ]",
             "title": "Example"
         },
         {
             "location": "/gameData/brain/",
-            "text": "brain\n\n\nVariables\n\n\nbrain.settings\n\n\nint brain.settings\n\n\nFlag int that defines brain settings, to use a flag int, just sum all the options you want for the setting and set it as the code\nExample : the target must be sane and alive, ergo we exclude the insanes and the dead : 2 + 8 = 10\n\n ExcludeSane = 1;\n\n ExcludeInsane = 2;\n\n ExcludeAlive = 4;\n\n ExcludeDead = 8;\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nbrain\n.\nsettings\n \n=\n \n80085\n\n\n\n\n\n\n\nbrain.playerDist\n\n\nfloat brain.playerDist\n\n\nDistance to closest player.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nbrain\n.\nplayerDist\n \n=\n \n3.14159\n\n\n\n\n\n\n\nbrain.playerFront\n\n\nfloat brain.playerFront\n\n\nDot to closest player. 1 is in front of brain -1 is back\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nbrain\n.\nplayerFront\n \n=\n \n2.9\n\n\n\n\n\n\n\nbrain.playerLateral\n\n\nfloat brain.playerLateral\n\n\nDistance to closest player on the lateral axis. Meaning how far on the left or the right\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nbrain\n.\nplayerLateral\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nbrain.playerVertical\n\n\nfloat brain.playerVertical\n\n\nDistance to closest player on the vertical axis. Positive is above, negative is below\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nbrain\n.\nplayerVertical\n \n=\n \n3.14159\n\n\n\n\n\n\n\nbrain.bestAttack\n\n\nint brain.bestAttack\n\n\nGet an identifier to the best attack processed by the brain, you may the use this value to trigger an attack on the attack gamedata\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nbrain\n.\nbestAttack\n \n=\n \n1337",
+            "text": "brain\n\n\nVariables\n\n\nbrain.closestFoe\n\n\nentity brain.closestFoe\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nbrain\n.\nclosestFoe\n \n=\n \nsomeEntity\n\n\n\n\n\n\n\nbrain.settings\n\n\nint brain.settings\n\n\nFlag int that defines brain settings, to use a flag int, just sum all the options you want for the setting and set it as the code\nExample : the target must be sane and alive, ergo we exclude the insanes and the dead : 2 + 8 = 10\n\n ExcludeSane = 1;\n\n ExcludeInsane = 2;\n\n ExcludeAlive = 4;\n\n ExcludeDead = 8;\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nbrain\n.\nsettings\n \n=\n \n42",
             "title": "brain"
         },
         {
@@ -1066,68 +1226,28 @@
             "title": "Variables"
         },
         {
+            "location": "/gameData/brain/#brainclosestfoe",
+            "text": "entity brain.closestFoe",
+            "title": "brain.closestFoe"
+        },
+        {
+            "location": "/gameData/brain/#example",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> brain . closestFoe   =   someEntity",
+            "title": "Example"
+        },
+        {
             "location": "/gameData/brain/#brainsettings",
             "text": "int brain.settings  Flag int that defines brain settings, to use a flag int, just sum all the options you want for the setting and set it as the code\nExample : the target must be sane and alive, ergo we exclude the insanes and the dead : 2 + 8 = 10  ExcludeSane = 1;  ExcludeInsane = 2;  ExcludeAlive = 4;  ExcludeDead = 8;",
             "title": "brain.settings"
         },
         {
-            "location": "/gameData/brain/#example",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> brain . settings   =   80085",
-            "title": "Example"
-        },
-        {
-            "location": "/gameData/brain/#brainplayerdist",
-            "text": "float brain.playerDist  Distance to closest player.",
-            "title": "brain.playerDist"
-        },
-        {
             "location": "/gameData/brain/#example_1",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> brain . playerDist   =   3.14159",
-            "title": "Example"
-        },
-        {
-            "location": "/gameData/brain/#brainplayerfront",
-            "text": "float brain.playerFront  Dot to closest player. 1 is in front of brain -1 is back",
-            "title": "brain.playerFront"
-        },
-        {
-            "location": "/gameData/brain/#example_2",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> brain . playerFront   =   2.9",
-            "title": "Example"
-        },
-        {
-            "location": "/gameData/brain/#brainplayerlateral",
-            "text": "float brain.playerLateral  Distance to closest player on the lateral axis. Meaning how far on the left or the right",
-            "title": "brain.playerLateral"
-        },
-        {
-            "location": "/gameData/brain/#example_3",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> brain . playerLateral   =   - 1.0",
-            "title": "Example"
-        },
-        {
-            "location": "/gameData/brain/#brainplayervertical",
-            "text": "float brain.playerVertical  Distance to closest player on the vertical axis. Positive is above, negative is below",
-            "title": "brain.playerVertical"
-        },
-        {
-            "location": "/gameData/brain/#example_4",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> brain . playerVertical   =   3.14159",
-            "title": "Example"
-        },
-        {
-            "location": "/gameData/brain/#brainbestattack",
-            "text": "int brain.bestAttack  Get an identifier to the best attack processed by the brain, you may the use this value to trigger an attack on the attack gamedata",
-            "title": "brain.bestAttack"
-        },
-        {
-            "location": "/gameData/brain/#example_5",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> brain . bestAttack   =   1337",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> brain . settings   =   42",
             "title": "Example"
         },
         {
             "location": "/gameData/chest/",
-            "text": "chest\n\n\nVariables\n\n\nchest.descriptor\n\n\nstring chest.descriptor\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nchest\n.\ndescriptor\n \n=\n \n\"helloWorld\"\n\n\n\n\n\n\n\nMessage\n\n\nchest.open\n\n\n(void)chest.open\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nchest\n.\nopen\n]",
+            "text": "chest\n\n\nVariables\n\n\nchest.descriptor\n\n\nstring chest.descriptor\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nchest\n.\ndescriptor\n \n=\n \n\"yolo\"\n\n\n\n\n\n\n\nMessage\n\n\nchest.open\n\n\n(void)chest.open\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nchest\n.\nopen\n]",
             "title": "chest"
         },
         {
@@ -1147,7 +1267,7 @@
         },
         {
             "location": "/gameData/chest/#example",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> chest . descriptor   =   \"helloWorld\"",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> chest . descriptor   =   \"yolo\"",
             "title": "Example"
         },
         {
@@ -1187,7 +1307,7 @@
         },
         {
             "location": "/gameData/debug/",
-            "text": "debug\n\n\nMessage\n\n\ndebug.log\n\n\n(void)debug.log:(string)log\n\n\nDisplay a message in the console\n\n\nArguments\n\n\nstring log\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ndebug\n.\nlog\n:\n\"somethingCorrect\"\n]\n\n\n\n\n\n\n\ndebug.logFloat\n\n\n(void)debug.logFloat:(string)log value:(float)value\n\n\nDisplay a message in the console\n\n\nArguments\n\n\nstring log\n: N/A\n\n\nfloat value\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ndebug\n.\nlogFloat\n:\n\"helloWorld\"\n \nvalue\n:\n3.14159\n]\n\n\n\n\n\n\n\ndebug.logString\n\n\n(void)debug.logString:(string)log value:(string)value\n\n\nArguments\n\n\nstring log\n: \n\n\nstring value\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ndebug\n.\nlogString\n:\n\"somethingCorrect\"\n \nvalue\n:\n\"somethingCorrect\"\n]\n\n\n\n\n\n\n\ndebug.logInt\n\n\n(void)debug.logInt:(string)log value:(int)value\n\n\nDisplay a message in the console\n\n\nArguments\n\n\nstring log\n: N/A\n\n\nint value\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ndebug\n.\nlogInt\n:\n\"helloWorld\"\n \nvalue\n:\n666\n]\n\n\n\n\n\n\n\ndebug.logBool\n\n\n(void)debug.logBool:(string)log value:(bool)value\n\n\nDisplay a message in the console\n\n\nArguments\n\n\nstring log\n: N/A\n\n\nbool value\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ndebug\n.\nlogBool\n:\n\"somethingCorrect\"\n \nvalue\n:\nfalse\n]",
+            "text": "debug\n\n\nMessage\n\n\ndebug.log\n\n\n(void)debug.log:(string)log\n\n\nDisplay a message in the console\n\n\nArguments\n\n\nstring log\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ndebug\n.\nlog\n:\n\"helloWorld\"\n]\n\n\n\n\n\n\n\ndebug.logFloat\n\n\n(void)debug.logFloat:(string)log value:(float)value\n\n\nDisplay a message in the console\n\n\nArguments\n\n\nstring log\n: N/A\n\n\nfloat value\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ndebug\n.\nlogFloat\n:\n\"yolo\"\n \nvalue\n:\n2.9\n]\n\n\n\n\n\n\n\ndebug.logString\n\n\n(void)debug.logString:(string)log value:(string)value\n\n\nArguments\n\n\nstring log\n: \n\n\nstring value\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ndebug\n.\nlogString\n:\n\"yolo\"\n \nvalue\n:\n\"yolo\"\n]\n\n\n\n\n\n\n\ndebug.logInt\n\n\n(void)debug.logInt:(string)log value:(int)value\n\n\nDisplay a message in the console\n\n\nArguments\n\n\nstring log\n: N/A\n\n\nint value\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ndebug\n.\nlogInt\n:\n\"somethingCorrect\"\n \nvalue\n:\n80085\n]\n\n\n\n\n\n\n\ndebug.logBool\n\n\n(void)debug.logBool:(string)log value:(bool)value\n\n\nDisplay a message in the console\n\n\nArguments\n\n\nstring log\n: N/A\n\n\nbool value\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ndebug\n.\nlogBool\n:\n\"helloWorld\"\n \nvalue\n:\nfalse\n]",
             "title": "debug"
         },
         {
@@ -1217,7 +1337,7 @@
         },
         {
             "location": "/gameData/debug/#example",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   debug . log : \"somethingCorrect\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   debug . log : \"helloWorld\" ]",
             "title": "Example"
         },
         {
@@ -1237,7 +1357,7 @@
         },
         {
             "location": "/gameData/debug/#example_1",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   debug . logFloat : \"helloWorld\"   value : 3.14159 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   debug . logFloat : \"yolo\"   value : 2.9 ]",
             "title": "Example"
         },
         {
@@ -1257,7 +1377,7 @@
         },
         {
             "location": "/gameData/debug/#example_2",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   debug . logString : \"somethingCorrect\"   value : \"somethingCorrect\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   debug . logString : \"yolo\"   value : \"yolo\" ]",
             "title": "Example"
         },
         {
@@ -1277,7 +1397,7 @@
         },
         {
             "location": "/gameData/debug/#example_3",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   debug . logInt : \"helloWorld\"   value : 666 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   debug . logInt : \"somethingCorrect\"   value : 80085 ]",
             "title": "Example"
         },
         {
@@ -1297,8 +1417,23 @@
         },
         {
             "location": "/gameData/debug/#example_4",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   debug . logBool : \"somethingCorrect\"   value : false ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   debug . logBool : \"helloWorld\"   value : false ]",
             "title": "Example"
+        },
+        {
+            "location": "/gameData/detection/",
+            "text": "detection\n\n\nConstants\n\n\n\n\n\n\n\n\nName\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\ndetection.foes\n\n\nint\n\n\n\n\n\n\n\n\ndetection.allies\n\n\nint\n\n\n\n\n\n\n\n\ndetection.neutrals\n\n\nint\n\n\n\n\n\n\n\n\ndetection.trueSight\n\n\nint\n\n\n\n\n\n\n\n\ndetection.any\n\n\nint",
+            "title": "detection"
+        },
+        {
+            "location": "/gameData/detection/#detection",
+            "text": "",
+            "title": "detection"
+        },
+        {
+            "location": "/gameData/detection/#constants",
+            "text": "Name  Type  Description      detection.foes  int     detection.allies  int     detection.neutrals  int     detection.trueSight  int     detection.any  int",
+            "title": "Constants"
         },
         {
             "location": "/gameData/dk/",
@@ -1327,7 +1462,7 @@
         },
         {
             "location": "/gameData/entity/",
-            "text": "entity\n\n\nMessage\n\n\nentity.addEffect\n\n\n(void)entity.addEffect:(string)gameStat op:(string)op value:(float)value priority:(float)priority\n\n\nAdd a permanent effect on a gameStat\n\n\nArguments\n\n\nstring gameStat\n: the game stat affected by the effect\n\n\nstring op\n: operator of the effect, possible parameters are add/mult/over/ and any script path\n\n\nfloat value\n: value applied by operators add/mult/over\n\n\nfloat priority\n: the priority of the effect, a greater number means the effect will be executed later\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nentity\n.\naddEffect\n:\n\"somethingCorrect\"\n \nop\n:\n\"yolo\"\n \nvalue\n:\n-\n1.0\n \npriority\n:\n3.14159\n]\n\n\n\n\n\n\n\nentity.addEffectTimed\n\n\n(void)entity.addEffectTimed:(string)gameStat op:(string)op value:(float)value priority:(float)priority duration:(float)duration\n\n\nAdd a timed effect on a gameStat\n\n\nArguments\n\n\nstring gameStat\n: N/A\n\n\nstring op\n: N/A\n\n\nfloat value\n: N/A\n\n\nfloat priority\n: N/A\n\n\nfloat duration\n: duration of the effect, once elapsed, it will be removed\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n[\nthis\n \nentity\n.\naddEffectTimed\n:\n\"myStat\"\n \nop\n:\n\"add\"\n \nvalue\n:\n1.0\n \npriority\n:\n2.0\n \nduration\n:\n3.0\n]\n\n\n\n\n\n\n\nentity.addEffectAlter\n\n\n(void)entity.addEffectAlter:(string)gameStat op:(string)op value:(float)value priority:(float)priority alter:(string)alter\n\n\nAdd a alteration bound effect on a gameStat, the effect will remain as long as the alteration is inflicted. \nOnce the alteration is cured or elapsed, the effect will be removed\n\n\nArguments\n\n\nstring gameStat\n: N/A\n\n\nstring op\n: N/A\n\n\nfloat value\n: N/A\n\n\nfloat priority\n: N/A\n\n\nstring alter\n: link to alteration\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nentity\n.\naddEffectAlter\n:\n\"helloWorld\"\n \nop\n:\n\"somethingCorrect\"\n \nvalue\n:\n3.14159\n \npriority\n:\n2.9\n \nalter\n:\n\"helloWorld\"\n]\n\n\n\n\n\n\n\nentity.play\n\n\n(void)entity.play:(string)name\n\n\nPlay the fiber using a name.\nIf already playing, doesn't do anything.\n\n\nArguments\n\n\nstring name\n: Name of the fiber to play.\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n[\nthis\n \nentity\n.\nplay\n:\n\"essentials\"\n]\n\n\n\n\n\n\n\nentity.stop\n\n\n(void)entity.stop:(string)name\n\n\nStop the fiber using a name.\nWhen stopped a fiber stop it's execution and reset.\nThe fiber can be start again from the beginning later by calling \nplay\n\n\nArguments\n\n\nstring name\n: Name of the fiber to stop.\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n[\nthis\n \nentity\n.\nstop\n:\n\"essentials\"\n]\n\n\n\n\n\n\n\nentity.pause\n\n\n(void)entity.pause:(string)name\n\n\nPause the fiber using a name.\nThe fiber will not be executed until the message \nplay\n is called on this fiber.\nWhen resuming play it will start again at the same position.\n\n\nArguments\n\n\nstring name\n: Name of the fiber to pause.\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n[\nthis\n \nentity\n.\npause\n:\n\"essentials\"\n]\n\n\n\n\n\n\n\nentity.reset\n\n\n(void)entity.reset:(string)name\n\n\nReset the fiber using a name.\nIt clears the stack and the execution state.\n(It's like a fresh start).\n\n\nArguments\n\n\nstring name\n: Name of the fiber to reset.\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n[\nthis\n \nentity\n.\nreset\n:\n\"essentials\"\n]\n\n\n\n\n\n\n\nentity.getFiber\n\n\n(fiber)entity.getFiber:(string)name\n\n\n\n\nWarning\n\n\n\n\nSome fibers are running on the instance but are not registered\n\n\nArguments\n\n\nstring name\n: Name of the fiber to find\n\n\nReturns\n\n\nThe fiber if found otherwise return null.\n\n\nExample\n\n\n1\n[\nthis\n \nentity\n.\ngetFiber\n:\n\"essentials\"\n]\n\n\n\n\n\n\n\nentity.listen\n\n\n(void)entity.listen:(string)evt fiber:(fiber)fiber state:(string)state\n\n\nRegister the fiber's state as a listener of the specified event.\nThe fiber's state will be called each time the event is raised.\n\n\nArguments\n\n\nstring evt\n: Event name to listen.\n\n\nfiber fiber\n: Fiber listening.\n\n\nstring state\n: State to call when event is raised.\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nentity\n.\nlisten\n:\n\"somethingCorrect\"\n \nfiber\n:\nsomeOtherFiber\n \nstate\n:\n\"yolo\"\n]\n\n\n\n\n\n\n\nentity.stopListen\n\n\n(void)entity.stopListen:(string)evt fiber:(fiber)fiber state:(string)state\n\n\nUnregister a fiber's state as listener of the specified event.\n\n\nArguments\n\n\nstring evt\n: Event name to listen.\n\n\nfiber fiber\n: Fiber listening.\n\n\nstring state\n: State registered when event is raised.\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nentity\n.\nstopListen\n:\n\"somethingCorrect\"\n \nfiber\n:\nsomeOtherFiber\n \nstate\n:\n\"somethingCorrect\"\n]",
+            "text": "entity\n\n\nMessage\n\n\nentity.play\n\n\n(void)entity.play:(string)name\n\n\nPlay the fiber using a name.\nIf already playing, doesn't do anything.\n\n\nArguments\n\n\nstring name\n: Name of the fiber to play.\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n[\nthis\n \nentity\n.\nplay\n:\n\"essentials\"\n]\n\n\n\n\n\n\n\nentity.stop\n\n\n(void)entity.stop:(string)name\n\n\nStop the fiber using a name.\nWhen stopped a fiber stop it's execution and reset.\nThe fiber can be start again from the beginning later by calling \nplay\n\n\nArguments\n\n\nstring name\n: Name of the fiber to stop.\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n[\nthis\n \nentity\n.\nstop\n:\n\"essentials\"\n]\n\n\n\n\n\n\n\nentity.pause\n\n\n(void)entity.pause:(string)name\n\n\nPause the fiber using a name.\nThe fiber will not be executed until the message \nplay\n is called on this fiber.\nWhen resuming play it will start again at the same position.\n\n\nArguments\n\n\nstring name\n: Name of the fiber to pause.\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n[\nthis\n \nentity\n.\npause\n:\n\"essentials\"\n]\n\n\n\n\n\n\n\nentity.reset\n\n\n(void)entity.reset:(string)name\n\n\nReset the fiber using a name.\nIt clears the stack and the execution state.\n(It's like a fresh start).\n\n\nArguments\n\n\nstring name\n: Name of the fiber to reset.\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n[\nthis\n \nentity\n.\nreset\n:\n\"essentials\"\n]\n\n\n\n\n\n\n\nentity.effectNew\n\n\n(void)entity.effectNew:(string)name\n\n\nAdd a permanent effect on a gameStat, a permanent effect bears not constraint and will remain until said otherwise\n\n\nArguments\n\n\nstring name\n: a unique name key to identify your effect and replace any \nthat would happen to bear the same name on the same stat, \na null key means the effect will stack no matter what when pushed\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nentity\n.\neffectNew\n:\n\"helloWorld\"\n]\n\n\n\n\n\n\n\nentity.effectNewTimed\n\n\n(void)entity.effectNewTimed:(string)name duration:(float)duration\n\n\nAdd a timed-based effect on a gameStat, timed effect lasts as long as their duration says so\npushed\n\n\nArguments\n\n\nstring name\n: a unique name key to identify your effect\n\n\nfloat duration\n: duration of the effect, once elapsed, it will be removed\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n[\nthis\n \neffect\n.\nnewTimed\n:\n\"myStat\"\n \nduration\n:\n3.0\n]\n\n\n\n\n\n\n\nentity.effectNewFiber\n\n\n(void)entity.effectNewFiber:(string)name\n\n\nAdd a fiber bound effect on a gameStat, fiber effect will remain as long as the fiber that created\nthe effect is running. Shall the fiber be stopped, reseted or unregistered, the effect would be removed\n\n\nArguments\n\n\nstring name\n: a unique name key to identify your effect\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nentity\n.\neffectNewFiber\n:\n\"helloWorld\"\n]\n\n\n\n\n\n\n\nentity.effectPush\n\n\n(void)entity.effectPush:(string)stat op:(string)op value:(float)value priority:(float)priority\n\n\nArguments\n\n\nstring stat\n: \n\n\nstring op\n: \n\n\nfloat value\n: \n\n\nfloat priority\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nentity\n.\neffectPush\n:\n\"somethingCorrect\"\n \nop\n:\n\"yolo\"\n \nvalue\n:\n-\n1.0\n \npriority\n:\n3.14159\n]\n\n\n\n\n\n\n\nentity.effectRemove\n\n\n(void)entity.effectRemove:(string)stat name:(string)name\n\n\nRemoves an named effect on a specific stat, Note that in case of fiber effect\nthe remove command must be done from the same fiber which added the effect in the first place\n(in case of stacking)\n\n\nArguments\n\n\nstring stat\n: \n\n\nstring name\n: \n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n[\nthis\n \nentity\n.\neffectRemove\n:\n\"myStat\"\n \nname\n:\n\"myEffectName\"\n]\n\n\n\n\n\n\n\nentity.getFiber\n\n\n(fiber)entity.getFiber:(string)name\n\n\n\n\nWarning\n\n\n\n\nSome fibers are running on the instance but are not registered\n\n\nArguments\n\n\nstring name\n: Name of the fiber to find\n\n\nReturns\n\n\nThe fiber if found otherwise return null.\n\n\nExample\n\n\n1\n[\nthis\n \nentity\n.\ngetFiber\n:\n\"essentials\"\n]\n\n\n\n\n\n\n\nentity.listen\n\n\n(void)entity.listen:(string)evt fiber:(fiber)fiber state:(string)state\n\n\nRegister the fiber's state as a listener of the specified event.\nThe fiber's state will be called each time the event is raised.\n\n\nArguments\n\n\nstring evt\n: Event name to listen.\n\n\nfiber fiber\n: Fiber listening.\n\n\nstring state\n: State to call when event is raised.\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nentity\n.\nlisten\n:\n\"helloWorld\"\n \nfiber\n:\nsomeOtherFiber\n \nstate\n:\n\"somethingCorrect\"\n]\n\n\n\n\n\n\n\nentity.stopListen\n\n\n(void)entity.stopListen:(string)evt fiber:(fiber)fiber state:(string)state\n\n\nUnregister a fiber's state as listener of the specified event.\n\n\nArguments\n\n\nstring evt\n: Event name to listen.\n\n\nfiber fiber\n: Fiber listening.\n\n\nstring state\n: State registered when event is raised.\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nentity\n.\nstopListen\n:\n\"helloWorld\"\n \nfiber\n:\nsomeOtherFiber\n \nstate\n:\n\"yolo\"\n]\n\n\n\n\n\n\n\nentity.distance\n\n\n(float)entity.distance:(entity)target\n\n\nArguments\n\n\nentity target\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nentity\n.\ndistance\n:\nsomeEntity\n]\n\n\n\n\n\n\n\nentity.distanceFront\n\n\n(float)entity.distanceFront:(entity)target\n\n\nArguments\n\n\nentity target\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nentity\n.\ndistanceFront\n:\nsomeEntity\n]\n\n\n\n\n\n\n\nentity.distanceLateral\n\n\n(float)entity.distanceLateral:(entity)target\n\n\nArguments\n\n\nentity target\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nentity\n.\ndistanceLateral\n:\nsomeEntity\n]\n\n\n\n\n\n\n\nentity.distanceVertical\n\n\n(float)entity.distanceVertical:(entity)target\n\n\nArguments\n\n\nentity target\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nentity\n.\ndistanceVertical\n:\nsomeEntity\n]",
             "title": "entity"
         },
         {
@@ -1341,13 +1476,13 @@
             "title": "Message"
         },
         {
-            "location": "/gameData/entity/#entityaddeffect",
-            "text": "(void)entity.addEffect:(string)gameStat op:(string)op value:(float)value priority:(float)priority  Add a permanent effect on a gameStat",
-            "title": "entity.addEffect"
+            "location": "/gameData/entity/#entityplay",
+            "text": "(void)entity.play:(string)name  Play the fiber using a name.\nIf already playing, doesn't do anything.",
+            "title": "entity.play"
         },
         {
             "location": "/gameData/entity/#arguments",
-            "text": "string gameStat : the game stat affected by the effect  string op : operator of the effect, possible parameters are add/mult/over/ and any script path  float value : value applied by operators add/mult/over  float priority : the priority of the effect, a greater number means the effect will be executed later",
+            "text": "string name : Name of the fiber to play.",
             "title": "Arguments"
         },
         {
@@ -1357,66 +1492,6 @@
         },
         {
             "location": "/gameData/entity/#example",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   entity . addEffect : \"somethingCorrect\"   op : \"yolo\"   value : - 1.0   priority : 3.14159 ]",
-            "title": "Example"
-        },
-        {
-            "location": "/gameData/entity/#entityaddeffecttimed",
-            "text": "(void)entity.addEffectTimed:(string)gameStat op:(string)op value:(float)value priority:(float)priority duration:(float)duration  Add a timed effect on a gameStat",
-            "title": "entity.addEffectTimed"
-        },
-        {
-            "location": "/gameData/entity/#arguments_1",
-            "text": "string gameStat : N/A  string op : N/A  float value : N/A  float priority : N/A  float duration : duration of the effect, once elapsed, it will be removed",
-            "title": "Arguments"
-        },
-        {
-            "location": "/gameData/entity/#returns_1",
-            "text": "N/A",
-            "title": "Returns"
-        },
-        {
-            "location": "/gameData/entity/#example_1",
-            "text": "1 [ this   entity . addEffectTimed : \"myStat\"   op : \"add\"   value : 1.0   priority : 2.0   duration : 3.0 ]",
-            "title": "Example"
-        },
-        {
-            "location": "/gameData/entity/#entityaddeffectalter",
-            "text": "(void)entity.addEffectAlter:(string)gameStat op:(string)op value:(float)value priority:(float)priority alter:(string)alter  Add a alteration bound effect on a gameStat, the effect will remain as long as the alteration is inflicted. \nOnce the alteration is cured or elapsed, the effect will be removed",
-            "title": "entity.addEffectAlter"
-        },
-        {
-            "location": "/gameData/entity/#arguments_2",
-            "text": "string gameStat : N/A  string op : N/A  float value : N/A  float priority : N/A  string alter : link to alteration",
-            "title": "Arguments"
-        },
-        {
-            "location": "/gameData/entity/#returns_2",
-            "text": "N/A",
-            "title": "Returns"
-        },
-        {
-            "location": "/gameData/entity/#example_2",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   entity . addEffectAlter : \"helloWorld\"   op : \"somethingCorrect\"   value : 3.14159   priority : 2.9   alter : \"helloWorld\" ]",
-            "title": "Example"
-        },
-        {
-            "location": "/gameData/entity/#entityplay",
-            "text": "(void)entity.play:(string)name  Play the fiber using a name.\nIf already playing, doesn't do anything.",
-            "title": "entity.play"
-        },
-        {
-            "location": "/gameData/entity/#arguments_3",
-            "text": "string name : Name of the fiber to play.",
-            "title": "Arguments"
-        },
-        {
-            "location": "/gameData/entity/#returns_3",
-            "text": "N/A",
-            "title": "Returns"
-        },
-        {
-            "location": "/gameData/entity/#example_3",
             "text": "1 [ this   entity . play : \"essentials\" ]",
             "title": "Example"
         },
@@ -1426,17 +1501,17 @@
             "title": "entity.stop"
         },
         {
-            "location": "/gameData/entity/#arguments_4",
+            "location": "/gameData/entity/#arguments_1",
             "text": "string name : Name of the fiber to stop.",
             "title": "Arguments"
         },
         {
-            "location": "/gameData/entity/#returns_4",
+            "location": "/gameData/entity/#returns_1",
             "text": "N/A",
             "title": "Returns"
         },
         {
-            "location": "/gameData/entity/#example_4",
+            "location": "/gameData/entity/#example_1",
             "text": "1 [ this   entity . stop : \"essentials\" ]",
             "title": "Example"
         },
@@ -1446,17 +1521,17 @@
             "title": "entity.pause"
         },
         {
-            "location": "/gameData/entity/#arguments_5",
+            "location": "/gameData/entity/#arguments_2",
             "text": "string name : Name of the fiber to pause.",
             "title": "Arguments"
         },
         {
-            "location": "/gameData/entity/#returns_5",
+            "location": "/gameData/entity/#returns_2",
             "text": "N/A",
             "title": "Returns"
         },
         {
-            "location": "/gameData/entity/#example_5",
+            "location": "/gameData/entity/#example_2",
             "text": "1 [ this   entity . pause : \"essentials\" ]",
             "title": "Example"
         },
@@ -1466,8 +1541,68 @@
             "title": "entity.reset"
         },
         {
-            "location": "/gameData/entity/#arguments_6",
+            "location": "/gameData/entity/#arguments_3",
             "text": "string name : Name of the fiber to reset.",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/entity/#returns_3",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/entity/#example_3",
+            "text": "1 [ this   entity . reset : \"essentials\" ]",
+            "title": "Example"
+        },
+        {
+            "location": "/gameData/entity/#entityeffectnew",
+            "text": "(void)entity.effectNew:(string)name  Add a permanent effect on a gameStat, a permanent effect bears not constraint and will remain until said otherwise",
+            "title": "entity.effectNew"
+        },
+        {
+            "location": "/gameData/entity/#arguments_4",
+            "text": "string name : a unique name key to identify your effect and replace any \nthat would happen to bear the same name on the same stat, \na null key means the effect will stack no matter what when pushed",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/entity/#returns_4",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/entity/#example_4",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   entity . effectNew : \"helloWorld\" ]",
+            "title": "Example"
+        },
+        {
+            "location": "/gameData/entity/#entityeffectnewtimed",
+            "text": "(void)entity.effectNewTimed:(string)name duration:(float)duration  Add a timed-based effect on a gameStat, timed effect lasts as long as their duration says so\npushed",
+            "title": "entity.effectNewTimed"
+        },
+        {
+            "location": "/gameData/entity/#arguments_5",
+            "text": "string name : a unique name key to identify your effect  float duration : duration of the effect, once elapsed, it will be removed",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/entity/#returns_5",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/entity/#example_5",
+            "text": "1 [ this   effect . newTimed : \"myStat\"   duration : 3.0 ]",
+            "title": "Example"
+        },
+        {
+            "location": "/gameData/entity/#entityeffectnewfiber",
+            "text": "(void)entity.effectNewFiber:(string)name  Add a fiber bound effect on a gameStat, fiber effect will remain as long as the fiber that created\nthe effect is running. Shall the fiber be stopped, reseted or unregistered, the effect would be removed",
+            "title": "entity.effectNewFiber"
+        },
+        {
+            "location": "/gameData/entity/#arguments_6",
+            "text": "string name : a unique name key to identify your effect",
             "title": "Arguments"
         },
         {
@@ -1477,37 +1612,37 @@
         },
         {
             "location": "/gameData/entity/#example_6",
-            "text": "1 [ this   entity . reset : \"essentials\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   entity . effectNewFiber : \"helloWorld\" ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/entity/#entitygetfiber",
-            "text": "(fiber)entity.getFiber:(string)name   Warning   Some fibers are running on the instance but are not registered",
-            "title": "entity.getFiber"
+            "location": "/gameData/entity/#entityeffectpush",
+            "text": "(void)entity.effectPush:(string)stat op:(string)op value:(float)value priority:(float)priority",
+            "title": "entity.effectPush"
         },
         {
             "location": "/gameData/entity/#arguments_7",
-            "text": "string name : Name of the fiber to find",
+            "text": "string stat :   string op :   float value :   float priority :",
             "title": "Arguments"
         },
         {
             "location": "/gameData/entity/#returns_7",
-            "text": "The fiber if found otherwise return null.",
+            "text": "",
             "title": "Returns"
         },
         {
             "location": "/gameData/entity/#example_7",
-            "text": "1 [ this   entity . getFiber : \"essentials\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   entity . effectPush : \"somethingCorrect\"   op : \"yolo\"   value : - 1.0   priority : 3.14159 ]",
             "title": "Example"
         },
         {
-            "location": "/gameData/entity/#entitylisten",
-            "text": "(void)entity.listen:(string)evt fiber:(fiber)fiber state:(string)state  Register the fiber's state as a listener of the specified event.\nThe fiber's state will be called each time the event is raised.",
-            "title": "entity.listen"
+            "location": "/gameData/entity/#entityeffectremove",
+            "text": "(void)entity.effectRemove:(string)stat name:(string)name  Removes an named effect on a specific stat, Note that in case of fiber effect\nthe remove command must be done from the same fiber which added the effect in the first place\n(in case of stacking)",
+            "title": "entity.effectRemove"
         },
         {
             "location": "/gameData/entity/#arguments_8",
-            "text": "string evt : Event name to listen.  fiber fiber : Fiber listening.  string state : State to call when event is raised.",
+            "text": "string stat :   string name :",
             "title": "Arguments"
         },
         {
@@ -1517,7 +1652,47 @@
         },
         {
             "location": "/gameData/entity/#example_8",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   entity . listen : \"somethingCorrect\"   fiber : someOtherFiber   state : \"yolo\" ]",
+            "text": "1 [ this   entity . effectRemove : \"myStat\"   name : \"myEffectName\" ]",
+            "title": "Example"
+        },
+        {
+            "location": "/gameData/entity/#entitygetfiber",
+            "text": "(fiber)entity.getFiber:(string)name   Warning   Some fibers are running on the instance but are not registered",
+            "title": "entity.getFiber"
+        },
+        {
+            "location": "/gameData/entity/#arguments_9",
+            "text": "string name : Name of the fiber to find",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/entity/#returns_9",
+            "text": "The fiber if found otherwise return null.",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/entity/#example_9",
+            "text": "1 [ this   entity . getFiber : \"essentials\" ]",
+            "title": "Example"
+        },
+        {
+            "location": "/gameData/entity/#entitylisten",
+            "text": "(void)entity.listen:(string)evt fiber:(fiber)fiber state:(string)state  Register the fiber's state as a listener of the specified event.\nThe fiber's state will be called each time the event is raised.",
+            "title": "entity.listen"
+        },
+        {
+            "location": "/gameData/entity/#arguments_10",
+            "text": "string evt : Event name to listen.  fiber fiber : Fiber listening.  string state : State to call when event is raised.",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/entity/#returns_10",
+            "text": "N/A",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/entity/#example_10",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   entity . listen : \"helloWorld\"   fiber : someOtherFiber   state : \"somethingCorrect\" ]",
             "title": "Example"
         },
         {
@@ -1526,18 +1701,98 @@
             "title": "entity.stopListen"
         },
         {
-            "location": "/gameData/entity/#arguments_9",
+            "location": "/gameData/entity/#arguments_11",
             "text": "string evt : Event name to listen.  fiber fiber : Fiber listening.  string state : State registered when event is raised.",
             "title": "Arguments"
         },
         {
-            "location": "/gameData/entity/#returns_9",
+            "location": "/gameData/entity/#returns_11",
             "text": "N/A",
             "title": "Returns"
         },
         {
-            "location": "/gameData/entity/#example_9",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   entity . stopListen : \"somethingCorrect\"   fiber : someOtherFiber   state : \"somethingCorrect\" ]",
+            "location": "/gameData/entity/#example_11",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   entity . stopListen : \"helloWorld\"   fiber : someOtherFiber   state : \"yolo\" ]",
+            "title": "Example"
+        },
+        {
+            "location": "/gameData/entity/#entitydistance",
+            "text": "(float)entity.distance:(entity)target",
+            "title": "entity.distance"
+        },
+        {
+            "location": "/gameData/entity/#arguments_12",
+            "text": "entity target :",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/entity/#returns_12",
+            "text": "",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/entity/#example_12",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   entity . distance : someEntity ]",
+            "title": "Example"
+        },
+        {
+            "location": "/gameData/entity/#entitydistancefront",
+            "text": "(float)entity.distanceFront:(entity)target",
+            "title": "entity.distanceFront"
+        },
+        {
+            "location": "/gameData/entity/#arguments_13",
+            "text": "entity target :",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/entity/#returns_13",
+            "text": "",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/entity/#example_13",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   entity . distanceFront : someEntity ]",
+            "title": "Example"
+        },
+        {
+            "location": "/gameData/entity/#entitydistancelateral",
+            "text": "(float)entity.distanceLateral:(entity)target",
+            "title": "entity.distanceLateral"
+        },
+        {
+            "location": "/gameData/entity/#arguments_14",
+            "text": "entity target :",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/entity/#returns_14",
+            "text": "",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/entity/#example_14",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   entity . distanceLateral : someEntity ]",
+            "title": "Example"
+        },
+        {
+            "location": "/gameData/entity/#entitydistancevertical",
+            "text": "(float)entity.distanceVertical:(entity)target",
+            "title": "entity.distanceVertical"
+        },
+        {
+            "location": "/gameData/entity/#arguments_15",
+            "text": "entity target :",
+            "title": "Arguments"
+        },
+        {
+            "location": "/gameData/entity/#returns_15",
+            "text": "",
+            "title": "Returns"
+        },
+        {
+            "location": "/gameData/entity/#example_15",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   entity . distanceVertical : someEntity ]",
             "title": "Example"
         },
         {
@@ -1557,7 +1812,7 @@
         },
         {
             "location": "/gameData/gameObject/",
-            "text": "gameObject\n\n\nVariables\n\n\ngameObject.isActive\n\n\nbool gameObject.isActive\n\n\nReturns if the object is active.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\ngameObject\n.\nisActive\n \n=\n \nfalse\n\n\n\n\n\n\n\ngameObject.isActiveInHierarchy\n\n\nbool gameObject.isActiveInHierarchy\n\n\nIs the GameObject active in the scene?\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\ngameObject\n.\nisActiveInHierarchy\n \n=\n \nfalse\n\n\n\n\n\n\n\nMessage\n\n\ngameObject.destroyWithDelay\n\n\n(void)gameObject.destroyWithDelay:(float)delay\n\n\nDestroy with a specific delay.\n\n\nArguments\n\n\nfloat delay\n: Duration in second to wait before destroying\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ngameObject\n.\ndestroyWithDelay\n:\n2.9\n]\n\n\n\n\n\n\n\ngameObject.destroy\n\n\n(void)gameObject.destroy\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ngameObject\n.\ndestroy\n]\n\n\n\n\n\n\n\ngameObject.setLayer\n\n\n(void)gameObject.setLayer:(string)layerName\n\n\nchange the game object physic layer, which affects the world collision\n\n\nArguments\n\n\nstring layerName\n: name of the new layer\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ngameObject\n.\nsetLayer\n:\n\"somethingCorrect\"\n]\n\n\n\n\n\n\n\ngameObject.resetLayer\n\n\n(void)gameObject.resetLayer\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ngameObject\n.\nresetLayer\n]",
+            "text": "gameObject\n\n\nVariables\n\n\ngameObject.isActive\n\n\nbool gameObject.isActive\n\n\nReturns if the object is active.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\ngameObject\n.\nisActive\n \n=\n \ntrue\n\n\n\n\n\n\n\ngameObject.isActiveInHierarchy\n\n\nbool gameObject.isActiveInHierarchy\n\n\nIs the GameObject active in the scene?\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\ngameObject\n.\nisActiveInHierarchy\n \n=\n \nfalse\n\n\n\n\n\n\n\nMessage\n\n\ngameObject.destroyWithDelay\n\n\n(void)gameObject.destroyWithDelay:(float)delay\n\n\nDestroy with a specific delay.\n\n\nArguments\n\n\nfloat delay\n: Duration in second to wait before destroying\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ngameObject\n.\ndestroyWithDelay\n:\n-\n1.0\n]\n\n\n\n\n\n\n\ngameObject.destroy\n\n\n(void)gameObject.destroy\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ngameObject\n.\ndestroy\n]\n\n\n\n\n\n\n\ngameObject.setLayer\n\n\n(void)gameObject.setLayer:(string)layerName\n\n\nchange the game object physic layer, which affects the world collision\n\n\nArguments\n\n\nstring layerName\n: name of the new layer\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ngameObject\n.\nsetLayer\n:\n\"helloWorld\"\n]\n\n\n\n\n\n\n\ngameObject.resetLayer\n\n\n(void)gameObject.resetLayer\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ngameObject\n.\nresetLayer\n]",
             "title": "gameObject"
         },
         {
@@ -1577,7 +1832,7 @@
         },
         {
             "location": "/gameData/gameObject/#example",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> gameObject . isActive   =   false",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> gameObject . isActive   =   true",
             "title": "Example"
         },
         {
@@ -1612,7 +1867,7 @@
         },
         {
             "location": "/gameData/gameObject/#example_2",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   gameObject . destroyWithDelay : 2.9 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   gameObject . destroyWithDelay : - 1.0 ]",
             "title": "Example"
         },
         {
@@ -1652,7 +1907,7 @@
         },
         {
             "location": "/gameData/gameObject/#example_4",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   gameObject . setLayer : \"somethingCorrect\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   gameObject . setLayer : \"helloWorld\" ]",
             "title": "Example"
         },
         {
@@ -1677,7 +1932,7 @@
         },
         {
             "location": "/gameData/health/",
-            "text": "health\n\n\nVariables\n\n\nhealth.current\n\n\nint health.current\n\n\nThe current state of the bar, ergo, how many points you have for that stat\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nhealth\n.\ncurrent\n \n=\n \n80085\n\n\n\n\n\n\n\nStats\n\n\nhealth.rate\n\n\nfloat health.rate\n\n\nGame Stat that affect the bar over time, \npositive Regen is a continuous recover\nnegative is meant for continuous damage\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nhealth\n.\nrate\n \n=\n \n2.9\n\n\n\n\n\n\n\nhealth.capacity\n\n\nfloat health.capacity\n\n\nGame Stat that affect the total number of points for that stat, as much as one would care for a bar that it should never have a null capacity\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nhealth\n.\ncapacity\n \n=\n \n3.14159\n\n\n\n\n\n\n\nMessage\n\n\nhealth.damage\n\n\n(void)health.damage:(int)amount\n\n\nArguments\n\n\nint amount\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nhealth\n.\ndamage\n:\n42\n]\n\n\n\n\n\n\n\nhealth.burst\n\n\n(bool)health.burst:(float)amount\n\n\nTry to remove a value.\n\n\nArguments\n\n\nfloat amount\n: Amount to remove\n\n\nReturns\n\n\nTrue if succeeded to remove (that is there's enough quantity to remove).\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nhealth\n.\nburst\n:\n-\n1.0\n]\n\n\n\n\n\n\n\nhealth.recover\n\n\n(void)health.recover:(int)amount\n\n\nRecover the stat by the amount specified\n\n\nArguments\n\n\nint amount\n: amount to recover\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nhealth\n.\nrecover\n:\n666\n]",
+            "text": "health\n\n\nVariables\n\n\nhealth.current\n\n\nint health.current\n\n\nThe current state of the bar, ergo, how many points you have for that stat\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nhealth\n.\ncurrent\n \n=\n \n42\n\n\n\n\n\n\n\nStats\n\n\nhealth.rate\n\n\nfloat health.rate\n\n\nGame Stat that affect the bar over time, \npositive Regen is a continuous recover\nnegative is meant for continuous damage\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nhealth\n.\nrate\n \n=\n \n2.9\n\n\n\n\n\n\n\nhealth.capacity\n\n\nfloat health.capacity\n\n\nGame Stat that affect the total number of points for that stat, as much as one would care for a bar that it should never have a null capacity\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nhealth\n.\ncapacity\n \n=\n \n3.14159\n\n\n\n\n\n\n\nMessage\n\n\nhealth.damage\n\n\n(void)health.damage:(int)amount\n\n\nArguments\n\n\nint amount\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nhealth\n.\ndamage\n:\n42\n]\n\n\n\n\n\n\n\nhealth.burst\n\n\n(bool)health.burst:(float)amount\n\n\nTry to remove a value.\n\n\nArguments\n\n\nfloat amount\n: Amount to remove\n\n\nReturns\n\n\nTrue if succeeded to remove (that is there's enough quantity to remove).\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nhealth\n.\nburst\n:\n-\n1.0\n]\n\n\n\n\n\n\n\nhealth.recover\n\n\n(void)health.recover:(int)amount\n\n\nRecover the stat by the amount specified\n\n\nArguments\n\n\nint amount\n: amount to recover\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nhealth\n.\nrecover\n:\n42\n]",
             "title": "health"
         },
         {
@@ -1697,7 +1952,7 @@
         },
         {
             "location": "/gameData/health/#example",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> health . current   =   80085",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> health . current   =   42",
             "title": "Example"
         },
         {
@@ -1787,12 +2042,12 @@
         },
         {
             "location": "/gameData/health/#example_5",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   health . recover : 666 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   health . recover : 42 ]",
             "title": "Example"
         },
         {
             "location": "/gameData/health/",
-            "text": "health\n\n\nVariables\n\n\nhealth.current\n\n\nint health.current\n\n\nThe current state of the bar, ergo, how many points you have for that stat\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nhealth\n.\ncurrent\n \n=\n \n80085\n\n\n\n\n\n\n\nStats\n\n\nhealth.rate\n\n\nfloat health.rate\n\n\nGame Stat that affect the bar over time, \npositive Regen is a continuous recover\nnegative is meant for continuous damage\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nhealth\n.\nrate\n \n=\n \n2.9\n\n\n\n\n\n\n\nhealth.capacity\n\n\nfloat health.capacity\n\n\nGame Stat that affect the total number of points for that stat, as much as one would care for a bar that it should never have a null capacity\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nhealth\n.\ncapacity\n \n=\n \n3.14159\n\n\n\n\n\n\n\nMessage\n\n\nhealth.damage\n\n\n(void)health.damage:(int)amount\n\n\nArguments\n\n\nint amount\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nhealth\n.\ndamage\n:\n42\n]\n\n\n\n\n\n\n\nhealth.burst\n\n\n(bool)health.burst:(float)amount\n\n\nTry to remove a value.\n\n\nArguments\n\n\nfloat amount\n: Amount to remove\n\n\nReturns\n\n\nTrue if succeeded to remove (that is there's enough quantity to remove).\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nhealth\n.\nburst\n:\n-\n1.0\n]\n\n\n\n\n\n\n\nhealth.recover\n\n\n(void)health.recover:(int)amount\n\n\nRecover the stat by the amount specified\n\n\nArguments\n\n\nint amount\n: amount to recover\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nhealth\n.\nrecover\n:\n666\n]",
+            "text": "health\n\n\nVariables\n\n\nhealth.current\n\n\nint health.current\n\n\nThe current state of the bar, ergo, how many points you have for that stat\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nhealth\n.\ncurrent\n \n=\n \n42\n\n\n\n\n\n\n\nStats\n\n\nhealth.rate\n\n\nfloat health.rate\n\n\nGame Stat that affect the bar over time, \npositive Regen is a continuous recover\nnegative is meant for continuous damage\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nhealth\n.\nrate\n \n=\n \n2.9\n\n\n\n\n\n\n\nhealth.capacity\n\n\nfloat health.capacity\n\n\nGame Stat that affect the total number of points for that stat, as much as one would care for a bar that it should never have a null capacity\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nhealth\n.\ncapacity\n \n=\n \n3.14159\n\n\n\n\n\n\n\nMessage\n\n\nhealth.damage\n\n\n(void)health.damage:(int)amount\n\n\nArguments\n\n\nint amount\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nhealth\n.\ndamage\n:\n42\n]\n\n\n\n\n\n\n\nhealth.burst\n\n\n(bool)health.burst:(float)amount\n\n\nTry to remove a value.\n\n\nArguments\n\n\nfloat amount\n: Amount to remove\n\n\nReturns\n\n\nTrue if succeeded to remove (that is there's enough quantity to remove).\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nhealth\n.\nburst\n:\n-\n1.0\n]\n\n\n\n\n\n\n\nhealth.recover\n\n\n(void)health.recover:(int)amount\n\n\nRecover the stat by the amount specified\n\n\nArguments\n\n\nint amount\n: amount to recover\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nhealth\n.\nrecover\n:\n42\n]",
             "title": "health"
         },
         {
@@ -1812,7 +2067,7 @@
         },
         {
             "location": "/gameData/health/#example",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> health . current   =   80085",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> health . current   =   42",
             "title": "Example"
         },
         {
@@ -1902,12 +2157,12 @@
         },
         {
             "location": "/gameData/health/#example_5",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   health . recover : 666 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   health . recover : 42 ]",
             "title": "Example"
         },
         {
             "location": "/gameData/legs/",
-            "text": "legs\n\n\nVariables\n\n\nlegs.isStopped\n\n\nbool legs.isStopped\n\n\nWhether the creature is stopped or not\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nlegs\n.\nisStopped\n \n=\n \ntrue\n\n\n\n\n\n\n\nStats\n\n\nlegs.speed\n\n\nfloat legs.speed\n\n\nMoving speed.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nlegs\n.\nspeed\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nlegs.knockDamp\n\n\nfloat legs.knockDamp\n\n\nthe rate at which a knockforce is reduced.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nlegs\n.\nknockDamp\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nMessage\n\n\nlegs.moveRight\n\n\n(void)legs.moveRight\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nlegs\n.\nmoveRight\n]\n\n\n\n\n\n\n\nlegs.turn\n\n\n(void)legs.turn:(float)angle\n\n\nTurns the facing direction of @angle degrees\n\n\nArguments\n\n\nfloat angle\n: \n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nlegs\n.\nturn\n:\n3.14159\n]\n\n\n\n\n\n\n\nlegs.stop\n\n\n(void)legs.stop\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nlegs\n.\nstop\n]\n\n\n\n\n\n\n\nlegs.resume\n\n\n(void)legs.resume\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nlegs\n.\nresume\n]\n\n\n\n\n\n\n\nlegs.jump\n\n\n(void)legs.jump:(float)strengh\n\n\nMake the creature jump, please check that a rigidbody is there and has UseGravity enabled\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nlegs\n.\njump\n:\n2.9\n]\n\n\n\n\n\n\n\nlegs.knock\n\n\n(void)legs.knock:(float)strengh x:(float)x y:(float)y z:(float)z\n\n\nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\nall you need is strengh and origin\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nfloat x\n: \n\n\nfloat y\n: \n\n\nfloat z\n: \n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nlegs\n.\nknock\n:\n-\n1.0\n \nx\n:\n3.14159\n \ny\n:\n3.14159\n \nz\n:\n-\n1.0\n]",
+            "text": "legs\n\n\nVariables\n\n\nlegs.isStopped\n\n\nbool legs.isStopped\n\n\nWhether the creature is stopped or not\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nlegs\n.\nisStopped\n \n=\n \ntrue\n\n\n\n\n\n\n\nStats\n\n\nlegs.speed\n\n\nfloat legs.speed\n\n\nMoving speed.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nlegs\n.\nspeed\n \n=\n \n3.14159\n\n\n\n\n\n\n\nlegs.knockDamp\n\n\nfloat legs.knockDamp\n\n\nthe rate at which a knockforce is reduced.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nlegs\n.\nknockDamp\n \n=\n \n3.14159\n\n\n\n\n\n\n\nMessage\n\n\nlegs.moveRight\n\n\n(void)legs.moveRight\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nlegs\n.\nmoveRight\n]\n\n\n\n\n\n\n\nlegs.turn\n\n\n(void)legs.turn:(float)angle\n\n\nTurns the facing direction of @angle degrees\n\n\nArguments\n\n\nfloat angle\n: \n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nlegs\n.\nturn\n:\n2.9\n]\n\n\n\n\n\n\n\nlegs.stop\n\n\n(void)legs.stop\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nlegs\n.\nstop\n]\n\n\n\n\n\n\n\nlegs.resume\n\n\n(void)legs.resume\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nlegs\n.\nresume\n]\n\n\n\n\n\n\n\nlegs.jump\n\n\n(void)legs.jump:(float)strengh\n\n\nMake the creature jump, please check that a rigidbody is there and has UseGravity enabled\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nlegs\n.\njump\n:\n2.9\n]\n\n\n\n\n\n\n\nlegs.knock\n\n\n(void)legs.knock:(float)strengh x:(float)x y:(float)y z:(float)z\n\n\nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\nall you need is strengh and origin\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nfloat x\n: \n\n\nfloat y\n: \n\n\nfloat z\n: \n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nlegs\n.\nknock\n:\n3.14159\n \nx\n:\n3.14159\n \ny\n:\n3.14159\n \nz\n:\n2.9\n]",
             "title": "legs"
         },
         {
@@ -1942,7 +2197,7 @@
         },
         {
             "location": "/gameData/legs/#example_1",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> legs . speed   =   - 1.0",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> legs . speed   =   3.14159",
             "title": "Example"
         },
         {
@@ -1952,7 +2207,7 @@
         },
         {
             "location": "/gameData/legs/#example_2",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> legs . knockDamp   =   - 1.0",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> legs . knockDamp   =   3.14159",
             "title": "Example"
         },
         {
@@ -1997,7 +2252,7 @@
         },
         {
             "location": "/gameData/legs/#example_4",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   legs . turn : 3.14159 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   legs . turn : 2.9 ]",
             "title": "Example"
         },
         {
@@ -2077,12 +2332,12 @@
         },
         {
             "location": "/gameData/legs/#example_8",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   legs . knock : - 1.0   x : 3.14159   y : 3.14159   z : - 1.0 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   legs . knock : 3.14159   x : 3.14159   y : 3.14159   z : 2.9 ]",
             "title": "Example"
         },
         {
             "location": "/gameData/math/",
-            "text": "math\n\n\nMessage\n\n\nmath.round\n\n\n(int)math.round:(float)value\n\n\nRound the given value to the nearest integer\n\n\nArguments\n\n\nfloat value\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nmath\n.\nround\n:\n2.9\n]\n\n\n\n\n\n\n\nmath.roundUp\n\n\n(int)math.roundUp:(float)value\n\n\nRound the given value to the nearest integer above\n\n\nArguments\n\n\nfloat value\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nmath\n.\nroundUp\n:\n-\n1.0\n]\n\n\n\n\n\n\n\nmath.roundDown\n\n\n(int)math.roundDown:(float)value\n\n\nRound the given value to the nearest integer below\n\n\nArguments\n\n\nfloat value\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nmath\n.\nroundDown\n:\n3.14159\n]\n\n\n\n\n\n\n\nmath.roundF\n\n\n(float)math.roundF:(float)value\n\n\nRound the given value to the nearest integer\n\n\nArguments\n\n\nfloat value\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nmath\n.\nroundF\n:\n2.9\n]\n\n\n\n\n\n\n\nmath.roundUpF\n\n\n(float)math.roundUpF:(float)value\n\n\nRound the given value to the nearest integer above\n\n\nArguments\n\n\nfloat value\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nmath\n.\nroundUpF\n:\n-\n1.0\n]\n\n\n\n\n\n\n\nmath.roundDownF\n\n\n(float)math.roundDownF:(float)value\n\n\nRound the given value to the nearest integer below\n\n\nArguments\n\n\nfloat value\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nmath\n.\nroundDownF\n:\n3.14159\n]",
+            "text": "math\n\n\nMessage\n\n\nmath.round\n\n\n(int)math.round:(float)value\n\n\nRound the given value to the nearest integer\n\n\nArguments\n\n\nfloat value\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nmath\n.\nround\n:\n2.9\n]\n\n\n\n\n\n\n\nmath.roundUp\n\n\n(int)math.roundUp:(float)value\n\n\nRound the given value to the nearest integer above\n\n\nArguments\n\n\nfloat value\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nmath\n.\nroundUp\n:\n3.14159\n]\n\n\n\n\n\n\n\nmath.roundDown\n\n\n(int)math.roundDown:(float)value\n\n\nRound the given value to the nearest integer below\n\n\nArguments\n\n\nfloat value\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nmath\n.\nroundDown\n:\n3.14159\n]\n\n\n\n\n\n\n\nmath.roundF\n\n\n(float)math.roundF:(float)value\n\n\nRound the given value to the nearest integer\n\n\nArguments\n\n\nfloat value\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nmath\n.\nroundF\n:\n3.14159\n]\n\n\n\n\n\n\n\nmath.roundUpF\n\n\n(float)math.roundUpF:(float)value\n\n\nRound the given value to the nearest integer above\n\n\nArguments\n\n\nfloat value\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nmath\n.\nroundUpF\n:\n3.14159\n]\n\n\n\n\n\n\n\nmath.roundDownF\n\n\n(float)math.roundDownF:(float)value\n\n\nRound the given value to the nearest integer below\n\n\nArguments\n\n\nfloat value\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nmath\n.\nroundDownF\n:\n-\n1.0\n]",
             "title": "math"
         },
         {
@@ -2132,7 +2387,7 @@
         },
         {
             "location": "/gameData/math/#example_1",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   math . roundUp : - 1.0 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   math . roundUp : 3.14159 ]",
             "title": "Example"
         },
         {
@@ -2172,7 +2427,7 @@
         },
         {
             "location": "/gameData/math/#example_3",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   math . roundF : 2.9 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   math . roundF : 3.14159 ]",
             "title": "Example"
         },
         {
@@ -2192,7 +2447,7 @@
         },
         {
             "location": "/gameData/math/#example_4",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   math . roundUpF : - 1.0 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   math . roundUpF : 3.14159 ]",
             "title": "Example"
         },
         {
@@ -2212,12 +2467,12 @@
         },
         {
             "location": "/gameData/math/#example_5",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   math . roundDownF : 3.14159 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   math . roundDownF : - 1.0 ]",
             "title": "Example"
         },
         {
             "location": "/gameData/navigation/",
-            "text": "navigation\n\n\nStats\n\n\nnavigation.decision\n\n\nfloat navigation.decision\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\ndecision\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nnavigation.gravity\n\n\nfloat navigation.gravity\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\ngravity\n \n=\n \n3.14159\n\n\n\n\n\n\n\nnavigation.motion\n\n\nfloat navigation.motion\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nmotion\n \n=\n \n3.14159\n\n\n\n\n\n\n\nnavigation.knockDamp\n\n\nfloat navigation.knockDamp\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nknockDamp\n \n=\n \n2.9\n\n\n\n\n\n\n\nMessage\n\n\nnavigation.jump\n\n\n(void)navigation.jump:(float)strengh\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\njump\n:\n3.14159\n]\n\n\n\n\n\n\n\nnavigation.moveForward\n\n\n(void)navigation.moveForward:(float)speed\n\n\nArguments\n\n\nfloat speed\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\nmoveForward\n:\n2.9\n]\n\n\n\n\n\n\n\nnavigation.knock\n\n\n(void)navigation.knock:(float)strengh x:(float)x y:(float)y z:(float)z\n\n\nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\nall you need is strengh and origin\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nfloat x\n: \n\n\nfloat y\n: \n\n\nfloat z\n: \n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\nknock\n:\n2.9\n \nx\n:\n2.9\n \ny\n:\n-\n1.0\n \nz\n:\n3.14159\n]",
+            "text": "navigation\n\n\nStats\n\n\nnavigation.decision\n\n\nfloat navigation.decision\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\ndecision\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nnavigation.gravity\n\n\nfloat navigation.gravity\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\ngravity\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nnavigation.motion\n\n\nfloat navigation.motion\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nmotion\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nnavigation.knockDamp\n\n\nfloat navigation.knockDamp\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nknockDamp\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nMessage\n\n\nnavigation.jump\n\n\n(void)navigation.jump:(float)strengh\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\njump\n:\n2.9\n]\n\n\n\n\n\n\n\nnavigation.moveForward\n\n\n(void)navigation.moveForward:(float)speed\n\n\nArguments\n\n\nfloat speed\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\nmoveForward\n:\n-\n1.0\n]\n\n\n\n\n\n\n\nnavigation.knock\n\n\n(void)navigation.knock:(float)strengh origin:(entity)origin x:(float)x y:(float)y z:(float)z\n\n\nknock the creature, relative from another entity, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\nall you need is strengh and origin\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nentity origin\n: N/A\n\n\nfloat x\n: \n\n\nfloat y\n: \n\n\nfloat z\n: \n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\nknock\n:\n2.9\n \norigin\n:\nsomeEntity\n \nx\n:\n-\n1.0\n \ny\n:\n3.14159\n \nz\n:\n-\n1.0\n]",
             "title": "navigation"
         },
         {
@@ -2247,7 +2502,7 @@
         },
         {
             "location": "/gameData/navigation/#example_1",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . gravity   =   3.14159",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . gravity   =   - 1.0",
             "title": "Example"
         },
         {
@@ -2257,7 +2512,7 @@
         },
         {
             "location": "/gameData/navigation/#example_2",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . motion   =   3.14159",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . motion   =   - 1.0",
             "title": "Example"
         },
         {
@@ -2267,7 +2522,7 @@
         },
         {
             "location": "/gameData/navigation/#example_3",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . knockDamp   =   2.9",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . knockDamp   =   - 1.0",
             "title": "Example"
         },
         {
@@ -2292,7 +2547,7 @@
         },
         {
             "location": "/gameData/navigation/#example_4",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   navigation . jump : 3.14159 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   navigation . jump : 2.9 ]",
             "title": "Example"
         },
         {
@@ -2312,17 +2567,17 @@
         },
         {
             "location": "/gameData/navigation/#example_5",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   navigation . moveForward : 2.9 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   navigation . moveForward : - 1.0 ]",
             "title": "Example"
         },
         {
             "location": "/gameData/navigation/#navigationknock",
-            "text": "(void)navigation.knock:(float)strengh x:(float)x y:(float)y z:(float)z  knock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\nall you need is strengh and origin",
+            "text": "(void)navigation.knock:(float)strengh origin:(entity)origin x:(float)x y:(float)y z:(float)z  knock the creature, relative from another entity, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\nall you need is strengh and origin",
             "title": "navigation.knock"
         },
         {
             "location": "/gameData/navigation/#arguments_2",
-            "text": "float strengh :   float x :   float y :   float z :",
+            "text": "float strengh :   entity origin : N/A  float x :   float y :   float z :",
             "title": "Arguments"
         },
         {
@@ -2332,12 +2587,12 @@
         },
         {
             "location": "/gameData/navigation/#example_6",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   navigation . knock : 2.9   x : 2.9   y : - 1.0   z : 3.14159 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   navigation . knock : 2.9   origin : someEntity   x : - 1.0   y : 3.14159   z : - 1.0 ]",
             "title": "Example"
         },
         {
             "location": "/gameData/navigation/",
-            "text": "navigation\n\n\nStats\n\n\nnavigation.decision\n\n\nfloat navigation.decision\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\ndecision\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nnavigation.gravity\n\n\nfloat navigation.gravity\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\ngravity\n \n=\n \n3.14159\n\n\n\n\n\n\n\nnavigation.motion\n\n\nfloat navigation.motion\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nmotion\n \n=\n \n3.14159\n\n\n\n\n\n\n\nnavigation.knockDamp\n\n\nfloat navigation.knockDamp\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nknockDamp\n \n=\n \n2.9\n\n\n\n\n\n\n\nMessage\n\n\nnavigation.jump\n\n\n(void)navigation.jump:(float)strengh\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\njump\n:\n3.14159\n]\n\n\n\n\n\n\n\nnavigation.moveForward\n\n\n(void)navigation.moveForward:(float)speed\n\n\nArguments\n\n\nfloat speed\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\nmoveForward\n:\n2.9\n]\n\n\n\n\n\n\n\nnavigation.knock\n\n\n(void)navigation.knock:(float)strengh x:(float)x y:(float)y z:(float)z\n\n\nknock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\nall you need is strengh and origin\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nfloat x\n: \n\n\nfloat y\n: \n\n\nfloat z\n: \n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\nknock\n:\n2.9\n \nx\n:\n2.9\n \ny\n:\n-\n1.0\n \nz\n:\n3.14159\n]",
+            "text": "navigation\n\n\nStats\n\n\nnavigation.decision\n\n\nfloat navigation.decision\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\ndecision\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nnavigation.gravity\n\n\nfloat navigation.gravity\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\ngravity\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nnavigation.motion\n\n\nfloat navigation.motion\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nmotion\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nnavigation.knockDamp\n\n\nfloat navigation.knockDamp\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nknockDamp\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nMessage\n\n\nnavigation.jump\n\n\n(void)navigation.jump:(float)strengh\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\njump\n:\n2.9\n]\n\n\n\n\n\n\n\nnavigation.moveForward\n\n\n(void)navigation.moveForward:(float)speed\n\n\nArguments\n\n\nfloat speed\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\nmoveForward\n:\n-\n1.0\n]\n\n\n\n\n\n\n\nnavigation.knock\n\n\n(void)navigation.knock:(float)strengh origin:(entity)origin x:(float)x y:(float)y z:(float)z\n\n\nknock the creature, relative from another entity, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\nall you need is strengh and origin\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nentity origin\n: N/A\n\n\nfloat x\n: \n\n\nfloat y\n: \n\n\nfloat z\n: \n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\nknock\n:\n2.9\n \norigin\n:\nsomeEntity\n \nx\n:\n-\n1.0\n \ny\n:\n3.14159\n \nz\n:\n-\n1.0\n]",
             "title": "navigation"
         },
         {
@@ -2367,7 +2622,7 @@
         },
         {
             "location": "/gameData/navigation/#example_1",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . gravity   =   3.14159",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . gravity   =   - 1.0",
             "title": "Example"
         },
         {
@@ -2377,7 +2632,7 @@
         },
         {
             "location": "/gameData/navigation/#example_2",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . motion   =   3.14159",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . motion   =   - 1.0",
             "title": "Example"
         },
         {
@@ -2387,7 +2642,7 @@
         },
         {
             "location": "/gameData/navigation/#example_3",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . knockDamp   =   2.9",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . knockDamp   =   - 1.0",
             "title": "Example"
         },
         {
@@ -2412,7 +2667,7 @@
         },
         {
             "location": "/gameData/navigation/#example_4",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   navigation . jump : 3.14159 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   navigation . jump : 2.9 ]",
             "title": "Example"
         },
         {
@@ -2432,17 +2687,17 @@
         },
         {
             "location": "/gameData/navigation/#example_5",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   navigation . moveForward : 2.9 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   navigation . moveForward : - 1.0 ]",
             "title": "Example"
         },
         {
             "location": "/gameData/navigation/#navigationknock",
-            "text": "(void)navigation.knock:(float)strengh x:(float)x y:(float)y z:(float)z  knock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\nall you need is strengh and origin",
+            "text": "(void)navigation.knock:(float)strengh origin:(entity)origin x:(float)x y:(float)y z:(float)z  knock the creature, relative from another entity, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)\nall you need is strengh and origin",
             "title": "navigation.knock"
         },
         {
             "location": "/gameData/navigation/#arguments_2",
-            "text": "float strengh :   float x :   float y :   float z :",
+            "text": "float strengh :   entity origin : N/A  float x :   float y :   float z :",
             "title": "Arguments"
         },
         {
@@ -2452,12 +2707,12 @@
         },
         {
             "location": "/gameData/navigation/#example_6",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   navigation . knock : 2.9   x : 2.9   y : - 1.0   z : 3.14159 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   navigation . knock : 2.9   origin : someEntity   x : - 1.0   y : 3.14159   z : - 1.0 ]",
             "title": "Example"
         },
         {
             "location": "/gameData/net/",
-            "text": "net\n\n\nVariables\n\n\nnet.hasAutority\n\n\nbool net.hasAutority\n\n\nThis returns true if this object is the authoritative version of the object in the distributed network application.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnet\n.\nhasAutority\n \n=\n \ntrue\n\n\n\n\n\n\n\nnet.isServer\n\n\nbool net.isServer\n\n\nReturns true if this object is active on an active server.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnet\n.\nisServer\n \n=\n \ntrue\n\n\n\n\n\n\n\nnet.isClient\n\n\nbool net.isClient\n\n\nReturns true if running as a client and this object was spawned by a server.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnet\n.\nisClient\n \n=\n \ntrue\n\n\n\n\n\n\n\nnet.isLocalPlayer\n\n\nbool net.isLocalPlayer\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnet\n.\nisLocalPlayer\n \n=\n \ntrue",
+            "text": "net\n\n\nVariables\n\n\nnet.hasAutority\n\n\nbool net.hasAutority\n\n\nThis returns true if this object is the authoritative version of the object in the distributed network application.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnet\n.\nhasAutority\n \n=\n \ntrue\n\n\n\n\n\n\n\nnet.isServer\n\n\nbool net.isServer\n\n\nReturns true if this object is active on an active server.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnet\n.\nisServer\n \n=\n \nfalse\n\n\n\n\n\n\n\nnet.isClient\n\n\nbool net.isClient\n\n\nReturns true if running as a client and this object was spawned by a server.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnet\n.\nisClient\n \n=\n \ntrue\n\n\n\n\n\n\n\nnet.isLocalPlayer\n\n\nbool net.isLocalPlayer\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnet\n.\nisLocalPlayer\n \n=\n \ntrue",
             "title": "net"
         },
         {
@@ -2487,7 +2742,7 @@
         },
         {
             "location": "/gameData/net/#example_1",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> net . isServer   =   true",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> net . isServer   =   false",
             "title": "Example"
         },
         {
@@ -2522,7 +2777,7 @@
         },
         {
             "location": "/gameData/random/",
-            "text": "random\n\n\nVariables\n\n\nrandom.value\n\n\nfloat random.value\n\n\nget a random float value between 0 and 1\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nrandom\n.\nvalue\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nMessage\n\n\nrandom.range\n\n\n(float)random.range:(float)min max:(float)max\n\n\nget a random float value between min and max\n\n\nArguments\n\n\nfloat min\n: minimal float value\n\n\nfloat max\n: maximal float value\n\n\nReturns\n\n\nreturn the random float\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nrandom\n.\nrange\n:\n2.9\n \nmax\n:\n3.14159\n]\n\n\n\n\n\n\n\nrandom.rangeInt\n\n\n(int)random.rangeInt:(int)min max:(int)max\n\n\nsame as range but with integers\n\n\nArguments\n\n\nint min\n: minimal int value (inclusive)\n\n\nint max\n: maximal int value (also inclusive)\n\n\nReturns\n\n\nreturn the random integer\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nrandom\n.\nrangeInt\n:\n80085\n \nmax\n:\n80085\n]",
+            "text": "random\n\n\nVariables\n\n\nrandom.value\n\n\nfloat random.value\n\n\nget a random float value between 0 and 1\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nrandom\n.\nvalue\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nMessage\n\n\nrandom.range\n\n\n(float)random.range:(float)min max:(float)max\n\n\nget a random float value between min and max\n\n\nArguments\n\n\nfloat min\n: minimal float value\n\n\nfloat max\n: maximal float value\n\n\nReturns\n\n\nreturn the random float\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nrandom\n.\nrange\n:\n-\n1.0\n \nmax\n:\n2.9\n]\n\n\n\n\n\n\n\nrandom.rangeInt\n\n\n(int)random.rangeInt:(int)min max:(int)max\n\n\nsame as range but with integers\n\n\nArguments\n\n\nint min\n: minimal int value (inclusive)\n\n\nint max\n: maximal int value (also inclusive)\n\n\nReturns\n\n\nreturn the random integer\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nrandom\n.\nrangeInt\n:\n42\n \nmax\n:\n42\n]",
             "title": "random"
         },
         {
@@ -2567,7 +2822,7 @@
         },
         {
             "location": "/gameData/random/#example_1",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   random . range : 2.9   max : 3.14159 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   random . range : - 1.0   max : 2.9 ]",
             "title": "Example"
         },
         {
@@ -2587,12 +2842,12 @@
         },
         {
             "location": "/gameData/random/#example_2",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   random . rangeInt : 80085   max : 80085 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   random . rangeInt : 42   max : 42 ]",
             "title": "Example"
         },
         {
             "location": "/gameData/skills/",
-            "text": "skills\n\n\nStats\n\n\nskills.available\n\n\nfloat skills.available\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nskills\n.\navailable\n \n=\n \n2.9\n\n\n\n\n\n\n\nMessage\n\n\nskills.inflictall\n\n\n(void)skills.inflictall:(string)key\n\n\nArguments\n\n\nstring key\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nskills\n.\ninflictall\n:\n\"helloWorld\"\n]\n\n\n\n\n\n\n\nskills.inflict\n\n\n(void)skills.inflict:(int)slot key:(string)key\n\n\nusing a key effect, the ailement will be given to a slot specific skill\n\n\nArguments\n\n\nint slot\n: \n\n\nstring key\n: \n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nskills\n.\ninflict\n:\n42\n \nkey\n:\n\"somethingCorrect\"\n]",
+            "text": "skills\n\n\nStats\n\n\nskills.available\n\n\nfloat skills.available\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nskills\n.\navailable\n \n=\n \n2.9\n\n\n\n\n\n\n\nMessage\n\n\nskills.inflictall\n\n\n(void)skills.inflictall:(string)key\n\n\nArguments\n\n\nstring key\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nskills\n.\ninflictall\n:\n\"somethingCorrect\"\n]\n\n\n\n\n\n\n\nskills.inflict\n\n\n(void)skills.inflict:(int)slot key:(string)key\n\n\nusing a key effect, the ailement will be given to a slot specific skill\n\n\nArguments\n\n\nint slot\n: \n\n\nstring key\n: \n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nskills\n.\ninflict\n:\n666\n \nkey\n:\n\"helloWorld\"\n]",
             "title": "skills"
         },
         {
@@ -2637,7 +2892,7 @@
         },
         {
             "location": "/gameData/skills/#example_1",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   skills . inflictall : \"helloWorld\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   skills . inflictall : \"somethingCorrect\" ]",
             "title": "Example"
         },
         {
@@ -2657,7 +2912,7 @@
         },
         {
             "location": "/gameData/skills/#example_2",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   skills . inflict : 42   key : \"somethingCorrect\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   skills . inflict : 666   key : \"helloWorld\" ]",
             "title": "Example"
         },
         {
@@ -2677,7 +2932,7 @@
         },
         {
             "location": "/gameData/skillsout/",
-            "text": "skillsout\n\n\nConstants\n\n\n\n\n\n\n\n\nName\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nskillsout.none\n\n\nint\n\n\nDefault outcome, don't forget to set it whenever needed\n\n\n\n\n\n\nskillsout.applycd\n\n\nint\n\n\nApply cooldown on the skill, cooldown duration depends on the skill\n\n\n\n\n\n\nskillsout.removecd\n\n\nint\n\n\nRemove cooldown on the skill, if any\n\n\n\n\n\n\nskillsout.applylock\n\n\nint\n\n\nLock the skill, which is independant of cooldown\n\n\n\n\n\n\nskillsout.removelock\n\n\nint\n\n\nUnlock the skill\n\n\n\n\n\n\nskillsout.press\n\n\nint\n\n\n\n\n\n\n\n\nskillsout.release\n\n\nint",
+            "text": "skillsout\n\n\nConstants\n\n\n\n\n\n\n\n\nName\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nskillsout.none\n\n\nint\n\n\nDefault outcome, don't forget to set it whenever needed\n\n\n\n\n\n\nskillsout.applycd\n\n\nint\n\n\nApply cooldown on the skill, cooldown duration depends on the skill\n\n\n\n\n\n\nskillsout.release\n\n\nint\n\n\n\n\n\n\n\n\nskillsout.press\n\n\nint\n\n\n\n\n\n\n\n\nskillsout.removelock\n\n\nint\n\n\nUnlock the skill\n\n\n\n\n\n\nskillsout.applylock\n\n\nint\n\n\nLock the skill, which is independant of cooldown\n\n\n\n\n\n\nskillsout.removecd\n\n\nint\n\n\nRemove cooldown on the skill, if any",
             "title": "skillsout"
         },
         {
@@ -2687,12 +2942,12 @@
         },
         {
             "location": "/gameData/skillsout/#constants",
-            "text": "Name  Type  Description      skillsout.none  int  Default outcome, don't forget to set it whenever needed    skillsout.applycd  int  Apply cooldown on the skill, cooldown duration depends on the skill    skillsout.removecd  int  Remove cooldown on the skill, if any    skillsout.applylock  int  Lock the skill, which is independant of cooldown    skillsout.removelock  int  Unlock the skill    skillsout.press  int     skillsout.release  int",
+            "text": "Name  Type  Description      skillsout.none  int  Default outcome, don't forget to set it whenever needed    skillsout.applycd  int  Apply cooldown on the skill, cooldown duration depends on the skill    skillsout.release  int     skillsout.press  int     skillsout.removelock  int  Unlock the skill    skillsout.applylock  int  Lock the skill, which is independant of cooldown    skillsout.removecd  int  Remove cooldown on the skill, if any",
             "title": "Constants"
         },
         {
             "location": "/gameData/spawner/",
-            "text": "spawner\n\n\nMessage\n\n\nspawner.spawnMult\n\n\n(void)spawner.spawnMult:(string)objId count:(int)count\n\n\nSpawn an item multiple times, using a WieldedSpawnable key as identifier of the object to spawn. \non entity origin\n\n\nArguments\n\n\nstring objId\n: N/A\n\n\nint count\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nspawner\n.\nspawnMult\n:\n\"helloWorld\"\n \ncount\n:\n42\n]\n\n\n\n\n\n\n\nspawner.spawn\n\n\n(void)spawner.spawn:(string)objId\n\n\nSpawn a single item, using a WieldedSpawnable key as identifier of the object to spawn. \non entity origin.\n\n\nArguments\n\n\nstring objId\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nspawner\n.\nspawn\n:\n\"helloWorld\"\n]\n\n\n\n\n\n\n\nspawner.shoot\n\n\n(void)spawner.shoot:(string)objId spawner:(string)spawner\n\n\nSpawn a single item. using a specified spawner with key id\n\n\nArguments\n\n\nstring objId\n: N/A\n\n\nstring spawner\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nspawner\n.\nshoot\n:\n\"helloWorld\"\n \nspawner\n:\n\"yolo\"\n]",
+            "text": "spawner\n\n\nMessage\n\n\nspawner.spawnMult\n\n\n(void)spawner.spawnMult:(string)objId count:(int)count\n\n\nSpawn an item multiple times, using a WieldedSpawnable key as identifier of the object to spawn. \non entity origin\n\n\nArguments\n\n\nstring objId\n: N/A\n\n\nint count\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nspawner\n.\nspawnMult\n:\n\"helloWorld\"\n \ncount\n:\n42\n]\n\n\n\n\n\n\n\nspawner.spawn\n\n\n(void)spawner.spawn:(string)objId\n\n\nSpawn a single item, using a WieldedSpawnable key as identifier of the object to spawn. \non entity origin.\n\n\nArguments\n\n\nstring objId\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nspawner\n.\nspawn\n:\n\"yolo\"\n]\n\n\n\n\n\n\n\nspawner.shoot\n\n\n(void)spawner.shoot:(string)objId spawner:(string)spawner\n\n\nSpawn a single item. using a specified spawner with key id\n\n\nArguments\n\n\nstring objId\n: N/A\n\n\nstring spawner\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nspawner\n.\nshoot\n:\n\"somethingCorrect\"\n \nspawner\n:\n\"somethingCorrect\"\n]",
             "title": "spawner"
         },
         {
@@ -2742,7 +2997,7 @@
         },
         {
             "location": "/gameData/spawner/#example_1",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   spawner . spawn : \"helloWorld\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   spawner . spawn : \"yolo\" ]",
             "title": "Example"
         },
         {
@@ -2762,12 +3017,12 @@
         },
         {
             "location": "/gameData/spawner/#example_2",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   spawner . shoot : \"helloWorld\"   spawner : \"yolo\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   spawner . shoot : \"somethingCorrect\"   spawner : \"somethingCorrect\" ]",
             "title": "Example"
         },
         {
             "location": "/gameData/stamina/",
-            "text": "stamina\n\n\nVariables\n\n\nstamina.current\n\n\nint stamina.current\n\n\nThe current state of the bar, ergo, how many points you have for that stat\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nstamina\n.\ncurrent\n \n=\n \n80085\n\n\n\n\n\n\n\nStats\n\n\nstamina.rate\n\n\nfloat stamina.rate\n\n\nGame Stat that affect the bar over time, \npositive Regen is a continuous recover\nnegative is meant for continuous damage\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nstamina\n.\nrate\n \n=\n \n3.14159\n\n\n\n\n\n\n\nstamina.capacity\n\n\nfloat stamina.capacity\n\n\nGame Stat that affect the total number of points for that stat, as much as one would care for a bar that it should never have a null capacity\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nstamina\n.\ncapacity\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nMessage\n\n\nstamina.damage\n\n\n(void)stamina.damage:(int)amount\n\n\nApply damages: remove the amount.\n\n\nArguments\n\n\nint amount\n: Amount of damages to apply.\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nstamina\n.\ndamage\n:\n42\n]\n\n\n\n\n\n\n\nstamina.burst\n\n\n(bool)stamina.burst:(float)amount\n\n\nTry to remove a value.\n\n\nArguments\n\n\nfloat amount\n: Amount to remove\n\n\nReturns\n\n\nTrue if succeeded to remove (that is there's enough quantity to remove).\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nstamina\n.\nburst\n:\n3.14159\n]\n\n\n\n\n\n\n\nstamina.recover\n\n\n(void)stamina.recover:(int)amount\n\n\nRecover the stat by the amount specified\n\n\nArguments\n\n\nint amount\n: amount to recover\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nstamina\n.\nrecover\n:\n1337\n]",
+            "text": "stamina\n\n\nVariables\n\n\nstamina.current\n\n\nint stamina.current\n\n\nThe current state of the bar, ergo, how many points you have for that stat\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nstamina\n.\ncurrent\n \n=\n \n666\n\n\n\n\n\n\n\nStats\n\n\nstamina.rate\n\n\nfloat stamina.rate\n\n\nGame Stat that affect the bar over time, \npositive Regen is a continuous recover\nnegative is meant for continuous damage\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nstamina\n.\nrate\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nstamina.capacity\n\n\nfloat stamina.capacity\n\n\nGame Stat that affect the total number of points for that stat, as much as one would care for a bar that it should never have a null capacity\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nstamina\n.\ncapacity\n \n=\n \n2.9\n\n\n\n\n\n\n\nMessage\n\n\nstamina.damage\n\n\n(void)stamina.damage:(int)amount\n\n\nApply damages: remove the amount.\n\n\nArguments\n\n\nint amount\n: Amount of damages to apply.\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nstamina\n.\ndamage\n:\n1337\n]\n\n\n\n\n\n\n\nstamina.burst\n\n\n(bool)stamina.burst:(float)amount\n\n\nTry to remove a value.\n\n\nArguments\n\n\nfloat amount\n: Amount to remove\n\n\nReturns\n\n\nTrue if succeeded to remove (that is there's enough quantity to remove).\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nstamina\n.\nburst\n:\n3.14159\n]\n\n\n\n\n\n\n\nstamina.recover\n\n\n(void)stamina.recover:(int)amount\n\n\nRecover the stat by the amount specified\n\n\nArguments\n\n\nint amount\n: amount to recover\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nstamina\n.\nrecover\n:\n42\n]",
             "title": "stamina"
         },
         {
@@ -2787,7 +3042,7 @@
         },
         {
             "location": "/gameData/stamina/#example",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> stamina . current   =   80085",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> stamina . current   =   666",
             "title": "Example"
         },
         {
@@ -2802,7 +3057,7 @@
         },
         {
             "location": "/gameData/stamina/#example_1",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> stamina . rate   =   3.14159",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> stamina . rate   =   - 1.0",
             "title": "Example"
         },
         {
@@ -2812,7 +3067,7 @@
         },
         {
             "location": "/gameData/stamina/#example_2",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> stamina . capacity   =   - 1.0",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> stamina . capacity   =   2.9",
             "title": "Example"
         },
         {
@@ -2837,7 +3092,7 @@
         },
         {
             "location": "/gameData/stamina/#example_3",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   stamina . damage : 42 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   stamina . damage : 1337 ]",
             "title": "Example"
         },
         {
@@ -2877,7 +3132,7 @@
         },
         {
             "location": "/gameData/stamina/#example_5",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   stamina . recover : 1337 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   stamina . recover : 42 ]",
             "title": "Example"
         },
         {
@@ -2912,7 +3167,7 @@
         },
         {
             "location": "/gameData/throw/",
-            "text": "throw\n\n\nVariables\n\n\nthrow.strengh\n\n\nfloat throw.strengh\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nthrow\n.\nstrengh\n \n=\n \n3.14159\n\n\n\n\n\n\n\nthrow.angle\n\n\nfloat throw.angle\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nthrow\n.\nangle\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nthrow.gravity\n\n\nbool throw.gravity\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nthrow\n.\ngravity\n \n=\n \nfalse\n\n\n\n\n\n\n\nthrow.drag\n\n\nfloat throw.drag\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nthrow\n.\ndrag\n \n=\n \n3.14159\n\n\n\n\n\n\n\nthrow.use\n\n\nbool throw.use\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nthrow\n.\nuse\n \n=\n \ntrue\n\n\n\n\n\n\n\nMessage\n\n\nthrow.throw\n\n\n(void)throw.throw\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nthrow\n.\nthrow\n]",
+            "text": "throw\n\n\nVariables\n\n\nthrow.strengh\n\n\nfloat throw.strengh\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nthrow\n.\nstrengh\n \n=\n \n2.9\n\n\n\n\n\n\n\nthrow.angle\n\n\nfloat throw.angle\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nthrow\n.\nangle\n \n=\n \n3.14159\n\n\n\n\n\n\n\nthrow.gravity\n\n\nbool throw.gravity\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nthrow\n.\ngravity\n \n=\n \ntrue\n\n\n\n\n\n\n\nthrow.drag\n\n\nfloat throw.drag\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nthrow\n.\ndrag\n \n=\n \n2.9\n\n\n\n\n\n\n\nthrow.use\n\n\nbool throw.use\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nthrow\n.\nuse\n \n=\n \ntrue\n\n\n\n\n\n\n\nMessage\n\n\nthrow.throw\n\n\n(void)throw.throw\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nthrow\n.\nthrow\n]",
             "title": "throw"
         },
         {
@@ -2932,7 +3187,7 @@
         },
         {
             "location": "/gameData/throw/#example",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> throw . strengh   =   3.14159",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> throw . strengh   =   2.9",
             "title": "Example"
         },
         {
@@ -2942,7 +3197,7 @@
         },
         {
             "location": "/gameData/throw/#example_1",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> throw . angle   =   - 1.0",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> throw . angle   =   3.14159",
             "title": "Example"
         },
         {
@@ -2952,7 +3207,7 @@
         },
         {
             "location": "/gameData/throw/#example_2",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> throw . gravity   =   false",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> throw . gravity   =   true",
             "title": "Example"
         },
         {
@@ -2962,7 +3217,7 @@
         },
         {
             "location": "/gameData/throw/#example_3",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> throw . drag   =   3.14159",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> throw . drag   =   2.9",
             "title": "Example"
         },
         {
@@ -3002,7 +3257,7 @@
         },
         {
             "location": "/gameData/time/",
-            "text": "time\n\n\nVariables\n\n\ntime.dt\n\n\nfloat time.dt\n\n\nTime interval since last frame.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\ntime\n.\ndt\n \n=\n \n3.14159",
+            "text": "time\n\n\nVariables\n\n\ntime.dt\n\n\nfloat time.dt\n\n\nTime interval since last frame.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\ntime\n.\ndt\n \n=\n \n2.9",
             "title": "time"
         },
         {
@@ -3022,12 +3277,12 @@
         },
         {
             "location": "/gameData/time/#example",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> time . dt   =   3.14159",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> time . dt   =   2.9",
             "title": "Example"
         },
         {
             "location": "/gameData/transform/",
-            "text": "transform\n\n\nVariables\n\n\ntransform.posx\n\n\nfloat transform.posx\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\ntransform\n.\nposx\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\ntransform.posy\n\n\nfloat transform.posy\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\ntransform\n.\nposy\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\ntransform.posz\n\n\nfloat transform.posz\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\ntransform\n.\nposz\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nMessage\n\n\ntransform.isFacing\n\n\n(bool)transform.isFacing:(float)x y:(float)y z:(float)z\n\n\nArguments\n\n\nfloat x\n: \n\n\nfloat y\n: \n\n\nfloat z\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ntransform\n.\nisFacing\n:\n2.9\n \ny\n:\n3.14159\n \nz\n:\n3.14159\n]",
+            "text": "transform\n\n\nVariables\n\n\ntransform.posx\n\n\nfloat transform.posx\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\ntransform\n.\nposx\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\ntransform.posy\n\n\nfloat transform.posy\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\ntransform\n.\nposy\n \n=\n \n3.14159\n\n\n\n\n\n\n\ntransform.posz\n\n\nfloat transform.posz\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\ntransform\n.\nposz\n \n=\n \n2.9\n\n\n\n\n\n\n\nMessage\n\n\ntransform.isFacing\n\n\n(bool)transform.isFacing:(float)x y:(float)y z:(float)z\n\n\nArguments\n\n\nfloat x\n: \n\n\nfloat y\n: \n\n\nfloat z\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ntransform\n.\nisFacing\n:\n3.14159\n \ny\n:\n3.14159\n \nz\n:\n-\n1.0\n]",
             "title": "transform"
         },
         {
@@ -3057,7 +3312,7 @@
         },
         {
             "location": "/gameData/transform/#example_1",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> transform . posy   =   - 1.0",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> transform . posy   =   3.14159",
             "title": "Example"
         },
         {
@@ -3067,7 +3322,7 @@
         },
         {
             "location": "/gameData/transform/#example_2",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> transform . posz   =   - 1.0",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> transform . posz   =   2.9",
             "title": "Example"
         },
         {
@@ -3092,7 +3347,7 @@
         },
         {
             "location": "/gameData/transform/#example_3",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   transform . isFacing : 2.9   y : 3.14159   z : 3.14159 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   transform . isFacing : 3.14159   y : 3.14159   z : - 1.0 ]",
             "title": "Example"
         },
         {
@@ -3117,7 +3372,7 @@
         },
         {
             "location": "/gameData/world/",
-            "text": "world\n\n\nVariables\n\n\nworld.ground\n\n\nbool world.ground\n\n\nWhether has a ground under.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nworld\n.\nground\n \n=\n \ntrue\n\n\n\n\n\n\n\nworld.wallLeft\n\n\nbool world.wallLeft\n\n\nCheck if has a wall on left.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nworld\n.\nwallLeft\n \n=\n \ntrue\n\n\n\n\n\n\n\nworld.wallRight\n\n\nbool world.wallRight\n\n\nHas wall on the right.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nworld\n.\nwallRight\n \n=\n \nfalse\n\n\n\n\n\n\n\nworld.ceil\n\n\nbool world.ceil\n\n\nHas ceiling.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nworld\n.\nceil\n \n=\n \nfalse\n\n\n\n\n\n\n\nMessage\n\n\nworld.addLayer\n\n\n(void)world.addLayer:(string)layerName\n\n\nWill add the specified layer to the world detection, meaning the world knowledge will be able to detect collison from that layer\n\n\nArguments\n\n\nstring layerName\n: The name of the layer to Add\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nworld\n.\naddLayer\n:\n\"somethingCorrect\"\n]\n\n\n\n\n\n\n\nworld.removeLayer\n\n\n(void)world.removeLayer:(string)layerName\n\n\nWill remove the specified layer from the world detection, meaning the world knowledge will not be able to detect collison from that layer\n\n\nArguments\n\n\nstring layerName\n: The name of the layer to Add\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nworld\n.\nremoveLayer\n:\n\"somethingCorrect\"\n]\n\n\n\n\n\n\n\nworld.setLayer\n\n\n(void)world.setLayer:(string)layerName\n\n\nArguments\n\n\nstring layerName\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nworld\n.\nsetLayer\n:\n\"somethingCorrect\"\n]\n\n\n\n\n\n\n\nworld.resetMask\n\n\n(void)world.resetMask\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nworld\n.\nresetMask\n]",
+            "text": "world\n\n\nVariables\n\n\nworld.ground\n\n\nbool world.ground\n\n\nWhether has a ground under.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nworld\n.\nground\n \n=\n \nfalse\n\n\n\n\n\n\n\nworld.wallLeft\n\n\nbool world.wallLeft\n\n\nCheck if has a wall on left.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nworld\n.\nwallLeft\n \n=\n \nfalse\n\n\n\n\n\n\n\nworld.wallRight\n\n\nbool world.wallRight\n\n\nHas wall on the right.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nworld\n.\nwallRight\n \n=\n \nfalse\n\n\n\n\n\n\n\nworld.ceil\n\n\nbool world.ceil\n\n\nHas ceiling.\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nworld\n.\nceil\n \n=\n \nfalse\n\n\n\n\n\n\n\nMessage\n\n\nworld.addLayer\n\n\n(void)world.addLayer:(string)layerName\n\n\nWill add the specified layer to the world detection, meaning the world knowledge will be able to detect collison from that layer\n\n\nArguments\n\n\nstring layerName\n: The name of the layer to Add\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nworld\n.\naddLayer\n:\n\"somethingCorrect\"\n]\n\n\n\n\n\n\n\nworld.removeLayer\n\n\n(void)world.removeLayer:(string)layerName\n\n\nWill remove the specified layer from the world detection, meaning the world knowledge will not be able to detect collison from that layer\n\n\nArguments\n\n\nstring layerName\n: The name of the layer to Add\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nworld\n.\nremoveLayer\n:\n\"helloWorld\"\n]\n\n\n\n\n\n\n\nworld.setLayer\n\n\n(void)world.setLayer:(string)layerName\n\n\nArguments\n\n\nstring layerName\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nworld\n.\nsetLayer\n:\n\"somethingCorrect\"\n]\n\n\n\n\n\n\n\nworld.resetMask\n\n\n(void)world.resetMask\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nworld\n.\nresetMask\n]",
             "title": "world"
         },
         {
@@ -3137,7 +3392,7 @@
         },
         {
             "location": "/gameData/world/#example",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> world . ground   =   true",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> world . ground   =   false",
             "title": "Example"
         },
         {
@@ -3147,7 +3402,7 @@
         },
         {
             "location": "/gameData/world/#example_1",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> world . wallLeft   =   true",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> world . wallLeft   =   false",
             "title": "Example"
         },
         {
@@ -3212,7 +3467,7 @@
         },
         {
             "location": "/gameData/world/#example_5",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   world . removeLayer : \"somethingCorrect\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   world . removeLayer : \"helloWorld\" ]",
             "title": "Example"
         },
         {

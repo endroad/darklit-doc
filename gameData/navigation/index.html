@@ -607,6 +607,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../detection/" title="detection" class="md-nav__link">
+      detection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../dk/" title="dk" class="md-nav__link">
       dk
     </a>
@@ -1649,7 +1661,7 @@
 <h4 id="example_1">Example</h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">// This example is automatically generated: don&#39;t trust values</span>
-<span class="k">this</span><span class="o">-&gt;</span><span class="n">navigation</span><span class="p">.</span><span class="n">gravity</span> <span class="o">=</span> <span class="mf">3.14159</span>
+<span class="k">this</span><span class="o">-&gt;</span><span class="n">navigation</span><span class="p">.</span><span class="n">gravity</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.0</span>
 </pre></div>
 </td></tr></table>
 
@@ -1658,7 +1670,7 @@
 <h4 id="example_2">Example</h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">// This example is automatically generated: don&#39;t trust values</span>
-<span class="k">this</span><span class="o">-&gt;</span><span class="n">navigation</span><span class="p">.</span><span class="n">motion</span> <span class="o">=</span> <span class="mf">3.14159</span>
+<span class="k">this</span><span class="o">-&gt;</span><span class="n">navigation</span><span class="p">.</span><span class="n">motion</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.0</span>
 </pre></div>
 </td></tr></table>
 
@@ -1667,7 +1679,7 @@
 <h4 id="example_3">Example</h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">// This example is automatically generated: don&#39;t trust values</span>
-<span class="k">this</span><span class="o">-&gt;</span><span class="n">navigation</span><span class="p">.</span><span class="n">knockDamp</span> <span class="o">=</span> <span class="mf">2.9</span>
+<span class="k">this</span><span class="o">-&gt;</span><span class="n">navigation</span><span class="p">.</span><span class="n">knockDamp</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.0</span>
 </pre></div>
 </td></tr></table>
 
@@ -1680,7 +1692,7 @@
 <h4 id="example_4">Example</h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">// This example is automatically generated: don&#39;t trust values</span>
-<span class="p">[</span><span class="k">this</span> <span class="n">navigation</span><span class="p">.</span><span class="nl">jump</span><span class="p">:</span><span class="mf">3.14159</span><span class="p">]</span>
+<span class="p">[</span><span class="k">this</span> <span class="n">navigation</span><span class="p">.</span><span class="nl">jump</span><span class="p">:</span><span class="mf">2.9</span><span class="p">]</span>
 </pre></div>
 </td></tr></table>
 
@@ -1692,16 +1704,17 @@
 <h4 id="example_5">Example</h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">// This example is automatically generated: don&#39;t trust values</span>
-<span class="p">[</span><span class="k">this</span> <span class="n">navigation</span><span class="p">.</span><span class="nl">moveForward</span><span class="p">:</span><span class="mf">2.9</span><span class="p">]</span>
+<span class="p">[</span><span class="k">this</span> <span class="n">navigation</span><span class="p">.</span><span class="nl">moveForward</span><span class="p">:</span><span class="o">-</span><span class="mf">1.0</span><span class="p">]</span>
 </pre></div>
 </td></tr></table>
 
 <h3 id="navigationknock"><strong>navigation.knock</strong></h3>
-<p><code>(void)navigation.knock:(float)strengh x:(float)x y:(float)y z:(float)z</code></p>
-<p>knock the creature, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)
+<p><code>(void)navigation.knock:(float)strengh origin:(entity)origin x:(float)x y:(float)y z:(float)z</code></p>
+<p>knock the creature, relative from another entity, impose a locomotion force that cannot be opposed with conscient locomotion (like walking)
 all you need is strengh and origin</p>
 <h4 id="arguments_2">Arguments</h4>
 <p><code>float strengh</code>: </p>
+<p><code>entity origin</code>: N/A</p>
 <p><code>float x</code>: </p>
 <p><code>float y</code>: </p>
 <p><code>float z</code>: </p>
@@ -1710,7 +1723,7 @@ all you need is strengh and origin</p>
 <h4 id="example_6">Example</h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">// This example is automatically generated: don&#39;t trust values</span>
-<span class="p">[</span><span class="k">this</span> <span class="n">navigation</span><span class="p">.</span><span class="nl">knock</span><span class="p">:</span><span class="mf">2.9</span> <span class="nl">x</span><span class="p">:</span><span class="mf">2.9</span> <span class="nl">y</span><span class="p">:</span><span class="o">-</span><span class="mf">1.0</span> <span class="nl">z</span><span class="p">:</span><span class="mf">3.14159</span><span class="p">]</span>
+<span class="p">[</span><span class="k">this</span> <span class="n">navigation</span><span class="p">.</span><span class="nl">knock</span><span class="p">:</span><span class="mf">2.9</span> <span class="nl">origin</span><span class="p">:</span><span class="n">someEntity</span> <span class="nl">x</span><span class="p">:</span><span class="o">-</span><span class="mf">1.0</span> <span class="nl">y</span><span class="p">:</span><span class="mf">3.14159</span> <span class="nl">z</span><span class="p">:</span><span class="o">-</span><span class="mf">1.0</span><span class="p">]</span>
 </pre></div>
 </td></tr></table>
                 
