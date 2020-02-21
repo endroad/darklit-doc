@@ -2,18 +2,30 @@
 
 ## Declarations
 
-### Variables
+### Data types
 
-Plain variables
+    // Numeric
 
-    int a
-    float b
+    int a = 1        // or i32
+    float b = 1.0    // or f32
     bool a
+    time = 0.1s        // time is seconds
+
+    // References
+    entity e
+    fiber f
+    array[int] a_i = [1,2,3]
+    array[fiber] a_f  
+    future[bool] fut
+
+    // Composites
+    option[int] o // see below
+    float3 v = float3(x,y,z)
+
 
 ### I / O
 
-Some variables can be retrieve or set from the C# code.
-
+Input / Output markers allow to communicate between fibers and with C#
 To use them you need to add `in`, `out`, `inout` in front of variable declaration
 
         in int a
@@ -58,18 +70,8 @@ They can be manipulated as well as any other object type in NuSpeak.
 
     fiber myFiber
 
-Fibers can be send and retrieved from **GameData** or can be bound to a register.
+You can reference the current fiber using `self`
 
-!!! warning
-    **Work in progress**: Register usage is only available for built-in registers
-
-> To know more about fiber usage see the page on [Fiber](nsref.fibers). or consult your local programmer.
-
-##### Built-in registers
-
-| Entity Name | Usage |
-|-------------|-------|
-|`self` | The fiber executing the current script. |
 
 The **fibers** above are always defined and usable in any script.
 ## Operators
@@ -84,12 +86,6 @@ Defined for `int` and `float`
     a * b // Multiplication
     a / b // Division
     a % b // Modulo
-
-    // Unary
-    a++   // Postfix increment
-    ++a   // Prefix increment
-    a--   // Postfix decrement
-    --a   // Prefix decrement
 
     // Assignment
     a += b
@@ -111,7 +107,6 @@ Defined for `bool`, `int` and `float`
     bool c = a is b     // Equal
     bool c = a == b     // Equal (equiv.)
 
-    bool c = a is not b // Not Equal
     bool c = a isnot b  // Not Equal (equiv.)
     bool c = a != b     // Not Equal (equiv.)
 
@@ -142,3 +137,11 @@ Defined for `bool` only
     else
         // do some other other thing here
     end
+
+### Casting
+
+To transform the type of a value to another type of value
+
+    float a = 0
+    int b = (int)a
+    int c = a as int

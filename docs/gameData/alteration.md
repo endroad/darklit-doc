@@ -27,7 +27,7 @@ this->alteration.recovery = 3.14159
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this alteration.hasInflicted:"helloWorld"]
+[this alteration.hasInflicted:"yolo"]
 ```
 ### **alteration.hasResistance**
 `(bool)alteration.hasResistance:(string)alter `
@@ -43,7 +43,7 @@ this->alteration.recovery = 3.14159
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this alteration.hasResistance:"yolo"]
+[this alteration.hasResistance:"somethingCorrect"]
 ```
 ### **alteration.inflict**
 `(void)alteration.inflict:(string)alter duration:(float)duration `
@@ -63,7 +63,7 @@ N/A
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this alteration.inflict:"yolo" duration:-1.0]
+[this alteration.inflict:"somethingCorrect" duration:2.9]
 ```
 ### **alteration.resist**
 `(void)alteration.resist:(string)alter duration:(float)duration `
@@ -82,7 +82,7 @@ N/A
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this alteration.resist:"somethingCorrect" duration:2.9]
+[this alteration.resist:"yolo" duration:3.14159]
 ```
 ### **alteration.cureAll**
 `(void)alteration.cureAll:(int)morality `
@@ -99,7 +99,7 @@ N/A
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this alteration.cureAll:42]
+[this alteration.cureAll:80085]
 ```
 ### **alteration.cure**
 `(void)alteration.cure:(string)alter `
@@ -115,7 +115,7 @@ N/A
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this alteration.cure:"yolo"]
+[this alteration.cure:"somethingCorrect"]
 ```
 ### **alteration.disruptAll**
 `(void)alteration.disruptAll:(int)morality `
@@ -132,7 +132,7 @@ N/A
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this alteration.disruptAll:80085]
+[this alteration.disruptAll:42]
 ```
 ### **alteration.disrupt**
 `(void)alteration.disrupt:(string)alter `
@@ -148,7 +148,7 @@ N/A
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this alteration.disrupt:"somethingCorrect"]
+[this alteration.disrupt:"helloWorld"]
 ```
 ### **alteration.clear**
 `(void)alteration.clear`

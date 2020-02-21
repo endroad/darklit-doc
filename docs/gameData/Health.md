@@ -9,7 +9,7 @@ The current state of the bar, ergo, how many points you have for that stat
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->health.current = 1337
+this->health.current = 42
 ```
 ## Stats
 ### **health.rate**
@@ -23,7 +23,7 @@ negative is meant for continuous damage
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->health.rate = -1.0
+this->health.rate = 3.14159
 ```
 ### **health.capacity**
 `float health.capacity`
@@ -34,7 +34,7 @@ Game Stat that affect the total number of points for that stat, as much as one w
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->health.capacity = -1.0
+this->health.capacity = 2.9
 ```
 ## Message
 ### **health.damage**
@@ -51,7 +51,7 @@ this->health.capacity = -1.0
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this health.damage:42]
+[this health.damage:1337]
 ```
 ### **health.burst**
 `(bool)health.burst:(float)amount `

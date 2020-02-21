@@ -71,7 +71,7 @@ Check if a fiber has the specified tag:
 
 You can add any number of tags to a script as follow:
 
-    script MySuperCoolScript:
+    script: MySuperCoolScript
 
     #someTag
     #otherTag #immediatelly #followed #by #others

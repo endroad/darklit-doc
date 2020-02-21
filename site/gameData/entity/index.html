@@ -28,7 +28,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.2.3">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.3.0">
     
     
       
@@ -36,7 +36,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.bcabdff3.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.0e9c8aca.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-palette.792431c1.css">
       
@@ -593,6 +593,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../dk/" title="dk" class="md-nav__link">
+      dk
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -924,6 +936,74 @@
         
           <li class="md-nav__item">
   <a href="#example_8" title="Example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entitylisten" title="entity.listen" class="md-nav__link">
+    entity.listen
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments_8" title="Arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_8" title="Returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_9" title="Example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entitystoplisten" title="entity.stopListen" class="md-nav__link">
+    entity.stopListen
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments_9" title="Arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_9" title="Returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_10" title="Example" class="md-nav__link">
     Example
   </a>
   
@@ -1514,6 +1594,74 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#entitylisten" title="entity.listen" class="md-nav__link">
+    entity.listen
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments_8" title="Arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_8" title="Returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_9" title="Example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entitystoplisten" title="entity.stopListen" class="md-nav__link">
+    entity.stopListen
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arguments_9" title="Arguments" class="md-nav__link">
+    Arguments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_9" title="Returns" class="md-nav__link">
+    Returns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_10" title="Example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1667,6 +1815,39 @@ It clears the stack and the execution state.
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">[</span><span class="k">this</span> <span class="n">entity</span><span class="p">.</span><span class="nl">getFiber</span><span class="p">:</span><span class="s">&quot;essentials&quot;</span><span class="p">]</span>
 </pre></div>
 </td></tr></table>
+
+<h3 id="entitylisten"><strong>entity.listen</strong></h3>
+<p><code>(void)entity.listen:(string)evt fiber:(fiber)fiber state:(string)state</code></p>
+<p>Register the fiber's state as a listener of the specified event.
+The fiber's state will be called each time the event is raised.</p>
+<h4 id="arguments_8">Arguments</h4>
+<p><code>string evt</code>: Event name to listen.</p>
+<p><code>fiber fiber</code>: Fiber listening.</p>
+<p><code>string state</code>: State to call when event is raised.</p>
+<h4 id="returns_8">Returns</h4>
+<p>N/A</p>
+<h4 id="example_9">Example</h4>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">// This example is automatically generated: don&#39;t trust values</span>
+<span class="p">[</span><span class="k">this</span> <span class="n">entity</span><span class="p">.</span><span class="nl">listen</span><span class="p">:</span><span class="s">&quot;helloWorld&quot;</span> <span class="nl">fiber</span><span class="p">:</span><span class="n">someOtherFiber</span> <span class="nl">state</span><span class="p">:</span><span class="s">&quot;yolo&quot;</span><span class="p">]</span>
+</pre></div>
+</td></tr></table>
+
+<h3 id="entitystoplisten"><strong>entity.stopListen</strong></h3>
+<p><code>(void)entity.stopListen:(string)evt fiber:(fiber)fiber state:(string)state</code></p>
+<p>Unregister a fiber's state as listener of the specified event.</p>
+<h4 id="arguments_9">Arguments</h4>
+<p><code>string evt</code>: Event name to listen.</p>
+<p><code>fiber fiber</code>: Fiber listening.</p>
+<p><code>string state</code>: State registered when event is raised.</p>
+<h4 id="returns_9">Returns</h4>
+<p>N/A</p>
+<h4 id="example_10">Example</h4>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">// This example is automatically generated: don&#39;t trust values</span>
+<span class="p">[</span><span class="k">this</span> <span class="n">entity</span><span class="p">.</span><span class="nl">stopListen</span><span class="p">:</span><span class="s">&quot;somethingCorrect&quot;</span> <span class="nl">fiber</span><span class="p">:</span><span class="n">someOtherFiber</span> <span class="nl">state</span><span class="p">:</span><span class="s">&quot;helloWorld&quot;</span><span class="p">]</span>
+</pre></div>
+</td></tr></table>
                 
                   
                 
@@ -1685,7 +1866,7 @@ It clears the stack and the execution state.
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../chest/" title="chest" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../dk/" title="dk" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1694,7 +1875,7 @@ It clears the stack and the execution state.
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                chest
+                dk
               </span>
             </div>
           </a>
@@ -1736,7 +1917,7 @@ It clears the stack and the execution state.
       
     </div>
     
-      <script src="../../assets/javascripts/application.6cdc17f0.js"></script>
+      <script src="../../assets/javascripts/application.cae2244d.js"></script>
       
       <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
       

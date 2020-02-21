@@ -31,7 +31,7 @@ this->navigation.motion = 3.14159
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->navigation.knockDamp = 2.9
+this->navigation.knockDamp = 3.14159
 ```
 ## Message
 ### **navigation.jump**
@@ -64,7 +64,7 @@ this->navigation.knockDamp = 2.9
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this navigation.moveForward:3.14159]
+[this navigation.moveForward:-1.0]
 ```
 ### **navigation.knock**
 `(void)navigation.knock:(float)strengh x:(float)x y:(float)y z:(float)z `
@@ -87,6 +87,6 @@ N/A
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this navigation.knock:2.9 x:2.9 y:3.14159 z:3.14159]
+[this navigation.knock:3.14159 x:2.9 y:3.14159 z:3.14159]
 ```
 

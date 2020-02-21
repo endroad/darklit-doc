@@ -20,7 +20,7 @@ this->throw.strengh = -1.0
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->throw.angle = 3.14159
+this->throw.angle = -1.0
 ```
 ### **throw.gravity**
 `bool throw.gravity`
@@ -53,7 +53,7 @@ this->throw.drag = -1.0
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->throw.use = false
+this->throw.use = true
 ```
 ## Message
 ### **throw.throw**

@@ -28,7 +28,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.2.3">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.3.0">
     
     
       
@@ -36,7 +36,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.bcabdff3.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.0e9c8aca.css">
       
         <link rel="stylesheet" href="../assets/stylesheets/application-palette.792431c1.css">
       
@@ -353,8 +353,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#execution-flow" title="Execution flow" class="md-nav__link">
-    Execution flow
+  <a href="#messages" title="Messages" class="md-nav__link">
+    Messages
   </a>
   
     <nav class="md-nav">
@@ -364,6 +364,47 @@
   <a href="#exec" title="exec" class="md-nav__link">
     exec
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step" title="step" class="md-nav__link">
+    step
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasstate" title="hasState" class="md-nav__link">
+    hasState
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hastag" title="hasTag" class="md-nav__link">
+    hasTag
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tags" title="Tags" class="md-nav__link">
+    Tags
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reserved-tags" title="Reserved tags" class="md-nav__link">
+    Reserved tags
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -651,6 +692,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../gameData/dk/" title="dk" class="md-nav__link">
+      dk
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../gameData/entity/" title="entity" class="md-nav__link">
       entity
     </a>
@@ -918,8 +971,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#execution-flow" title="Execution flow" class="md-nav__link">
-    Execution flow
+  <a href="#messages" title="Messages" class="md-nav__link">
+    Messages
   </a>
   
     <nav class="md-nav">
@@ -929,6 +982,47 @@
   <a href="#exec" title="exec" class="md-nav__link">
     exec
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step" title="step" class="md-nav__link">
+    step
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasstate" title="hasState" class="md-nav__link">
+    hasState
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hastag" title="hasTag" class="md-nav__link">
+    hasTag
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tags" title="Tags" class="md-nav__link">
+    Tags
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reserved-tags" title="Reserved tags" class="md-nav__link">
+    Reserved tags
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -966,11 +1060,10 @@ They can be manipulated as well as any other object type in NuSpeak.</p>
 </pre></div>
 </td></tr></table>
 
-<h2 id="execution-flow">Execution flow</h2>
-<p>You can modify the execution flow of a <code>fiber</code> using the built-in fibers functions.</p>
-<p>These functions can be called on both the current <code>fiber</code> or any <strong>other</strong>.</p>
+<h2 id="messages">Messages</h2>
+<p>These messages can be called on both the current <code>fiber</code> (<code>self</code>) or any <strong>other</strong>.</p>
 <h3 id="exec"><strong>exec</strong></h3>
-<p>Set the execution point of a fiber.</p>
+<p>Set the execution state of a fiber. It simply goes to the specified state.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -978,10 +1071,100 @@ They can be manipulated as well as any other object type in NuSpeak.</p>
 5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">// Retrieve a fiber name &quot;awesomeFiber&quot; in the current entity</span>
 <span class="n">fiber</span> <span class="n">someOtherFiber</span> <span class="o">=</span> <span class="p">[</span><span class="n">this</span> <span class="n">entity</span><span class="p">.</span><span class="n">getFiber</span><span class="p">(</span><span class="s">&quot;awesomeFiber&quot;</span><span class="p">)]</span>
 
-<span class="c1">// Execute the state DoSomethingAmazing</span>
+<span class="c1">// Move to the state DoSomethingAmazing</span>
 <span class="p">[</span><span class="n">someOtherFiber</span> <span class="nl">exec</span><span class="p">:</span><span class="n">DoSomethingAmazing</span><span class="p">]</span>
 </pre></div>
 </td></tr></table>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The fiber is not run. If you want to immediately run the fiber, call <code>step</code> on the fiber: <code>[someOtherFiber step]</code></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If called on <code>self</code> it carries on with the execution after moving to the specified state until yielding or end of program.</p>
+</div>
+<h3 id="step"><strong>step</strong></h3>
+<p>Immediately executes (if possible) the fiber in its current state.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">// Retrieve a fiber name &quot;awesomeFiber&quot; in the current entity</span>
+<span class="n">fiber</span> <span class="n">someOtherFiber</span> <span class="o">=</span> <span class="p">[</span><span class="n">this</span> <span class="n">entity</span><span class="p">.</span><span class="nl">getFiber</span><span class="p">:</span><span class="s">&quot;awesomeFiber&quot;</span><span class="p">]</span>
+
+<span class="c1">// Run the fiber immediately</span>
+<span class="p">[</span><span class="n">someOtherFiber</span> <span class="n">step</span><span class="p">]</span>
+</pre></div>
+</td></tr></table>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not call on <code>self</code>. It'll create a runtime error.</p>
+</div>
+<h3 id="hasstate"><strong>hasState</strong></h3>
+<p>Check if a fiber implements the specified state:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">// Check if awesomeFiber has a state &quot;Attack&quot; in the program currently attached</span>
+<span class="kt">bool</span> <span class="n">hasAttackState</span> <span class="o">=</span> <span class="p">[</span><span class="n">awesomeFiber</span> <span class="nl">hasState</span><span class="p">:</span><span class="n">Attack</span><span class="p">]</span>
+</pre></div>
+</td></tr></table>
+
+<blockquote>
+<p>You <strong>don't</strong> need quote symbols " surrondding the state name. However using quotes
+is still a valid syntax</p>
+</blockquote>
+<h3 id="hastag"><strong>hasTag</strong></h3>
+<p>Check if a fiber has the specified tag:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">// Check if awesomeFiber has the tag &quot;helloTag&quot;</span>
+<span class="kt">bool</span> <span class="n">hasHelloTag</span> <span class="o">=</span> <span class="p">[</span><span class="n">awesomeFiber</span> <span class="nl">hasTag</span><span class="p">:</span><span class="s">&quot;helloTag&quot;</span><span class="p">]</span>
+</pre></div>
+</td></tr></table>
+
+<h3 id="tags">Tags</h3>
+<p>You can add any number of tags to a script as follow:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">script</span><span class="o">:</span> <span class="n">MySuperCoolScript</span>
+
+<span class="err">#</span><span class="n">someTag</span>
+<span class="err">#</span><span class="n">otherTag</span> <span class="err">#</span><span class="n">immediatelly</span> <span class="err">#</span><span class="n">followed</span> <span class="err">#</span><span class="n">by</span> <span class="err">#</span><span class="n">others</span>
+
+<span class="c1">// rest of the script</span>
+
+<span class="n">endscript</span>
+</pre></div>
+</td></tr></table>
+
+<blockquote>
+<p>You can add tags anywhere in your script
+However it's good practice to keep them at the beginning of the script
+to ease readability</p>
+</blockquote>
+<p>Tags can then be check using <code>[aFiber hasTag:"someTag"]</code></p>
+<h4 id="reserved-tags">Reserved tags</h4>
+<p>Some tags are reserved by the system (compiler, interpreter or VM)
+Here is the list of reserved tags</p>
+<table>
+<thead>
+<tr>
+<th>Reserved tag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>break</code></td>
+<td>Add a breakpoint to the script at the specified location</td>
+</tr>
+</tbody>
+</table>
                 
                   
                 
@@ -1051,7 +1234,7 @@ They can be manipulated as well as any other object type in NuSpeak.</p>
       
     </div>
     
-      <script src="../assets/javascripts/application.6cdc17f0.js"></script>
+      <script src="../assets/javascripts/application.cae2244d.js"></script>
       
       <script>app.initialize({version:"0.17.2",url:{base:".."}})</script>
       

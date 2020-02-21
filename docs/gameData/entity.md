@@ -167,4 +167,45 @@ The fiber if found otherwise return null.
 ``` cpp
 [this entity.getFiber:"essentials"]
 ```
+### **entity.listen**
+`(void)entity.listen:(string)evt fiber:(fiber)fiber state:(string)state `
+
+Register the fiber's state as a listener of the specified event.
+The fiber's state will be called each time the event is raised.
+#### Arguments
+`string evt`: Event name to listen.
+
+`fiber fiber`: Fiber listening.
+
+`string state`: State to call when event is raised.
+
+#### Returns
+N/A
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+[this entity.listen:"helloWorld" fiber:someOtherFiber state:"yolo"]
+```
+### **entity.stopListen**
+`(void)entity.stopListen:(string)evt fiber:(fiber)fiber state:(string)state `
+
+Unregister a fiber's state as listener of the specified event.
+#### Arguments
+`string evt`: Event name to listen.
+
+`fiber fiber`: Fiber listening.
+
+`string state`: State registered when event is raised.
+
+#### Returns
+N/A
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+[this entity.stopListen:"somethingCorrect" fiber:someOtherFiber state:"helloWorld"]
+```
 

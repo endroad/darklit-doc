@@ -21,7 +21,7 @@ Moving speed.
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->legs.speed = 3.14159
+this->legs.speed = 2.9
 ```
 ### **legs.knockDamp**
 `float legs.knockDamp`
@@ -32,7 +32,7 @@ the rate at which a knockforce is reduced.
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->legs.knockDamp = 3.14159
+this->legs.knockDamp = -1.0
 ```
 ## Message
 ### **legs.moveRight**
@@ -63,7 +63,7 @@ N/A
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this legs.turn:3.14159]
+[this legs.turn:-1.0]
 ```
 ### **legs.stop**
 `(void)legs.stop`
@@ -130,6 +130,6 @@ N/A
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this legs.knock:2.9 x:-1.0 y:2.9 z:-1.0]
+[this legs.knock:3.14159 x:-1.0 y:2.9 z:2.9]
 ```
 

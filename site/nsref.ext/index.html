@@ -28,7 +28,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.2.3">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.3.0">
     
     
       
@@ -36,7 +36,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.bcabdff3.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.0e9c8aca.css">
       
         <link rel="stylesheet" href="../assets/stylesheets/application-palette.792431c1.css">
       
@@ -679,6 +679,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../gameData/dk/" title="dk" class="md-nav__link">
+      dk
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../gameData/entity/" title="entity" class="md-nav__link">
       entity
     </a>
@@ -1092,8 +1104,8 @@ The type of these dynamic data is unknown when you compile the program (compile-
 </blockquote>
 <p>If I'm using in my script the <code>extern</code> variable <code>lifetime</code> I've defined in a <strong>Json</strong> file I <strong>must</strong> defined it like that:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>extern float lifetime        // Forward definition of &#39;lifetime&#39;
-this-&gt;global.lifetime = 0    // Usage of &#39;lifetime&#39;
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>extern float entity.lifetime        // Forward definition of &#39;lifetime&#39;
+this-&gt;lifetime = 0    // Usage of &#39;lifetime&#39;
 </pre></div>
 </td></tr></table>
 
@@ -1102,18 +1114,18 @@ this-&gt;global.lifetime = 0    // Usage of &#39;lifetime&#39;
 2
 3
 4
-5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>extern int victoryPoints
-extern float lifetime
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>extern int entity.victoryPoints
+extern float entity.lifetime
 
 // Statistic
-extern stat strength
+extern stat entity.strength
 </pre></div>
 </td></tr></table>
 
 <h3 id="messages_1">Messages</h3>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>extern (bool)doSomething:(int)
-extern (void)doOtherThing:(int) withArgument:(float) lotOfArguments:(bool)
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>extern bool entity.doSomething:int
+extern void entity.doOtherThing:int withArgument:float lotOfArguments:bool
 </pre></div>
 </td></tr></table>
                 
@@ -1185,7 +1197,7 @@ extern (void)doOtherThing:(int) withArgument:(float) lotOfArguments:(bool)
       
     </div>
     
-      <script src="../assets/javascripts/application.6cdc17f0.js"></script>
+      <script src="../assets/javascripts/application.cae2244d.js"></script>
       
       <script>app.initialize({version:"0.17.2",url:{base:".."}})</script>
       

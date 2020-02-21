@@ -31,7 +31,7 @@ this->transform.posy = 3.14159
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->transform.posz = 2.9
+this->transform.posz = 3.14159
 ```
 ## Message
 ### **transform.isFacing**
@@ -52,6 +52,6 @@ this->transform.posz = 2.9
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this transform.isFacing:-1.0 y:2.9 z:2.9]
+[this transform.isFacing:3.14159 y:-1.0 z:3.14159]
 ```
 

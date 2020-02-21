@@ -9,6 +9,6 @@ Time interval since last frame.
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->time.dt = 3.14159
+this->time.dt = 2.9
 ```
 

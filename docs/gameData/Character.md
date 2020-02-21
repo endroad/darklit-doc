@@ -9,7 +9,7 @@ a boolean to know if the character can recieve hit damage
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->character.vulnerable = true
+this->character.vulnerable = false
 ```
 ## Stats
 ### **character.damage**
@@ -21,7 +21,7 @@ this->character.vulnerable = true
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->character.damage = -1.0
+this->character.damage = 2.9
 ```
 ### **character.acknowledgable**
 `float character.acknowledgable`
@@ -32,7 +32,7 @@ the capacity to be spotted by IA
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->character.acknowledgable = 3.14159
+this->character.acknowledgable = 2.9
 ```
 ### **character.gravity**
 `float character.gravity`
@@ -68,22 +68,6 @@ this->character.motion = 3.14159
 this->character.knockDamp = 2.9
 ```
 ## Message
-### **character.upwardBoost**
-`(void)character.upwardBoost:(float)boost `
-
-
-#### Arguments
-`float boost`: 
-
-#### Returns
-
-
-
-#### Example
-``` cpp
-// This example is automatically generated: don't trust values
-[this character.upwardBoost:2.9]
-```
 ### **character.setInvincible**
 `(void)character.setInvincible:(float)duration `
 
@@ -98,7 +82,7 @@ this->character.knockDamp = 2.9
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this character.setInvincible:2.9]
+[this character.setInvincible:-1.0]
 ```
 ### **character.setState**
 `(void)character.setState:(int)state `
@@ -114,7 +98,23 @@ this->character.knockDamp = 2.9
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this character.setState:80085]
+[this character.setState:666]
+```
+### **character.upwardBoost**
+`(void)character.upwardBoost:(float)boost `
+
+
+#### Arguments
+`float boost`: 
+
+#### Returns
+
+
+
+#### Example
+``` cpp
+// This example is automatically generated: don't trust values
+[this character.upwardBoost:3.14159]
 ```
 ### **character.jump**
 `(void)character.jump:(float)strengh `
@@ -130,7 +130,7 @@ this->character.knockDamp = 2.9
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this character.jump:-1.0]
+[this character.jump:3.14159]
 ```
 ### **character.moveForward**
 `(void)character.moveForward:(float)speed `
@@ -169,6 +169,6 @@ N/A
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this character.knock:2.9 x:-1.0 y:-1.0 z:3.14159]
+[this character.knock:3.14159 x:2.9 y:2.9 z:2.9]
 ```
 

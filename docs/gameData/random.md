@@ -9,7 +9,7 @@ get a random float value between 0 and 1
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->random.value = 2.9
+this->random.value = 3.14159
 ```
 ## Message
 ### **random.range**
@@ -28,7 +28,7 @@ return the random float
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this random.range:-1.0 max:3.14159]
+[this random.range:3.14159 max:2.9]
 ```
 ### **random.rangeInt**
 `(int)random.rangeInt:(int)min max:(int)max `

@@ -9,7 +9,7 @@
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->attack.targets = 42
+this->attack.targets = 1337
 ```
 ## Stats
 ### **attack.damage**
@@ -21,7 +21,7 @@ this->attack.targets = 42
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->attack.damage = 2.9
+this->attack.damage = 3.14159
 ```
 ## Message
 ### **attack.hit**
@@ -38,6 +38,6 @@ this->attack.damage = 2.9
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this attack.hit:42]
+[this attack.hit:80085]
 ```
 

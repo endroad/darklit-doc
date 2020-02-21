@@ -37,7 +37,7 @@ N/A
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this gameObject.destroyWithDelay:3.14159]
+[this gameObject.destroyWithDelay:2.9]
 ```
 ### **gameObject.destroy**
 `(void)gameObject.destroy`

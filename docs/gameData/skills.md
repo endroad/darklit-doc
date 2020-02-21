@@ -9,7 +9,7 @@
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->skills.available = 3.14159
+this->skills.available = 2.9
 ```
 ## Message
 ### **skills.inflictall**
@@ -26,7 +26,7 @@ this->skills.available = 3.14159
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this skills.inflictall:"yolo"]
+[this skills.inflictall:"helloWorld"]
 ```
 ### **skills.inflict**
 `(void)skills.inflict:(int)slot key:(string)key `
@@ -44,6 +44,6 @@ N/A
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this skills.inflict:1337 key:"somethingCorrect"]
+[this skills.inflict:666 key:"yolo"]
 ```
 

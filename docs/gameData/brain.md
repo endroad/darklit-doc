@@ -14,7 +14,7 @@ Example : the target must be sane and alive, ergo we exclude the insanes and the
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->brain.settings = 1337
+this->brain.settings = 42
 ```
 ### **brain.playerDist**
 `float brain.playerDist`
@@ -25,7 +25,7 @@ Distance to closest player.
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->brain.playerDist = 3.14159
+this->brain.playerDist = -1.0
 ```
 ### **brain.playerFront**
 `float brain.playerFront`
@@ -47,7 +47,7 @@ Distance to closest player on the lateral axis. Meaning how far on the left or t
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->brain.playerLateral = 2.9
+this->brain.playerLateral = 3.14159
 ```
 ### **brain.playerVertical**
 `float brain.playerVertical`

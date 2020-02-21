@@ -16,7 +16,7 @@
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this spawner.burst:"somethingCorrect" count:666]
+[this spawner.burst:"helloWorld" count:42]
 ```
 ### **spawner.spawn**
 `(void)spawner.spawn:(string)keyid `
@@ -32,7 +32,7 @@ N/A
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this spawner.spawn:"helloWorld"]
+[this spawner.spawn:"yolo"]
 ```
 ### **spawner.reset**
 `(void)spawner.reset:(string)keyid `
@@ -48,6 +48,6 @@ N/A
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this spawner.reset:"helloWorld"]
+[this spawner.reset:"yolo"]
 ```
 

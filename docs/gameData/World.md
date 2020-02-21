@@ -20,7 +20,7 @@ Check if has a wall on left.
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->world.wallLeft = false
+this->world.wallLeft = true
 ```
 ### **world.wallRight**
 `bool world.wallRight`
@@ -31,7 +31,7 @@ Has wall on the right.
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->world.wallRight = true
+this->world.wallRight = false
 ```
 ### **world.ceil**
 `bool world.ceil`
@@ -42,7 +42,7 @@ Has ceiling.
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->world.ceil = true
+this->world.ceil = false
 ```
 ## Message
 ### **world.addLayer**

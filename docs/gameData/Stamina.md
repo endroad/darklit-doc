@@ -9,7 +9,7 @@ The current state of the bar, ergo, how many points you have for that stat
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->stamina.current = 666
+this->stamina.current = 80085
 ```
 ## Stats
 ### **stamina.rate**
@@ -23,7 +23,7 @@ negative is meant for continuous damage
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->stamina.rate = 3.14159
+this->stamina.rate = 2.9
 ```
 ### **stamina.capacity**
 `float stamina.capacity`
@@ -34,7 +34,7 @@ Game Stat that affect the total number of points for that stat, as much as one w
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->stamina.capacity = 2.9
+this->stamina.capacity = 3.14159
 ```
 ## Message
 ### **stamina.damage**
@@ -83,6 +83,6 @@ N/A
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this stamina.recover:42]
+[this stamina.recover:80085]
 ```
 

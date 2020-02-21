@@ -9,7 +9,7 @@
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-this->chest.descriptor = "yolo"
+this->chest.descriptor = "helloWorld"
 ```
 ## Message
 ### **chest.open**

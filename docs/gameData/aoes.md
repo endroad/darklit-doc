@@ -46,7 +46,7 @@ N/A
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this aoes.resume:"yolo"]
+[this aoes.resume:"somethingCorrect"]
 ```
 ### **aoes.stop**
 `(void)aoes.stop:(string)keyid `
@@ -62,6 +62,6 @@ N/A
 #### Example
 ``` cpp
 // This example is automatically generated: don't trust values
-[this aoes.stop:"somethingCorrect"]
+[this aoes.stop:"yolo"]
 ```
 
