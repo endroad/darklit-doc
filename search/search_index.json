@@ -1762,7 +1762,7 @@
         },
         {
             "location": "/gameData/blink/",
-            "text": "blink\n\n\nMessage\n\n\nblink.target\n\n\n(void)blink.target:(string)parameterName target:(entity)target\n\n\nArguments\n\n\nstring parameterName\n: \n\n\nentity target\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nblink\n.\ntarget\n:\n\"yolo\"\n \ntarget\n:\nsomeEntity\n]\n\n\n\n\n\n\n\nblink.canBlink\n\n\n(bool)blink.canBlink\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nblink\n.\ncanBlink\n]\n\n\n\n\n\n\n\nblink.blink\n\n\n(void)blink.blink\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nblink\n.\nblink\n]",
+            "text": "blink\n\n\nMessage\n\n\nblink.target\n\n\n(void)blink.target:(string)parameterName target:(entity)target\n\n\nArguments\n\n\nstring parameterName\n: \n\n\nentity target\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nblink\n.\ntarget\n:\n\"helloWorld\"\n \ntarget\n:\nsomeEntity\n]\n\n\n\n\n\n\n\nblink.canBlink\n\n\n(bool)blink.canBlink\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nblink\n.\ncanBlink\n]\n\n\n\n\n\n\n\nblink.blink\n\n\n(void)blink.blink\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nblink\n.\nblink\n]",
             "title": "blink"
         },
         {
@@ -1792,7 +1792,7 @@
         },
         {
             "location": "/gameData/blink/#example",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   blink . target : \"yolo\"   target : someEntity ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   blink . target : \"helloWorld\"   target : someEntity ]",
             "title": "Example"
         },
         {
@@ -1967,7 +1967,7 @@
         },
         {
             "location": "/gameData/chest/",
-            "text": "chest\n\n\nMessage\n\n\nchest.open\n\n\n(void)chest.open\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nchest\n.\nopen\n]\n\n\n\n\n\n\n\nchest.empty\n\n\n(void)chest.empty\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nchest\n.\nempty\n]\n\n\n\n\n\n\n\nchest.drop\n\n\n(void)chest.drop:(string)key\n\n\nFetch the corresponding loot with key in ItemManager > ItemDrops and drop it\n\n\nArguments\n\n\nstring key\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nchest\n.\ndrop\n:\n\"yolo\"\n]\n\n\n\n\n\n\n\nchest.dropAmount\n\n\n(void)chest.dropAmount:(int)amount key:(string)key\n\n\nFetch a number of the corresponding loot with key in ItemManager > ItemDrops and drop it\nargument0 is the amount of times the loot will be fetched\nkey is the id of the loot to find in ItemManager > ItemDrops\n\n\nArguments\n\n\nint amount\n: N/A\n\n\nstring key\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nchest\n.\ndropAmount\n:\n80085\n \nkey\n:\n\"yolo\"\n]\n\n\n\n\n\n\n\nchest.dropCurrency\n\n\n(void)chest.dropCurrency:(int)amount key:(string)key value:(int)value\n\n\nFetch a number of the corresponding currency with a specified value for each of them and drop it\nargument0 is the number of items\nkey is the currency id, \"Dust\" for vesta ; \"ManPower\" for scrap\nvalue is the amount of currency PER ITEMS\n\n\nArguments\n\n\nint amount\n: N/A\n\n\nstring key\n: N/A\n\n\nint value\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nchest\n.\ndropCurrency\n:\n80085\n \nkey\n:\n\"yolo\"\n \nvalue\n:\n666\n]\n\n\n\n\n\n\n\nchest.dropPowerup\n\n\n(void)chest.dropPowerup:(int)amount key:(string)key value:(int)value\n\n\nFetch a number of the corresponding powerup with a specified value for each of them and drop it\nargument0 is the number of items\nkey is the powerup id, \"Health\"/\"Shield\"/\"Ammo\"\nvalue is the powerup value PER ITEMS (number of hp gained for exemple)\n\n\nArguments\n\n\nint amount\n: N/A\n\n\nstring key\n: N/A\n\n\nint value\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nchest\n.\ndropPowerup\n:\n1337\n \nkey\n:\n\"helloWorld\"\n \nvalue\n:\n80085\n]\n\n\n\n\n\n\n\nchest.dropExp\n\n\n(void)chest.dropExp:(int)amount value:(int)value\n\n\nFetch a number of experience bits and drop it\nargument0 is the number of items\nvalue is the experience value PER ITEMS\n\n\nArguments\n\n\nint amount\n: N/A\n\n\nint value\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nchest\n.\ndropExp\n:\n42\n \nvalue\n:\n42\n]",
+            "text": "chest\n\n\nMessage\n\n\nchest.open\n\n\n(void)chest.open\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nchest\n.\nopen\n]\n\n\n\n\n\n\n\nchest.empty\n\n\n(void)chest.empty\n\n\nArguments\n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nchest\n.\nempty\n]\n\n\n\n\n\n\n\nchest.drop\n\n\n(void)chest.drop:(string)key\n\n\nFetch the corresponding loot with key in ItemManager > ItemDrops and drop it\n\n\nArguments\n\n\nstring key\n: the id of the loot to find in ItemManager.\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n[\nthis\n \nchest\n.\ndrop\n:\n\"elite\"\n]\n\n\n\n\n\n\n\nchest.dropAmount\n\n\n(void)chest.dropAmount:(int)amount key:(string)key\n\n\nFetch a number of the corresponding loot with key in ItemManager > ItemDrops and drop it\n\n\nArguments\n\n\nint amount\n: the amount of times the loot will be fetched.\n\n\nstring key\n: the id of the loot to find in ItemManager > ItemDrops.\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n[\nthis\n \nchest\n.\ndropAmount\n:\n3\n \nkey\n:\n\"elite\"\n]\n\n\n\n\n\n\n\nchest.dropCurrency\n\n\n(void)chest.dropCurrency:(int)amount key:(string)key value:(int)value\n\n\nFetch a number of the corresponding currency with a specified value for each of them and drop it\n\n\nArguments\n\n\nint amount\n: the amount of items.\n\n\nstring key\n: the currency id, \"Dust\" for vesta ; \"ManPower\" for scrap\n\n\nint value\n: the amount of currency PER ITEMS\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n[\nthis\n \nchest\n.\ndropCurrency\n:\n \nkey\n:\n\"Dust\"\n \nvalue\n:\n5\n]\n\n\n\n\n\n\n\nchest.dropPowerup\n\n\n(void)chest.dropPowerup:(int)amount key:(string)key value:(int)value\n\n\nFetch a number of the corresponding powerup with a specified value for each of them and drop it\n\n\nArguments\n\n\nint amount\n: the amount of items.\n\n\nstring key\n: the powerup id, \"Health\"/\"Shield\"/\"Ammo\"\n\n\nint value\n: the powerup value PER ITEMS (number of hp gained for exemple)\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n[\nthis\n \nchest\n.\ndropPowerup\n:\n3\n \nkey\n:\n\"Health\"\n \nvalue\n:\n5\n]\n\n\n\n\n\n\n\nchest.dropExp\n\n\n(void)chest.dropExp:(int)amount value:(int)value\n\n\nFetch a number of experience bits and drop it\n\n\nArguments\n\n\nint amount\n: the amount of items.\n\n\nint value\n: the experience value PER ITEMS\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n[\nthis\n \nchest\n.\ndropExp\n:\n3\n \nvalue\n:\n5\n]",
             "title": "chest"
         },
         {
@@ -2027,7 +2027,7 @@
         },
         {
             "location": "/gameData/chest/#arguments_2",
-            "text": "string key : N/A",
+            "text": "string key : the id of the loot to find in ItemManager.",
             "title": "Arguments"
         },
         {
@@ -2037,17 +2037,17 @@
         },
         {
             "location": "/gameData/chest/#example_2",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   chest . drop : \"yolo\" ]",
+            "text": "1 [ this   chest . drop : \"elite\" ]",
             "title": "Example"
         },
         {
             "location": "/gameData/chest/#chestdropamount",
-            "text": "(void)chest.dropAmount:(int)amount key:(string)key  Fetch a number of the corresponding loot with key in ItemManager > ItemDrops and drop it\nargument0 is the amount of times the loot will be fetched\nkey is the id of the loot to find in ItemManager > ItemDrops",
+            "text": "(void)chest.dropAmount:(int)amount key:(string)key  Fetch a number of the corresponding loot with key in ItemManager > ItemDrops and drop it",
             "title": "chest.dropAmount"
         },
         {
             "location": "/gameData/chest/#arguments_3",
-            "text": "int amount : N/A  string key : N/A",
+            "text": "int amount : the amount of times the loot will be fetched.  string key : the id of the loot to find in ItemManager > ItemDrops.",
             "title": "Arguments"
         },
         {
@@ -2057,17 +2057,17 @@
         },
         {
             "location": "/gameData/chest/#example_3",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   chest . dropAmount : 80085   key : \"yolo\" ]",
+            "text": "1 [ this   chest . dropAmount : 3   key : \"elite\" ]",
             "title": "Example"
         },
         {
             "location": "/gameData/chest/#chestdropcurrency",
-            "text": "(void)chest.dropCurrency:(int)amount key:(string)key value:(int)value  Fetch a number of the corresponding currency with a specified value for each of them and drop it\nargument0 is the number of items\nkey is the currency id, \"Dust\" for vesta ; \"ManPower\" for scrap\nvalue is the amount of currency PER ITEMS",
+            "text": "(void)chest.dropCurrency:(int)amount key:(string)key value:(int)value  Fetch a number of the corresponding currency with a specified value for each of them and drop it",
             "title": "chest.dropCurrency"
         },
         {
             "location": "/gameData/chest/#arguments_4",
-            "text": "int amount : N/A  string key : N/A  int value : N/A",
+            "text": "int amount : the amount of items.  string key : the currency id, \"Dust\" for vesta ; \"ManPower\" for scrap  int value : the amount of currency PER ITEMS",
             "title": "Arguments"
         },
         {
@@ -2077,17 +2077,17 @@
         },
         {
             "location": "/gameData/chest/#example_4",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   chest . dropCurrency : 80085   key : \"yolo\"   value : 666 ]",
+            "text": "1 [ this   chest . dropCurrency :   key : \"Dust\"   value : 5 ]",
             "title": "Example"
         },
         {
             "location": "/gameData/chest/#chestdroppowerup",
-            "text": "(void)chest.dropPowerup:(int)amount key:(string)key value:(int)value  Fetch a number of the corresponding powerup with a specified value for each of them and drop it\nargument0 is the number of items\nkey is the powerup id, \"Health\"/\"Shield\"/\"Ammo\"\nvalue is the powerup value PER ITEMS (number of hp gained for exemple)",
+            "text": "(void)chest.dropPowerup:(int)amount key:(string)key value:(int)value  Fetch a number of the corresponding powerup with a specified value for each of them and drop it",
             "title": "chest.dropPowerup"
         },
         {
             "location": "/gameData/chest/#arguments_5",
-            "text": "int amount : N/A  string key : N/A  int value : N/A",
+            "text": "int amount : the amount of items.  string key : the powerup id, \"Health\"/\"Shield\"/\"Ammo\"  int value : the powerup value PER ITEMS (number of hp gained for exemple)",
             "title": "Arguments"
         },
         {
@@ -2097,17 +2097,17 @@
         },
         {
             "location": "/gameData/chest/#example_5",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   chest . dropPowerup : 1337   key : \"helloWorld\"   value : 80085 ]",
+            "text": "1 [ this   chest . dropPowerup : 3   key : \"Health\"   value : 5 ]",
             "title": "Example"
         },
         {
             "location": "/gameData/chest/#chestdropexp",
-            "text": "(void)chest.dropExp:(int)amount value:(int)value  Fetch a number of experience bits and drop it\nargument0 is the number of items\nvalue is the experience value PER ITEMS",
+            "text": "(void)chest.dropExp:(int)amount value:(int)value  Fetch a number of experience bits and drop it",
             "title": "chest.dropExp"
         },
         {
             "location": "/gameData/chest/#arguments_6",
-            "text": "int amount : N/A  int value : N/A",
+            "text": "int amount : the amount of items.  int value : the experience value PER ITEMS",
             "title": "Arguments"
         },
         {
@@ -2117,7 +2117,7 @@
         },
         {
             "location": "/gameData/chest/#example_6",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   chest . dropExp : 42   value : 42 ]",
+            "text": "1 [ this   chest . dropExp : 3   value : 5 ]",
             "title": "Example"
         },
         {
@@ -3877,7 +3877,7 @@
         },
         {
             "location": "/gameData/inventory/",
-            "text": "inventory\n\n\nMessage\n\n\ninventory.balance\n\n\n(int)inventory.balance:(string)currency\n\n\ntells how much of a currency the entity has\n\n\nArguments\n\n\nstring currency\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ninventory\n.\nbalance\n:\n\"helloWorld\"\n]\n\n\n\n\n\n\n\ninventory.add\n\n\n(void)inventory.add:(string)currency amount:(int)amount\n\n\nGive this much of a specified currency\n\n\nArguments\n\n\nstring currency\n: N/A\n\n\nint amount\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ninventory\n.\nadd\n:\n\"yolo\"\n \namount\n:\n666\n]\n\n\n\n\n\n\n\ninventory.remove\n\n\n(void)inventory.remove:(string)currency amount:(int)amount\n\n\nRemove this much of a specified currency\n\n\nArguments\n\n\nstring currency\n: N/A\n\n\nint amount\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ninventory\n.\nremove\n:\n\"helloWorld\"\n \namount\n:\n666\n]",
+            "text": "inventory\n\n\nMessage\n\n\ninventory.balance\n\n\n(int)inventory.balance:(string)currency\n\n\ntells how much of a currency the entity has\n\n\nArguments\n\n\nstring currency\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ninventory\n.\nbalance\n:\n\"yolo\"\n]\n\n\n\n\n\n\n\ninventory.add\n\n\n(void)inventory.add:(string)currency amount:(int)amount\n\n\nGive this much of a specified currency\n\n\nArguments\n\n\nstring currency\n: N/A\n\n\nint amount\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ninventory\n.\nadd\n:\n\"helloWorld\"\n \namount\n:\n42\n]\n\n\n\n\n\n\n\ninventory.remove\n\n\n(void)inventory.remove:(string)currency amount:(int)amount\n\n\nRemove this much of a specified currency\n\n\nArguments\n\n\nstring currency\n: N/A\n\n\nint amount\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \ninventory\n.\nremove\n:\n\"helloWorld\"\n \namount\n:\n42\n]",
             "title": "inventory"
         },
         {
@@ -3907,7 +3907,7 @@
         },
         {
             "location": "/gameData/inventory/#example",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   inventory . balance : \"helloWorld\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   inventory . balance : \"yolo\" ]",
             "title": "Example"
         },
         {
@@ -3927,7 +3927,7 @@
         },
         {
             "location": "/gameData/inventory/#example_1",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   inventory . add : \"yolo\"   amount : 666 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   inventory . add : \"helloWorld\"   amount : 42 ]",
             "title": "Example"
         },
         {
@@ -3947,7 +3947,7 @@
         },
         {
             "location": "/gameData/inventory/#example_2",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   inventory . remove : \"helloWorld\"   amount : 666 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   inventory . remove : \"helloWorld\"   amount : 42 ]",
             "title": "Example"
         },
         {
@@ -4652,7 +4652,7 @@
         },
         {
             "location": "/gameData/navigation/",
-            "text": "navigation\n\n\nVariables\n\n\nnavigation.useGravity\n\n\nbool navigation.useGravity\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nuseGravity\n \n=\n \ntrue\n\n\n\n\n\n\n\nnavigation.speedForward\n\n\nfloat navigation.speedForward\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nspeedForward\n \n=\n \n2.9\n\n\n\n\n\n\n\nnavigation.speedVertical\n\n\nfloat navigation.speedVertical\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nspeedVertical\n \n=\n \n3.14159\n\n\n\n\n\n\n\nStats\n\n\nnavigation.decision\n\n\nfloat navigation.decision\n\n\nDefine the ability to interpret orders given by a brain\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\ndecision\n \n=\n \n3.14159\n\n\n\n\n\n\n\nnavigation.gravity\n\n\nfloat navigation.gravity\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\ngravity\n \n=\n \n3.14159\n\n\n\n\n\n\n\nnavigation.motion\n\n\nfloat navigation.motion\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nmotion\n \n=\n \n2.9\n\n\n\n\n\n\n\nnavigation.time\n\n\nfloat navigation.time\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\ntime\n \n=\n \n2.9\n\n\n\n\n\n\n\nnavigation.knockResist\n\n\nfloat navigation.knockResist\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nknockResist\n \n=\n \n2.9\n\n\n\n\n\n\n\nnavigation.knockDamp\n\n\nfloat navigation.knockDamp\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nknockDamp\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nMessage\n\n\nnavigation.jump\n\n\n(void)navigation.jump:(float)strengh\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\njump\n:\n2.9\n]\n\n\n\n\n\n\n\nnavigation.eject\n\n\n(void)navigation.eject:(float)strengh\n\n\nknock the navigable vertically\n\n\nArguments\n\n\nfloat strengh\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\neject\n:\n-\n1.0\n]\n\n\n\n\n\n\n\nnavigation.knock\n\n\n(void)navigation.knock:(float)strengh origin:(entity)origin offset:(float)offset\n\n\nknock the navigable lateraly, relative from another entity, impose a locomotion force that cannot be opposed with other velocity\nthe offset is relative to the target right axis\n\n\nArguments\n\n\nfloat strengh\n: N/A\n\n\nentity origin\n: N/A\n\n\nfloat offset\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\nknock\n:\n2.9\n \norigin\n:\nsomeEntity\n \noffset\n:\n2.9\n]\n\n\n\n\n\n\n\nnavigation.distanceFront\n\n\n(float)navigation.distanceFront:(entity)target\n\n\nArguments\n\n\nentity target\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\ndistanceFront\n:\nsomeEntity\n]\n\n\n\n\n\n\n\nnavigation.distanceVertical\n\n\n(float)navigation.distanceVertical:(entity)target\n\n\nArguments\n\n\nentity target\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\ndistanceVertical\n:\nsomeEntity\n]",
+            "text": "navigation\n\n\nVariables\n\n\nnavigation.useGravity\n\n\nbool navigation.useGravity\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nuseGravity\n \n=\n \nfalse\n\n\n\n\n\n\n\nnavigation.speedForward\n\n\nfloat navigation.speedForward\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nspeedForward\n \n=\n \n3.14159\n\n\n\n\n\n\n\nnavigation.speedVertical\n\n\nfloat navigation.speedVertical\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nspeedVertical\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nStats\n\n\nnavigation.decision\n\n\nfloat navigation.decision\n\n\nDefine the ability to interpret orders given by a brain\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\ndecision\n \n=\n \n2.9\n\n\n\n\n\n\n\nnavigation.gravity\n\n\nfloat navigation.gravity\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\ngravity\n \n=\n \n3.14159\n\n\n\n\n\n\n\nnavigation.motion\n\n\nfloat navigation.motion\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nmotion\n \n=\n \n3.14159\n\n\n\n\n\n\n\nnavigation.time\n\n\nfloat navigation.time\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\ntime\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nnavigation.knockResist\n\n\nfloat navigation.knockResist\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nknockResist\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nnavigation.knockDamp\n\n\nfloat navigation.knockDamp\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nknockDamp\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nMessage\n\n\nnavigation.jump\n\n\n(void)navigation.jump:(float)strengh\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\njump\n:\n2.9\n]\n\n\n\n\n\n\n\nnavigation.eject\n\n\n(void)navigation.eject:(float)strengh\n\n\nknock the navigable vertically\n\n\nArguments\n\n\nfloat strengh\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\neject\n:\n3.14159\n]\n\n\n\n\n\n\n\nnavigation.knock\n\n\n(void)navigation.knock:(float)strengh origin:(entity)origin offset:(float)offset\n\n\nknock the navigable lateraly, relative from another entity, impose a locomotion force that cannot be opposed with other velocity\nthe offset is relative to the target right axis\n\n\nArguments\n\n\nfloat strengh\n: N/A\n\n\nentity origin\n: N/A\n\n\nfloat offset\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\nknock\n:\n3.14159\n \norigin\n:\nsomeEntity\n \noffset\n:\n3.14159\n]\n\n\n\n\n\n\n\nnavigation.distanceFront\n\n\n(float)navigation.distanceFront:(entity)target\n\n\nArguments\n\n\nentity target\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\ndistanceFront\n:\nsomeEntity\n]\n\n\n\n\n\n\n\nnavigation.distanceVertical\n\n\n(float)navigation.distanceVertical:(entity)target\n\n\nArguments\n\n\nentity target\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\ndistanceVertical\n:\nsomeEntity\n]",
             "title": "navigation"
         },
         {
@@ -4672,7 +4672,7 @@
         },
         {
             "location": "/gameData/navigation/#example",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . useGravity   =   true",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . useGravity   =   false",
             "title": "Example"
         },
         {
@@ -4682,7 +4682,7 @@
         },
         {
             "location": "/gameData/navigation/#example_1",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . speedForward   =   2.9",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . speedForward   =   3.14159",
             "title": "Example"
         },
         {
@@ -4692,7 +4692,7 @@
         },
         {
             "location": "/gameData/navigation/#example_2",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . speedVertical   =   3.14159",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . speedVertical   =   - 1.0",
             "title": "Example"
         },
         {
@@ -4707,7 +4707,7 @@
         },
         {
             "location": "/gameData/navigation/#example_3",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . decision   =   3.14159",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . decision   =   2.9",
             "title": "Example"
         },
         {
@@ -4727,7 +4727,7 @@
         },
         {
             "location": "/gameData/navigation/#example_5",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . motion   =   2.9",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . motion   =   3.14159",
             "title": "Example"
         },
         {
@@ -4737,7 +4737,7 @@
         },
         {
             "location": "/gameData/navigation/#example_6",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . time   =   2.9",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . time   =   - 1.0",
             "title": "Example"
         },
         {
@@ -4747,7 +4747,7 @@
         },
         {
             "location": "/gameData/navigation/#example_7",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . knockResist   =   2.9",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . knockResist   =   - 1.0",
             "title": "Example"
         },
         {
@@ -4802,7 +4802,7 @@
         },
         {
             "location": "/gameData/navigation/#example_10",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   navigation . eject : - 1.0 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   navigation . eject : 3.14159 ]",
             "title": "Example"
         },
         {
@@ -4822,7 +4822,7 @@
         },
         {
             "location": "/gameData/navigation/#example_11",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   navigation . knock : 2.9   origin : someEntity   offset : 2.9 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   navigation . knock : 3.14159   origin : someEntity   offset : 3.14159 ]",
             "title": "Example"
         },
         {
@@ -4867,7 +4867,7 @@
         },
         {
             "location": "/gameData/navigation/",
-            "text": "navigation\n\n\nVariables\n\n\nnavigation.useGravity\n\n\nbool navigation.useGravity\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nuseGravity\n \n=\n \ntrue\n\n\n\n\n\n\n\nnavigation.speedForward\n\n\nfloat navigation.speedForward\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nspeedForward\n \n=\n \n2.9\n\n\n\n\n\n\n\nnavigation.speedVertical\n\n\nfloat navigation.speedVertical\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nspeedVertical\n \n=\n \n3.14159\n\n\n\n\n\n\n\nStats\n\n\nnavigation.decision\n\n\nfloat navigation.decision\n\n\nDefine the ability to interpret orders given by a brain\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\ndecision\n \n=\n \n3.14159\n\n\n\n\n\n\n\nnavigation.gravity\n\n\nfloat navigation.gravity\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\ngravity\n \n=\n \n3.14159\n\n\n\n\n\n\n\nnavigation.motion\n\n\nfloat navigation.motion\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nmotion\n \n=\n \n2.9\n\n\n\n\n\n\n\nnavigation.time\n\n\nfloat navigation.time\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\ntime\n \n=\n \n2.9\n\n\n\n\n\n\n\nnavigation.knockResist\n\n\nfloat navigation.knockResist\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nknockResist\n \n=\n \n2.9\n\n\n\n\n\n\n\nnavigation.knockDamp\n\n\nfloat navigation.knockDamp\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nknockDamp\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nMessage\n\n\nnavigation.jump\n\n\n(void)navigation.jump:(float)strengh\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\njump\n:\n2.9\n]\n\n\n\n\n\n\n\nnavigation.eject\n\n\n(void)navigation.eject:(float)strengh\n\n\nknock the navigable vertically\n\n\nArguments\n\n\nfloat strengh\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\neject\n:\n-\n1.0\n]\n\n\n\n\n\n\n\nnavigation.knock\n\n\n(void)navigation.knock:(float)strengh origin:(entity)origin offset:(float)offset\n\n\nknock the navigable lateraly, relative from another entity, impose a locomotion force that cannot be opposed with other velocity\nthe offset is relative to the target right axis\n\n\nArguments\n\n\nfloat strengh\n: N/A\n\n\nentity origin\n: N/A\n\n\nfloat offset\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\nknock\n:\n2.9\n \norigin\n:\nsomeEntity\n \noffset\n:\n2.9\n]\n\n\n\n\n\n\n\nnavigation.distanceFront\n\n\n(float)navigation.distanceFront:(entity)target\n\n\nArguments\n\n\nentity target\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\ndistanceFront\n:\nsomeEntity\n]\n\n\n\n\n\n\n\nnavigation.distanceVertical\n\n\n(float)navigation.distanceVertical:(entity)target\n\n\nArguments\n\n\nentity target\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\ndistanceVertical\n:\nsomeEntity\n]",
+            "text": "navigation\n\n\nVariables\n\n\nnavigation.useGravity\n\n\nbool navigation.useGravity\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nuseGravity\n \n=\n \nfalse\n\n\n\n\n\n\n\nnavigation.speedForward\n\n\nfloat navigation.speedForward\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nspeedForward\n \n=\n \n3.14159\n\n\n\n\n\n\n\nnavigation.speedVertical\n\n\nfloat navigation.speedVertical\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nspeedVertical\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nStats\n\n\nnavigation.decision\n\n\nfloat navigation.decision\n\n\nDefine the ability to interpret orders given by a brain\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\ndecision\n \n=\n \n2.9\n\n\n\n\n\n\n\nnavigation.gravity\n\n\nfloat navigation.gravity\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\ngravity\n \n=\n \n3.14159\n\n\n\n\n\n\n\nnavigation.motion\n\n\nfloat navigation.motion\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nmotion\n \n=\n \n3.14159\n\n\n\n\n\n\n\nnavigation.time\n\n\nfloat navigation.time\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\ntime\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nnavigation.knockResist\n\n\nfloat navigation.knockResist\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nknockResist\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nnavigation.knockDamp\n\n\nfloat navigation.knockDamp\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nnavigation\n.\nknockDamp\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nMessage\n\n\nnavigation.jump\n\n\n(void)navigation.jump:(float)strengh\n\n\nArguments\n\n\nfloat strengh\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\njump\n:\n2.9\n]\n\n\n\n\n\n\n\nnavigation.eject\n\n\n(void)navigation.eject:(float)strengh\n\n\nknock the navigable vertically\n\n\nArguments\n\n\nfloat strengh\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\neject\n:\n3.14159\n]\n\n\n\n\n\n\n\nnavigation.knock\n\n\n(void)navigation.knock:(float)strengh origin:(entity)origin offset:(float)offset\n\n\nknock the navigable lateraly, relative from another entity, impose a locomotion force that cannot be opposed with other velocity\nthe offset is relative to the target right axis\n\n\nArguments\n\n\nfloat strengh\n: N/A\n\n\nentity origin\n: N/A\n\n\nfloat offset\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\nknock\n:\n3.14159\n \norigin\n:\nsomeEntity\n \noffset\n:\n3.14159\n]\n\n\n\n\n\n\n\nnavigation.distanceFront\n\n\n(float)navigation.distanceFront:(entity)target\n\n\nArguments\n\n\nentity target\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\ndistanceFront\n:\nsomeEntity\n]\n\n\n\n\n\n\n\nnavigation.distanceVertical\n\n\n(float)navigation.distanceVertical:(entity)target\n\n\nArguments\n\n\nentity target\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nnavigation\n.\ndistanceVertical\n:\nsomeEntity\n]",
             "title": "navigation"
         },
         {
@@ -4887,7 +4887,7 @@
         },
         {
             "location": "/gameData/navigation/#example",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . useGravity   =   true",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . useGravity   =   false",
             "title": "Example"
         },
         {
@@ -4897,7 +4897,7 @@
         },
         {
             "location": "/gameData/navigation/#example_1",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . speedForward   =   2.9",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . speedForward   =   3.14159",
             "title": "Example"
         },
         {
@@ -4907,7 +4907,7 @@
         },
         {
             "location": "/gameData/navigation/#example_2",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . speedVertical   =   3.14159",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . speedVertical   =   - 1.0",
             "title": "Example"
         },
         {
@@ -4922,7 +4922,7 @@
         },
         {
             "location": "/gameData/navigation/#example_3",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . decision   =   3.14159",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . decision   =   2.9",
             "title": "Example"
         },
         {
@@ -4942,7 +4942,7 @@
         },
         {
             "location": "/gameData/navigation/#example_5",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . motion   =   2.9",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . motion   =   3.14159",
             "title": "Example"
         },
         {
@@ -4952,7 +4952,7 @@
         },
         {
             "location": "/gameData/navigation/#example_6",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . time   =   2.9",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . time   =   - 1.0",
             "title": "Example"
         },
         {
@@ -4962,7 +4962,7 @@
         },
         {
             "location": "/gameData/navigation/#example_7",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . knockResist   =   2.9",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> navigation . knockResist   =   - 1.0",
             "title": "Example"
         },
         {
@@ -5017,7 +5017,7 @@
         },
         {
             "location": "/gameData/navigation/#example_10",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   navigation . eject : - 1.0 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   navigation . eject : 3.14159 ]",
             "title": "Example"
         },
         {
@@ -5037,7 +5037,7 @@
         },
         {
             "location": "/gameData/navigation/#example_11",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   navigation . knock : 2.9   origin : someEntity   offset : 2.9 ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   navigation . knock : 3.14159   origin : someEntity   offset : 3.14159 ]",
             "title": "Example"
         },
         {
@@ -5147,7 +5147,7 @@
         },
         {
             "location": "/gameData/perks/",
-            "text": "perks\n\n\nVariables\n\n\nperks.swordDamage\n\n\nint perks.swordDamage\n\n\nthe value of damage provided by the perk Damage boost\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nperks\n.\nswordDamage\n \n=\n \n666\n\n\n\n\n\n\n\nperks.vestaLootBoost\n\n\nfloat perks.vestaLootBoost\n\n\nthe value of boost provided by the perk Vesta loot boost\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nperks\n.\nvestaLootBoost\n \n=\n \n2.9\n\n\n\n\n\n\n\nMessage\n\n\nperks.getLevel\n\n\n(int)perks.getLevel:(string)perkName\n\n\nArguments\n\n\nstring perkName\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nperks\n.\ngetLevel\n:\n\"yolo\"\n]\n\n\n\n\n\n\n\nperks.getFloat\n\n\n(float)perks.getFloat:(string)perkId property:(string)property\n\n\nreturns a float property defined by perk, Please use with caution !\n\n\nArguments\n\n\nstring perkId\n: N/A\n\n\nstring property\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nperks\n.\ngetFloat\n:\n\"yolo\"\n \nproperty\n:\n\"somethingCorrect\"\n]\n\n\n\n\n\n\n\nperks.getInt\n\n\n(int)perks.getInt:(string)perkId property:(string)property\n\n\nreturns a int property defined by perk, Please use with caution !\n\n\nArguments\n\n\nstring perkId\n: N/A\n\n\nstring property\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nperks\n.\ngetInt\n:\n\"somethingCorrect\"\n \nproperty\n:\n\"somethingCorrect\"\n]\n\n\n\n\n\n\n\nperks.getBool\n\n\n(bool)perks.getBool:(string)perkId property:(string)property\n\n\nreturns a bool property defined by perk, Please use with caution !\n\n\nArguments\n\n\nstring perkId\n: N/A\n\n\nstring property\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nperks\n.\ngetBool\n:\n\"helloWorld\"\n \nproperty\n:\n\"yolo\"\n]",
+            "text": "perks\n\n\nVariables\n\n\nperks.swordDamage\n\n\nint perks.swordDamage\n\n\nthe value of damage provided by the perk Damage boost\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nperks\n.\nswordDamage\n \n=\n \n666\n\n\n\n\n\n\n\nperks.vestaLootBoost\n\n\nfloat perks.vestaLootBoost\n\n\nthe value of boost provided by the perk Vesta loot boost\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\nthis\n->\nperks\n.\nvestaLootBoost\n \n=\n \n-\n1.0\n\n\n\n\n\n\n\nMessage\n\n\nperks.getLevel\n\n\n(int)perks.getLevel:(string)perkName\n\n\nArguments\n\n\nstring perkName\n: \n\n\nReturns\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nperks\n.\ngetLevel\n:\n\"helloWorld\"\n]\n\n\n\n\n\n\n\nperks.getFloat\n\n\n(float)perks.getFloat:(string)perkId property:(string)property\n\n\nreturns a float property defined by perk, Please use with caution !\n\n\nArguments\n\n\nstring perkId\n: N/A\n\n\nstring property\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nperks\n.\ngetFloat\n:\n\"helloWorld\"\n \nproperty\n:\n\"yolo\"\n]\n\n\n\n\n\n\n\nperks.getInt\n\n\n(int)perks.getInt:(string)perkId property:(string)property\n\n\nreturns a int property defined by perk, Please use with caution !\n\n\nArguments\n\n\nstring perkId\n: N/A\n\n\nstring property\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nperks\n.\ngetInt\n:\n\"yolo\"\n \nproperty\n:\n\"helloWorld\"\n]\n\n\n\n\n\n\n\nperks.getBool\n\n\n(bool)perks.getBool:(string)perkId property:(string)property\n\n\nreturns a bool property defined by perk, Please use with caution !\n\n\nArguments\n\n\nstring perkId\n: N/A\n\n\nstring property\n: N/A\n\n\nReturns\n\n\nN/A\n\n\nExample\n\n\n1\n2\n// This example is automatically generated: don't trust values\n\n\n[\nthis\n \nperks\n.\ngetBool\n:\n\"yolo\"\n \nproperty\n:\n\"somethingCorrect\"\n]",
             "title": "perks"
         },
         {
@@ -5177,7 +5177,7 @@
         },
         {
             "location": "/gameData/perks/#example_1",
-            "text": "1\n2 // This example is automatically generated: don't trust values  this -> perks . vestaLootBoost   =   2.9",
+            "text": "1\n2 // This example is automatically generated: don't trust values  this -> perks . vestaLootBoost   =   - 1.0",
             "title": "Example"
         },
         {
@@ -5202,7 +5202,7 @@
         },
         {
             "location": "/gameData/perks/#example_2",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   perks . getLevel : \"yolo\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   perks . getLevel : \"helloWorld\" ]",
             "title": "Example"
         },
         {
@@ -5222,7 +5222,7 @@
         },
         {
             "location": "/gameData/perks/#example_3",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   perks . getFloat : \"yolo\"   property : \"somethingCorrect\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   perks . getFloat : \"helloWorld\"   property : \"yolo\" ]",
             "title": "Example"
         },
         {
@@ -5242,7 +5242,7 @@
         },
         {
             "location": "/gameData/perks/#example_4",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   perks . getInt : \"somethingCorrect\"   property : \"somethingCorrect\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   perks . getInt : \"yolo\"   property : \"helloWorld\" ]",
             "title": "Example"
         },
         {
@@ -5262,7 +5262,7 @@
         },
         {
             "location": "/gameData/perks/#example_5",
-            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   perks . getBool : \"helloWorld\"   property : \"yolo\" ]",
+            "text": "1\n2 // This example is automatically generated: don't trust values  [ this   perks . getBool : \"yolo\"   property : \"somethingCorrect\" ]",
             "title": "Example"
         },
         {
